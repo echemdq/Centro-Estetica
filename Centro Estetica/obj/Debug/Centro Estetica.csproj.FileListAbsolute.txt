@@ -5,3 +5,5 @@ C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Cen
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro Estetica.csproj.GenerateResource.Cache
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro Estetica.exe
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro Estetica.pdb
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro Estetica.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\bin\Debug\Centro Estetica.exe.config
