@@ -1,6 +1,6 @@
 ﻿namespace Centro_Estetica
 {
-    partial class Form1
+    partial class frm_Principal
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -28,12 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frm_Principal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Name = "frm_Principal";
+            this.Text = "Centro de Estetica";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
     }
 }
 
