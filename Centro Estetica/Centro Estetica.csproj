@@ -77,11 +77,11 @@
     <Compile Include="ControladoraRubros.cs" />
     <Compile Include="ControladoraSubrubros.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="fmrPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fmrPrincipal.Designer.cs">
+      <DependentUpon>fmrPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Honorarios.cs" />
     <Compile Include="IDAO.cs" />
@@ -93,8 +93,8 @@
     <Compile Include="Rubros.cs" />
     <Compile Include="Subrubros.cs" />
     <Compile Include="TipoDoc.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="fmrPrincipal.resx">
+      <DependentUpon>fmrPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +119,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Imagenes\Background-Image41.jpg" />
+    <None Include="Imagenes\Background-Spa.jpg" />
     <Content Include="Imagenes\Document.ico" />
     <Content Include="Imagenes\Edit.ico" />
     <Content Include="Imagenes\Hopstarter-Soft-Scraps-Clock.ico" />

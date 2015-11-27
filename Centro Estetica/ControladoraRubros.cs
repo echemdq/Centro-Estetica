@@ -8,34 +8,36 @@ namespace Centro_Estetica
 {
     public class ControladoraRubros : IDAO<Rubros>
     {
+        BdRubros bd = new BdRubros();
+
         public void Agregar(Rubros dato)
         {
-            throw new NotImplementedException();
+            bd.Agregar(dato);
         }
 
         public List<Rubros> TraerTodos()
         {
-            throw new NotImplementedException();
+            return bd.TraerTodos();
         }
 
         public void Borrar(Rubros dato)
         {
-            throw new NotImplementedException();
+            bd.Borrar(dato);
         }
 
         public Rubros Buscar(string dato)
         {
-            throw new NotImplementedException();
+            return bd.Buscar(dato);
         }
 
         public List<Rubros> BuscarEspecial(string dato)
         {
-            throw new NotImplementedException();
+            return bd.BuscarEspecial(dato);
         }
 
         public void Modificar(Rubros dato)
         {
-            throw new NotImplementedException();
+            bd.Modificar(dato);
         }
 
         public int traerSigID()

@@ -8,6 +8,8 @@ namespace Centro_Estetica
 {
     public class ControladoraTipoDoc : IDAO<TipoDoc>
     {
+        BdTipoDoc bd = new BdTipoDoc();
+
         public void Agregar(TipoDoc dato)
         {
             throw new NotImplementedException();
@@ -15,7 +17,7 @@ namespace Centro_Estetica
 
         public List<TipoDoc> TraerTodos()
         {
-            throw new NotImplementedException();
+            return bd.TraerTodos();
         }
 
         public void Borrar(TipoDoc dato)

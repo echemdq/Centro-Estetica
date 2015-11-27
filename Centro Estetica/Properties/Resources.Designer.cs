@@ -63,6 +63,26 @@ namespace Centro_Estetica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background_Image41 {
+            get {
+                object obj = ResourceManager.GetObject("Background-Image41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_Spa {
+            get {
+                object obj = ResourceManager.GetObject("Background-Spa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Recycle_Bin_Full {
             get {
                 object obj = ResourceManager.GetObject("Recycle Bin Full", resourceCulture);

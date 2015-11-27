@@ -8,6 +8,7 @@ namespace Centro_Estetica
 {
     public class ControladoraProductos : IDAO<Productos>
     {
+        BdProductos bd = new BdProductos();
         public void Agregar(Productos dato)
         {
             throw new NotImplementedException();

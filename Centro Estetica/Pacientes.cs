@@ -18,6 +18,12 @@ namespace Centro_Estetica
         string celular;
         int activo;
         string comentarios;
+
+        public string Comentarios
+        {
+            get { return comentarios; }
+            set { comentarios = value; }
+        }
         string foto;
 
         public string Foto

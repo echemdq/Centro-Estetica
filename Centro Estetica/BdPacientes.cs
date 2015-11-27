@@ -9,6 +9,8 @@ namespace Centro_Estetica
 {
     public class BdPacientes : IDAO<Pacientes>
     {
+        Acceso_BD oacceso = new Acceso_BD();
+
         public void Agregar(Pacientes dato)
         {
             throw new NotImplementedException();

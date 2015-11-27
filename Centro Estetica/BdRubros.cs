@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Centro_Estetica
 {
     public class BdRubros : IDAO<Rubros>
     {
+        Acceso_BD oacceso = new Acceso_BD();
+
         public void Agregar(Rubros dato)
         {
             throw new NotImplementedException();
