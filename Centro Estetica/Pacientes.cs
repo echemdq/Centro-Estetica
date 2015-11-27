@@ -15,6 +15,28 @@ namespace Centro_Estetica
         string mail;
         string documento;
         TipoDoc tipod;
+        string celular;
+        int activo;
+        string comentarios;
+        string foto;
+
+        public string Foto
+        {
+            get { return foto; }
+            set { foto = value; }
+        }
+
+        public int Activo
+        {
+            get { return activo; }
+            set { activo = value; }
+        }
+
+        public string Celular
+        {
+            get { return celular; }
+            set { celular = value; }
+        }
 
         public TipoDoc Tipod
         {

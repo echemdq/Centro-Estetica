@@ -9,11 +9,39 @@ namespace Centro_Estetica
     public class Productos
     {
         int idproductos;
-        string codigo;
         string detalle;
-        decimal costo;
+        decimal precioventa;
+        int sesiones;
         int stock;
         Subrubros subrubro;
+        int activo;
+        decimal preciocalculo;
+
+        public decimal Preciocalculo
+        {
+            get { return preciocalculo; }
+            set { preciocalculo = value; }
+        }
+
+        public int Activo
+        {
+            get { return activo; }
+            set { activo = value; }
+        }
+
+        public int Sesiones
+        {
+            get { return sesiones; }
+            set { sesiones = value; }
+        }
+        int llevastock;
+
+        public int Llevastock
+        {
+            get { return llevastock; }
+            set { llevastock = value; }
+        }
+        
 
         public Subrubros Subrubro
         {
@@ -27,22 +55,16 @@ namespace Centro_Estetica
             set { stock = value; }
         }
 
-        public decimal Costo
+        public decimal Precioventa
         {
-            get { return costo; }
-            set { costo = value; }
+            get { return precioventa; }
+            set { precioventa = value; }
         }
 
         public string Detalle
         {
             get { return detalle; }
             set { detalle = value; }
-        }
-
-        public string Codigo
-        {
-            get { return codigo; }
-            set { codigo = value; }
         }
 
         public int Idproductos

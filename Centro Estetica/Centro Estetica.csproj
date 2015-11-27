@@ -63,12 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acceso BD.cs" />
+    <Compile Include="BdHonorarios.cs" />
     <Compile Include="BdPacientes.cs" />
     <Compile Include="BdProductos.cs" />
     <Compile Include="BdProfesionales.cs" />
     <Compile Include="BdRubros.cs" />
     <Compile Include="BdSubrubros.cs" />
     <Compile Include="BdTipoDoc.cs" />
+    <Compile Include="ControladoraHonorarios.cs" />
     <Compile Include="ControladoraPacientes.cs" />
     <Compile Include="ControladoraProductos.cs" />
     <Compile Include="ControladoraProfesionales.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Honorarios.cs" />
     <Compile Include="IDAO.cs" />
     <Compile Include="Pacientes.cs" />
     <Compile Include="Productos.cs" />
