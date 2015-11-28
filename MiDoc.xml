@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Servers>
+  <Server Id_Server="1">
+    <Direccion>localhost</Direccion>
+    <Tipo>mysql</Tipo>
+    <BaseDatos>centroestetica</BaseDatos>
+  </Server>
+</Servers>

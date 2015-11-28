@@ -22,5 +22,11 @@ namespace Centro_Estetica
             get { return idrubros; }
             set { idrubros = value; }
         }
+
+        public Rubros(int i, string r)
+        {
+            idrubros = i;
+            rubro = r;
+        }
     }
 }

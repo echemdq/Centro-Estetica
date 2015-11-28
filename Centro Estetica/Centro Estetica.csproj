@@ -77,11 +77,17 @@
     <Compile Include="ControladoraRubros.cs" />
     <Compile Include="ControladoraSubrubros.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
-    <Compile Include="fmrPrincipal.cs">
+    <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrPrincipal.Designer.cs">
-      <DependentUpon>fmrPrincipal.cs</DependentUpon>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRubros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRubros.Designer.cs">
+      <DependentUpon>frmRubros.cs</DependentUpon>
     </Compile>
     <Compile Include="Honorarios.cs" />
     <Compile Include="IDAO.cs" />
@@ -93,8 +99,11 @@
     <Compile Include="Rubros.cs" />
     <Compile Include="Subrubros.cs" />
     <Compile Include="TipoDoc.cs" />
-    <EmbeddedResource Include="fmrPrincipal.resx">
-      <DependentUpon>fmrPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRubros.resx">
+      <DependentUpon>frmRubros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +128,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Imagenes\Undo.ico" />
     <None Include="Imagenes\Background-Image41.jpg" />
     <None Include="Imagenes\Background-Spa.jpg" />
     <Content Include="Imagenes\Document.ico" />

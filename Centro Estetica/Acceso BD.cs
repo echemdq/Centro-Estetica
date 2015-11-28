@@ -44,8 +44,8 @@ namespace Centro_Estetica
             get { return Acceso_BD.uid; }
             set { Acceso_BD.uid = value; }
         }
-        static string password = "Pa21rA*";
-        //static string password = "210466";
+        //static string password = "Pa21rA*";
+        static string password = "romeo1";
         public static string Password
         {
             get { return Acceso_BD.password; }
@@ -70,7 +70,7 @@ namespace Centro_Estetica
         public void buscarEnXML()
         {
 
-            XDocument miXML = XDocument.Load(@"C:\Program Files\FV Sistemas\Control de Accesos\MiDoc.xml");
+            XDocument miXML = XDocument.Load(@"C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\MiDoc.xml");
 
 
             var server1 = from nombre in miXML.Elements("Servers").Elements("Server")

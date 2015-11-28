@@ -13,17 +13,27 @@ namespace Centro_Estetica
 
         public void Agregar(Rubros dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("insert into rubros (detalle) values ('" + dato.Rubro + "')");
         }
 
         public List<Rubros> TraerTodos()
         {
-            throw new NotImplementedException();
+            List<Rubros> aux = new List<Rubros>();
+            string cmdtext = "select * from rubros order by detalle asc";
+            DataTable dt = oacceso.leerDatos(cmdtext);
+            foreach (DataRow dr in dt.Rows)
+            {
+                int id = Convert.ToInt32(dr["idrubros"]);
+                string detalle = Convert.ToString(dr["detalle"]);
+                Rubros c = new Rubros(id, detalle);
+                aux.Add(c);
+            }
+            return aux;
         }
 
         public void Borrar(Rubros dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("delete from rubros where idrubros = '" + dato.Idrubros + "'");
         }
 
         public Rubros Buscar(string dato)
@@ -38,7 +48,7 @@ namespace Centro_Estetica
 
         public void Modificar(Rubros dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("update rubros set detalle = '"+dato.Rubro+"' where idrubros = '"+dato.Idrubros+"'");
         }
 
         public int traerSigID()

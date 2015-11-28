@@ -14,5 +14,11 @@ namespace Centro_Estetica
         {
             InitializeComponent();
         }
+
+        private void rubrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRubros frm = new frmRubros();
+            frm.ShowDialog(); 
+        }
     }
 }
