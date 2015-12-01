@@ -114,7 +114,7 @@ namespace Centro_Estetica
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al Guardar: " + ex.Message);
+                MessageBox.Show("Error al Eliminar: " + ex.Message);
             }
         }
 

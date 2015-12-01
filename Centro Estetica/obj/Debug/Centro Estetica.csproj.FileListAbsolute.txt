@@ -8,3 +8,4 @@ C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Cen
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro Estetica.csprojResolveAssemblyReference.cache
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\bin\Debug\Centro Estetica.exe.config
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmRubros.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmSubrubros.resources

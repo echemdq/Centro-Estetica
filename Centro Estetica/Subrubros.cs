@@ -29,5 +29,17 @@ namespace Centro_Estetica
             get { return idsubrubros; }
             set { idsubrubros = value; }
         }
+
+        public Subrubros(int i, string d)
+        {
+            idsubrubros = i;
+            detalle = d;
+        }
+        public Subrubros(int i, string d,Rubros r)
+        {
+            idsubrubros = i;
+            detalle = d;
+            rubro = r;
+        }
     }
 }

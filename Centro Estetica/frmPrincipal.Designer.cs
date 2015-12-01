@@ -92,6 +92,7 @@
             this.subrubrosToolStripMenuItem.Name = "subrubrosToolStripMenuItem";
             this.subrubrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.subrubrosToolStripMenuItem.Text = "Subrubros";
+            this.subrubrosToolStripMenuItem.Click += new System.EventHandler(this.subrubrosToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem
             // 
