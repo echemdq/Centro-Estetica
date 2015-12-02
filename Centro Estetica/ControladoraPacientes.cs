@@ -12,7 +12,7 @@ namespace Centro_Estetica
 
         public void Agregar(Pacientes dato)
         {
-            throw new NotImplementedException();
+            bd.Agregar(dato);
         }
 
         public List<Pacientes> TraerTodos()

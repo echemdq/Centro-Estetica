@@ -19,6 +19,21 @@ namespace Centro_Estetica
         int activo;
         string comentarios;
 
+        public Pacientes(int i, string p, string t, string dom, string m, string doc, TipoDoc ti, string c, int a, string com, string fot)
+        {
+            idpacientes = i;
+            paciente = p;
+            telefono = t;
+            domicilio = dom;
+            mail = m;
+            documento = doc;
+            tipod = ti;
+            celular = c;
+            activo = a;
+            comentarios = com;
+            foto = fot;
+        }
+        
         public string Comentarios
         {
             get { return comentarios; }

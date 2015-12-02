@@ -18,7 +18,17 @@ namespace Centro_Estetica
 
         public List<TipoDoc> TraerTodos()
         {
-            throw new NotImplementedException();
+            List<TipoDoc> aux = new List<TipoDoc>();
+            string cmdtext = "select * from tipodoc order by detalle asc";
+            DataTable dt = oacceso.leerDatos(cmdtext);
+            foreach (DataRow dr in dt.Rows)
+            {
+                int id = Convert.ToInt32(dr["idtipodoc"]);
+                string detalle = Convert.ToString(dr["detalle"]);
+                TipoDoc c = new TipoDoc(id, detalle);
+                aux.Add(c);
+            }
+            return aux;
         }
 
         public void Borrar(TipoDoc dato)

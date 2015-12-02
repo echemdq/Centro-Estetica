@@ -35,6 +35,18 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp, Version=5.3.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\itextsharp.dll</HintPath>
@@ -77,6 +89,12 @@
     <Compile Include="ControladoraRubros.cs" />
     <Compile Include="ControladoraSubrubros.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
+    <Compile Include="frmPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes.Designer.cs">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,9 @@
     <Compile Include="Rubros.cs" />
     <Compile Include="Subrubros.cs" />
     <Compile Include="TipoDoc.cs" />
+    <EmbeddedResource Include="frmPacientes.resx">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

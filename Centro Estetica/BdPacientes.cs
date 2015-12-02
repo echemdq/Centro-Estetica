@@ -13,7 +13,7 @@ namespace Centro_Estetica
 
         public void Agregar(Pacientes dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("insert into pacientes (paciente, telefono, domicilio, mail, documento, idtipodoc, celular, activo, comentarios, foto) values ('"+dato.Paciente+"','"+dato.Telefono+"','"+dato.Domicilio+"','"+dato.Mail+"','"+dato.Documento+"','"+dato.Tipod.Idtipodoc+"','"+dato.Celular+"','"+dato.Activo+"','"+dato.Comentarios+"','"+dato.Foto+"')");
         }
 
         public List<Pacientes> TraerTodos()
@@ -38,7 +38,7 @@ namespace Centro_Estetica
 
         public void Modificar(Pacientes dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("update pacientes set paciente = '" + dato.Paciente + "', telefono = '" + dato.Telefono + "', domicilio = '" + dato.Domicilio + "', mail = '" + dato.Mail + "', documento = '" + dato.Documento + "', idtipodoc = '" + dato.Tipod.Idtipodoc + "', celular = '" + dato.Celular + "', activo = '" + dato.Activo + "', comentarios = '" + dato.Comentarios + "', foto = '" + dato.Foto + "' where idpacientes = '" + dato.Idpacientes + "'");
         }
 
         public int traerSigID()

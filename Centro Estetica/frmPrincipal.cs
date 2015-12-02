@@ -26,5 +26,11 @@ namespace Centro_Estetica
             frmSubrubros frm = new frmSubrubros();
             frm.ShowDialog(); 
         }
+
+        private void aBMPacientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPacientes frm = new frmPacientes();
+            frm.ShowDialog(); 
+        }
     }
 }

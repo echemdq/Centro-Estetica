@@ -71,26 +71,26 @@
             // iniciarSesionToolStripMenuItem
             // 
             this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
-            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.iniciarSesionToolStripMenuItem.Text = "Iniciar Sesion";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.ForeColor = System.Drawing.Color.Black;
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(140, 6);
             // 
             // rubrosToolStripMenuItem
             // 
             this.rubrosToolStripMenuItem.Name = "rubrosToolStripMenuItem";
-            this.rubrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rubrosToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.rubrosToolStripMenuItem.Text = "Rubros";
             this.rubrosToolStripMenuItem.Click += new System.EventHandler(this.rubrosToolStripMenuItem_Click);
             // 
             // subrubrosToolStripMenuItem
             // 
             this.subrubrosToolStripMenuItem.Name = "subrubrosToolStripMenuItem";
-            this.subrubrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.subrubrosToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.subrubrosToolStripMenuItem.Text = "Subrubros";
             this.subrubrosToolStripMenuItem.Click += new System.EventHandler(this.subrubrosToolStripMenuItem_Click);
             // 
@@ -142,6 +142,7 @@
             this.aBMPacientesToolStripMenuItem.Name = "aBMPacientesToolStripMenuItem";
             this.aBMPacientesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.aBMPacientesToolStripMenuItem.Text = "ABM Pacientes";
+            this.aBMPacientesToolStripMenuItem.Click += new System.EventHandler(this.aBMPacientesToolStripMenuItem_Click);
             // 
             // frm_Principal
             // 
