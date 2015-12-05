@@ -23,7 +23,7 @@ namespace Centro_Estetica
 
         public void Borrar(Pacientes dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("delete from pacientes where idpacientes = '" + dato.Idpacientes + "'");
         }
 
         public Pacientes Buscar(string dato)
@@ -33,7 +33,19 @@ namespace Centro_Estetica
 
         public List<Pacientes> BuscarEspecial(string dato)
         {
-            throw new NotImplementedException();
+            string cmdtext = "select * from pacientes p inner join tipodoc td on p.idtipodoc = td.idtipodoc where paciente " + dato + " order by paciente";
+            DataTable dt = oacceso.leerDatos(cmdtext);
+            Pacientes usuario = null;
+            TipoDoc tipod = null;
+            List<Pacientes> lista = new List<Pacientes>();
+            foreach (DataRow dr in dt.Rows)
+            {
+                tipod = new TipoDoc(Convert.ToInt32(dr["idtipodoc"]), Convert.ToString(dr["detalle"]));
+                int activo = Convert.ToInt32(dr["activo"]);
+                usuario = new Pacientes(Convert.ToInt32(dr["idpacientes"]), Convert.ToString(dr["paciente"]), Convert.ToString(dr["telefono"]), Convert.ToString(dr["domicilio"]), Convert.ToString(dr["mail"]), Convert.ToString(dr["documento"]), tipod, Convert.ToString(dr["celular"]), activo, Convert.ToString(dr["comentarios"]), Convert.ToString(dr["foto"]));
+                lista.Add(usuario);
+            }
+            return lista;
         }
 
         public void Modificar(Pacientes dato)

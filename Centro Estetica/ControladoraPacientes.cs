@@ -22,7 +22,7 @@ namespace Centro_Estetica
 
         public void Borrar(Pacientes dato)
         {
-            throw new NotImplementedException();
+            bd.Borrar(dato);
         }
 
         public Pacientes Buscar(string dato)
@@ -32,12 +32,12 @@ namespace Centro_Estetica
 
         public List<Pacientes> BuscarEspecial(string dato)
         {
-            throw new NotImplementedException();
+            return bd.BuscarEspecial(dato);
         }
 
         public void Modificar(Pacientes dato)
         {
-            throw new NotImplementedException();
+            bd.Modificar(dato);
         }
 
         public int traerSigID()

@@ -21,11 +21,16 @@ namespace Centro_Estetica
 
         private void frmSubrubros_Load(object sender, EventArgs e)
         {
-            cmbRubros.DataSource = controlr.TraerTodos();
-            cmbRubros.DisplayMember = "rubro";
-            cmbRubros.ValueMember = "idrubros";
-            cmbRubros.SelectedIndex = 0;
-            cmbRubros_SelectedIndexChanged(sender, e);
+            List<Rubros> laux = null;
+            laux = controlr.TraerTodos();
+            if (laux.Count != 0)
+            {
+                cmbRubros.DataSource = laux;
+                cmbRubros.DisplayMember = "rubro";
+                cmbRubros.ValueMember = "idrubros";
+                cmbRubros.SelectedIndex = 0;
+                cmbRubros_SelectedIndexChanged(sender, e);
+            }
         }
 
         private void cmbRubros_SelectedIndexChanged(object sender, EventArgs e)

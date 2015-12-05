@@ -245,5 +245,76 @@ namespace Centro_Estetica
                 MessageBox.Show("Error al Guardar: " + ex.Message);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                deshabilitar();
+                limpiar();
+                frmBuscaPacientes frm = new frmBuscaPacientes();
+                frm.ShowDialog();
+                Pacientes u = frm.u;
+                if (u != null)
+                {
+                    lblId.Text = Convert.ToString(u.Idpacientes);
+                    txtPaciente.Text = u.Paciente;
+                    txtDocumento.Text = u.Documento;
+                    txtDomicilio.Text = u.Domicilio;
+                    txtTelefono.Text = u.Telefono;
+                    txtCelular.Text = u.Celular;
+                    txtComentarios.Text = u.Comentarios;
+                    txtMail.Text = u.Mail; 
+                    cmbTipoDoc.Text = u.Tipod.Detalle;
+                    if (u.Activo == 0)
+                    {
+                        chkActivo.Checked = false;
+                        //tabPageCargaEmpleados.BackColor = Color.LightCoral;
+                    }
+                    else if (u.Activo == 1)
+                    {
+                        chkActivo.Checked = true;
+                        //tabPageCargaEmpleados.BackColor = SystemColors.Info;
+                    }
+                    pbFotoUser.ImageLocation = u.Foto;
+                    lbl_foto.Text = u.Foto;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (lblId.Text != "")
+            {
+                habilitar();
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lblId.Text != "")
+                {
+                    Pacientes r = new Pacientes(Convert.ToInt32(lblId.Text), "", "", "", "", "", null, "", 0, "", "");
+                    cpac.Borrar(r);
+                    limpiar();
+                    deshabilitar();
+                    MessageBox.Show("Paciente eliminado correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Debe seleccionar un Paciente para eliminarlo");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al Eliminar: " + ex.Message);
+            }
+        }
     }
 }

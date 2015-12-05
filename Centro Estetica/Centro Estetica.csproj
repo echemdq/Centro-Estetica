@@ -89,6 +89,12 @@
     <Compile Include="ControladoraRubros.cs" />
     <Compile Include="ControladoraSubrubros.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
+    <Compile Include="frmBuscaPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaPacientes.Designer.cs">
+      <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="Rubros.cs" />
     <Compile Include="Subrubros.cs" />
     <Compile Include="TipoDoc.cs" />
+    <EmbeddedResource Include="frmBuscaPacientes.resx">
+      <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPacientes.resx">
       <DependentUpon>frmPacientes.cs</DependentUpon>
     </EmbeddedResource>
