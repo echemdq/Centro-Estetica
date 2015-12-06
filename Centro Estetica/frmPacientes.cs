@@ -196,6 +196,7 @@ namespace Centro_Estetica
             txtTelefono.Text = "";
             lbl_foto.Text = "";
             lblId.Text = "";
+            pbFotoUser.ImageLocation = "";
         }
 
         private void button1_Click(object sender, EventArgs e)

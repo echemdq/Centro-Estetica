@@ -14,3 +14,5 @@ C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\bin\Debug\AFo
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmPacientes.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmBuscaPacientes.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmBuscaProfesionales.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmProfesionales.resources

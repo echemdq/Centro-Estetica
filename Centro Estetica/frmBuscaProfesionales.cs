@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Centro_Estetica
 {
-    public partial class frmBuscaPacientes : Form
+    public partial class frmBuscaProfesionales : Form
     {
-        ControladoraPacientes controlp = new ControladoraPacientes();
-        public Pacientes u = null;
-        public frmBuscaPacientes()
+        ControladoraProfesionales controlp = new ControladoraProfesionales();
+        public Profesionales u = null;
+        public frmBuscaProfesionales()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace Centro_Estetica
                         }
                         else
                         {
-                            d2 += " and paciente like '%" + d1 + "%' ";
+                            d2 += " and profesional like '%" + d1 + "%' ";
                         }
                         a = false;
                     }
@@ -64,7 +64,7 @@ namespace Centro_Estetica
                             }
                             else
                             {
-                                d2 += " and paciente like '%" + d1 + "%' ";
+                                d2 += " and profesional like '%" + d1 + "%' ";
 
                             }
                         }
@@ -75,9 +75,9 @@ namespace Centro_Estetica
                     }
                     cant++;
                 }
-                List<Pacientes> lista = controlp.BuscarEspecial(d2);
+                List<Profesionales> lista = controlp.BuscarEspecial(d2);
                 int i = 0;
-                foreach (Pacientes aux in lista)
+                foreach (Profesionales aux in lista)
                 {
                     i++;
                 }
@@ -85,66 +85,38 @@ namespace Centro_Estetica
                 if (i > 0)
                 {
                     dataGridView1.Rows.Add(i);
-                    foreach (Pacientes aux in lista)
+                    foreach (Profesionales aux in lista)
                     {
-                        dataGridView1.Rows[x].Cells[0].Value = aux.Idpacientes;
-                        dataGridView1.Rows[x].Cells[1].Value = aux.Paciente;
+                        dataGridView1.Rows[x].Cells[0].Value = aux.Idprofesionales;
+                        dataGridView1.Rows[x].Cells[1].Value = aux.Profesional;
                         dataGridView1.Rows[x].Cells[2].Value = aux.Tipod.Detalle;
                         dataGridView1.Rows[x].Cells[3].Value = aux.Documento;
                         dataGridView1.Rows[x].Cells[4].Value = aux.Domicilio;
                         dataGridView1.Rows[x].Cells[5].Value = aux.Telefono;
-                        dataGridView1.Rows[x].Cells[6].Value = aux.Celular;
-                        dataGridView1.Rows[x].Cells[7].Value = aux.Mail;
-                        dataGridView1.Rows[x].Cells[8].Value = aux.Tipod.Idtipodoc;
-                        dataGridView1.Rows[x].Cells[9].Value = aux.Foto;
-                        dataGridView1.Rows[x].Cells[10].Value = aux.Activo;
-                        dataGridView1.Rows[x].Cells[11].Value = aux.Comentarios;
+                        dataGridView1.Rows[x].Cells[6].Value = aux.Mail;
+                        dataGridView1.Rows[x].Cells[7].Value = aux.Tipod.Idtipodoc;
+                        dataGridView1.Rows[x].Cells[8].Value = aux.Activo;
                         x++;
                     }
                 }
             }
         }
 
-        private void frmBuscaPacientes_Load(object sender, EventArgs e)
+        private void frmBuscaProfesionales_Load(object sender, EventArgs e)
         {
-            dataGridView1.ColumnCount = 12;
-            dataGridView1.Columns[0].Name = "idpaciente";
-            dataGridView1.Columns[1].Name = "Paciente";
+            dataGridView1.ColumnCount = 9;
+            dataGridView1.Columns[0].Name = "idprofesionales";
+            dataGridView1.Columns[1].Name = "Profesional";
             dataGridView1.Columns[2].Name = "Tipo Doc";
             dataGridView1.Columns[3].Name = "Documento";
             dataGridView1.Columns[4].Name = "Domicilio";
             dataGridView1.Columns[5].Name = "Telefono";
-            dataGridView1.Columns[6].Name = "Celular";
-            dataGridView1.Columns[7].Name = "Mail";
-            dataGridView1.Columns[8].Name = "idtipodoc";
-            dataGridView1.Columns[9].Name = "foto";
-            dataGridView1.Columns[10].Name = "";
-            dataGridView1.Columns[11].Name = "Comentario";
+            dataGridView1.Columns[6].Name = "Mail";
+            dataGridView1.Columns[7].Name = "idtipodoc";
+            dataGridView1.Columns[8].Name = "";
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[8].Visible = false;
-            dataGridView1.Columns[9].Visible = false;
-            dataGridView1.Columns[10].Visible = false;
-            dataGridView1.Columns[11].Visible = false;
-        }
-
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int filaseleccionada = Convert.ToInt32(this.dataGridView1.CurrentRow.Index);
-            int idpaciente = Convert.ToInt32(dataGridView1[0, filaseleccionada].Value);
-            string paciente = dataGridView1[1, filaseleccionada].Value.ToString();
-            int idtipod = Convert.ToInt32(dataGridView1[8, filaseleccionada].Value);
-            string tipod = dataGridView1[2, filaseleccionada].Value.ToString();
-            TipoDoc tipodoc = new TipoDoc(idtipod, tipod);
-            string documento = dataGridView1[3, filaseleccionada].Value.ToString();
-            string domicilio = dataGridView1[4, filaseleccionada].Value.ToString();
-            string telefono = dataGridView1[5, filaseleccionada].Value.ToString();
-            string celular = dataGridView1[6, filaseleccionada].Value.ToString();
-            string mail = dataGridView1[7, filaseleccionada].Value.ToString();
-            string foto = dataGridView1[9, filaseleccionada].Value.ToString();
-            string comentario = dataGridView1[11, filaseleccionada].Value.ToString();
-            int activo = Convert.ToInt32(dataGridView1[10, filaseleccionada].Value);
-            u = new Pacientes(idpaciente, paciente, telefono, domicilio, mail, documento, tipodoc, celular, activo, comentario, foto);
-            this.Close();
+            dataGridView1.Columns[7].Visible = false;
         }
 
         private void txtPaciente_KeyPress(object sender, KeyPressEventArgs e)
@@ -153,6 +125,23 @@ namespace Centro_Estetica
             {
                 btnTraer_Click(sender, e);
             }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int filaseleccionada = Convert.ToInt32(this.dataGridView1.CurrentRow.Index);
+            int idprofesionales = Convert.ToInt32(dataGridView1[0, filaseleccionada].Value);
+            string profesional = dataGridView1[1, filaseleccionada].Value.ToString();
+            int idtipod = Convert.ToInt32(dataGridView1[7, filaseleccionada].Value);
+            string tipod = dataGridView1[2, filaseleccionada].Value.ToString();
+            TipoDoc tipodoc = new TipoDoc(idtipod, tipod);
+            string documento = dataGridView1[3, filaseleccionada].Value.ToString();
+            string domicilio = dataGridView1[4, filaseleccionada].Value.ToString();
+            string telefono = dataGridView1[5, filaseleccionada].Value.ToString();
+            string mail = dataGridView1[6, filaseleccionada].Value.ToString();
+            int activo = Convert.ToInt32(dataGridView1[8, filaseleccionada].Value);
+            u = new Profesionales(idprofesionales, profesional, documento, tipodoc, domicilio, telefono, mail, activo);
+            this.Close();
         }
     }
 }

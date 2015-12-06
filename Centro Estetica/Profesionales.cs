@@ -15,6 +15,25 @@ namespace Centro_Estetica
         string domicilio;
         string telefono;
         string mail;
+        int activo;
+
+        public Profesionales(int i, string p, string d, TipoDoc t, string dom, string tel, string m, int a)
+        {
+            idprofesionales = i;
+            profesional = p;
+            documento = d;
+            tipod = t;
+            domicilio = dom;
+            telefono = tel;
+            mail = m;
+            activo = a;
+        }
+
+        public int Activo
+        {
+            get { return activo; }
+            set { activo = value; }
+        } 
 
         public string Mail
         {

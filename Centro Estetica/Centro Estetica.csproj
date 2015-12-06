@@ -95,6 +95,12 @@
     <Compile Include="frmBuscaPacientes.Designer.cs">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscaProfesionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaProfesionales.Designer.cs">
+      <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfesionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfesionales.Designer.cs">
+      <DependentUpon>frmProfesionales.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRubros.cs">
       <SubType>Form</SubType>
@@ -132,11 +144,17 @@
     <EmbeddedResource Include="frmBuscaPacientes.resx">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaProfesionales.resx">
+      <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPacientes.resx">
       <DependentUpon>frmPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfesionales.resx">
+      <DependentUpon>frmProfesionales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRubros.resx">
       <DependentUpon>frmRubros.cs</DependentUpon>
