@@ -81,6 +81,7 @@
     <Compile Include="BdProfesionales.cs" />
     <Compile Include="BdRubros.cs" />
     <Compile Include="BdSubrubros.cs" />
+    <Compile Include="BdSubrubrosProf.cs" />
     <Compile Include="BdTipoDoc.cs" />
     <Compile Include="ControladoraHonorarios.cs" />
     <Compile Include="ControladoraPacientes.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="ControladoraProfesionales.cs" />
     <Compile Include="ControladoraRubros.cs" />
     <Compile Include="ControladoraSubrubros.cs" />
+    <Compile Include="ControladoraSubrubrosProf.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
     <Compile Include="frmBuscaPacientes.cs">
       <SubType>Form</SubType>
@@ -131,6 +133,12 @@
     <Compile Include="frmSubrubros.Designer.cs">
       <DependentUpon>frmSubrubros.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSubrubrosProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubrubrosProf.Designer.cs">
+      <DependentUpon>frmSubrubrosProf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Honorarios.cs" />
     <Compile Include="IDAO.cs" />
     <Compile Include="Pacientes.cs" />
@@ -140,6 +148,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rubros.cs" />
     <Compile Include="Subrubros.cs" />
+    <Compile Include="SubrubrosProfesionales.cs" />
     <Compile Include="TipoDoc.cs" />
     <EmbeddedResource Include="frmBuscaPacientes.resx">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
@@ -161,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubrubros.resx">
       <DependentUpon>frmSubrubros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubrubrosProf.resx">
+      <DependentUpon>frmSubrubrosProf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

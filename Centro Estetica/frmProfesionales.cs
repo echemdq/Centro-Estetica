@@ -33,6 +33,7 @@ namespace Centro_Estetica
             txtMail.Enabled = false;
             txtProfesional.Enabled = false;
             txtTelefono.Enabled = false;
+            btnSubrubros.Enabled = false;
         }
         public void habilitar()
         {
@@ -41,6 +42,7 @@ namespace Centro_Estetica
             txtMail.Enabled = true;
             txtProfesional.Enabled = true;
             txtTelefono.Enabled = true;
+            btnSubrubros.Enabled = true;
         }
         public void limpiar()
         {
@@ -50,12 +52,14 @@ namespace Centro_Estetica
             txtProfesional.Text = "";
             txtTelefono.Text = "";
             lblId.Text = "";
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             limpiar();
             habilitar();
+            btnSubrubros.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -170,6 +174,19 @@ namespace Centro_Estetica
             if (lblId.Text != "")
             {
                 habilitar();
+            }
+        }
+
+        private void btnSubrubros_Click(object sender, EventArgs e)
+        {
+            if (lblId.Text != "")
+            {
+                frmSubrubrosProf frm = new frmSubrubrosProf(lblId.Text);
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un profesional para ir a la configuracion");
             }
         }
     }

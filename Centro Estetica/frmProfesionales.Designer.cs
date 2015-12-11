@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chkActivo = new System.Windows.Forms.CheckBox();
+            this.btnSubrubros = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -194,6 +195,18 @@
             this.chkActivo.Text = "Activo";
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
+            // btnSubrubros
+            // 
+            this.btnSubrubros.Enabled = false;
+            this.btnSubrubros.Location = new System.Drawing.Point(409, 59);
+            this.btnSubrubros.Name = "btnSubrubros";
+            this.btnSubrubros.Size = new System.Drawing.Size(75, 44);
+            this.btnSubrubros.TabIndex = 65;
+            this.btnSubrubros.Text = "Config Subrubros";
+            this.toolTip1.SetToolTip(this.btnSubrubros, "Configurar Subrubros del Profesional");
+            this.btnSubrubros.UseVisualStyleBackColor = true;
+            this.btnSubrubros.Click += new System.EventHandler(this.btnSubrubros_Click);
+            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.SystemColors.Control;
@@ -273,6 +286,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 248);
+            this.Controls.Add(this.btnSubrubros);
             this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lblId);
@@ -324,5 +338,6 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.CheckBox chkActivo;
+        private System.Windows.Forms.Button btnSubrubros;
     }
 }
