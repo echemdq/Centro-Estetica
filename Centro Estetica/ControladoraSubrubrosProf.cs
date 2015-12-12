@@ -21,7 +21,7 @@ namespace Centro_Estetica
 
         public void Borrar(SubrubrosProfesionales dato)
         {
-            throw new NotImplementedException();
+            bd.Borrar(dato);
         }
 
         public SubrubrosProfesionales Buscar(string dato)

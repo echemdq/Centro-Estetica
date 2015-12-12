@@ -12,7 +12,7 @@ namespace Centro_Estetica
         Acceso_BD oacceso = new Acceso_BD();
         public void Agregar(SubrubrosProfesionales dato)
         {
-            oacceso.ActualizarBD("insert into subrubrosprofesionales (idsubrubros, idprofesionales) values ('" + dato.Subrubro.Idsubrubros + "','" + dato.Profesional.Idprofesionales + "')");
+            oacceso.ActualizarBD("insert into subrubrosprofesionales (idsubrubros, idprofesionales) select * from (select '" + dato.Subrubro.Idsubrubros + "','" + dato.Profesional.Idprofesionales + "') as tmp where not exists (select idsubrubrosprofesionales from subrubrosprofesionales where idprofesionales = '"+dato.Profesional.Idprofesionales+"' and idsubrubros = '"+dato.Subrubro.Idsubrubros+"') LIMIT 1;");
         }
 
         public List<SubrubrosProfesionales> TraerTodos()
@@ -22,7 +22,7 @@ namespace Centro_Estetica
 
         public void Borrar(SubrubrosProfesionales dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("delete from subrubrosprofesionales where idsubrubrosprofesionales = '" + dato.Idsubprof + "'");
         }
 
         public SubrubrosProfesionales Buscar(string dato)

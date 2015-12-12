@@ -101,11 +101,15 @@ namespace Centro_Estetica
                 if (txtId.Text != "")
                 {
                     Rubros r = new Rubros(Convert.ToInt32(txtId.Text), txtRubro.Text);
-                    crubros.Borrar(r);
-                    limpiar();
-                    deshabilitar();
-                    dataGridView1.DataSource = crubros.TraerTodos();
-                    MessageBox.Show("Rubro eliminado correctamente");
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el rubro: "+txtRubro.Text, "Eliminar Rubro", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        crubros.Borrar(r);
+                        limpiar();
+                        deshabilitar();
+                        dataGridView1.DataSource = crubros.TraerTodos();
+                        MessageBox.Show("Rubro eliminado correctamente");
+                    }
                 }
                 else
                 {

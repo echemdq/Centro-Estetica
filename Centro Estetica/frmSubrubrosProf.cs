@@ -108,5 +108,25 @@ namespace Centro_Estetica
             }
 
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int filaseleccionada = Convert.ToInt32(this.dataGridView1.CurrentRow.Index);
+                int idsubprof = Convert.ToInt32(dataGridView1[0, filaseleccionada].Value);
+                SubrubrosProfesionales n = new SubrubrosProfesionales(idsubprof, null, null);
+                DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar", "Eliminar Configuracion", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    csrubpr.Borrar(n);
+                }
+                frmSubrubrosProf_Activated(sender, e);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

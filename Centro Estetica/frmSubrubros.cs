@@ -128,11 +128,15 @@ namespace Centro_Estetica
                 if (txtId.Text != "")
                 {
                     Subrubros r = new Subrubros(Convert.ToInt32(txtId.Text), txtSubrubro.Text);
-                    controlsr.Borrar(r);
-                    limpiar();
-                    deshabilitar();
-                    dataGridView1.DataSource = controlsr.BuscarEspecial(cmbRubros.SelectedValue.ToString());
-                    MessageBox.Show("Subrubro eliminado correctamente");
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el subrubro: "+txtSubrubro.Text, "Eliminar Subrubro", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        controlsr.Borrar(r);
+                        limpiar();
+                        deshabilitar();
+                        dataGridView1.DataSource = controlsr.BuscarEspecial(cmbRubros.SelectedValue.ToString());
+                        MessageBox.Show("Subrubro eliminado correctamente");
+                    }
                 }
                 else
                 {

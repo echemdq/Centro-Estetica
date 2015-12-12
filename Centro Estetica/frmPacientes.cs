@@ -302,10 +302,14 @@ namespace Centro_Estetica
                 if (lblId.Text != "")
                 {
                     Pacientes r = new Pacientes(Convert.ToInt32(lblId.Text), "", "", "", "", "", null, "", 0, "", "");
-                    cpac.Borrar(r);
-                    limpiar();
-                    deshabilitar();
-                    MessageBox.Show("Paciente eliminado correctamente");
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el paciente: " +txtPaciente.Text, "Eliminar Paciente", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        cpac.Borrar(r);
+                        limpiar();
+                        deshabilitar();
+                        MessageBox.Show("Paciente eliminado correctamente");
+                    }
                 }
                 else
                 {

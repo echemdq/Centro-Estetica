@@ -153,10 +153,14 @@ namespace Centro_Estetica
                 if (lblId.Text != "")
                 {
                     Profesionales r = new Profesionales(Convert.ToInt32(lblId.Text), "", "", null, "", "", "", 0);
-                    cprof.Borrar(r);
-                    limpiar();
-                    deshabilitar();
-                    MessageBox.Show("Profesional eliminado correctamente");
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el profesional: "+ txtProfesional.Text, "Eliminar Profesional", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        cprof.Borrar(r);
+                        limpiar();
+                        deshabilitar();
+                        MessageBox.Show("Profesional eliminado correctamente");
+                    }
                 }
                 else
                 {
