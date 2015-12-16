@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnSubrubros = new System.Windows.Forms.Button();
             this.lblId = new System.Windows.Forms.Label();
             this.cmbTipoDoc = new System.Windows.Forms.ComboBox();
             this.txtMail = new System.Windows.Forms.TextBox();
@@ -44,14 +45,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chkActivo = new System.Windows.Forms.CheckBox();
-            this.btnSubrubros = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnHorarios = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnSubrubros
+            // 
+            this.btnSubrubros.Enabled = false;
+            this.btnSubrubros.Location = new System.Drawing.Point(409, 59);
+            this.btnSubrubros.Name = "btnSubrubros";
+            this.btnSubrubros.Size = new System.Drawing.Size(75, 44);
+            this.btnSubrubros.TabIndex = 65;
+            this.btnSubrubros.Text = "Config Subrubros";
+            this.toolTip1.SetToolTip(this.btnSubrubros, "Configurar Subrubros del Profesional");
+            this.btnSubrubros.UseVisualStyleBackColor = true;
+            this.btnSubrubros.Click += new System.EventHandler(this.btnSubrubros_Click);
             // 
             // lblId
             // 
@@ -70,7 +83,7 @@
             this.cmbTipoDoc.Location = new System.Drawing.Point(128, 43);
             this.cmbTipoDoc.Name = "cmbTipoDoc";
             this.cmbTipoDoc.Size = new System.Drawing.Size(159, 21);
-            this.cmbTipoDoc.TabIndex = 61;
+            this.cmbTipoDoc.TabIndex = 1;
             // 
             // txtMail
             // 
@@ -80,7 +93,7 @@
             this.txtMail.Location = new System.Drawing.Point(128, 158);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(253, 21);
-            this.txtMail.TabIndex = 59;
+            this.txtMail.TabIndex = 5;
             // 
             // txtTelefono
             // 
@@ -90,7 +103,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(128, 131);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(253, 21);
-            this.txtTelefono.TabIndex = 57;
+            this.txtTelefono.TabIndex = 4;
             // 
             // txtDomicilio
             // 
@@ -100,7 +113,7 @@
             this.txtDomicilio.Location = new System.Drawing.Point(128, 102);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(253, 21);
-            this.txtDomicilio.TabIndex = 56;
+            this.txtDomicilio.TabIndex = 3;
             // 
             // txtDocumento
             // 
@@ -110,7 +123,7 @@
             this.txtDocumento.Location = new System.Drawing.Point(128, 73);
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(253, 21);
-            this.txtDocumento.TabIndex = 55;
+            this.txtDocumento.TabIndex = 2;
             // 
             // txtProfesional
             // 
@@ -120,7 +133,7 @@
             this.txtProfesional.Location = new System.Drawing.Point(128, 15);
             this.txtProfesional.Name = "txtProfesional";
             this.txtProfesional.Size = new System.Drawing.Size(253, 21);
-            this.txtProfesional.TabIndex = 54;
+            this.txtProfesional.TabIndex = 0;
             // 
             // label7
             // 
@@ -191,21 +204,9 @@
             this.chkActivo.Location = new System.Drawing.Point(320, 45);
             this.chkActivo.Name = "chkActivo";
             this.chkActivo.Size = new System.Drawing.Size(61, 17);
-            this.chkActivo.TabIndex = 64;
+            this.chkActivo.TabIndex = 6;
             this.chkActivo.Text = "Activo";
             this.chkActivo.UseVisualStyleBackColor = true;
-            // 
-            // btnSubrubros
-            // 
-            this.btnSubrubros.Enabled = false;
-            this.btnSubrubros.Location = new System.Drawing.Point(409, 59);
-            this.btnSubrubros.Name = "btnSubrubros";
-            this.btnSubrubros.Size = new System.Drawing.Size(75, 44);
-            this.btnSubrubros.TabIndex = 65;
-            this.btnSubrubros.Text = "Config Subrubros";
-            this.toolTip1.SetToolTip(this.btnSubrubros, "Configurar Subrubros del Profesional");
-            this.btnSubrubros.UseVisualStyleBackColor = true;
-            this.btnSubrubros.Click += new System.EventHandler(this.btnSubrubros_Click);
             // 
             // btnBuscar
             // 
@@ -263,7 +264,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(187, 200);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(41, 38);
-            this.btnGuardar.TabIndex = 42;
+            this.btnGuardar.TabIndex = 7;
             this.toolTip1.SetToolTip(this.btnGuardar, "Guardar");
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -281,11 +282,24 @@
             this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // btnHorarios
+            // 
+            this.btnHorarios.Enabled = false;
+            this.btnHorarios.Location = new System.Drawing.Point(409, 117);
+            this.btnHorarios.Name = "btnHorarios";
+            this.btnHorarios.Size = new System.Drawing.Size(75, 44);
+            this.btnHorarios.TabIndex = 66;
+            this.btnHorarios.Text = "Config Horarios";
+            this.toolTip1.SetToolTip(this.btnHorarios, "Configurar Subrubros del Profesional");
+            this.btnHorarios.UseVisualStyleBackColor = true;
+            this.btnHorarios.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmProfesionales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 248);
+            this.Controls.Add(this.btnHorarios);
             this.Controls.Add(this.btnSubrubros);
             this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.btnBuscar);
@@ -339,5 +353,6 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.CheckBox chkActivo;
         private System.Windows.Forms.Button btnSubrubros;
+        private System.Windows.Forms.Button btnHorarios;
     }
 }

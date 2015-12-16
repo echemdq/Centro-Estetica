@@ -60,7 +60,7 @@
             this.cmbRubros.Location = new System.Drawing.Point(75, 12);
             this.cmbRubros.Name = "cmbRubros";
             this.cmbRubros.Size = new System.Drawing.Size(197, 21);
-            this.cmbRubros.TabIndex = 17;
+            this.cmbRubros.TabIndex = 0;
             this.cmbRubros.SelectedIndexChanged += new System.EventHandler(this.cmbRubros_SelectedIndexChanged);
             // 
             // label1
@@ -81,7 +81,7 @@
             this.cmbSubrubros.Location = new System.Drawing.Point(75, 39);
             this.cmbSubrubros.Name = "cmbSubrubros";
             this.cmbSubrubros.Size = new System.Drawing.Size(197, 21);
-            this.cmbSubrubros.TabIndex = 19;
+            this.cmbSubrubros.TabIndex = 1;
             // 
             // btnTraer
             // 
@@ -91,7 +91,7 @@
             this.btnTraer.Location = new System.Drawing.Point(281, 15);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
-            this.btnTraer.TabIndex = 31;
+            this.btnTraer.TabIndex = 2;
             this.btnTraer.UseVisualStyleBackColor = false;
             this.btnTraer.Click += new System.EventHandler(this.btnTraer_Click);
             // 

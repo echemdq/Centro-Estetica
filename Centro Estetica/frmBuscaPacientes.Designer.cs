@@ -45,7 +45,7 @@
             this.txtPaciente.Location = new System.Drawing.Point(134, 12);
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Size = new System.Drawing.Size(393, 21);
-            this.txtPaciente.TabIndex = 25;
+            this.txtPaciente.TabIndex = 0;
             this.txtPaciente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPaciente_KeyPress);
             // 
             // label1
@@ -66,7 +66,7 @@
             this.btnTraer.Location = new System.Drawing.Point(547, 5);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
-            this.btnTraer.TabIndex = 26;
+            this.btnTraer.TabIndex = 1;
             this.btnTraer.UseVisualStyleBackColor = false;
             this.btnTraer.Click += new System.EventHandler(this.btnTraer_Click);
             // 

@@ -76,6 +76,7 @@
   <ItemGroup>
     <Compile Include="Acceso BD.cs" />
     <Compile Include="BdHonorarios.cs" />
+    <Compile Include="BdHorariosProfesionales.cs" />
     <Compile Include="BdPacientes.cs" />
     <Compile Include="BdProductos.cs" />
     <Compile Include="BdProfesionales.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="BdSubrubrosProf.cs" />
     <Compile Include="BdTipoDoc.cs" />
     <Compile Include="ControladoraHonorarios.cs" />
+    <Compile Include="ControladoraHorariosProfesionales.cs" />
     <Compile Include="ControladoraPacientes.cs" />
     <Compile Include="ControladoraProductos.cs" />
     <Compile Include="ControladoraProfesionales.cs" />
@@ -102,6 +104,12 @@
     </Compile>
     <Compile Include="frmBuscaProfesionales.Designer.cs">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHorariosProfesionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHorariosProfesionales.Designer.cs">
+      <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPacientes.cs">
       <SubType>Form</SubType>
@@ -140,6 +148,7 @@
       <DependentUpon>frmSubrubrosProf.cs</DependentUpon>
     </Compile>
     <Compile Include="Honorarios.cs" />
+    <Compile Include="HorariosProfesionales.cs" />
     <Compile Include="IDAO.cs" />
     <Compile Include="Pacientes.cs" />
     <Compile Include="Productos.cs" />
@@ -155,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscaProfesionales.resx">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHorariosProfesionales.resx">
+      <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPacientes.resx">
       <DependentUpon>frmPacientes.cs</DependentUpon>
