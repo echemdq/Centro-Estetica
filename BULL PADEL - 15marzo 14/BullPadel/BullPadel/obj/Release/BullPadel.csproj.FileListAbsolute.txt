@@ -1331,3 +1331,5 @@ C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Releas
 C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Apertura_Caja.resources
 C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Movimientos_de_Caja.resources
 C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Consulta_Cajas.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.pdb
