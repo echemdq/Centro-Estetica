@@ -18,3 +18,4 @@ C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Cen
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmProfesionales.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmSubrubrosProf.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmHorariosProfesionales.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmTurnero.resources

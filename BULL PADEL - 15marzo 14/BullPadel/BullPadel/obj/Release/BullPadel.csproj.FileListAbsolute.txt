@@ -1,0 +1,1333 @@
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+D:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+D:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+D:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+G:\Bull Padel\BULL PADEL - 30 ENERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\itextsharp.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\itextsharp.pdfa.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\itextsharp.xtra.dll
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+G:\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\itextsharp.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\itextsharp.pdfa.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\itextsharp.xtra.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+G:\Bull Padel\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+G:\Bull Padel\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+G:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+F:\Bull Padel\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  16 JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL -  18 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL -  19 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL -  19 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 20 JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 23 JULIO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 1 AGOSTO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Ezequiel\Desktop\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.exe
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.exe
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+G:\BULL PADEL - 9 AGOSTO\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.exe
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.exe
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\ResolveAssemblyReference.cache
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\GenerateResource.read.1.tlog
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\GenerateResource.write.1.tlog
+E:\BULL PADEL - 4 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BullPadel\BULL PADEL - 7 SEPTIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 29 octubre\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\trab\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 octubre\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 6 NOVIEMBRE\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Deuda.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.RegistroTurnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 30 NOVIEMBRE\BullPadel\BullPadel\obj\Release\BullPadel.Registro.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Deuda.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Registro.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.RegistroTurnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 25 enero 14\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Deuda.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Registro.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.RegistroTurnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 12 febrero 14\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\bin\Release\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Deuda.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Registro.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.RegistroTurnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 20 febrero 14\BullPadel\BullPadel\obj\Release\BullPadel.Cambio_Precio.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\bin\Release\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\bin\Release\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\bin\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.csprojResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_Turnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarcliente.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Cambio_Precio.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Canchas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Configuracion_Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Datos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Deuda.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Registro.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.RegistroTurnos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.StockArticulos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Suspender_Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Turnero.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Acceso_Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Apertura_Caja.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Movimientos_de_Caja.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 15marzo 14\BullPadel\BullPadel\obj\Release\BullPadel.Consulta_Cajas.resources

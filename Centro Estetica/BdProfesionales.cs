@@ -18,7 +18,19 @@ namespace Centro_Estetica
 
         public List<Profesionales> TraerTodos()
         {
-            throw new NotImplementedException();
+            string cmdtext = "select * from profesionales p inner join tipodoc t on t.idtipodoc = p.idtipodoc where p.activo = '1' order by profesional asc";
+            DataTable dt = oacceso.leerDatos(cmdtext);
+            Profesionales usuario = null;
+            TipoDoc tipod = null;
+            List<Profesionales> lista = new List<Profesionales>();
+            foreach (DataRow dr in dt.Rows)
+            {
+                tipod = new TipoDoc(Convert.ToInt32(dr["idtipodoc"]), Convert.ToString(dr["detalle"]));
+                int activo = Convert.ToInt32(dr["activo"]);
+                usuario = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), Convert.ToString(dr["documento"]), tipod, Convert.ToString(dr["domicilio"]), Convert.ToString(dr["telefono"]), Convert.ToString(dr["mail"]), activo);
+                lista.Add(usuario);
+            }
+            return lista;
         }
 
         public void Borrar(Profesionales dato)

@@ -41,6 +41,7 @@
             this.configHonorariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMPacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             this.archivoToolStripMenuItem,
             this.productosToolStripMenuItem,
             this.profesionalesToolStripMenuItem,
-            this.pacientesToolStripMenuItem});
+            this.pacientesToolStripMenuItem,
+            this.turnosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1219, 24);
@@ -145,6 +147,13 @@
             this.aBMPacientesToolStripMenuItem.Text = "ABM Pacientes";
             this.aBMPacientesToolStripMenuItem.Click += new System.EventHandler(this.aBMPacientesToolStripMenuItem_Click);
             // 
+            // turnosToolStripMenuItem
+            // 
+            this.turnosToolStripMenuItem.Name = "turnosToolStripMenuItem";
+            this.turnosToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.turnosToolStripMenuItem.Text = "Turnos";
+            this.turnosToolStripMenuItem.Click += new System.EventHandler(this.turnosToolStripMenuItem_Click);
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,6 +188,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem rubrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subrubrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem turnosToolStripMenuItem;
 
     }
 }

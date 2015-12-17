@@ -36,7 +36,13 @@ namespace Centro_Estetica
         private void aBMProfesionalesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmProfesionales frm = new frmProfesionales();
-            frm.ShowDialog(); 
+            frm.ShowDialog();
+        }
+
+        private void turnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTurnero frm = new frmTurnero();
+            frm.Show();
         }
     }
 }

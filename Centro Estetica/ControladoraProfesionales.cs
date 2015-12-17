@@ -17,7 +17,7 @@ namespace Centro_Estetica
 
         public List<Profesionales> TraerTodos()
         {
-            throw new NotImplementedException();
+            return bd.TraerTodos();
         }
 
         public void Borrar(Profesionales dato)

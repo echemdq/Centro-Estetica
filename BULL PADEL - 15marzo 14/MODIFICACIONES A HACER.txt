@@ -1,0 +1,49 @@
+CONSUMO INTERNO QUE SUME PLATA
+TURNO PADEL QUE GUARDE SI DEBE ALGO
+CLAVE PARA CAMBIAR PRECIO
+
+
+tabla turnos campo deuda default 0 
+nueva tabla turnoseliminados
+idturnoseliminados
+clientes
+comentario
+fecha timestamp default current_timestamp
+
+
+
+tabla configuraciones
+agregar columna clave varchar
+codigo = clave
+clave = bp123
+
+
+*******************
+
+tabla empleados 
+nueva columna contrasena
+
+tabla ventas
+nueva columna idempleado tipo int
+
+procedure consumoprod
+CREATE DEFINER=`root`@`localhost` PROCEDURE `consumoprod`(cod int, desde datetime, hasta datetime)
+select mv.idart, a.descripcion, sum(mv.cantidad) as cantidad, e.empleado as empleado
+from bullpadelbd.movifinal mv
+inner join bullpadelbd.articulos a on  mv.idart = a.idarticulos
+left join bullpadelbd.ventas v on mv.idventas = v.idventas
+inner join bullpadelbd.empleados e on v.idempleado = e.idempleados
+where v.fecha between desde and hasta
+and mv.idart = (case when cod = 0 then mv.idart else cod end)
+and v.tipo = '1'
+group by mv.idart, a.descripcion
+order by cantidad
+
+tabla caja agregar columna inicio
+
+crear tabla movimientoscaja
+id
+idcaja
+concepto varchar100
+tipo int
+importe decimal

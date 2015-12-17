@@ -1,0 +1,230 @@
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Documents\Visual Studio 2008\Projects\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Downloads\BullPadel\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\bullpadel\BullPadel\BullPadel\obj\Debug\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\bullpadel- act 26-12-2012\BullPadel\BullPadel\obj\Debug\BullPadel.Cajas.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_EMPLEADOS.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Articulos_Consumidos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Cajas.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaAdelanto.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaGasto.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Consumo_Interno.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Gastos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Jugador.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Sueldos.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Turno.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+G:\Bull Padel\BULL PADEL - 25 ENERO\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\BULL PADEL - 31 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Debug\itextsharp.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 1 ENERO\BullPadel\BullPadel\bin\Debug\itextsharp.xtra.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Debug\itextsharp.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Debug\itextsharp.xtra.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\bin\Debug\MySql.Data.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Mesas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_EMPLEADOS.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.abmproductos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.adicion1.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Articulos_Consumidos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.buscarproducto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Cajas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaAdelanto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaGasto.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaProd.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.ConsultaVentas.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Consumo_Interno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.eliminarmesa.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Gastos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.IngresoMercaderia.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Jugador.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Login.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.MesasA.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Properties.Resources.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Sueldos.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Turno.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.Main.es-AR.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.csproj.GenerateResource.Cache
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\es-AR\BullPadel.resources.dll
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.exe
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.pdb
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.ABM_Clientes.resources
+C:\Users\Ezequiel\Desktop\Nueva carpeta\BULL PADEL - 5 FEBRERO\BullPadel\BullPadel\obj\Debug\BullPadel.buscarcliente.resources
