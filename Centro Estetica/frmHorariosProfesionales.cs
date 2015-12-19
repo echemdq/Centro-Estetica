@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Centro_Estetica
 {
@@ -81,7 +82,7 @@ namespace Centro_Estetica
                     {
                         ingreso = t.ToString("HH:mm");
                         egreso = t1.ToString("HH:mm");
-                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo);
+                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo,TSemana.Text);
                         controlh.Agregar(h);
                         frmHorariosProfesionales_Load(sender, e);
                     }
@@ -89,7 +90,7 @@ namespace Centro_Estetica
                     {
                         ingreso = t.ToString("HH:mm");
                         egreso = t1.ToString("HH:mm");
-                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), Convert.ToDateTime(txtHasta.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo);
+                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), Convert.ToDateTime(txtHasta.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo, TSemana.Text);
                         controlh.Agregar(h);
                         frmHorariosProfesionales_Load(sender, e);
                     }                    
@@ -197,13 +198,45 @@ namespace Centro_Estetica
             {
                 int filaseleccionada = Convert.ToInt32(this.dataGridView1.CurrentRow.Index);
                 int idhorarioprof = Convert.ToInt32(dataGridView1[0, filaseleccionada].Value);
-                HorariosProfesionales h = new HorariosProfesionales(idhorarioprof, null, "", "", DateTime.Now, "", "", "", "", "", "", "");
+                HorariosProfesionales h = new HorariosProfesionales(idhorarioprof, null, "", "", DateTime.Now, "", "", "", "", "", "", "","");
                 DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el Horario seleccionado ?", "Eliminar Configuracion Horarios", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     controlh.Borrar(h);
                 }
                 frmHorariosProfesionales_Load(sender, e);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void label43_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox7_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (maskedTextBox7.Text != "  /  /")
+                {
+                    DateTime a = Convert.ToDateTime(maskedTextBox7.Text);
+                    CultureInfo myCI = new CultureInfo("en-US");
+                    CalendarWeekRule myCWR = myCI.DateTimeFormat.CalendarWeekRule;
+                    DayOfWeek myFirstDOW = myCI.DateTimeFormat.FirstDayOfWeek;
+                    Calendar myCal = myCI.Calendar;
+                    if (myCal.GetWeekOfYear(a, myCWR, myFirstDOW) % 2 == 0)
+                    {
+                        TSemana.Text = "2";
+                    }
+                    else
+                    {
+                        TSemana.Text = "1";
+                    }
+                }
             }
             catch (Exception ex)
             {

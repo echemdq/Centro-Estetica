@@ -165,6 +165,7 @@
     <Compile Include="Subrubros.cs" />
     <Compile Include="SubrubrosProfesionales.cs" />
     <Compile Include="TipoDoc.cs" />
+    <Compile Include="Turnos.cs" />
     <EmbeddedResource Include="frmBuscaPacientes.resx">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
     </EmbeddedResource>

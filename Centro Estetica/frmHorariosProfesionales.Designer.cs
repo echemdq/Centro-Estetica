@@ -44,6 +44,9 @@
             this.lblId = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label43 = new System.Windows.Forms.Label();
+            this.TSemana = new System.Windows.Forms.TextBox();
+            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +78,7 @@
             // txtEgr
             // 
             this.txtEgr.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEgr.Location = new System.Drawing.Point(185, 237);
+            this.txtEgr.Location = new System.Drawing.Point(234, 238);
             this.txtEgr.Mask = "00:00";
             this.txtEgr.Name = "txtEgr";
             this.txtEgr.Size = new System.Drawing.Size(55, 22);
@@ -86,7 +89,7 @@
             // txtIng
             // 
             this.txtIng.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIng.Location = new System.Drawing.Point(185, 201);
+            this.txtIng.Location = new System.Drawing.Point(234, 202);
             this.txtIng.Mask = "00:00";
             this.txtIng.Name = "txtIng";
             this.txtIng.Size = new System.Drawing.Size(55, 22);
@@ -98,7 +101,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(110, 240);
+            this.label22.Location = new System.Drawing.Point(174, 241);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(56, 14);
             this.label22.TabIndex = 83;
@@ -108,7 +111,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(105, 204);
+            this.label20.Location = new System.Drawing.Point(169, 205);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(61, 14);
             this.label20.TabIndex = 84;
@@ -117,7 +120,7 @@
             // txtDesde
             // 
             this.txtDesde.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesde.Location = new System.Drawing.Point(185, 278);
+            this.txtDesde.Location = new System.Drawing.Point(234, 279);
             this.txtDesde.Mask = "00/00/0000";
             this.txtDesde.Name = "txtDesde";
             this.txtDesde.Size = new System.Drawing.Size(97, 22);
@@ -129,7 +132,7 @@
             // txtHasta
             // 
             this.txtHasta.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHasta.Location = new System.Drawing.Point(185, 314);
+            this.txtHasta.Location = new System.Drawing.Point(234, 315);
             this.txtHasta.Mask = "00/00/0000";
             this.txtHasta.Name = "txtHasta";
             this.txtHasta.Size = new System.Drawing.Size(97, 22);
@@ -142,7 +145,7 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(20, 316);
+            this.label46.Location = new System.Drawing.Point(84, 317);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(146, 16);
             this.label46.TabIndex = 88;
@@ -152,7 +155,7 @@
             // 
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(118, 280);
+            this.label45.Location = new System.Drawing.Point(182, 281);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(48, 16);
             this.label45.TabIndex = 87;
@@ -173,7 +176,7 @@
             "Viernes",
             "Sabado",
             "Domingo"});
-            this.checkedListBox1.Location = new System.Drawing.Point(338, 204);
+            this.checkedListBox1.Location = new System.Drawing.Point(361, 204);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(134, 126);
             this.checkedListBox1.TabIndex = 4;
@@ -198,11 +201,48 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(0, 351);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(230, 16);
+            this.label43.TabIndex = 93;
+            this.label43.Text = "Semana (0-Todas 1-Impar 2-Par)";
+            this.label43.Click += new System.EventHandler(this.label43_Click);
+            // 
+            // TSemana
+            // 
+            this.TSemana.Enabled = false;
+            this.TSemana.Location = new System.Drawing.Point(236, 350);
+            this.TSemana.Name = "TSemana";
+            this.TSemana.Size = new System.Drawing.Size(27, 20);
+            this.TSemana.TabIndex = 91;
+            // 
+            // maskedTextBox7
+            // 
+            this.maskedTextBox7.Enabled = false;
+            this.maskedTextBox7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox7.Location = new System.Drawing.Point(269, 348);
+            this.maskedTextBox7.Mask = "00/00/0000";
+            this.maskedTextBox7.Name = "maskedTextBox7";
+            this.maskedTextBox7.Size = new System.Drawing.Size(97, 22);
+            this.maskedTextBox7.TabIndex = 92;
+            this.maskedTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.maskedTextBox7, "Ingrese fecha para determinar si la correspondiente semana anualizada es PAR o IM" +
+        "PAR");
+            this.maskedTextBox7.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox7.Validated += new System.EventHandler(this.maskedTextBox7_Validated);
+            // 
             // frmHorariosProfesionales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 376);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.TSemana);
+            this.Controls.Add(this.maskedTextBox7);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.checkedListBox1);
@@ -243,5 +283,8 @@
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox TSemana;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
     }
 }

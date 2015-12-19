@@ -21,6 +21,14 @@ namespace Centro_Estetica
         string viernes;
         string sabado;
         string domingo;
+        string semana;
+
+        public string Semana
+        {
+            get { return semana; }
+            set { semana = value; }
+        }
+
 
         public string Domingo
         {
@@ -100,7 +108,7 @@ namespace Centro_Estetica
             set { idhorariosprofesionales = value; }
         }
 
-        public HorariosProfesionales(int i, Profesionales p, string ing, string eg, DateTime d, DateTime h, string l, string m, string mi, string j, string v, string s, string dom)
+        public HorariosProfesionales(int i, Profesionales p, string ing, string eg, DateTime d, DateTime h, string l, string m, string mi, string j, string v, string s, string dom, string sem)
         {
             idhorariosprofesionales = i;
             profesionales = p;
@@ -115,9 +123,10 @@ namespace Centro_Estetica
             viernes = v;
             sabado = s;
             domingo = dom;
+            semana = sem;
         }
 
-        public HorariosProfesionales(int i, Profesionales p, string ing, string eg, DateTime d, string l, string m, string mi, string j, string v, string s, string dom)
+        public HorariosProfesionales(int i, Profesionales p, string ing, string eg, DateTime d, string l, string m, string mi, string j, string v, string s, string dom, string sem)
         {
             idhorariosprofesionales = i;
             profesionales = p;
@@ -131,6 +140,7 @@ namespace Centro_Estetica
             viernes = v;
             sabado = s;
             domingo = dom;
+            semana = sem;
         }
     }
 }
