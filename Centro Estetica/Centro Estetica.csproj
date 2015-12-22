@@ -84,6 +84,7 @@
     <Compile Include="BdSubrubros.cs" />
     <Compile Include="BdSubrubrosProf.cs" />
     <Compile Include="BdTipoDoc.cs" />
+    <Compile Include="BdTurnos.cs" />
     <Compile Include="ControladoraHonorarios.cs" />
     <Compile Include="ControladoraHorariosProfesionales.cs" />
     <Compile Include="ControladoraPacientes.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="ControladoraSubrubros.cs" />
     <Compile Include="ControladoraSubrubrosProf.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
+    <Compile Include="ControladoraTurnos.cs" />
     <Compile Include="frmBuscaPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +112,12 @@
     </Compile>
     <Compile Include="frmHorariosProfesionales.Designer.cs">
       <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoTurno.Designer.cs">
+      <DependentUpon>frmNuevoTurno.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPacientes.cs">
       <SubType>Form</SubType>
@@ -174,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHorariosProfesionales.resx">
       <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoTurno.resx">
+      <DependentUpon>frmNuevoTurno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPacientes.resx">
       <DependentUpon>frmPacientes.cs</DependentUpon>
