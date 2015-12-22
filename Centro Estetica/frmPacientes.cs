@@ -321,5 +321,15 @@ namespace Centro_Estetica
                 MessageBox.Show("Error al Eliminar: " + ex.Message);
             }
         }
+
+        private void txtPaciente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

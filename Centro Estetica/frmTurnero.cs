@@ -124,7 +124,7 @@ namespace Centro_Estetica
             {
                 if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White)
                 {
-                    frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"),dataGridView1.Rows[ro].Cells[0].Value.ToString());
+                    frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"),dataGridView1.Rows[ro].Cells[0].Value.ToString(), dataGridView1.Columns[col].Name.ToString());
                     frm.ShowDialog();
                 }
             }

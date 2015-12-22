@@ -27,7 +27,7 @@ namespace Centro_Estetica
 
         public Profesionales Buscar(string dato)
         {
-            throw new NotImplementedException();
+            return bd.Buscar(dato);
         }
 
         public List<Profesionales> BuscarEspecial(string dato)

@@ -82,6 +82,7 @@
             this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "Nombre y Apellido";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -152,6 +153,7 @@
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Size = new System.Drawing.Size(253, 21);
             this.txtPaciente.TabIndex = 0;
+            this.txtPaciente.TextChanged += new System.EventHandler(this.txtPaciente_TextChanged);
             // 
             // txtDocumento
             // 

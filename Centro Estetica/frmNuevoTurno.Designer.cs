@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.txtProfesional = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnBuscarProf = new System.Windows.Forms.Button();
             this.btnBuscarPac = new System.Windows.Forms.Button();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,40 +49,9 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblIdProf = new System.Windows.Forms.Label();
             this.lblIdPac = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtProfesional = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtProfesional
-            // 
-            this.txtProfesional.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtProfesional.Enabled = false;
-            this.txtProfesional.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProfesional.Location = new System.Drawing.Point(88, 18);
-            this.txtProfesional.Name = "txtProfesional";
-            this.txtProfesional.Size = new System.Drawing.Size(253, 21);
-            this.txtProfesional.TabIndex = 64;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 65;
-            this.label1.Text = "Profesional";
-            // 
-            // btnBuscarProf
-            // 
-            this.btnBuscarProf.BackColor = System.Drawing.SystemColors.Control;
-            this.btnBuscarProf.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
-            this.btnBuscarProf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarProf.Location = new System.Drawing.Point(364, 7);
-            this.btnBuscarProf.Name = "btnBuscarProf";
-            this.btnBuscarProf.Size = new System.Drawing.Size(41, 38);
-            this.btnBuscarProf.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.btnBuscarProf, "Buscar");
-            this.btnBuscarProf.UseVisualStyleBackColor = false;
-            this.btnBuscarProf.Click += new System.EventHandler(this.btnBuscarProf_Click);
             // 
             // btnBuscarPac
             // 
@@ -98,6 +64,7 @@
             this.btnBuscarPac.TabIndex = 69;
             this.toolTip1.SetToolTip(this.btnBuscarPac, "Buscar");
             this.btnBuscarPac.UseVisualStyleBackColor = false;
+            this.btnBuscarPac.Click += new System.EventHandler(this.btnBuscarPac_Click);
             // 
             // txtPaciente
             // 
@@ -151,6 +118,7 @@
             this.txtFecha.TabIndex = 75;
             this.txtFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtFecha.ValidatingType = typeof(System.DateTime);
+            this.txtFecha.Validated += new System.EventHandler(this.txtFecha_Validated);
             // 
             // txtHora
             // 
@@ -274,6 +242,7 @@
             this.lblIdProf.Name = "lblIdProf";
             this.lblIdProf.Size = new System.Drawing.Size(0, 13);
             this.lblIdProf.TabIndex = 100;
+            this.lblIdProf.Visible = false;
             // 
             // lblIdPac
             // 
@@ -282,6 +251,27 @@
             this.lblIdPac.Name = "lblIdPac";
             this.lblIdPac.Size = new System.Drawing.Size(0, 13);
             this.lblIdPac.TabIndex = 101;
+            this.lblIdPac.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 65;
+            this.label1.Text = "Profesional";
+            // 
+            // txtProfesional
+            // 
+            this.txtProfesional.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProfesional.Enabled = false;
+            this.txtProfesional.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProfesional.Location = new System.Drawing.Point(88, 18);
+            this.txtProfesional.Name = "txtProfesional";
+            this.txtProfesional.Size = new System.Drawing.Size(253, 21);
+            this.txtProfesional.TabIndex = 64;
             // 
             // frmNuevoTurno
             // 
@@ -307,7 +297,6 @@
             this.Controls.Add(this.btnBuscarPac);
             this.Controls.Add(this.txtPaciente);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnBuscarProf);
             this.Controls.Add(this.txtProfesional);
             this.Controls.Add(this.label1);
             this.Name = "frmNuevoTurno";
@@ -321,9 +310,6 @@
         #endregion
 
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button btnBuscarProf;
-        private System.Windows.Forms.TextBox txtProfesional;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscarPac;
         private System.Windows.Forms.TextBox txtPaciente;
         private System.Windows.Forms.Label label2;
@@ -343,5 +329,7 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblIdProf;
         private System.Windows.Forms.Label lblIdPac;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtProfesional;
     }
 }

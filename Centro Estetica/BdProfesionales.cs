@@ -40,7 +40,13 @@ namespace Centro_Estetica
 
         public Profesionales Buscar(string dato)
         {
-            throw new NotImplementedException();
+            DataTable dt = oacceso.leerDatos("select idprofesionales from profesionales where profesional = '" + dato + "'");
+            Profesionales p = null;
+            foreach (DataRow dr in dt.Rows)
+            {
+                p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), "", "", null, "", "", "", 0);
+            }
+            return p;
         }
 
         public List<Profesionales> BuscarEspecial(string dato)
