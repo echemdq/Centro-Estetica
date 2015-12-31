@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnBuscarPac = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.rbQuincenal = new System.Windows.Forms.RadioButton();
             this.label43 = new System.Windows.Forms.Label();
             this.TSemana = new System.Windows.Forms.TextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.lblIdProf = new System.Windows.Forms.Label();
             this.lblIdPac = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,6 +65,17 @@
             this.toolTip1.SetToolTip(this.btnBuscarPac, "Buscar");
             this.btnBuscarPac.UseVisualStyleBackColor = false;
             this.btnBuscarPac.Click += new System.EventHandler(this.btnBuscarPac_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Save;
+            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.Location = new System.Drawing.Point(201, 280);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(41, 38);
+            this.btnGuardar.TabIndex = 99;
+            this.toolTip1.SetToolTip(this.btnGuardar, "Guardar");
+            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // txtPaciente
             // 
@@ -174,9 +185,10 @@
             // chkFijo
             // 
             this.chkFijo.AutoSize = true;
+            this.chkFijo.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.chkFijo.Location = new System.Drawing.Point(88, 217);
             this.chkFijo.Name = "chkFijo";
-            this.chkFijo.Size = new System.Drawing.Size(73, 17);
+            this.chkFijo.Size = new System.Drawing.Size(83, 17);
             this.chkFijo.TabIndex = 80;
             this.chkFijo.Text = "Turno Fijo";
             this.chkFijo.UseVisualStyleBackColor = true;
@@ -186,9 +198,10 @@
             // 
             this.rbSemanal.AutoSize = true;
             this.rbSemanal.Enabled = false;
-            this.rbSemanal.Location = new System.Drawing.Point(176, 216);
+            this.rbSemanal.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.rbSemanal.Location = new System.Drawing.Point(190, 216);
             this.rbSemanal.Name = "rbSemanal";
-            this.rbSemanal.Size = new System.Drawing.Size(66, 17);
+            this.rbSemanal.Size = new System.Drawing.Size(75, 17);
             this.rbSemanal.TabIndex = 81;
             this.rbSemanal.TabStop = true;
             this.rbSemanal.Text = "Semanal";
@@ -198,9 +211,10 @@
             // 
             this.rbQuincenal.AutoSize = true;
             this.rbQuincenal.Enabled = false;
-            this.rbQuincenal.Location = new System.Drawing.Point(267, 216);
+            this.rbQuincenal.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.rbQuincenal.Location = new System.Drawing.Point(281, 216);
             this.rbQuincenal.Name = "rbQuincenal";
-            this.rbQuincenal.Size = new System.Drawing.Size(73, 17);
+            this.rbQuincenal.Size = new System.Drawing.Size(81, 17);
             this.rbQuincenal.TabIndex = 82;
             this.rbQuincenal.TabStop = true;
             this.rbQuincenal.Text = "Quincenal";
@@ -218,22 +232,12 @@
             // 
             // TSemana
             // 
+            this.TSemana.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TSemana.Enabled = false;
             this.TSemana.Location = new System.Drawing.Point(267, 251);
             this.TSemana.Name = "TSemana";
             this.TSemana.Size = new System.Drawing.Size(27, 20);
             this.TSemana.TabIndex = 96;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Save;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardar.Location = new System.Drawing.Point(201, 280);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(41, 38);
-            this.btnGuardar.TabIndex = 99;
-            this.toolTip1.SetToolTip(this.btnGuardar, "Guardar");
-            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // lblIdProf
             // 

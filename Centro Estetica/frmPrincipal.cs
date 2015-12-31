@@ -44,5 +44,11 @@ namespace Centro_Estetica
             frmTurnero frm = new frmTurnero();
             frm.Show();
         }
+
+        private void aBMProducotsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProductos frm = new frmProductos();
+            frm.Show();
+        }
     }
 }

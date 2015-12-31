@@ -109,6 +109,7 @@
             this.aBMProducotsToolStripMenuItem.Name = "aBMProducotsToolStripMenuItem";
             this.aBMProducotsToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.aBMProducotsToolStripMenuItem.Text = "ABM Productos";
+            this.aBMProducotsToolStripMenuItem.Click += new System.EventHandler(this.aBMProducotsToolStripMenuItem_Click);
             // 
             // profesionalesToolStripMenuItem
             // 

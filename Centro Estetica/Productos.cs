@@ -13,7 +13,6 @@ namespace Centro_Estetica
         decimal precioventa;
         int sesiones;
         int stock;
-        Subrubros subrubro;
         int activo;
         decimal preciocalculo;
 
@@ -42,13 +41,6 @@ namespace Centro_Estetica
             set { llevastock = value; }
         }
         
-
-        public Subrubros Subrubro
-        {
-            get { return subrubro; }
-            set { subrubro = value; }
-        }
-
         public int Stock
         {
             get { return stock; }
@@ -71,6 +63,17 @@ namespace Centro_Estetica
         {
             get { return idproductos; }
             set { idproductos = value; }
+        }
+
+        public Productos(int i, string d, decimal pv, int s, int st, int a, decimal pc)
+        {
+            idproductos = i;
+            detalle = d;
+            precioventa = pv;
+            sesiones = s;
+            stock = st;
+            activo = a;
+            preciocalculo = pc;
         }
     }
 }

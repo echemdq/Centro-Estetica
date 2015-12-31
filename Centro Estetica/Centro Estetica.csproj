@@ -101,6 +101,12 @@
     <Compile Include="frmBuscaPacientes.Designer.cs">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaProductos.Designer.cs">
+      <DependentUpon>frmBuscaProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscaProfesionales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,12 @@
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProfesionales.cs">
       <SubType>Form</SubType>
@@ -177,6 +189,9 @@
     <EmbeddedResource Include="frmBuscaPacientes.resx">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaProductos.resx">
+      <DependentUpon>frmBuscaProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscaProfesionales.resx">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProfesionales.resx">
       <DependentUpon>frmProfesionales.cs</DependentUpon>

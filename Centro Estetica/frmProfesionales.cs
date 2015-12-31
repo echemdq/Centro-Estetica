@@ -54,7 +54,6 @@ namespace Centro_Estetica
             txtProfesional.Text = "";
             txtTelefono.Text = "";
             lblId.Text = "";
-
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

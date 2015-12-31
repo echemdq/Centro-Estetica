@@ -11,7 +11,7 @@ namespace Centro_Estetica
         BdProductos bd = new BdProductos();
         public void Agregar(Productos dato)
         {
-            throw new NotImplementedException();
+            bd.Agregar(dato);
         }
 
         public List<Productos> TraerTodos()
@@ -21,7 +21,7 @@ namespace Centro_Estetica
 
         public void Borrar(Productos dato)
         {
-            throw new NotImplementedException();
+            bd.Borrar(dato);
         }
 
         public Productos Buscar(string dato)
@@ -31,12 +31,12 @@ namespace Centro_Estetica
 
         public List<Productos> BuscarEspecial(string dato)
         {
-            throw new NotImplementedException();
+            return bd.BuscarEspecial(dato);
         }
 
         public void Modificar(Productos dato)
         {
-            throw new NotImplementedException();
+            bd.Modificar(dato);
         }
 
         public int traerSigID()
