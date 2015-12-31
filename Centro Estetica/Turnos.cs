@@ -12,12 +12,19 @@ namespace Centro_Estetica
         Profesionales profesionales;
         string hora;
         DateTime fecha;
-        Pacientes paciente;
+        string paciente;
         string detalle;
         string fijo;
         string semana;
         string dia;
         string telefono;
+        string producto;
+
+        public string Producto
+        {
+            get { return producto; }
+            set { producto = value; }
+        }
 
         public string Telefono
         {
@@ -50,7 +57,7 @@ namespace Centro_Estetica
             set { detalle = value; }
         }
 
-        public Pacientes Paciente
+        public string Paciente
         {
             get { return paciente; }
             set { paciente = value; }
@@ -80,7 +87,7 @@ namespace Centro_Estetica
             set { idturnos = value; }
         }
 
-        public Turnos(int i, Profesionales p, string h, DateTime f, Pacientes pa, string d, string fi, string s, string di, string t)
+        public Turnos(int i, Profesionales p, string h, DateTime f, string pa, string d, string fi, string s, string di, string t, string prod)
         {
             idturnos = i;
             profesionales = p;
@@ -92,6 +99,7 @@ namespace Centro_Estetica
             semana = s;
             dia = di;
             telefono = t;
+            producto = prod;
         }
     }
 }

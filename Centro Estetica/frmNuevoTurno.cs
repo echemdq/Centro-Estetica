@@ -13,13 +13,17 @@ namespace Centro_Estetica
     public partial class frmNuevoTurno : Form
     {
         ControladoraProfesionales controlp = new ControladoraProfesionales();
+        ControladoraTurnos controlt = new ControladoraTurnos();
+        Profesionales p = null;
+        Productos prod = null;
+        Pacientes u = null;
         public frmNuevoTurno(string fecha, string hora, string profesional)
         {
             InitializeComponent();
             txtFecha.Text = fecha;
             txtHora.Text = hora;
             txtProfesional.Text = profesional;
-            Profesionales p = controlp.Buscar(profesional);
+            p = controlp.Buscar(profesional);
             lblIdProf.Text = p.Idprofesionales.ToString();
             DateTime dia = Convert.ToDateTime(fecha);
             int diaint = Convert.ToInt32(dia.DayOfWeek);
@@ -44,24 +48,6 @@ namespace Centro_Estetica
             txtFecha_Validated(sender, e);
         }
 
-        private void btnBuscarProf_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                frmBuscaProfesionales frm = new frmBuscaProfesionales();
-                frm.ShowDialog();
-                Profesionales u = frm.u;
-                if (u != null)
-                {
-                    lblIdProf.Text = Convert.ToString(u.Idprofesionales);
-                    txtProfesional.Text = u.Profesional;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void btnBuscarPac_Click(object sender, EventArgs e)
         {
@@ -69,7 +55,7 @@ namespace Centro_Estetica
             {
                 frmBuscaPacientes frm = new frmBuscaPacientes();
                 frm.ShowDialog();
-                Pacientes u = frm.u;
+                u = frm.u;
                 if (u != null)
                 {
                     lblIdPac.Text = Convert.ToString(u.Idpacientes);
@@ -106,6 +92,61 @@ namespace Centro_Estetica
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string dia = Convert.ToInt32(Convert.ToDateTime(txtFecha.Text).DayOfWeek).ToString();
+                string fijo = "";
+                string semana = "0";
+                if (chkFijo.Checked)
+                {
+                    if (rbQuincenal.Checked)
+                    {
+                        fijo = "q";
+                        semana = TSemana.Text;
+                    }
+                    else
+                    {
+                        fijo = "s";
+                    }
+                }                
+                DateTime fecha = Convert.ToDateTime(txtFecha.Text);
+                string detalle = txtDetalle.Text;
+                string hora = txtHora.Text;
+                string telefono = txtTelefono.Text;
+                string idprod = "";
+                if (prod != null)
+                {
+                    idprod = prod.Idproductos.ToString();
+                }
+                Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idprod);
+                controlt.Agregar(t);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBuscarProd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmBuscaProductos frm = new frmBuscaProductos();
+                frm.ShowDialog();
+                prod = frm.u;
+                if (prod != null)
+                {
+                    txtProducto.Text = prod.Detalle;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

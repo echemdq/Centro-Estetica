@@ -51,6 +51,9 @@
             this.lblIdPac = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtProfesional = new System.Windows.Forms.TextBox();
+            this.btnBuscarProd = new System.Windows.Forms.Button();
+            this.txtProducto = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBuscarPac
@@ -58,7 +61,7 @@
             this.btnBuscarPac.BackColor = System.Drawing.SystemColors.Control;
             this.btnBuscarPac.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
             this.btnBuscarPac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarPac.Location = new System.Drawing.Point(364, 47);
+            this.btnBuscarPac.Location = new System.Drawing.Point(364, 44);
             this.btnBuscarPac.Name = "btnBuscarPac";
             this.btnBuscarPac.Size = new System.Drawing.Size(41, 38);
             this.btnBuscarPac.TabIndex = 69;
@@ -70,12 +73,13 @@
             // 
             this.btnGuardar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Save;
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardar.Location = new System.Drawing.Point(201, 280);
+            this.btnGuardar.Location = new System.Drawing.Point(201, 310);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(41, 38);
             this.btnGuardar.TabIndex = 99;
             this.toolTip1.SetToolTip(this.btnGuardar, "Guardar");
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtPaciente
             // 
@@ -101,7 +105,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 102);
+            this.label3.Location = new System.Drawing.Point(42, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 71;
@@ -111,7 +115,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(205, 102);
+            this.label4.Location = new System.Drawing.Point(205, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 73;
@@ -122,7 +126,7 @@
             this.txtFecha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFecha.Enabled = false;
             this.txtFecha.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha.Location = new System.Drawing.Point(88, 98);
+            this.txtFecha.Location = new System.Drawing.Point(88, 128);
             this.txtFecha.Mask = "00/00/0000";
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(97, 22);
@@ -136,7 +140,7 @@
             this.txtHora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHora.Enabled = false;
             this.txtHora.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHora.Location = new System.Drawing.Point(245, 98);
+            this.txtHora.Location = new System.Drawing.Point(245, 128);
             this.txtHora.Mask = "00:00";
             this.txtHora.Name = "txtHora";
             this.txtHora.Size = new System.Drawing.Size(55, 22);
@@ -148,7 +152,7 @@
             // 
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefono.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(88, 178);
+            this.txtTelefono.Location = new System.Drawing.Point(88, 208);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(151, 21);
             this.txtTelefono.TabIndex = 78;
@@ -157,7 +161,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(26, 180);
+            this.label5.Location = new System.Drawing.Point(26, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 79;
@@ -167,7 +171,7 @@
             // 
             this.txtDetalle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDetalle.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetalle.Location = new System.Drawing.Point(88, 138);
+            this.txtDetalle.Location = new System.Drawing.Point(88, 168);
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(253, 21);
             this.txtDetalle.TabIndex = 76;
@@ -176,7 +180,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(35, 140);
+            this.label6.Location = new System.Drawing.Point(35, 170);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 77;
@@ -186,7 +190,7 @@
             // 
             this.chkFijo.AutoSize = true;
             this.chkFijo.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.chkFijo.Location = new System.Drawing.Point(88, 217);
+            this.chkFijo.Location = new System.Drawing.Point(88, 247);
             this.chkFijo.Name = "chkFijo";
             this.chkFijo.Size = new System.Drawing.Size(83, 17);
             this.chkFijo.TabIndex = 80;
@@ -199,7 +203,7 @@
             this.rbSemanal.AutoSize = true;
             this.rbSemanal.Enabled = false;
             this.rbSemanal.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.rbSemanal.Location = new System.Drawing.Point(190, 216);
+            this.rbSemanal.Location = new System.Drawing.Point(190, 246);
             this.rbSemanal.Name = "rbSemanal";
             this.rbSemanal.Size = new System.Drawing.Size(75, 17);
             this.rbSemanal.TabIndex = 81;
@@ -212,7 +216,7 @@
             this.rbQuincenal.AutoSize = true;
             this.rbQuincenal.Enabled = false;
             this.rbQuincenal.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.rbQuincenal.Location = new System.Drawing.Point(281, 216);
+            this.rbQuincenal.Location = new System.Drawing.Point(281, 246);
             this.rbQuincenal.Name = "rbQuincenal";
             this.rbQuincenal.Size = new System.Drawing.Size(81, 17);
             this.rbQuincenal.TabIndex = 82;
@@ -224,7 +228,7 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(85, 252);
+            this.label43.Location = new System.Drawing.Point(85, 282);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(170, 16);
             this.label43.TabIndex = 98;
@@ -234,7 +238,7 @@
             // 
             this.TSemana.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TSemana.Enabled = false;
-            this.TSemana.Location = new System.Drawing.Point(267, 251);
+            this.TSemana.Location = new System.Drawing.Point(267, 281);
             this.TSemana.Name = "TSemana";
             this.TSemana.Size = new System.Drawing.Size(27, 20);
             this.TSemana.TabIndex = 96;
@@ -277,11 +281,47 @@
             this.txtProfesional.Size = new System.Drawing.Size(253, 21);
             this.txtProfesional.TabIndex = 64;
             // 
+            // btnBuscarProd
+            // 
+            this.btnBuscarProd.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBuscarProd.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
+            this.btnBuscarProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarProd.Location = new System.Drawing.Point(364, 83);
+            this.btnBuscarProd.Name = "btnBuscarProd";
+            this.btnBuscarProd.Size = new System.Drawing.Size(41, 38);
+            this.btnBuscarProd.TabIndex = 104;
+            this.toolTip1.SetToolTip(this.btnBuscarProd, "Buscar");
+            this.btnBuscarProd.UseVisualStyleBackColor = false;
+            this.btnBuscarProd.Click += new System.EventHandler(this.btnBuscarProd_Click);
+            // 
+            // txtProducto
+            // 
+            this.txtProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProducto.Enabled = false;
+            this.txtProducto.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProducto.Location = new System.Drawing.Point(88, 92);
+            this.txtProducto.Name = "txtProducto";
+            this.txtProducto.Size = new System.Drawing.Size(253, 21);
+            this.txtProducto.TabIndex = 102;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(27, 94);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 13);
+            this.label7.TabIndex = 103;
+            this.label7.Text = "Producto";
+            // 
             // frmNuevoTurno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 330);
+            this.ClientSize = new System.Drawing.Size(428, 350);
+            this.Controls.Add(this.btnBuscarProd);
+            this.Controls.Add(this.txtProducto);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lblIdPac);
             this.Controls.Add(this.lblIdProf);
             this.Controls.Add(this.btnGuardar);
@@ -335,5 +375,8 @@
         private System.Windows.Forms.Label lblIdPac;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtProfesional;
+        private System.Windows.Forms.Button btnBuscarProd;
+        private System.Windows.Forms.TextBox txtProducto;
+        private System.Windows.Forms.Label label7;
     }
 }
