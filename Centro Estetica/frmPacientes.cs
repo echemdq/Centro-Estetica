@@ -152,6 +152,7 @@ namespace Centro_Estetica
             cmbTipoDoc.DisplayMember = "detalle";
             cmbTipoDoc.ValueMember = "idtipodoc";
             cmbTipoDoc.SelectedIndex = 0;
+            cmbTipoDoc.Text = "DNI";
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

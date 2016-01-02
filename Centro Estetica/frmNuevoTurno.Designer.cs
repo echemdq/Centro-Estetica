@@ -32,6 +32,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnBuscarPac = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnBuscarProd = new System.Windows.Forms.Button();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.lblIdPac = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtProfesional = new System.Windows.Forms.TextBox();
-            this.btnBuscarProd = new System.Windows.Forms.Button();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.btnBuscarPac.Location = new System.Drawing.Point(364, 44);
             this.btnBuscarPac.Name = "btnBuscarPac";
             this.btnBuscarPac.Size = new System.Drawing.Size(41, 38);
-            this.btnBuscarPac.TabIndex = 69;
+            this.btnBuscarPac.TabIndex = 1;
             this.toolTip1.SetToolTip(this.btnBuscarPac, "Buscar");
             this.btnBuscarPac.UseVisualStyleBackColor = false;
             this.btnBuscarPac.Click += new System.EventHandler(this.btnBuscarPac_Click);
@@ -76,10 +76,23 @@
             this.btnGuardar.Location = new System.Drawing.Point(201, 310);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(41, 38);
-            this.btnGuardar.TabIndex = 99;
+            this.btnGuardar.TabIndex = 9;
             this.toolTip1.SetToolTip(this.btnGuardar, "Guardar");
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnBuscarProd
+            // 
+            this.btnBuscarProd.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBuscarProd.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
+            this.btnBuscarProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarProd.Location = new System.Drawing.Point(364, 83);
+            this.btnBuscarProd.Name = "btnBuscarProd";
+            this.btnBuscarProd.Size = new System.Drawing.Size(41, 38);
+            this.btnBuscarProd.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.btnBuscarProd, "Buscar");
+            this.btnBuscarProd.UseVisualStyleBackColor = false;
+            this.btnBuscarProd.Click += new System.EventHandler(this.btnBuscarProd_Click);
             // 
             // txtPaciente
             // 
@@ -89,7 +102,7 @@
             this.txtPaciente.Location = new System.Drawing.Point(88, 58);
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Size = new System.Drawing.Size(253, 21);
-            this.txtPaciente.TabIndex = 67;
+            this.txtPaciente.TabIndex = 0;
             // 
             // label2
             // 
@@ -130,7 +143,7 @@
             this.txtFecha.Mask = "00/00/0000";
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(97, 22);
-            this.txtFecha.TabIndex = 75;
+            this.txtFecha.TabIndex = 4;
             this.txtFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtFecha.ValidatingType = typeof(System.DateTime);
             this.txtFecha.Validated += new System.EventHandler(this.txtFecha_Validated);
@@ -155,7 +168,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(88, 208);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(151, 21);
-            this.txtTelefono.TabIndex = 78;
+            this.txtTelefono.TabIndex = 5;
             // 
             // label5
             // 
@@ -174,7 +187,7 @@
             this.txtDetalle.Location = new System.Drawing.Point(88, 168);
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(253, 21);
-            this.txtDetalle.TabIndex = 76;
+            this.txtDetalle.TabIndex = 4;
             // 
             // label6
             // 
@@ -193,7 +206,7 @@
             this.chkFijo.Location = new System.Drawing.Point(88, 247);
             this.chkFijo.Name = "chkFijo";
             this.chkFijo.Size = new System.Drawing.Size(83, 17);
-            this.chkFijo.TabIndex = 80;
+            this.chkFijo.TabIndex = 6;
             this.chkFijo.Text = "Turno Fijo";
             this.chkFijo.UseVisualStyleBackColor = true;
             this.chkFijo.CheckedChanged += new System.EventHandler(this.chkFijo_CheckedChanged);
@@ -206,7 +219,7 @@
             this.rbSemanal.Location = new System.Drawing.Point(190, 246);
             this.rbSemanal.Name = "rbSemanal";
             this.rbSemanal.Size = new System.Drawing.Size(75, 17);
-            this.rbSemanal.TabIndex = 81;
+            this.rbSemanal.TabIndex = 7;
             this.rbSemanal.TabStop = true;
             this.rbSemanal.Text = "Semanal";
             this.rbSemanal.UseVisualStyleBackColor = true;
@@ -219,7 +232,7 @@
             this.rbQuincenal.Location = new System.Drawing.Point(281, 246);
             this.rbQuincenal.Name = "rbQuincenal";
             this.rbQuincenal.Size = new System.Drawing.Size(81, 17);
-            this.rbQuincenal.TabIndex = 82;
+            this.rbQuincenal.TabIndex = 8;
             this.rbQuincenal.TabStop = true;
             this.rbQuincenal.Text = "Quincenal";
             this.rbQuincenal.UseVisualStyleBackColor = true;
@@ -281,19 +294,6 @@
             this.txtProfesional.Size = new System.Drawing.Size(253, 21);
             this.txtProfesional.TabIndex = 64;
             // 
-            // btnBuscarProd
-            // 
-            this.btnBuscarProd.BackColor = System.Drawing.SystemColors.Control;
-            this.btnBuscarProd.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
-            this.btnBuscarProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarProd.Location = new System.Drawing.Point(364, 83);
-            this.btnBuscarProd.Name = "btnBuscarProd";
-            this.btnBuscarProd.Size = new System.Drawing.Size(41, 38);
-            this.btnBuscarProd.TabIndex = 104;
-            this.toolTip1.SetToolTip(this.btnBuscarProd, "Buscar");
-            this.btnBuscarProd.UseVisualStyleBackColor = false;
-            this.btnBuscarProd.Click += new System.EventHandler(this.btnBuscarProd_Click);
-            // 
             // txtProducto
             // 
             this.txtProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -302,7 +302,7 @@
             this.txtProducto.Location = new System.Drawing.Point(88, 92);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(253, 21);
-            this.txtProducto.TabIndex = 102;
+            this.txtProducto.TabIndex = 2;
             // 
             // label7
             // 

@@ -25,6 +25,7 @@ namespace Centro_Estetica
             cmbTipoDoc.DisplayMember = "detalle";
             cmbTipoDoc.ValueMember = "idtipodoc";
             cmbTipoDoc.SelectedIndex = 0;
+            cmbTipoDoc.Text = "DNI";
         }
         public void deshabilitar()
         {
@@ -45,6 +46,7 @@ namespace Centro_Estetica
             txtTelefono.Enabled = true;
             btnSubrubros.Enabled = true;
             btnHorarios.Enabled = true;
+            btnHorarios.Enabled = true;
         }
         public void limpiar()
         {
@@ -61,6 +63,7 @@ namespace Centro_Estetica
             limpiar();
             habilitar();
             btnSubrubros.Enabled = false;
+            btnHorarios.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

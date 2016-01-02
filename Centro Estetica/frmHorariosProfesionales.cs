@@ -122,7 +122,7 @@ namespace Centro_Estetica
 
         private void frmHorariosProfesionales_Load(object sender, EventArgs e)
         {
-            dataGridView1.ColumnCount = 7;
+            dataGridView1.ColumnCount = 8;
             dataGridView1.Columns[0].Name = "idhorariosprofesionales";
             dataGridView1.Columns[1].Name = "idprofesionales";
             dataGridView1.Columns[2].Name = "Ingreso";
@@ -130,6 +130,7 @@ namespace Centro_Estetica
             dataGridView1.Columns[4].Name = "Desde";
             dataGridView1.Columns[5].Name = "Hasta";
             dataGridView1.Columns[6].Name = "Dias";
+            dataGridView1.Columns[7].Name = "Semana";
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[1].Visible = false;
             dataGridView1.Rows.Clear();
@@ -151,6 +152,18 @@ namespace Centro_Estetica
                     dataGridView1.Rows[x].Cells[2].Value = h.Ingreso;
                     dataGridView1.Rows[x].Cells[3].Value = h.Egreso;
                     dataGridView1.Rows[x].Cells[4].Value = h.Desde.ToShortDateString();
+                    if (h.Semana == "0")
+                    {
+                        dataGridView1.Rows[x].Cells[7].Value = "Todas";
+                    }
+                    else if (h.Semana == "1")
+                    {
+                        dataGridView1.Rows[x].Cells[7].Value = "Impares";
+                    }
+                    else if (h.Semana == "2")
+                    {
+                        dataGridView1.Rows[x].Cells[7].Value = "Pares";
+                    }
                     if (Convert.ToString(h.Hasta.ToShortDateString()) == "01/01/1900")
                     {
                         dataGridView1.Rows[x].Cells[5].Value = "";
@@ -224,6 +237,33 @@ namespace Centro_Estetica
                 if (maskedTextBox7.Text != "  /  /")
                 {
                     DateTime a = Convert.ToDateTime(maskedTextBox7.Text);
+                    CultureInfo myCI = new CultureInfo("en-US");
+                    CalendarWeekRule myCWR = myCI.DateTimeFormat.CalendarWeekRule;
+                    DayOfWeek myFirstDOW = myCI.DateTimeFormat.FirstDayOfWeek;
+                    Calendar myCal = myCI.Calendar;
+                    if (myCal.GetWeekOfYear(a, myCWR, myFirstDOW) % 2 == 0)
+                    {
+                        TSemana.Text = "2";
+                    }
+                    else
+                    {
+                        TSemana.Text = "1";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtDesde_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtDesde.Text != "  /  /")
+                {
+                    DateTime a = Convert.ToDateTime(txtDesde.Text);
                     CultureInfo myCI = new CultureInfo("en-US");
                     CalendarWeekRule myCWR = myCI.DateTimeFormat.CalendarWeekRule;
                     DayOfWeek myFirstDOW = myCI.DateTimeFormat.FirstDayOfWeek;

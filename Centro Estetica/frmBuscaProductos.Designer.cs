@@ -45,7 +45,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(757, 265);
-            this.dataGridView1.TabIndex = 35;
+            this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // txtPaciente
@@ -55,7 +55,7 @@
             this.txtPaciente.Location = new System.Drawing.Point(69, 15);
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Size = new System.Drawing.Size(393, 21);
-            this.txtPaciente.TabIndex = 32;
+            this.txtPaciente.TabIndex = 0;
             this.txtPaciente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPaciente_KeyPress);
             // 
             // label1
@@ -76,7 +76,7 @@
             this.btnTraer.Location = new System.Drawing.Point(479, 4);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
-            this.btnTraer.TabIndex = 33;
+            this.btnTraer.TabIndex = 1;
             this.btnTraer.UseVisualStyleBackColor = false;
             this.btnTraer.Click += new System.EventHandler(this.btnTraer_Click);
             // 

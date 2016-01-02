@@ -15,11 +15,11 @@ namespace Centro_Estetica
             string hasta = dato.Hasta.ToShortDateString();
             if (hasta == "01/01/0001")
             {
-                oacceso.ActualizarBD("insert into horariosprofesionales (idprofesionales, ingreso, egreso, desde, hasta, lunes, martes, miercoles, jueves, viernes, sabado, domingo) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Ingreso + "','" + dato.Egreso + "','" + dato.Desde.ToString("yyyy/MM/dd") + "','1900/01/01','" + dato.Lunes + "','" + dato.Martes + "','" + dato.Miercoles + "','" + dato.Jueves + "','" + dato.Viernes + "','" + dato.Sabado + "','" + dato.Domingo + "')");
+                oacceso.ActualizarBD("insert into horariosprofesionales (idprofesionales, ingreso, egreso, desde, hasta, lunes, martes, miercoles, jueves, viernes, sabado, domingo, semana) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Ingreso + "','" + dato.Egreso + "','" + dato.Desde.ToString("yyyy/MM/dd") + "','1900/01/01','" + dato.Lunes + "','" + dato.Martes + "','" + dato.Miercoles + "','" + dato.Jueves + "','" + dato.Viernes + "','" + dato.Sabado + "','" + dato.Domingo + "','"+dato.Semana+"')");
             }
             else
             {
-                oacceso.ActualizarBD("insert into horariosprofesionales (idprofesionales, ingreso, egreso, desde, hasta, lunes, martes, miercoles, jueves, viernes, sabado, domingo) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Ingreso + "','" + dato.Egreso + "','" + dato.Desde.ToString("yyyy/MM/dd") + "','" + dato.Hasta.ToString("yyyy/MM/dd") + "','" + dato.Lunes + "','" + dato.Martes + "','" + dato.Miercoles + "','" + dato.Jueves + "','" + dato.Viernes + "','" + dato.Sabado + "','" + dato.Domingo + "')");
+                oacceso.ActualizarBD("insert into horariosprofesionales (idprofesionales, ingreso, egreso, desde, hasta, lunes, martes, miercoles, jueves, viernes, sabado, domingo, semana) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Ingreso + "','" + dato.Egreso + "','" + dato.Desde.ToString("yyyy/MM/dd") + "','" + dato.Hasta.ToString("yyyy/MM/dd") + "','" + dato.Lunes + "','" + dato.Martes + "','" + dato.Miercoles + "','" + dato.Jueves + "','" + dato.Viernes + "','" + dato.Sabado + "','" + dato.Domingo + "','" + dato.Semana + "')");
             }
         }
 
@@ -41,7 +41,7 @@ namespace Centro_Estetica
         public List<HorariosProfesionales> BuscarEspecial(string dato)
         {
             List<HorariosProfesionales> aux = new List<HorariosProfesionales>();
-            string cmdtext = "select h.idhorariosprofesionales as idhorariosprofesionales, h.idprofesionales as idprofesionales, h.ingreso as ingreso, h.egreso as egreso, h.desde as desde, h.hasta as hasta, h.lunes as lunes, h.martes as martes, h.miercoles as miercoles, h.jueves as jueves, h.viernes as viernes, h.sabado as sabado, h.domingo as domingo from horariosprofesionales h inner join profesionales p on h.idprofesionales = p.idprofesionales  where h.idprofesionales = '" + dato + "'";
+            string cmdtext = "select h.idhorariosprofesionales as idhorariosprofesionales, h.idprofesionales as idprofesionales, h.ingreso as ingreso, h.egreso as egreso, h.desde as desde, h.hasta as hasta, h.lunes as lunes, h.martes as martes, h.miercoles as miercoles, h.jueves as jueves, h.viernes as viernes, h.sabado as sabado, h.domingo as domingo, h.semana as semana from horariosprofesionales h inner join profesionales p on h.idprofesionales = p.idprofesionales  where h.idprofesionales = '" + dato + "'";
             DataTable dt = oacceso.leerDatos(cmdtext);
             DateTime hasta = Convert.ToDateTime("1900/01/01");
             foreach (DataRow dr in dt.Rows)
@@ -61,8 +61,9 @@ namespace Centro_Estetica
                 string viernes = Convert.ToString(dr["viernes"]);
                 string sabado = Convert.ToString(dr["sabado"]);
                 string domingo = Convert.ToString(dr["domingo"]);
+                string semana = Convert.ToString(dr["semana"]);
                 Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), "", "", null, "", "", "", 0);
-                HorariosProfesionales c = new HorariosProfesionales(id, p, ingreso, egreso, desde, hasta, lunes, martes, miercoles, jueves, viernes, sabado, domingo, "");
+                HorariosProfesionales c = new HorariosProfesionales(id, p, ingreso, egreso, desde, hasta, lunes, martes, miercoles, jueves, viernes, sabado, domingo, semana);
                 aux.Add(c);
             }
             return aux;

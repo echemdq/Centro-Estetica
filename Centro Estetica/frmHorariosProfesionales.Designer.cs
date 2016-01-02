@@ -44,9 +44,9 @@
             this.lblId = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.TSemana = new System.Windows.Forms.TextBox();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -128,6 +128,7 @@
             this.txtDesde.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDesde.ValidatingType = typeof(System.DateTime);
             this.txtDesde.TypeValidationCompleted += new System.Windows.Forms.TypeValidationEventHandler(this.txtDesde_TypeValidationCompleted);
+            this.txtDesde.Validated += new System.EventHandler(this.txtDesde_Validated);
             // 
             // txtHasta
             // 
@@ -201,6 +202,22 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // maskedTextBox7
+            // 
+            this.maskedTextBox7.Enabled = false;
+            this.maskedTextBox7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox7.Location = new System.Drawing.Point(269, 348);
+            this.maskedTextBox7.Mask = "00/00/0000";
+            this.maskedTextBox7.Name = "maskedTextBox7";
+            this.maskedTextBox7.Size = new System.Drawing.Size(97, 22);
+            this.maskedTextBox7.TabIndex = 92;
+            this.maskedTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.maskedTextBox7, "Ingrese fecha para determinar si la correspondiente semana anualizada es PAR o IM" +
+        "PAR");
+            this.maskedTextBox7.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox7.Visible = false;
+            this.maskedTextBox7.Validated += new System.EventHandler(this.maskedTextBox7_Validated);
+            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -219,21 +236,6 @@
             this.TSemana.Name = "TSemana";
             this.TSemana.Size = new System.Drawing.Size(27, 20);
             this.TSemana.TabIndex = 91;
-            // 
-            // maskedTextBox7
-            // 
-            this.maskedTextBox7.Enabled = false;
-            this.maskedTextBox7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox7.Location = new System.Drawing.Point(269, 348);
-            this.maskedTextBox7.Mask = "00/00/0000";
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            this.maskedTextBox7.Size = new System.Drawing.Size(97, 22);
-            this.maskedTextBox7.TabIndex = 92;
-            this.maskedTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.maskedTextBox7, "Ingrese fecha para determinar si la correspondiente semana anualizada es PAR o IM" +
-        "PAR");
-            this.maskedTextBox7.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox7.Validated += new System.EventHandler(this.maskedTextBox7_Validated);
             // 
             // frmHorariosProfesionales
             // 
