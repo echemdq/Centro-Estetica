@@ -30,13 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.nuevoTurnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.habilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deshabilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -53,26 +55,43 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDown);
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(981, 12);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 1;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoTurnoToolStripMenuItem});
+            this.nuevoTurnoToolStripMenuItem,
+            this.habilitaHoraToolStripMenuItem,
+            this.deshabilitaHoraToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(145, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(162, 92);
             // 
             // nuevoTurnoToolStripMenuItem
             // 
             this.nuevoTurnoToolStripMenuItem.Name = "nuevoTurnoToolStripMenuItem";
-            this.nuevoTurnoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoTurnoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.nuevoTurnoToolStripMenuItem.Text = "Nuevo Turno";
             this.nuevoTurnoToolStripMenuItem.Click += new System.EventHandler(this.nuevoTurnoToolStripMenuItem_Click);
+            // 
+            // habilitaHoraToolStripMenuItem
+            // 
+            this.habilitaHoraToolStripMenuItem.Name = "habilitaHoraToolStripMenuItem";
+            this.habilitaHoraToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.habilitaHoraToolStripMenuItem.Text = "Habilita Hora";
+            this.habilitaHoraToolStripMenuItem.Click += new System.EventHandler(this.habilitaHoraToolStripMenuItem_Click);
+            // 
+            // deshabilitaHoraToolStripMenuItem
+            // 
+            this.deshabilitaHoraToolStripMenuItem.Name = "deshabilitaHoraToolStripMenuItem";
+            this.deshabilitaHoraToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.deshabilitaHoraToolStripMenuItem.Text = "Deshabilita Hora";
+            this.deshabilitaHoraToolStripMenuItem.Click += new System.EventHandler(this.deshabilitaHoraToolStripMenuItem_Click);
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(981, 12);
+            this.monthCalendar1.MaxSelectionCount = 1;
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 1;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // frmTurnero
             // 
@@ -85,8 +104,8 @@
             this.Text = "frmTurnero";
             this.Load += new System.EventHandler(this.frmTurnero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,5 +117,7 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem nuevoTurnoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem habilitaHoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deshabilitaHoraToolStripMenuItem;
     }
 }

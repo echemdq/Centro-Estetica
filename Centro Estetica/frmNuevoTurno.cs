@@ -17,13 +17,13 @@ namespace Centro_Estetica
         Profesionales p = null;
         Productos prod = null;
         Pacientes u = null;
-        public frmNuevoTurno(string fecha, string hora, string profesional)
+        public frmNuevoTurno(string fecha, string hora, int idprofesional)
         {
             InitializeComponent();
             txtFecha.Text = fecha;
-            txtHora.Text = hora;
-            txtProfesional.Text = profesional;
-            p = controlp.Buscar(profesional);
+            txtHora.Text = hora;            
+            p = controlp.Buscar(idprofesional.ToString());
+            txtProfesional.Text = p.Profesional;
             lblIdProf.Text = p.Idprofesionales.ToString();
             DateTime dia = Convert.ToDateTime(fecha);
             int diaint = Convert.ToInt32(dia.DayOfWeek);
