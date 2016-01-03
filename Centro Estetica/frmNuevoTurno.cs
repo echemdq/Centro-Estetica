@@ -18,8 +18,8 @@ namespace Centro_Estetica
         Productos prod = null;
         Pacientes u = null;
         Acceso_BD oacceso = new Acceso_BD();
-
-        public frmNuevoTurno(string fecha, string hora, int idprofesional)
+        int suspendido = 0;
+        public frmNuevoTurno(string fecha, string hora, int idprofesional, int estado)
         {
             InitializeComponent();
             txtFecha.Text = fecha;
@@ -29,6 +29,7 @@ namespace Centro_Estetica
             lblIdProf.Text = p.Idprofesionales.ToString();
             DateTime dia = Convert.ToDateTime(fecha);
             int diaint = Convert.ToInt32(dia.DayOfWeek);
+            suspendido = estado;
         }
 
         private void chkFijo_CheckedChanged(object sender, EventArgs e)
@@ -48,6 +49,15 @@ namespace Centro_Estetica
         private void frmNuevoTurno_Load(object sender, EventArgs e)
         {
             txtFecha_Validated(sender, e);
+            if (suspendido == 1)
+            {
+                chkFijo.Checked = false;
+                chkFijo.Enabled = false;
+                rbQuincenal.Enabled = false;
+                rbSemanal.Enabled = false;
+                TSemana.Enabled = false;
+                label43.Enabled = false;
+            }
         }
 
 

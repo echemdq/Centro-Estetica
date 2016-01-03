@@ -121,7 +121,7 @@ CREATE TABLE `horariosprofesionales` (
   `semana` varchar(1) NOT NULL,
   PRIMARY KEY (`idhorariosprofesionales`),
   KEY `fkhidprof_idx` (`idprofesionales`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -130,7 +130,7 @@ CREATE TABLE `horariosprofesionales` (
 
 LOCK TABLES `horariosprofesionales` WRITE;
 /*!40000 ALTER TABLE `horariosprofesionales` DISABLE KEYS */;
-INSERT INTO `horariosprofesionales` VALUES (1,2,'09:00','11:00','2015-12-01 00:00:00','2016-01-06 00:00:00','1','1','1','1','1','1','0','0'),(4,2,'15:00','20:00','2016-01-02 00:00:00','2016-01-15 00:00:00','1','1','1','1','1','0','0','0'),(5,2,'08:00','09:00','2016-01-04 00:00:00','2016-01-04 00:00:00','1','1','1','1','1','0','0','0'),(6,6,'12:00','13:00','2016-01-04 00:00:00','1900-01-01 00:00:00','1','1','1','1','1','0','0','2'),(7,2,'10:00','15:00','2015-01-05 00:00:00','2015-01-06 00:00:00','1','1','1','1','1','1','0','0');
+INSERT INTO `horariosprofesionales` VALUES (1,2,'09:00','11:00','2015-12-01 00:00:00','2016-01-06 00:00:00','1','1','1','1','1','1','0','0'),(4,2,'15:00','20:00','2016-01-02 00:00:00','2016-01-15 00:00:00','1','1','1','1','1','0','0','0'),(5,2,'08:00','09:00','2016-01-04 00:00:00','2016-01-04 00:00:00','1','1','1','1','1','0','0','0'),(6,6,'12:00','13:00','2016-01-04 00:00:00','1900-01-01 00:00:00','1','1','1','1','1','0','0','2'),(7,2,'10:00','15:00','2015-01-05 00:00:00','2015-01-06 00:00:00','1','1','1','1','1','1','0','0'),(8,2,'10:00','21:00','2016-01-11 00:00:00','1900-01-01 00:00:00','1','1','1','1','1','0','0','0');
 /*!40000 ALTER TABLE `horariosprofesionales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -305,7 +305,7 @@ CREATE TABLE `seguimientos` (
   PRIMARY KEY (`idseguimientos`),
   KEY `sfkidprof_idx` (`idprofesionales`),
   KEY `sfkidturnos_idx` (`idturnos`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -314,7 +314,7 @@ CREATE TABLE `seguimientos` (
 
 LOCK TABLES `seguimientos` WRITE;
 /*!40000 ALTER TABLE `seguimientos` DISABLE KEYS */;
-INSERT INTO `seguimientos` VALUES (1,6,'20:00','2016-01-04 00:00:00','Habilitacion Manual de Horario',0,'2016-01-03 20:49:23',0),(2,6,'18:00','2016-01-04 00:00:00','Deshabilitacion Manual de Horario',0,'2016-01-03 20:57:35',0),(3,2,'19:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-03 20:59:50',0),(4,2,'11:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 20:16:19',0),(5,6,'20:00','2016-01-04 00:00:00','Deshabilitacion Manual de Horario',0,'2016-01-04 20:58:18',0),(6,6,'20:00','2016-01-04 00:00:00','Habilitacion Manual de Horario',0,'2016-01-04 21:10:09',0),(7,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:10:13',0),(8,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:11:29',0),(9,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:11:30',0),(10,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:11:30',0),(11,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:14:52',0),(12,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:16:44',0);
+INSERT INTO `seguimientos` VALUES (1,6,'20:00','2016-01-04 00:00:00','Habilitacion Manual de Horario',0,'2016-01-03 20:49:23',0),(2,6,'18:00','2016-01-04 00:00:00','Deshabilitacion Manual de Horario',0,'2016-01-03 20:57:35',0),(3,2,'19:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-03 20:59:50',0),(4,2,'11:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 20:16:19',0),(5,6,'20:00','2016-01-04 00:00:00','Deshabilitacion Manual de Horario',0,'2016-01-04 20:58:18',0),(6,6,'20:00','2016-01-04 00:00:00','Habilitacion Manual de Horario',0,'2016-01-04 21:10:09',0),(7,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:10:13',0),(8,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:11:29',0),(9,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:11:30',0),(10,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:11:30',0),(11,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:14:52',0),(12,6,'20:00','2016-01-04 00:00:00','Inserta nuevo turno',0,'2016-01-04 21:16:44',0),(13,2,'18:00','2016-01-18 00:00:00','Suspende turno fijo por el dia',0,'2016-01-03 20:13:50',0),(14,2,'11:00','2016-01-18 00:00:00','Suspende turno fijo por el dia',0,'2016-01-03 20:53:32',0),(15,2,'11:00','2016-01-04 00:00:00','Libera Turno',0,'2016-01-03 20:55:26',0);
 /*!40000 ALTER TABLE `seguimientos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -430,7 +430,7 @@ CREATE TABLE `turnos` (
 
 LOCK TABLES `turnos` WRITE;
 /*!40000 ALTER TABLE `turnos` DISABLE KEYS */;
-INSERT INTO `turnos` VALUES (3,2,'09:00','2016-01-05 00:00:00','1','probando','q','2','2','123','2','1900-01-01 00:00:00'),(4,2,'18:00','2016-01-04 00:00:00','1','probanding','q','2','1','123','2','1900-01-01 00:00:00'),(5,2,'19:00','2016-01-04 00:00:00','','asdasdasd','','0','1','qw232311','','1900-01-01 00:00:00'),(6,2,'11:00','2016-01-04 00:00:00','','lñaksd','s','0','1','asdlk','','1900-01-01 00:00:00'),(11,6,'20:00','2016-01-04 00:00:00','','puto','','0','1','','','1900-01-01 00:00:00'),(12,6,'20:00','2016-01-04 00:00:00','1','','','0','1','','','1900-01-01 00:00:00');
+INSERT INTO `turnos` VALUES (3,2,'09:00','2016-01-05 00:00:00','1','probando','q','2','2','123','2','1900-01-01 00:00:00'),(4,2,'18:00','2016-01-04 00:00:00','1','probanding','q','2','1','123','2','1900-01-01 00:00:00'),(5,2,'19:00','2016-01-04 00:00:00','','asdasdasd','','0','1','qw232311','','1900-01-01 00:00:00'),(11,6,'20:00','2016-01-04 00:00:00','','puto','','0','1','','','1900-01-01 00:00:00'),(12,6,'20:00','2016-01-04 00:00:00','1','','','0','1','','','1900-01-01 00:00:00');
 /*!40000 ALTER TABLE `turnos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -447,7 +447,7 @@ CREATE TABLE `turnosuspendidos` (
   `dia` datetime NOT NULL,
   `hora` varchar(5) NOT NULL,
   PRIMARY KEY (`idturnosuspendidos`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -456,7 +456,7 @@ CREATE TABLE `turnosuspendidos` (
 
 LOCK TABLES `turnosuspendidos` WRITE;
 /*!40000 ALTER TABLE `turnosuspendidos` DISABLE KEYS */;
-INSERT INTO `turnosuspendidos` VALUES (1,2,'2016-01-04 00:00:00','11:00');
+INSERT INTO `turnosuspendidos` VALUES (1,2,'2016-01-11 00:00:00','11:00'),(4,2,'2016-01-18 00:00:00','18:00'),(5,2,'2016-01-18 00:00:00','11:00');
 /*!40000 ALTER TABLE `turnosuspendidos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -668,7 +668,7 @@ union
 select t.idturnos, t.idprofesionales, t.hora,t.fecha, ifnull(p.paciente,t.detalle) as detalle, t.fijo,t.semana, ifnull(ts.idturnosuspendidos,0) as suspendido
 from turnos t
 left join pacientes p on p.idpacientes=t.idpacientes
-left join turnosuspendidos ts on ts.idprofesionales=t.idprofesionales and t.fecha=ts.dia and t.hora=ts.hora
+left join turnosuspendidos ts on ts.idprofesionales=t.idprofesionales and ts.dia=fec and t.hora=ts.hora
 where t.fijo = 's' and t.dia=dias and t.finturnofijo>fec  and t.fecha<fec or
 (t.fijo = 's' and t.dia=dias and t.finturnofijo='1900-01-01'  and t.fecha<fec) or
 (t.fijo = 'q' and t.dia=dias and t.semana=sema and t.finturnofijo>fec and t.fecha<fec) or
@@ -691,4 +691,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-06 15:37:22
+-- Dump completed on 2016-01-03 20:56:23

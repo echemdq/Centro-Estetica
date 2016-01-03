@@ -162,8 +162,16 @@ namespace Centro_Estetica
                     {
                         if (fijo == "s")
                         {
-                            grilla gri = new grilla(col, fila, "0");
-                            laux.Add(gri);
+                            if (Convert.ToDateTime(dr["fecha"]) == monthCalendar1.SelectionRange.Start)
+                            {
+                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
+                                laux.Add(gri);
+                            }
+                            else
+                            {
+                                grilla gri = new grilla(col, fila, "0");
+                                laux.Add(gri);
+                            }
                             if (Convert.ToString(dr["suspendido"]) == "0")
                             {
                                 this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Red;
@@ -176,8 +184,16 @@ namespace Centro_Estetica
                         }
                         else if (fijo == "q")
                         {
-                            grilla gri = new grilla(col, fila, "0");
-                            laux.Add(gri);
+                            if (Convert.ToDateTime(dr["fecha"]) == monthCalendar1.SelectionRange.Start)
+                            {
+                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
+                                laux.Add(gri);
+                            }
+                            else
+                            {
+                                grilla gri = new grilla(col, fila, "0");
+                                laux.Add(gri);
+                            }
                             if (Convert.ToString(dr["suspendido"]) == "0")
                             {
                                 this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Blue;
@@ -226,7 +242,20 @@ namespace Centro_Estetica
                                 idprofesional = Convert.ToInt32(aux.Id);
                             }
                         }
-                        frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"), dataGridView1.Rows[ro].Cells[0].Value.ToString(), idprofesional);
+                        frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"), dataGridView1.Rows[ro].Cells[0].Value.ToString(), idprofesional,0);
+                        frm.ShowDialog();
+                    }
+                    else if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.LightBlue)
+                    {
+                        int idprofesional = 0;
+                        foreach (grilla aux in laux)
+                        {
+                            if (-1 == aux.Fila && col == aux.Columna)
+                            {
+                                idprofesional = Convert.ToInt32(aux.Id);
+                            }
+                        }
+                        frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"), dataGridView1.Rows[ro].Cells[0].Value.ToString(), idprofesional, 1);
                         frm.ShowDialog();
                     }
                 }
@@ -369,12 +398,55 @@ namespace Centro_Estetica
         {
             try
             {
-                DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
+                
                     if (monthCalendar1.SelectionRange.Start.Date >= DateTime.Now.Date)
                     {
                         if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Blue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Red)
+                        {
+                            DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
+                            if (dialogResult == DialogResult.Yes)
+                            {
+                                int idprofesional = 0;
+                                foreach (grilla aux in laux)
+                                {
+                                    if (-1 == aux.Fila && col == aux.Columna)
+                                    {
+                                        idprofesional = Convert.ToInt32(aux.Id);
+                                    }
+                                }
+
+                                oacceso.ActualizarBD("insert into turnosuspendidos (idprofesionales, dia, hora) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "')");
+                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Suspende turno fijo por el dia','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                MessageBox.Show("Turno Fijo Suspendido Correctamente");
+                                dataGridView1.Rows.Clear();
+                                cargagrilla();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Imposible modificar datos anteriores");
+                    }
+                
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void liberaTurnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (monthCalendar1.SelectionRange.Start.Date >= DateTime.Now.Date)
+                {
+                    if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Green)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
                         {
                             int idprofesional = 0;
                             foreach (grilla aux in laux)
@@ -384,9 +456,50 @@ namespace Centro_Estetica
                                     idprofesional = Convert.ToInt32(aux.Id);
                                 }
                             }
-
-                            oacceso.ActualizarBD("insert into turnosuspendidos (idprofesionales, dia, hora) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "')");
-                            MessageBox.Show("Turno Fijo Suspendido Correctamente");
+                            int idturnos = 0;
+                            foreach (grilla aux in laux)
+                            {
+                                if (aux.Columna == col && aux.Fila == ro)
+                                {
+                                    idturnos = Convert.ToInt32(aux.Id);
+                                }
+                            }
+                            oacceso.ActualizarBD("delete from turnos where idturnos ='"+idturnos+"'");
+                            oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                            MessageBox.Show("Turno liberado Correctamente");
+                            dataGridView1.Rows.Clear();
+                            cargagrilla();
+                        }
+                    }
+                    else if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Blue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Red)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            int idprofesional = 0;
+                            foreach (grilla aux in laux)
+                            {
+                                if (-1 == aux.Fila && col == aux.Columna)
+                                {
+                                    idprofesional = Convert.ToInt32(aux.Id);
+                                }
+                            }
+                            int idturnos = 0;
+                            foreach (grilla aux in laux)
+                            {
+                                if (aux.Columna == col && aux.Fila == ro)
+                                {
+                                    idturnos = Convert.ToInt32(aux.Id);
+                                }
+                            }
+                            if (idturnos != 0)
+                            {
+                                oacceso.ActualizarBD("delete from turnos where idturnos ='" + idturnos + "'");
+                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera Turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                MessageBox.Show("Turno liberado Correctamente");
+                                dataGridView1.Rows.Clear();
+                                cargagrilla();
+                            }
                         }
                     }
                 }
@@ -394,15 +507,12 @@ namespace Centro_Estetica
                 {
                     MessageBox.Show("Imposible modificar datos anteriores");
                 }
+
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                dataGridView1.Rows.Clear();
-                cargagrilla();
             }
         }
     }

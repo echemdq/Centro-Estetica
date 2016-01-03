@@ -26,7 +26,7 @@ namespace Centro_Estetica
             dataGridView1.Columns[0].Name = "Fecha";
             dataGridView1.Columns[1].Name = "Detalle";
             int x = 0;
-            dataGridView1.Rows.Add(laux.Count-1);
+            dataGridView1.Rows.Add(laux.Count);
             foreach (Seguimientos aux in laux)
             {
                 dataGridView1.Rows[x].Cells[0].Value = aux.Fechareal.ToString("dd-MM-yyyy HH:mm:ss");

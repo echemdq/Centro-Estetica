@@ -32,15 +32,16 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.nuevoTurnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.suspenderTurnoFijoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.habilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deshabilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.seguimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.suspenderTurnoFijoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.liberaTurnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -66,39 +67,62 @@
             this.nuevoTurnoToolStripMenuItem,
             this.toolStripSeparator2,
             this.suspenderTurnoFijoToolStripMenuItem,
+            this.liberaTurnoToolStripMenuItem,
             this.toolStripSeparator3,
             this.habilitaHoraToolStripMenuItem,
             this.deshabilitaHoraToolStripMenuItem,
             this.toolStripSeparator1,
             this.seguimientoToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 154);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 176);
             // 
             // nuevoTurnoToolStripMenuItem
             // 
             this.nuevoTurnoToolStripMenuItem.Name = "nuevoTurnoToolStripMenuItem";
-            this.nuevoTurnoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.nuevoTurnoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.nuevoTurnoToolStripMenuItem.Text = "Nuevo Turno";
             this.nuevoTurnoToolStripMenuItem.Click += new System.EventHandler(this.nuevoTurnoToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(183, 6);
+            // 
+            // suspenderTurnoFijoToolStripMenuItem
+            // 
+            this.suspenderTurnoFijoToolStripMenuItem.Name = "suspenderTurnoFijoToolStripMenuItem";
+            this.suspenderTurnoFijoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.suspenderTurnoFijoToolStripMenuItem.Text = "Suspender Turno Fijo";
+            this.suspenderTurnoFijoToolStripMenuItem.Click += new System.EventHandler(this.suspenderTurnoFijoToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(183, 6);
             // 
             // habilitaHoraToolStripMenuItem
             // 
             this.habilitaHoraToolStripMenuItem.Name = "habilitaHoraToolStripMenuItem";
-            this.habilitaHoraToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.habilitaHoraToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.habilitaHoraToolStripMenuItem.Text = "Habilita Hora";
             this.habilitaHoraToolStripMenuItem.Click += new System.EventHandler(this.habilitaHoraToolStripMenuItem_Click);
             // 
             // deshabilitaHoraToolStripMenuItem
             // 
             this.deshabilitaHoraToolStripMenuItem.Name = "deshabilitaHoraToolStripMenuItem";
-            this.deshabilitaHoraToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.deshabilitaHoraToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.deshabilitaHoraToolStripMenuItem.Text = "Deshabilita Hora";
             this.deshabilitaHoraToolStripMenuItem.Click += new System.EventHandler(this.deshabilitaHoraToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
             // 
             // seguimientoToolStripMenuItem
             // 
             this.seguimientoToolStripMenuItem.Name = "seguimientoToolStripMenuItem";
-            this.seguimientoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.seguimientoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.seguimientoToolStripMenuItem.Text = "Seguimiento";
             this.seguimientoToolStripMenuItem.Click += new System.EventHandler(this.seguimientoToolStripMenuItem_Click);
             // 
@@ -110,27 +134,12 @@
             this.monthCalendar1.TabIndex = 1;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
-            // suspenderTurnoFijoToolStripMenuItem
+            // liberaTurnoToolStripMenuItem
             // 
-            this.suspenderTurnoFijoToolStripMenuItem.Name = "suspenderTurnoFijoToolStripMenuItem";
-            this.suspenderTurnoFijoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.suspenderTurnoFijoToolStripMenuItem.Text = "Suspender Turno Fijo";
-            this.suspenderTurnoFijoToolStripMenuItem.Click += new System.EventHandler(this.suspenderTurnoFijoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(183, 6);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(183, 6);
+            this.liberaTurnoToolStripMenuItem.Name = "liberaTurnoToolStripMenuItem";
+            this.liberaTurnoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.liberaTurnoToolStripMenuItem.Text = "Libera Turno";
+            this.liberaTurnoToolStripMenuItem.Click += new System.EventHandler(this.liberaTurnoToolStripMenuItem_Click);
             // 
             // frmTurnero
             // 
@@ -163,5 +172,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem liberaTurnoToolStripMenuItem;
     }
 }
