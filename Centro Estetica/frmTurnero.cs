@@ -364,5 +364,46 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void suspenderTurnoFijoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    if (monthCalendar1.SelectionRange.Start.Date >= DateTime.Now.Date)
+                    {
+                        if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Blue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Red)
+                        {
+                            int idprofesional = 0;
+                            foreach (grilla aux in laux)
+                            {
+                                if (-1 == aux.Fila && col == aux.Columna)
+                                {
+                                    idprofesional = Convert.ToInt32(aux.Id);
+                                }
+                            }
+
+                            oacceso.ActualizarBD("insert into turnosuspendidos (idprofesionales, dia, hora) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "')");
+                            MessageBox.Show("Turno Fijo Suspendido Correctamente");
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Imposible modificar datos anteriores");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dataGridView1.Rows.Clear();
+                cargagrilla();
+            }
+        }
     }
 }
