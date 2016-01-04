@@ -132,23 +132,35 @@ namespace Centro_Estetica
         {
             try
             {
-                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White)
+                if (monthCalendar1.SelectionRange.Start >= DateTime.Now)
                 {
-                    int idprofesional = 0;
-                    foreach (grilla aux in laux)
+                    if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White)
                     {
-                        if (-1 == aux.Fila && col == aux.Columna)
+                        int idprofesional = 0;
+                        foreach (grilla aux in laux)
                         {
-                            idprofesional = Convert.ToInt32(aux.Id);
+                            if (-1 == aux.Fila && col == aux.Columna)
+                            {
+                                idprofesional = Convert.ToInt32(aux.Id);
+                            }
                         }
+                        frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"), dataGridView1.Rows[ro].Cells[0].Value.ToString(), idprofesional);
+                        frm.ShowDialog();
                     }
-                    frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"),dataGridView1.Rows[ro].Cells[0].Value.ToString(), idprofesional);
-                    frm.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Imposible modificar datos anteriores");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dataGridView1.Rows.Clear();
+                cargagrilla();
             }
         }
 
@@ -167,29 +179,39 @@ namespace Centro_Estetica
         {
             try
             {
-                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Gray)
+                if (monthCalendar1.SelectionRange.Start >= DateTime.Now)
                 {
-                    DialogResult dialogResult = MessageBox.Show("Esta seguro de habilitar la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Habilitar Hora", MessageBoxButtons.YesNo);
-                    if (dialogResult == DialogResult.Yes)
+                    if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Gray)
                     {
-                        int idprofesional = 0;
-                        foreach (grilla aux in laux)
+                        DialogResult dialogResult = MessageBox.Show("Esta seguro de habilitar la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Habilitar Hora", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
                         {
-                            if (-1 == aux.Fila && col == aux.Columna)
+                            int idprofesional = 0;
+                            foreach (grilla aux in laux)
                             {
-                                idprofesional = Convert.ToInt32(aux.Id);
+                                if (-1 == aux.Fila && col == aux.Columna)
+                                {
+                                    idprofesional = Convert.ToInt32(aux.Id);
+                                }
                             }
+                            oacceso.ActualizarBD("insert into horasmanuales (idprofesionales, dia, hora, estado) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','1')");
+                            oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Habilitacion Manual de Horario','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                         }
-                        oacceso.ActualizarBD("insert into horasmanuales (idprofesionales, dia, hora, estado) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0,5) + "','1')");
-                        dataGridView1.Rows.Clear();
-                        cargagrilla();
                     }
                 }
-                
+                else
+                {
+                    MessageBox.Show("Imposible modificar datos anteriores");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dataGridView1.Rows.Clear();
+                cargagrilla();
             }
         }
 
@@ -197,29 +219,39 @@ namespace Centro_Estetica
         {
             try
             {
-                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White)
+                if (monthCalendar1.SelectionRange.Start >= DateTime.Now)
                 {
-                    DialogResult dialogResult = MessageBox.Show("Esta seguro de deshabilitar la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Deshabilitar Hora", MessageBoxButtons.YesNo);
-                    if (dialogResult == DialogResult.Yes)
+                    if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White)
                     {
-                        int idprofesional = 0;
-                        foreach (grilla aux in laux)
+                        DialogResult dialogResult = MessageBox.Show("Esta seguro de deshabilitar la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Deshabilitar Hora", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
                         {
-                            if (-1 == aux.Fila && col == aux.Columna)
+                            int idprofesional = 0;
+                            foreach (grilla aux in laux)
                             {
-                                idprofesional = Convert.ToInt32(aux.Id);
+                                if (-1 == aux.Fila && col == aux.Columna)
+                                {
+                                    idprofesional = Convert.ToInt32(aux.Id);
+                                }
                             }
+                            oacceso.ActualizarBD("insert into horasmanuales (idprofesionales, dia, hora, estado) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','0')");
+                            oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Deshabilitacion Manual de Horario','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                         }
-                        oacceso.ActualizarBD("insert into horasmanuales (idprofesionales, dia, hora, estado) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','0')");
-                        dataGridView1.Rows.Clear();
-                        cargagrilla();
                     }
                 }
-
+                else
+                {
+                    MessageBox.Show("Imposible modificar datos anteriores");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dataGridView1.Rows.Clear();
+                cargagrilla();
             }
         }
     }

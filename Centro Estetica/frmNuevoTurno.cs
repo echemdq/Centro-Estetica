@@ -17,6 +17,8 @@ namespace Centro_Estetica
         Profesionales p = null;
         Productos prod = null;
         Pacientes u = null;
+        Acceso_BD oacceso = new Acceso_BD();
+
         public frmNuevoTurno(string fecha, string hora, int idprofesional)
         {
             InitializeComponent();
@@ -125,6 +127,7 @@ namespace Centro_Estetica
                 }
                 Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idprod);
                 controlt.Agregar(t);
+                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + p.Idprofesionales + "','" + fecha.ToString("yyyy-MM-dd") + "','" + hora + "','Inserta nuevo turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
             }
             catch(Exception ex)
             {
