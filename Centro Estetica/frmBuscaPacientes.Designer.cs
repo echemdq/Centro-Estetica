@@ -42,7 +42,7 @@
             // 
             this.txtPaciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPaciente.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaciente.Location = new System.Drawing.Point(134, 12);
+            this.txtPaciente.Location = new System.Drawing.Point(204, 12);
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Size = new System.Drawing.Size(393, 21);
             this.txtPaciente.TabIndex = 0;
@@ -54,16 +54,16 @@
             this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(16, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.Size = new System.Drawing.Size(185, 13);
             this.label1.TabIndex = 24;
-            this.label1.Text = "Nombre y Apellido";
+            this.label1.Text = "Nombre, Apellido o Documento";
             // 
             // btnTraer
             // 
             this.btnTraer.BackColor = System.Drawing.SystemColors.Control;
             this.btnTraer.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Check;
             this.btnTraer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTraer.Location = new System.Drawing.Point(547, 5);
+            this.btnTraer.Location = new System.Drawing.Point(617, 5);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
             this.btnTraer.TabIndex = 1;

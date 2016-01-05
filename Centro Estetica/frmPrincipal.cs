@@ -50,5 +50,11 @@ namespace Centro_Estetica
             frmProductos frm = new frmProductos();
             frm.Show();
         }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFactura frm = new frmFactura();
+            frm.Show();
+        }
     }
 }

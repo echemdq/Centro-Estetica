@@ -143,7 +143,7 @@
             this.txtPrecioC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPrecioC.Enabled = false;
             this.txtPrecioC.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioC.Location = new System.Drawing.Point(136, 127);
+            this.txtPrecioC.Location = new System.Drawing.Point(155, 127);
             this.txtPrecioC.Name = "txtPrecioC";
             this.txtPrecioC.Size = new System.Drawing.Size(75, 21);
             this.txtPrecioC.TabIndex = 5;
@@ -155,7 +155,7 @@
             this.txtPrecioV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPrecioV.Enabled = false;
             this.txtPrecioV.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecioV.Location = new System.Drawing.Point(136, 100);
+            this.txtPrecioV.Location = new System.Drawing.Point(155, 100);
             this.txtPrecioV.Name = "txtPrecioV";
             this.txtPrecioV.Size = new System.Drawing.Size(75, 21);
             this.txtPrecioV.TabIndex = 4;
@@ -167,7 +167,7 @@
             this.txtProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtProducto.Enabled = false;
             this.txtProducto.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProducto.Location = new System.Drawing.Point(136, 14);
+            this.txtProducto.Location = new System.Drawing.Point(155, 14);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(253, 21);
             this.txtProducto.TabIndex = 1;
@@ -176,17 +176,17 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 129);
+            this.label7.Location = new System.Drawing.Point(1, 129);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 13);
+            this.label7.Size = new System.Drawing.Size(148, 13);
             this.label7.TabIndex = 70;
-            this.label7.Text = "Precio Calculo";
+            this.label7.Text = "Precio Calculo Honorario";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(44, 102);
+            this.label5.Location = new System.Drawing.Point(70, 102);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 69;
@@ -196,7 +196,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 73);
+            this.label4.Location = new System.Drawing.Point(110, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 68;
@@ -206,7 +206,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(65, 44);
+            this.label3.Location = new System.Drawing.Point(91, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 67;
@@ -216,7 +216,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 16);
+            this.label1.Location = new System.Drawing.Point(102, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 65;
@@ -227,7 +227,7 @@
             this.txtSesiones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSesiones.Enabled = false;
             this.txtSesiones.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.txtSesiones.Location = new System.Drawing.Point(136, 42);
+            this.txtSesiones.Location = new System.Drawing.Point(155, 42);
             this.txtSesiones.Name = "txtSesiones";
             this.txtSesiones.Size = new System.Drawing.Size(42, 21);
             this.txtSesiones.TabIndex = 2;
@@ -238,7 +238,7 @@
             this.txtStock.Enabled = false;
             this.txtStock.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.txtStock.HideSelection = false;
-            this.txtStock.Location = new System.Drawing.Point(136, 69);
+            this.txtStock.Location = new System.Drawing.Point(155, 69);
             this.txtStock.Mask = "99999";
             this.txtStock.Name = "txtStock";
             this.txtStock.PromptChar = ' ';

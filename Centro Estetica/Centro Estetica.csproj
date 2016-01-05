@@ -97,6 +97,7 @@
     <Compile Include="ControladoraSubrubrosProf.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
     <Compile Include="ControladoraTurnos.cs" />
+    <Compile Include="Facturacion.cs" />
     <Compile Include="frmBuscaPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +115,12 @@
     </Compile>
     <Compile Include="frmBuscaProfesionales.Designer.cs">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactura.Designer.cs">
+      <DependentUpon>frmFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHorariosProfesionales.cs">
       <SubType>Form</SubType>
@@ -204,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscaProfesionales.resx">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactura.resx">
+      <DependentUpon>frmFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHorariosProfesionales.resx">
       <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>

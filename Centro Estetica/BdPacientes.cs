@@ -33,7 +33,7 @@ namespace Centro_Estetica
 
         public List<Pacientes> BuscarEspecial(string dato)
         {
-            string cmdtext = "select * from pacientes p inner join tipodoc td on p.idtipodoc = td.idtipodoc where paciente " + dato + " order by paciente";
+            string cmdtext = "select * from pacientes p inner join tipodoc td on p.idtipodoc = td.idtipodoc where paciente " + dato + " or documento "+dato+" order by paciente";
             DataTable dt = oacceso.leerDatos(cmdtext);
             Pacientes usuario = null;
             TipoDoc tipod = null;
