@@ -126,8 +126,17 @@ namespace Centro_Estetica
                     idprod = prod.Idproductos.ToString();
                 }
                 Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idprod);
-                controlt.Agregar(t);
-                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + p.Idprofesionales + "','" + fecha.ToString("yyyy-MM-dd") + "','" + hora + "','Inserta nuevo turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                if (detalle != "" || u != null)
+                {
+                    controlt.Agregar(t);
+                    oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + p.Idprofesionales + "','" + fecha.ToString("yyyy-MM-dd") + "','" + hora + "','Inserta nuevo turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                    MessageBox.Show("Turno grabado exitosamente");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Debe completar el campo detalle o seleccionar un paciente");
+                }
             }
             catch(Exception ex)
             {

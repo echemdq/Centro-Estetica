@@ -36,6 +36,7 @@
             this.deshabilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.seguimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -60,9 +61,10 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoTurnoToolStripMenuItem,
             this.habilitaHoraToolStripMenuItem,
-            this.deshabilitaHoraToolStripMenuItem});
+            this.deshabilitaHoraToolStripMenuItem,
+            this.seguimientoToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(162, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(162, 114);
             // 
             // nuevoTurnoToolStripMenuItem
             // 
@@ -93,6 +95,13 @@
             this.monthCalendar1.TabIndex = 1;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
+            // seguimientoToolStripMenuItem
+            // 
+            this.seguimientoToolStripMenuItem.Name = "seguimientoToolStripMenuItem";
+            this.seguimientoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.seguimientoToolStripMenuItem.Text = "Seguimiento";
+            this.seguimientoToolStripMenuItem.Click += new System.EventHandler(this.seguimientoToolStripMenuItem_Click);
+            // 
             // frmTurnero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,5 +128,6 @@
         private System.Windows.Forms.ToolStripMenuItem nuevoTurnoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem habilitaHoraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deshabilitaHoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seguimientoToolStripMenuItem;
     }
 }

@@ -22,3 +22,4 @@ C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Cen
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmNuevoTurno.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmProductos.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmBuscaProductos.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmSeguimiento.resources
