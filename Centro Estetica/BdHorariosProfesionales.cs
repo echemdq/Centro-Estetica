@@ -71,7 +71,7 @@ namespace Centro_Estetica
 
         public void Modificar(HorariosProfesionales dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("update horariosprofesionales set hasta = '" + dato.Hasta.ToString("yyyy/MM/dd") + "' where idhorariosprofesionales = '" + dato.IdhorariosProfesionales + "'");
         }
 
         public int traerSigID()

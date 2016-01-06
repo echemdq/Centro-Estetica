@@ -14,6 +14,7 @@ namespace Centro_Estetica
     public partial class frmHorariosProfesionales : Form
     {
         ControladoraHorariosProfesionales controlh = new ControladoraHorariosProfesionales();
+        int idhorario = 0;
         public frmHorariosProfesionales(string id)
         {
             InitializeComponent();
@@ -82,23 +83,59 @@ namespace Centro_Estetica
                     {
                         ingreso = t.ToString("HH:mm");
                         egreso = t1.ToString("HH:mm");
-                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo,TSemana.Text);
-                        controlh.Agregar(h);
+                        string semana = "0";
+                        if (!chkSemana.Checked)
+                        {
+                            semana = TSemana.Text;
+                        }
+                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo, semana);
+                        if (idhorario == 0)
+                        {
+                            controlh.Agregar(h);
+                        }
+                        else
+                        {
+                            h.IdhorariosProfesionales = idhorario;
+                            controlh.Modificar(h);
+                            idhorario = 0;
+                        }
                         frmHorariosProfesionales_Load(sender, e);
                     }
                     else if (DateTime.TryParse(ingreso, out t) && DateTime.TryParse(egreso, out t1) && txtHasta.Text != "  /  /")
                     {
                         ingreso = t.ToString("HH:mm");
                         egreso = t1.ToString("HH:mm");
-                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), Convert.ToDateTime(txtHasta.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo, TSemana.Text);
-                        controlh.Agregar(h);
+                        string semana = "0";
+                        if (!chkSemana.Checked)
+                        {
+                            semana = TSemana.Text;
+                        }
+                        HorariosProfesionales h = new HorariosProfesionales(0, prof, ingreso, egreso, Convert.ToDateTime(txtDesde.Text), Convert.ToDateTime(txtHasta.Text), lunes, martes, miercoles, jueves, viernes, sabado, domingo, semana);
+                        if (idhorario == 0)
+                        {
+                            controlh.Agregar(h);
+                        }
+                        else
+                        {
+                            h.IdhorariosProfesionales = idhorario;
+                            controlh.Modificar(h);
+                            idhorario = 0;
+                        }
                         frmHorariosProfesionales_Load(sender, e);
-                    }                    
+                    }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                txtDesde.Text = "";
+                txtHasta.Text = "";
+                txtIng.Text = "";
+                txtEgr.Text = "";
+                TSemana.Text = "";
             }
         }
 
@@ -122,6 +159,7 @@ namespace Centro_Estetica
 
         private void frmHorariosProfesionales_Load(object sender, EventArgs e)
         {
+            checkedListBox1.Visible = true;
             dataGridView1.ColumnCount = 8;
             dataGridView1.Columns[0].Name = "idhorariosprofesionales";
             dataGridView1.Columns[1].Name = "idprofesionales";
@@ -283,5 +321,35 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fila = dataGridView1.CurrentRow.Index;
+                
+                if (dataGridView1.Rows[fila].Cells[5].Value.ToString() == "")
+                {
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de ponerle fin al Horario seleccionado ?", "Finalizar Horarios", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        checkedListBox1.Visible = false;
+                        string x = dataGridView1.Rows[fila].Cells[1].Value.ToString();
+                        txtIng.Text = dataGridView1.Rows[fila].Cells[2].Value.ToString();
+                        txtEgr.Text = dataGridView1.Rows[fila].Cells[3].Value.ToString();
+                        txtDesde.Text = dataGridView1.Rows[fila].Cells[4].Value.ToString();
+                        idhorario = Convert.ToInt32(dataGridView1.Rows[fila].Cells[0].Value);
+                        x = x + "";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+            
     }
 }
+
+

@@ -164,15 +164,29 @@ namespace Centro_Estetica
                         {
                             grilla gri = new grilla(col, fila, "0");
                             laux.Add(gri);
-                            this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Red;
-                            this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]);
+                            if (Convert.ToString(dr["suspendido"]) == "0")
+                            {
+                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Red;
+                                this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]);
+                            }
+                            else
+                            {
+                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
+                            }
                         }
                         else if (fijo == "q")
                         {
                             grilla gri = new grilla(col, fila, "0");
                             laux.Add(gri);
-                            this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Blue;
-                            this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]);
+                            if (Convert.ToString(dr["suspendido"]) == "0")
+                            {
+                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Blue;
+                                this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]);
+                            }
+                            else
+                            {
+                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
+                            }
                         }
                         else
                         {

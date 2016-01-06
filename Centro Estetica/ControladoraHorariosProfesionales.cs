@@ -36,7 +36,7 @@ namespace Centro_Estetica
 
         public void Modificar(HorariosProfesionales dato)
         {
-            throw new NotImplementedException();
+            bd.Modificar(dato);
         }
 
         public int traerSigID()

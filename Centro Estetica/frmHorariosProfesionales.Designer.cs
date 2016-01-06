@@ -47,6 +47,8 @@
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.TSemana = new System.Windows.Forms.TextBox();
+            this.chkSemana = new System.Windows.Forms.CheckBox();
+            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -195,7 +197,7 @@
             // 
             this.btnGuardar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Save;
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardar.Location = new System.Drawing.Point(496, 240);
+            this.btnGuardar.Location = new System.Drawing.Point(496, 259);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(41, 38);
             this.btnGuardar.TabIndex = 5;
@@ -206,7 +208,7 @@
             // 
             this.maskedTextBox7.Enabled = false;
             this.maskedTextBox7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox7.Location = new System.Drawing.Point(269, 348);
+            this.maskedTextBox7.Location = new System.Drawing.Point(442, 350);
             this.maskedTextBox7.Mask = "00/00/0000";
             this.maskedTextBox7.Name = "maskedTextBox7";
             this.maskedTextBox7.Size = new System.Drawing.Size(97, 22);
@@ -222,11 +224,11 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(0, 351);
+            this.label43.Location = new System.Drawing.Point(60, 351);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(230, 16);
+            this.label43.Size = new System.Drawing.Size(170, 16);
             this.label43.TabIndex = 93;
-            this.label43.Text = "Semana (0-Todas 1-Impar 2-Par)";
+            this.label43.Text = "Semana (1-Impar 2-Par)";
             this.label43.Click += new System.EventHandler(this.label43_Click);
             // 
             // TSemana
@@ -237,11 +239,37 @@
             this.TSemana.Size = new System.Drawing.Size(27, 20);
             this.TSemana.TabIndex = 91;
             // 
+            // chkSemana
+            // 
+            this.chkSemana.AutoSize = true;
+            this.chkSemana.Checked = true;
+            this.chkSemana.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkSemana.Location = new System.Drawing.Point(269, 352);
+            this.chkSemana.Name = "chkSemana";
+            this.chkSemana.Size = new System.Drawing.Size(119, 17);
+            this.chkSemana.TabIndex = 94;
+            this.chkSemana.Text = "Todas las Semanas";
+            this.chkSemana.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Edit;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditar.Location = new System.Drawing.Point(496, 217);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(41, 38);
+            this.btnEditar.TabIndex = 95;
+            this.toolTip1.SetToolTip(this.btnEditar, "Editar");
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // frmHorariosProfesionales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 376);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.chkSemana);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.TSemana);
             this.Controls.Add(this.maskedTextBox7);
@@ -288,5 +316,7 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox TSemana;
         private System.Windows.Forms.MaskedTextBox maskedTextBox7;
+        private System.Windows.Forms.CheckBox chkSemana;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
