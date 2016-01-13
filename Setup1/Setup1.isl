@@ -2622,7 +2622,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1755632746</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1755613611</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1621373335</td></row>
@@ -3729,8 +3729,8 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>1621371255</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>http://www.FVSistemas.com</td><td>0</td><td/><td>1755632746</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1755632746</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.FVSistemas.com</td><td>0</td><td/><td>1755613611</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1755613611</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td/><td>0</td><td/><td>1621361143</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>LAUNCH~1.EXE|Launch Centro Estetica.exe</td><td>0</td><td/><td>1621363543</td></row>
 		<row><td>ID_STRING6</td><td>1033</td><td>GESTIO~1|Gestion Centro de Estetica</td><td>0</td><td/><td>1621378103</td></row>

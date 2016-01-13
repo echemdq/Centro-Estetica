@@ -69,6 +69,7 @@ namespace Centro_Estetica
 
         public void buscarEnXML()
         {
+            //string path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
             XDocument miXML = XDocument.Load(@"C:\Program Files\FV Sistemas\Gestion Centro Estetica\MiDoc.xml");
 
             
