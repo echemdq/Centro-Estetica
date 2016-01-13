@@ -45,10 +45,10 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
             this.TSemana = new System.Windows.Forms.TextBox();
             this.chkSemana = new System.Windows.Forms.CheckBox();
-            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -220,6 +220,18 @@
             this.maskedTextBox7.Visible = false;
             this.maskedTextBox7.Validated += new System.EventHandler(this.maskedTextBox7_Validated);
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Edit;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditar.Location = new System.Drawing.Point(496, 217);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(41, 38);
+            this.btnEditar.TabIndex = 95;
+            this.toolTip1.SetToolTip(this.btnEditar, "Editar");
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -251,18 +263,6 @@
             this.chkSemana.Text = "Todas las Semanas";
             this.chkSemana.UseVisualStyleBackColor = true;
             // 
-            // btnEditar
-            // 
-            this.btnEditar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Edit;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditar.Location = new System.Drawing.Point(496, 217);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(41, 38);
-            this.btnEditar.TabIndex = 95;
-            this.toolTip1.SetToolTip(this.btnEditar, "Editar");
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
             // frmHorariosProfesionales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,7 +287,7 @@
             this.Controls.Add(this.label36);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmHorariosProfesionales";
-            this.Text = "frmHorariosProfesionales";
+            this.Text = "Horarios Profesionales";
             this.Load += new System.EventHandler(this.frmHorariosProfesionales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

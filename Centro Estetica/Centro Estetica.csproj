@@ -293,6 +293,7 @@
     <Content Include="Imagenes\Document.ico" />
     <Content Include="Imagenes\Edit.ico" />
     <Content Include="Imagenes\Hopstarter-Soft-Scraps-Clock.ico" />
+    <Content Include="Imagenes\Principal.ico" />
     <Content Include="Imagenes\Recycle Bin Empty.ico" />
     <Content Include="Imagenes\Recycle Bin Full.ico" />
     <Content Include="Imagenes\Save.ico" />

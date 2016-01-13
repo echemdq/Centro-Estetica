@@ -66,7 +66,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmSeguimiento";
-            this.Text = "frmSeguimiento";
+            this.Text = "Seguimientos";
             this.Load += new System.EventHandler(this.frmSeguimiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

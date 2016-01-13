@@ -44,11 +44,11 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button1 = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape2 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape3 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape4 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape5 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape4 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape3 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape2 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -178,29 +178,13 @@
             this.shapeContainer1.TabIndex = 3;
             this.shapeContainer1.TabStop = false;
             // 
-            // ovalShape1
+            // ovalShape5
             // 
-            this.ovalShape1.BackColor = System.Drawing.Color.White;
-            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape1.Location = new System.Drawing.Point(974, 260);
-            this.ovalShape1.Name = "ovalShape1";
-            this.ovalShape1.Size = new System.Drawing.Size(50, 20);
-            // 
-            // ovalShape2
-            // 
-            this.ovalShape2.BackColor = System.Drawing.Color.LightBlue;
-            this.ovalShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape2.Location = new System.Drawing.Point(974, 287);
-            this.ovalShape2.Name = "ovalShape2";
-            this.ovalShape2.Size = new System.Drawing.Size(50, 20);
-            // 
-            // ovalShape3
-            // 
-            this.ovalShape3.BackColor = System.Drawing.Color.Red;
-            this.ovalShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape3.Location = new System.Drawing.Point(974, 314);
-            this.ovalShape3.Name = "ovalShape3";
-            this.ovalShape3.Size = new System.Drawing.Size(50, 20);
+            this.ovalShape5.BackColor = System.Drawing.Color.Blue;
+            this.ovalShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape5.Location = new System.Drawing.Point(974, 342);
+            this.ovalShape5.Name = "ovalShape5";
+            this.ovalShape5.Size = new System.Drawing.Size(50, 20);
             // 
             // ovalShape4
             // 
@@ -210,18 +194,34 @@
             this.ovalShape4.Name = "ovalShape4";
             this.ovalShape4.Size = new System.Drawing.Size(50, 20);
             // 
-            // ovalShape5
+            // ovalShape3
             // 
-            this.ovalShape5.BackColor = System.Drawing.Color.Blue;
-            this.ovalShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape5.Location = new System.Drawing.Point(974, 342);
-            this.ovalShape5.Name = "ovalShape5";
-            this.ovalShape5.Size = new System.Drawing.Size(50, 20);
+            this.ovalShape3.BackColor = System.Drawing.Color.Red;
+            this.ovalShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape3.Location = new System.Drawing.Point(974, 314);
+            this.ovalShape3.Name = "ovalShape3";
+            this.ovalShape3.Size = new System.Drawing.Size(50, 20);
+            // 
+            // ovalShape2
+            // 
+            this.ovalShape2.BackColor = System.Drawing.Color.LightBlue;
+            this.ovalShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape2.Location = new System.Drawing.Point(974, 287);
+            this.ovalShape2.Name = "ovalShape2";
+            this.ovalShape2.Size = new System.Drawing.Size(50, 20);
+            // 
+            // ovalShape1
+            // 
+            this.ovalShape1.BackColor = System.Drawing.Color.White;
+            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape1.Location = new System.Drawing.Point(974, 260);
+            this.ovalShape1.Name = "ovalShape1";
+            this.ovalShape1.Size = new System.Drawing.Size(50, 20);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1065, 263);
+            this.label1.Location = new System.Drawing.Point(1040, 263);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 4;
@@ -230,7 +230,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1065, 291);
+            this.label2.Location = new System.Drawing.Point(1040, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 13);
             this.label2.TabIndex = 5;
@@ -239,7 +239,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1065, 319);
+            this.label3.Location = new System.Drawing.Point(1040, 319);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 13);
             this.label3.TabIndex = 6;
@@ -248,7 +248,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1065, 348);
+            this.label4.Location = new System.Drawing.Point(1040, 348);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 13);
             this.label4.TabIndex = 7;
@@ -257,7 +257,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1065, 375);
+            this.label5.Location = new System.Drawing.Point(1040, 375);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 8;
@@ -278,7 +278,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.shapeContainer1);
             this.Name = "frmTurnero";
-            this.Text = "frmTurnero";
+            this.Text = "Turnero";
             this.Load += new System.EventHandler(this.frmTurnero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);

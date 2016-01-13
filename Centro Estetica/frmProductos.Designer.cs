@@ -280,7 +280,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
             this.Name = "frmProductos";
-            this.Text = "frmProductos";
+            this.Text = "ABM Productos";
             ((System.ComponentModel.ISupportInitialize)(this.txtSesiones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

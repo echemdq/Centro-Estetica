@@ -940,7 +940,7 @@
 		<row><td>InstallChangeFolder</td><td>Up</td><td>DirectoryListUp</td><td>0</td><td>1</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>Display_IsBitmapDlg</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
-		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>1</td><td>0</td></row>
+		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>DestinationFolder</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>DoAction</td><td>ISPrint</td><td>1</td><td>0</td></row>
@@ -975,7 +975,7 @@
 		<row><td>ReadmeInformation</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>1</td></row>
 		<row><td>ReadmeInformation</td><td>Next</td><td>NewDialog</td><td>CustomerInformation</td><td>1</td><td>1</td></row>
 		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>CustomSetup</td><td>Installed OR _IsSetupTypeMin = "Custom"</td><td>2</td></row>
-		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>NOT Installed</td><td>1</td></row>
+		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>DestinationFolder</td><td>NOT Installed</td><td>1</td></row>
 		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>MaintenanceType</td><td>Installed AND _IsMaintenance = "Reinstall"</td><td>3</td></row>
 		<row><td>ReadyToInstall</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>ReadyToInstall</td><td>InstallNow</td><td>EndDialog</td><td>Return</td><td>OutOfNoRbDiskSpace &lt;&gt; 1</td><td>0</td></row>
@@ -1177,7 +1177,7 @@
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>fvsist_1_fv_sistemas</td><td>ProgramMenuFolder</td><td>fvsist~1|fv sistemas</td><td/><td>1</td><td/></row>
-		<row><td>gestion_centro_estetica</td><td>fvsist_1_fv_sistemas</td><td>GESTIO~1|gestion centro estetica</td><td/><td>1</td><td/></row>
+		<row><td>gestion_centro_estetica</td><td>fvsist_1_fv_sistemas</td><td>CENTRO~1|Centro Estetica</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1903,6 +1903,7 @@
 	<table name="ISAssistantTag">
 		<col key="yes" def="s72">Tag</col>
 		<col def="S255">Data</col>
+		<row><td>NewShortcut1</td><td/></row>
 		<row><td>PROJECT_ASSISTANT_DEFAULT_FEATURE</td><td>AlwaysInstall</td></row>
 	</table>
 
@@ -2621,7 +2622,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1621387639</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1755632746</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1621373335</td></row>
@@ -3728,12 +3729,13 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1621369207</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>1621371255</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>http://www.FVSistemas.com</td><td>0</td><td/><td>1621387639</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1621387639</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.FVSistemas.com</td><td>0</td><td/><td>1755632746</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>FV Sistemas</td><td>0</td><td/><td>1755632746</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td/><td>0</td><td/><td>1621361143</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>LAUNCH~1.EXE|Launch Centro Estetica.exe</td><td>0</td><td/><td>1621363543</td></row>
 		<row><td>ID_STRING6</td><td>1033</td><td>GESTIO~1|Gestion Centro de Estetica</td><td>0</td><td/><td>1621378103</td></row>
 		<row><td>ID_STRING7</td><td>1033</td><td>GESTIO~1|Gestion Centro de Estetica</td><td>0</td><td/><td>1621382199</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td>GESTIO~1|Gestion Centro de Estetica</td><td>0</td><td/><td>1755583626</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1621369207</td></row>
 	</table>
 
@@ -3852,7 +3854,8 @@
 		<row><td>Centro_Estetica.ex_AE8468A506074B87BA64C543077BBC2F.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>Centro_Estetica.ex_C743C098B7DA40329906FDFA08E6D46D.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>Centro_Estetica.vs_94D087C9FC1B4D1786C1D186EF136682.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
-		<row><td>UNINST_Uninstall_G_A478C603D9EF4E5B988F2AC60E64B547.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
+		<row><td>NewShortcut111_7302231C5C014CB4934123A7C2D724D2.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Centro Estetica\Imagenes\Principal.ico</td><td>0</td></row>
+		<row><td>NewShortcut11_3FA50EFCB7D247D5B3624C3D7A21B3CC.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Centro Estetica\Imagenes\Principal.ico</td><td>0</td></row>
 		<row><td>UNINST_Uninstall_G_E7F9305E1AAB4EB8874B83BEFC58017F.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 	</table>
 
@@ -3986,7 +3989,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{4A733F15-CA45-4A4E-944E-2729033BFAC9}</td></row>
 		<row><td>ISUSSignature</td><td>{77BA784B-4EBE-4EDB-A33D-8D9B90DD68D6}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewShortcuts,viewAppFiles</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewShortcuts,viewAppFiles,viewISToday</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4440,7 +4443,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>NewShortcut1</td><td>Centro_Estetica.Resultado_principal</td><td/><td>gestion_centro_estetica</td><td>2</td></row>
+		<row><td>NewShortcut111</td><td>Centro_Estetica.Resultado_principal</td><td/><td>gestion_centro_estetica</td><td>2</td></row>
 		<row><td>UNINST_Uninstall_Gestion_Centro_Estetica</td><td>IS_ININSTALL_SHORTCUT</td><td/><td>gestion_centro_estetica</td><td>2</td></row>
 	</table>
 
@@ -4527,10 +4530,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>NewShortcut1</td><td>gestion_centro_estetica</td><td>##ID_STRING6##</td><td>Centro_Estetica.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td/><td/><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>NewShortcut11</td><td>DesktopFolder</td><td>##ID_STRING6##</td><td>Centro_Estetica.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td/><td/><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut11</td><td>DesktopFolder</td><td>##ID_STRING6##</td><td>Centro_Estetica.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut11_3FA50EFCB7D247D5B3624C3D7A21B3CC.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut111</td><td>gestion_centro_estetica</td><td>##ID_STRING6##</td><td>Centro_Estetica.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut111_7302231C5C014CB4934123A7C2D724D2.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>UNINST_Uninstall_Gestion_Centro_Estetica</td><td>gestion_centro_estetica</td><td>UNINST|Uninstall Gestion Centro Estetica</td><td>IS_ININSTALL_SHORTCUT</td><td>[SystemFolder]msiexec.exe</td><td>/x {08967837-1C51-4B61-ADF1-2C7738CA11CD}</td><td/><td/><td>UNINST_Uninstall_G_E7F9305E1AAB4EB8874B83BEFC58017F.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>UNINST_Uninstall_Gestion_Centro_Estetica1</td><td>DesktopFolder</td><td>UNINST|Uninstall Gestion Centro Estetica</td><td>IS_ININSTALL_SHORTCUT</td><td>[SystemFolder]msiexec.exe</td><td>/x {08967837-1C51-4B61-ADF1-2C7738CA11CD}</td><td/><td/><td>UNINST_Uninstall_G_A478C603D9EF4E5B988F2AC60E64B547.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

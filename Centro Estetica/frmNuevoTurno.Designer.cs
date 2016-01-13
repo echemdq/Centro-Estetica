@@ -361,7 +361,7 @@
             this.Controls.Add(this.txtProfesional);
             this.Controls.Add(this.label1);
             this.Name = "frmNuevoTurno";
-            this.Text = "frmNuevoTurno";
+            this.Text = "Nuevo Turno";
             this.Load += new System.EventHandler(this.frmNuevoTurno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

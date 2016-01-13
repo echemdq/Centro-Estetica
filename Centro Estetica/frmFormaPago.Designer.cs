@@ -232,7 +232,7 @@
             this.Controls.Add(this.cmbFormaPago);
             this.Name = "frmFormaPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmFormaPago";
+            this.Text = "Forma de Pago";
             this.Load += new System.EventHandler(this.frmFormaPago_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -90,7 +90,7 @@
             this.Controls.Add(this.txtPaciente);
             this.Controls.Add(this.label1);
             this.Name = "frmBuscaProfesionales";
-            this.Text = "frmBuscaProfesionales";
+            this.Text = "Buscar Profesionales";
             this.Load += new System.EventHandler(this.frmBuscaProfesionales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -131,7 +131,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbRubros);
             this.Name = "frmSubrubrosProf";
-            this.Text = "frmSubrubrosProf";
+            this.Text = "Subrubros Profesionales";
             this.Activated += new System.EventHandler(this.frmSubrubrosProf_Activated);
             this.Load += new System.EventHandler(this.frmSubrubrosProf_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
