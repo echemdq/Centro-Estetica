@@ -43,12 +43,6 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button1 = new System.Windows.Forms.Button();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.ovalShape5 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape4 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape3 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape2 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -163,61 +157,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.ovalShape5,
-            this.ovalShape4,
-            this.ovalShape3,
-            this.ovalShape2,
-            this.ovalShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(1235, 419);
-            this.shapeContainer1.TabIndex = 3;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // ovalShape5
-            // 
-            this.ovalShape5.BackColor = System.Drawing.Color.Blue;
-            this.ovalShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape5.Location = new System.Drawing.Point(974, 342);
-            this.ovalShape5.Name = "ovalShape5";
-            this.ovalShape5.Size = new System.Drawing.Size(50, 20);
-            // 
-            // ovalShape4
-            // 
-            this.ovalShape4.BackColor = System.Drawing.Color.Green;
-            this.ovalShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape4.Location = new System.Drawing.Point(974, 370);
-            this.ovalShape4.Name = "ovalShape4";
-            this.ovalShape4.Size = new System.Drawing.Size(50, 20);
-            // 
-            // ovalShape3
-            // 
-            this.ovalShape3.BackColor = System.Drawing.Color.Red;
-            this.ovalShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape3.Location = new System.Drawing.Point(974, 314);
-            this.ovalShape3.Name = "ovalShape3";
-            this.ovalShape3.Size = new System.Drawing.Size(50, 20);
-            // 
-            // ovalShape2
-            // 
-            this.ovalShape2.BackColor = System.Drawing.Color.LightBlue;
-            this.ovalShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape2.Location = new System.Drawing.Point(974, 287);
-            this.ovalShape2.Name = "ovalShape2";
-            this.ovalShape2.Size = new System.Drawing.Size(50, 20);
-            // 
-            // ovalShape1
-            // 
-            this.ovalShape1.BackColor = System.Drawing.Color.White;
-            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape1.Location = new System.Drawing.Point(974, 260);
-            this.ovalShape1.Name = "ovalShape1";
-            this.ovalShape1.Size = new System.Drawing.Size(50, 20);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -276,7 +215,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.shapeContainer1);
             this.Name = "frmTurnero";
             this.Text = "Turnero";
             this.Load += new System.EventHandler(this.frmTurnero_Load);
@@ -304,12 +242,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem liberaTurnoToolStripMenuItem;
         private System.Windows.Forms.Button button1;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape5;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape4;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape3;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape2;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
