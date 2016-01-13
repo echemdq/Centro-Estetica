@@ -158,12 +158,19 @@ namespace Centro_Estetica
         {
             try
             {
-                frmBuscaProductos frm = new frmBuscaProductos();
-                frm.ShowDialog();
-                prod = frm.u;
-                if (prod != null)
+                if (u != null)
                 {
-                    txtProducto.Text = prod.Detalle;
+                    frmBuscaProductos frm = new frmBuscaProductos();
+                    frm.ShowDialog();
+                    prod = frm.u;
+                    if (prod != null)
+                    {
+                        txtProducto.Text = prod.Detalle;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Para seleccionar un servicio debe elegir primero un paciente");
                 }
             }
             catch (Exception ex)

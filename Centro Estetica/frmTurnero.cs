@@ -515,5 +515,11 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmFactura frm = new frmFactura();
+            frm.ShowDialog();
+        }
     }
 }

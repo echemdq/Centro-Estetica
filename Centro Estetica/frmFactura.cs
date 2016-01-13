@@ -24,12 +24,14 @@ namespace Centro_Estetica
 
         private void frmFactura_Load(object sender, EventArgs e)
         {
-            dataGridView1.ColumnCount = 4;
+            dataGridView1.ColumnCount = 5;
             dataGridView1.Columns[0].Name = "idfacturacion";
             dataGridView1.Columns[1].Name = "Detalle";
             dataGridView1.Columns[2].Name = "Cantidad";
             dataGridView1.Columns[3].Name = "Precio";
+            dataGridView1.Columns[4].Name = "idproducto";
             dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[4].Visible = false;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -151,11 +153,12 @@ namespace Centro_Estetica
                             dataGridView1.Rows[x].Cells[1].Value = fa.P.Detalle;
                             dataGridView1.Rows[x].Cells[2].Value = fa.Cantidad;
                             dataGridView1.Rows[x].Cells[3].Value = fa.P.Precioventa * fa.Cantidad;
+                            dataGridView1.Rows[x].Cells[4].Value = fa.P.Idproductos;
                             decimal precio1 = fa.P.Precioventa * fa.Cantidad;
                             x++;
                             precio = precio + precio1;
                         }
-                        label9.Text = precio.ToString();
+                        lbltotal.Text = precio.ToString();
                     }
                 }
                 prod = null;
@@ -174,14 +177,66 @@ namespace Centro_Estetica
         private void button3_Click(object sender, EventArgs e)
         {
             int fila = dataGridView1.CurrentRow.Index;
-
+            decimal precio = 0;
             if (dataGridView1.Rows[fila].Cells[1].Value.ToString() != "")
             {
                 DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el producto: " + dataGridView1.Rows[fila].Cells[1].Value.ToString(), "Eliminar producto de facturacion", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-
+                    int flag = 0;
+                    Facturacion fa = new Facturacion(0, null, 0);
+                    foreach (Facturacion fe in listaf)
+                    {
+                        if (fe.P.Idproductos == Convert.ToInt32(dataGridView1.Rows[fila].Cells[4].Value))
+                        {
+                            flag = 1;
+                            fa = fe;
+                            break;
+                        }
+                    }
+                    if (flag == 1)
+                    {
+                        listaf.Remove(fa);
+                    }
+                    dataGridView1.Rows.Clear();
+                    int x = 0;
+                    if (listaf.Count > 0)
+                    {
+                        dataGridView1.Rows.Add(listaf.Count());
+                        foreach (Facturacion fac in listaf)
+                        {
+                            dataGridView1.Rows[x].Cells[0].Value = fac.Idfacturacion;
+                            dataGridView1.Rows[x].Cells[1].Value = fac.P.Detalle;
+                            dataGridView1.Rows[x].Cells[2].Value = fac.Cantidad;
+                            dataGridView1.Rows[x].Cells[3].Value = fac.P.Precioventa * fac.Cantidad;
+                            dataGridView1.Rows[x].Cells[4].Value = fac.P.Idproductos;
+                            decimal precio1 = fac.P.Precioventa * fac.Cantidad;
+                            x++;
+                            precio = precio + precio1;
+                        }
+                        lbltotal.Text = precio.ToString();
+                    }
                 }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int idpaciente = 0;
+                if(pac != null)
+                {
+                    idpaciente = pac.Idpacientes;
+                }
+                Factura f = new Factura(0, DateTime.Now, idpaciente, txtPaciente.Text, txtDomicilio.Text, txtDocumento.Text, txtLocalidad.Text, Convert.ToDecimal(lbltotal.Text),0,0);
+                frmFormaPago frm = new frmFormaPago(f, listaf);
+                frm.ShowDialog();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

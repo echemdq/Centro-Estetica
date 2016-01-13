@@ -56,5 +56,6 @@ namespace Centro_Estetica
             frmFactura frm = new frmFactura();
             frm.Show();
         }
+
     }
 }

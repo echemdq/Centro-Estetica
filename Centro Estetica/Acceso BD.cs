@@ -69,9 +69,9 @@ namespace Centro_Estetica
 
         public void buscarEnXML()
         {
+            XDocument miXML = XDocument.Load(@"C:\Program Files\FV Sistemas\Gestion Centro Estetica\MiDoc.xml");
 
-            XDocument miXML = XDocument.Load(@"C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\MiDoc.xml");
-
+            
 
             var server1 = from nombre in miXML.Elements("Servers").Elements("Server")
                           where nombre.Attribute("Id_Server").Value == "1"
