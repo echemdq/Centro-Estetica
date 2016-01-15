@@ -25,11 +25,13 @@ namespace Centro_Estetica
 
         private void frmTurnero_Load(object sender, EventArgs e)
         {
+            label6.Text = "Dia Seleccionado: "+monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy");
             cargagrilla();
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
+            label6.Text = "Dia Seleccionado: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy");
             dataGridView1.Rows.Clear();
             cargagrilla();
         }
@@ -416,7 +418,7 @@ namespace Centro_Estetica
                                 }
 
                                 oacceso.ActualizarBD("insert into turnosuspendidos (idprofesionales, dia, hora) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "')");
-                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Suspende turno fijo por el dia','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Suspende turno fijo por el dia del Cliente: '"+dataGridView1.Rows[ro].Cells[col].Value.ToString()+",'0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                                 MessageBox.Show("Turno Fijo Suspendido Correctamente");
                                 dataGridView1.Rows.Clear();
                                 cargagrilla();
@@ -495,7 +497,7 @@ namespace Centro_Estetica
                             if (idturnos != 0)
                             {
                                 oacceso.ActualizarBD("delete from turnos where idturnos ='" + idturnos + "'");
-                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera Turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera Turno del Cliente: '" + dataGridView1.Rows[ro].Cells[col].Value.ToString() + ",'0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                                 MessageBox.Show("Turno liberado Correctamente");
                                 dataGridView1.Rows.Clear();
                                 cargagrilla();

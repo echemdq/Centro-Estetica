@@ -109,7 +109,7 @@ namespace Centro_Estetica
         {
             dataGridView1.ColumnCount = 12;
             dataGridView1.Columns[0].Name = "idpaciente";
-            dataGridView1.Columns[1].Name = "Paciente";
+            dataGridView1.Columns[1].Name = "Cliente";
             dataGridView1.Columns[2].Name = "Tipo Doc";
             dataGridView1.Columns[3].Name = "Documento";
             dataGridView1.Columns[4].Name = "Domicilio";

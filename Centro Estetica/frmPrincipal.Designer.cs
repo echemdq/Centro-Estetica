@@ -142,14 +142,14 @@
             this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMPacientesToolStripMenuItem});
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.pacientesToolStripMenuItem.Text = "Pacientes";
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.pacientesToolStripMenuItem.Text = "Clientes";
             // 
             // aBMPacientesToolStripMenuItem
             // 
             this.aBMPacientesToolStripMenuItem.Name = "aBMPacientesToolStripMenuItem";
-            this.aBMPacientesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.aBMPacientesToolStripMenuItem.Text = "ABM Pacientes";
+            this.aBMPacientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aBMPacientesToolStripMenuItem.Text = "ABM Clientes";
             this.aBMPacientesToolStripMenuItem.Click += new System.EventHandler(this.aBMPacientesToolStripMenuItem_Click);
             // 
             // turnosToolStripMenuItem

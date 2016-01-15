@@ -145,7 +145,7 @@ namespace Centro_Estetica
                 }
                 else
                 {
-                    MessageBox.Show("Debe completar el campo detalle o seleccionar un paciente");
+                    MessageBox.Show("Debe completar el campo detalle o seleccionar un Cliente");
                 }
             }
             catch(Exception ex)
@@ -170,7 +170,7 @@ namespace Centro_Estetica
                 }
                 else
                 {
-                    MessageBox.Show("Para seleccionar un servicio debe elegir primero un paciente");
+                    MessageBox.Show("Para seleccionar un servicio debe elegir primero un Cliente");
                 }
             }
             catch (Exception ex)

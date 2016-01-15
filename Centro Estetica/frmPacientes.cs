@@ -226,20 +226,20 @@ namespace Centro_Estetica
                     if (lblId.Text == "")
                     {
                         cpac.Agregar(r);
-                        MessageBox.Show("Paciente guardado correctamente");
+                        MessageBox.Show("Cliente guardado correctamente");
                     }
                     else
                     {
                         r.Idpacientes = Convert.ToInt32(lblId.Text);
                         cpac.Modificar(r);
-                        MessageBox.Show("Paciente modificado correctamente");
+                        MessageBox.Show("Cliente modificado correctamente");
                     }
                     limpiar();
                     deshabilitar();
                 }
                 else
                 {
-                    MessageBox.Show("Debe completar el nombre y apellido del paciente");
+                    MessageBox.Show("Debe completar el nombre y apellido del Cliente");
                 }
             }
             catch (Exception ex)
@@ -303,18 +303,18 @@ namespace Centro_Estetica
                 if (lblId.Text != "")
                 {
                     Pacientes r = new Pacientes(Convert.ToInt32(lblId.Text), "", "", "", "", "", null, "", 0, "", "");
-                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el paciente: " +txtPaciente.Text, "Eliminar Paciente", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el Cliente: " + txtPaciente.Text, "Eliminar Cliente", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
                         cpac.Borrar(r);
                         limpiar();
                         deshabilitar();
-                        MessageBox.Show("Paciente eliminado correctamente");
+                        MessageBox.Show("Cliente eliminado correctamente");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Debe seleccionar un Paciente para eliminarlo");
+                    MessageBox.Show("Debe seleccionar un Cliente para eliminarlo");
                 }
             }
             catch (Exception ex)
