@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acceso BD.cs" />
+    <Compile Include="BdEsperas.cs" />
     <Compile Include="BdFacturacion.cs" />
     <Compile Include="BdHonorarios.cs" />
     <Compile Include="BdHorariosProfesionales.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="BdSubrubrosProf.cs" />
     <Compile Include="BdTipoDoc.cs" />
     <Compile Include="BdTurnos.cs" />
+    <Compile Include="ControladoraEsperas.cs" />
     <Compile Include="ControladoraFacturacion.cs" />
     <Compile Include="ControladoraHonorarios.cs" />
     <Compile Include="ControladoraHorariosProfesionales.cs" />
@@ -101,6 +103,7 @@
     <Compile Include="ControladoraSubrubrosProf.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
     <Compile Include="ControladoraTurnos.cs" />
+    <Compile Include="Esperas.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="Facturacion.cs" />
     <Compile Include="frmBuscaPacientes.cs">
@@ -120,6 +123,12 @@
     </Compile>
     <Compile Include="frmBuscaProfesionales.Designer.cs">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEsperas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEsperas.Designer.cs">
+      <DependentUpon>frmEsperas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFactura.cs">
       <SubType>Form</SubType>
@@ -230,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscaProfesionales.resx">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEsperas.resx">
+      <DependentUpon>frmEsperas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFactura.resx">
       <DependentUpon>frmFactura.cs</DependentUpon>

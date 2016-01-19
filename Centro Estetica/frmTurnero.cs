@@ -15,6 +15,7 @@ namespace Centro_Estetica
         ControladoraProfesionales controlp = new ControladoraProfesionales();
         ControladoraSeguimientos controls = new ControladoraSeguimientos();
         Acceso_BD oacceso = new Acceso_BD();
+        ControladoraEsperas controle = new ControladoraEsperas();
         List<grilla> laux = null;
         grilla gri;
         int ro = 0; int col = 0;
@@ -25,6 +26,9 @@ namespace Centro_Estetica
 
         private void frmTurnero_Load(object sender, EventArgs e)
         {
+            dataGridView2.DataSource = controle.BuscarEspecial(DateTime.Now.ToString("yyyy-MM-dd"));
+            dataGridView2.Columns[4].Visible = false;
+            dataGridView2.Columns[0].Visible = false;
             label6.Text = "Dia Seleccionado: "+monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy");
             cargagrilla();
         }
@@ -552,6 +556,15 @@ namespace Centro_Estetica
                 dataGridView1.Rows.Clear();
                 cargagrilla();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmEsperas frm = new frmEsperas();
+            frm.ShowDialog();
+            dataGridView2.DataSource = controle.BuscarEspecial(DateTime.Now.ToString("yyyy-MM-dd"));
+            dataGridView2.Columns[4].Visible = false;
+            dataGridView2.Columns[0].Visible = false;
         }
     }
 }
