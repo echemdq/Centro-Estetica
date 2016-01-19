@@ -43,7 +43,7 @@ namespace Centro_Estetica
                         }
                         else
                         {
-                            d2 += " and profesional like '%" + d1 + "%' ";
+                            d2 += " and detalle like '%" + d1 + "%' ";
                         }
                         a = false;
                     }
@@ -64,7 +64,7 @@ namespace Centro_Estetica
                             }
                             else
                             {
-                                d2 += " and profesional like '%" + d1 + "%' ";
+                                d2 += " and detalle like '%" + d1 + "%' ";
 
                             }
                         }

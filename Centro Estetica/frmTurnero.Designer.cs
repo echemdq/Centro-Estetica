@@ -40,7 +40,6 @@
             this.deshabilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.seguimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,6 +53,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.asignarGabineteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -84,9 +86,11 @@
             this.habilitaHoraToolStripMenuItem,
             this.deshabilitaHoraToolStripMenuItem,
             this.toolStripSeparator1,
-            this.seguimientoToolStripMenuItem});
+            this.seguimientoToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.asignarGabineteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 154);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 182);
             // 
             // nuevoTurnoToolStripMenuItem
             // 
@@ -278,6 +282,18 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "label6";
             // 
+            // asignarGabineteToolStripMenuItem
+            // 
+            this.asignarGabineteToolStripMenuItem.Name = "asignarGabineteToolStripMenuItem";
+            this.asignarGabineteToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.asignarGabineteToolStripMenuItem.Text = "Asignar Gabinete";
+            this.asignarGabineteToolStripMenuItem.Click += new System.EventHandler(this.asignarGabineteToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(183, 6);
+            // 
             // frmTurnero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,6 +314,7 @@
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmTurnero";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Turnero";
             this.Load += new System.EventHandler(this.frmTurnero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -335,5 +352,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem asignarGabineteToolStripMenuItem;
     }
 }

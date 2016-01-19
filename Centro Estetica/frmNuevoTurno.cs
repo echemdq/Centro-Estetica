@@ -36,13 +36,24 @@ namespace Centro_Estetica
         {
             if (chkFijo.Checked)
             {
-                rbQuincenal.Enabled = true;
-                rbSemanal.Enabled = true;
-            }
-            else
-            {
-                rbQuincenal.Enabled = false;
-                rbSemanal.Enabled = false;
+                if (u != null)
+                {
+                    if (chkFijo.Checked)
+                    {
+                        rbQuincenal.Enabled = true;
+                        rbSemanal.Enabled = true;
+                    }
+                    else
+                    {
+                        rbQuincenal.Enabled = false;
+                        rbSemanal.Enabled = false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Para seleccionar esta opcion debe buscar previamente un Cliente");
+                    chkFijo.Checked = false;
+                }
             }
         }
 

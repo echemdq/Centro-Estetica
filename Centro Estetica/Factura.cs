@@ -36,8 +36,15 @@ namespace Centro_Estetica
         }
         string localidad;
         decimal total;
+        decimal bonif;
 
-        public Factura(int i, DateTime f, int idp, string de, string dom, string docu, string lo, decimal t, int punto, int num)
+        public decimal Bonif
+        {
+            get { return bonif; }
+            set { bonif = value; }
+        }
+
+        public Factura(int i, DateTime f, int idp, string de, string dom, string docu, string lo, decimal t, int punto, int num, decimal b)
         {
             ptoventa = punto;
             numerofact = num;
@@ -49,6 +56,7 @@ namespace Centro_Estetica
             localidad = lo;
             total = t;
             documento = docu;
+            bonif = b;
         }
     
         public decimal Total

@@ -14,6 +14,7 @@ namespace Centro_Estetica
     {
         List<Facturacion> listaf = new List<Facturacion>();
         Productos prod = null;
+        decimal total = 0;
         Pacientes pac = null;
         ControladoraProductos controlprod = new ControladoraProductos();
         ControladoraPacientes controlpac = new ControladoraPacientes();
@@ -158,7 +159,12 @@ namespace Centro_Estetica
                             x++;
                             precio = precio + precio1;
                         }
+                        if (txtBonificacion.Text != "")
+                        {
+                            precio = precio - Convert.ToDecimal(txtBonificacion.Text);
+                        }
                         lbltotal.Text = precio.ToString();
+                        total = precio;
                     }
                 }
                 prod = null;
@@ -229,7 +235,12 @@ namespace Centro_Estetica
                 {
                     idpaciente = pac.Idpacientes;
                 }
-                Factura f = new Factura(0, DateTime.Now, idpaciente, txtPaciente.Text, txtDomicilio.Text, txtDocumento.Text, txtLocalidad.Text, Convert.ToDecimal(lbltotal.Text),0,0);
+                decimal bonif = 0;
+                if (txtBonificacion.Text != "")
+                {
+                    bonif = Convert.ToDecimal(txtBonificacion.Text.Replace('.', ','));
+                }
+                Factura f = new Factura(0, DateTime.Now, idpaciente, txtPaciente.Text, txtDomicilio.Text, txtDocumento.Text, txtLocalidad.Text, Convert.ToDecimal(lbltotal.Text),0,0,bonif);
                 frmFormaPago frm = new frmFormaPago(f, listaf);
                 frm.ShowDialog();
                 this.Close();
@@ -237,6 +248,64 @@ namespace Centro_Estetica
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtBonificacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == (char)(Keys.Enter))
+                {
+                    e.Handled = true;
+                    SendKeys.Send("{TAB}");
+                }
+                if (e.KeyChar == 8)
+                {
+                    e.Handled = false;
+                    return;
+                }
+
+                bool IsDec = false;
+                int nroDec = 0;
+
+                for (int i = 0; i < txtBonificacion.Text.Length; i++)
+                {
+                    if (txtBonificacion.Text[i] == '.')
+                        IsDec = true;
+
+                    if (IsDec && nroDec++ >= 2)
+                    {
+                        e.Handled = true;
+                        return;
+                    }
+                }
+
+                if (e.KeyChar >= 48 && e.KeyChar <= 57)
+                    e.Handled = false;
+                else if (e.KeyChar == 46)
+                    e.Handled = (IsDec) ? true : false;
+                else
+                    e.Handled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void txtBonificacion_TextChanged(object sender, EventArgs e)
+        {
+            decimal precio = total;
+            if (txtBonificacion.Text != "" && total > 0)
+            {
+                precio = precio - Convert.ToDecimal(txtBonificacion.Text.Replace('.',','));
+                lbltotal.Text = precio.ToString();
+            }
+            else
+            {
+                lbltotal.Text = total.ToString();
             }
         }
     }

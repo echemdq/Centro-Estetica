@@ -11,7 +11,7 @@ namespace Centro_Estetica
         Acceso_BD oacceso = new Acceso_BD();
         public void Agregar(Factura dato, List<Facturacion> dato1, TipoFormasPago dato2)
         {
-            DataTable dt = oacceso.leerDatos("insert into facturacion (fecha,idpaciente,detalle,domicilio,documento,localidad,total,ptoventa,factura) values ('" + dato.Fecha.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dato.Idpaciente + "','" + dato.Detalle + "','" + dato.Domicilio + "','" + dato.Documento + "','" + dato.Localidad + "','" + dato.Total.ToString().Replace(',', '.') + "','"+dato.Ptoventa+"','"+dato.Numerofact+"'); select max(idfacturacion) as idfactura from facturacion");
+            DataTable dt = oacceso.leerDatos("insert into facturacion (fecha,idpaciente,detalle,domicilio,documento,localidad,total,ptoventa,factura,bonificacion) values ('" + dato.Fecha.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dato.Idpaciente + "','" + dato.Detalle + "','" + dato.Domicilio + "','" + dato.Documento + "','" + dato.Localidad + "','" + dato.Total.ToString().Replace(',', '.') + "','" + dato.Ptoventa + "','" + dato.Numerofact + "','" + dato.Bonif.ToString().Replace(',', '.') + "'); select max(idfacturacion) as idfactura from facturacion");
             string idfactura = "";
             foreach (DataRow dr in dt.Rows)
             {

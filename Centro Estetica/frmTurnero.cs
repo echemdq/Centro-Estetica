@@ -418,7 +418,7 @@ namespace Centro_Estetica
                                 }
 
                                 oacceso.ActualizarBD("insert into turnosuspendidos (idprofesionales, dia, hora) values ('" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "')");
-                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Suspende turno fijo por el dia del Cliente: '"+dataGridView1.Rows[ro].Cells[col].Value.ToString()+",'0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Suspende turno fijo por el dia del Cliente: "+dataGridView1.Rows[ro].Cells[col].Value.ToString()+"','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                                 MessageBox.Show("Turno Fijo Suspendido Correctamente");
                                 dataGridView1.Rows.Clear();
                                 cargagrilla();
@@ -467,7 +467,7 @@ namespace Centro_Estetica
                                 }
                             }
                             oacceso.ActualizarBD("delete from turnos where idturnos ='"+idturnos+"'");
-                            oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                            oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera turno del cliente: " + dataGridView1.Rows[ro].Cells[col].Value.ToString() + "','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                             MessageBox.Show("Turno liberado Correctamente");
                             dataGridView1.Rows.Clear();
                             cargagrilla();
@@ -522,6 +522,36 @@ namespace Centro_Estetica
         {
             frmFactura frm = new frmFactura();
             frm.ShowDialog();
+        }
+
+        private void asignarGabineteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (monthCalendar1.SelectionRange.Start == DateTime.Now.Date)
+                {
+                    int idprofesional = 0;
+                    foreach (grilla aux in laux)
+                    {
+                        if (-1 == aux.Fila && col == aux.Columna)
+                        {
+                            idprofesional = Convert.ToInt32(aux.Id);
+                        }
+                    }
+                    string prof = dataGridView1.Columns[col].Name.ToString();
+                    frmGabinete frmq = new frmGabinete(idprofesional, prof);
+                    frmq.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dataGridView1.Rows.Clear();
+                cargagrilla();
+            }
         }
     }
 }

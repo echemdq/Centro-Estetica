@@ -54,6 +54,8 @@
             this.lbltotal = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtBonificacion = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -311,11 +313,35 @@
             this.label9.TabIndex = 89;
             this.label9.Text = "Total:";
             // 
+            // txtBonificacion
+            // 
+            this.txtBonificacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBonificacion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBonificacion.Location = new System.Drawing.Point(59, 350);
+            this.txtBonificacion.Name = "txtBonificacion";
+            this.txtBonificacion.Size = new System.Drawing.Size(70, 21);
+            this.txtBonificacion.TabIndex = 91;
+            this.txtBonificacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBonificacion.TextChanged += new System.EventHandler(this.txtBonificacion_TextChanged);
+            this.txtBonificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBonificacion_KeyPress);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(57, 334);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 13);
+            this.label10.TabIndex = 90;
+            this.label10.Text = "Bonificacion";
+            // 
             // frmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 380);
+            this.Controls.Add(this.txtBonificacion);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lbltotal);
@@ -378,5 +404,7 @@
         private System.Windows.Forms.Label lbltotal;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtBonificacion;
+        private System.Windows.Forms.Label label10;
     }
 }
