@@ -45,6 +45,7 @@
             this.turnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,7 +149,7 @@
             // aBMPacientesToolStripMenuItem
             // 
             this.aBMPacientesToolStripMenuItem.Name = "aBMPacientesToolStripMenuItem";
-            this.aBMPacientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aBMPacientesToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.aBMPacientesToolStripMenuItem.Text = "ABM Clientes";
             this.aBMPacientesToolStripMenuItem.Click += new System.EventHandler(this.aBMPacientesToolStripMenuItem_Click);
             // 
@@ -174,6 +175,16 @@
             this.facturacionToolStripMenuItem.Text = "Facturacion";
             this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(301, 175);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +192,7 @@
             this.BackgroundImage = global::Centro_Estetica.Properties.Resources.Background_Spa;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1219, 640);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -212,6 +224,7 @@
         private System.Windows.Forms.ToolStripMenuItem turnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
 
     }
 }

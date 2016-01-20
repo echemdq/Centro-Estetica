@@ -57,5 +57,11 @@ namespace Centro_Estetica
             frm.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmReport frm = new frmReport();
+            frm.Show();
+        }
+
     }
 }
