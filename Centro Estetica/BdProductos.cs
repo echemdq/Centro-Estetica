@@ -28,7 +28,16 @@ namespace Centro_Estetica
 
         public Productos Buscar(string dato)
         {
-            throw new NotImplementedException();
+            string cmdtext = "select * from productos where idproductos  = '" + dato + "'";
+            DataTable dt = oacceso.leerDatos(cmdtext);
+            Productos usuario = null;
+            foreach (DataRow dr in dt.Rows)
+            {
+                int activo = Convert.ToInt32(dr["activo"]);
+                usuario = new Productos(Convert.ToInt32(dr["idproductos"]), Convert.ToString(dr["detalle"]), Convert.ToDecimal(Convert.ToString(dr["precioventa"]).Replace('.', ',')), Convert.ToInt32(dr["sesiones"]), Convert.ToInt32(dr["stock"]), activo, Convert.ToDecimal(Convert.ToString(dr["preciocalculo"]).Replace('.', ',')));
+                
+            }
+            return usuario;
         }
 
         public List<Productos> BuscarEspecial(string dato)

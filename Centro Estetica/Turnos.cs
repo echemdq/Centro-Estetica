@@ -18,12 +18,12 @@ namespace Centro_Estetica
         string semana;
         string dia;
         string telefono;
-        string producto;
+        string idservicios;
 
-        public string Producto
+        public string Idservicios
         {
-            get { return producto; }
-            set { producto = value; }
+            get { return idservicios; }
+            set { idservicios = value; }
         }
 
         public string Telefono
@@ -87,7 +87,7 @@ namespace Centro_Estetica
             set { idturnos = value; }
         }
 
-        public Turnos(int i, Profesionales p, string h, DateTime f, string pa, string d, string fi, string s, string di, string t, string prod)
+        public Turnos(int i, Profesionales p, string h, DateTime f, string pa, string d, string fi, string s, string di, string t, string idserv)
         {
             idturnos = i;
             profesionales = p;
@@ -99,7 +99,7 @@ namespace Centro_Estetica
             semana = s;
             dia = di;
             telefono = t;
-            producto = prod;
+            idservicios = idserv;
         }
     }
 }

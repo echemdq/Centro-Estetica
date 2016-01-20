@@ -86,6 +86,7 @@
     <Compile Include="BdProfesionales.cs" />
     <Compile Include="BdRubros.cs" />
     <Compile Include="BdSeguimientos.cs" />
+    <Compile Include="BdServicios.cs" />
     <Compile Include="BdSubrubros.cs" />
     <Compile Include="BdSubrubrosProf.cs" />
     <Compile Include="BdTipoDoc.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="ControladoraProfesionales.cs" />
     <Compile Include="ControladoraRubros.cs" />
     <Compile Include="ControladoraSeguimientos.cs" />
+    <Compile Include="ControladoraServicios.cs" />
     <Compile Include="ControladoraSubrubros.cs" />
     <Compile Include="ControladoraSubrubrosProf.cs" />
     <Compile Include="ControladoraTipoDoc.cs" />
@@ -123,6 +125,12 @@
     </Compile>
     <Compile Include="frmBuscaProfesionales.Designer.cs">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaServicio.Designer.cs">
+      <DependentUpon>frmBuscaServicio.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEsperas.cs">
       <SubType>Form</SubType>
@@ -225,6 +233,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rubros.cs" />
     <Compile Include="Seguimientos.cs" />
+    <Compile Include="Servicios.cs" />
     <Compile Include="Subrubros.cs" />
     <Compile Include="SubrubrosProfesionales.cs" />
     <Compile Include="Tarjetas.cs" />
@@ -239,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscaProfesionales.resx">
       <DependentUpon>frmBuscaProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaServicio.resx">
+      <DependentUpon>frmBuscaServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEsperas.resx">
       <DependentUpon>frmEsperas.cs</DependentUpon>

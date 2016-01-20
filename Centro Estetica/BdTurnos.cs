@@ -11,7 +11,14 @@ namespace Centro_Estetica
         Acceso_BD oacceso = new Acceso_BD();
         public void Agregar(Turnos dato)
         {
-            oacceso.ActualizarBD("insert into turnos (idprofesionales, hora, fecha, idpacientes, detalle, fijo, semana, dia, telefono, idproductos) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Hora + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Paciente + "','" + dato.Detalle + "','" + dato.Fijo + "','" + dato.Semana + "','" + dato.Dia + "','" + dato.Telefono + "','" + dato.Producto + "')");
+            if (dato.Idservicios != "")
+            {
+                oacceso.ActualizarBD("insert into turnos (idprofesionales, hora, fecha, idpacientes, detalle, fijo, semana, dia, telefono) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Hora + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Paciente + "','" + dato.Detalle + "','" + dato.Fijo + "','" + dato.Semana + "','" + dato.Dia + "','" + dato.Telefono + "'); insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Idservicios + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Hora + "','"+dato.Paciente+"'); update servicios set usadas = usadas + 1 where idservicios = '" + dato.Idservicios + "'");
+            }
+            else
+            {
+                oacceso.ActualizarBD("insert into turnos (idprofesionales, hora, fecha, idpacientes, detalle, fijo, semana, dia, telefono) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Hora + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Paciente + "','" + dato.Detalle + "','" + dato.Fijo + "','" + dato.Semana + "','" + dato.Dia + "','" + dato.Telefono + "')");
+            }
         }
 
         public List<Turnos> TraerTodos()

@@ -23,7 +23,7 @@ namespace Centro_Estetica
 
         public void Borrar(Esperas dato)
         {
-            throw new NotImplementedException();
+            oacceso.ActualizarBD("delete from esperas where idesperas = '" + dato.Idesperas + "'");
         }
 
         public Esperas Buscar(string dato)

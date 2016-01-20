@@ -18,6 +18,7 @@ namespace Centro_Estetica
         Pacientes pac = null;
         ControladoraProductos controlprod = new ControladoraProductos();
         ControladoraPacientes controlpac = new ControladoraPacientes();
+        ControladoraProfesionales controlprof = new ControladoraProfesionales();
         public frmFactura()
         {
             InitializeComponent();
@@ -45,8 +46,11 @@ namespace Centro_Estetica
                 if (pac != null)
                 {
                     txtPaciente.Text = pac.Paciente;
+                    txtPaciente.Enabled = false;
                     txtDocumento.Text = pac.Documento;
+                    txtDocumento.Enabled = false;
                     txtDomicilio.Text = pac.Domicilio;
+                    txtDomicilio.Enabled = false;
                     button1.Focus();
                 }
             }
@@ -137,12 +141,26 @@ namespace Centro_Estetica
                         }
                         if (flag == 0)
                         {
-                            listaf.Add(f);
+                            if (f.P.Sesiones > 0 && pac != null || f.P.Sesiones == 0)
+                            {
+                                listaf.Add(f);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Debe seleccionar un cliente para facturar un servicio");
+                            }
                         }
                     }
                     else
                     {
-                        listaf.Add(f);
+                        if (f.P.Sesiones > 0 && pac != null || f.P.Sesiones == 0)
+                        {
+                            listaf.Add(f);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Debe seleccionar un cliente para facturar un servicio");
+                        }
                     }
                     int x = 0;
                     if (listaf.Count > 0)
@@ -306,6 +324,53 @@ namespace Centro_Estetica
             else
             {
                 lbltotal.Text = total.ToString();
+            }
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == 13)
+                {
+                    prod = controlprod.Buscar(txtCodigo.Text);
+                    if (prod != null)
+                    {
+                        txtCodigo.Text = prod.Idproductos.ToString();
+                        txtProducto.Text = prod.Detalle;
+                        txtPrecio.Text = prod.Precioventa.ToString();
+                        txtCant.Focus();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == 13)
+                {
+                    Pacientes pac = controlpac.Buscar(txtDocumento.Text);
+                    if (pac != null)
+                    {
+                        txtPaciente.Text = pac.Paciente;
+                        txtPaciente.Enabled = false;
+                        txtDocumento.Text = pac.Documento;
+                        txtDocumento.Enabled = false;
+                        txtDomicilio.Text = pac.Domicilio;
+                        txtDomicilio.Enabled = false;
+                        button1.Focus();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

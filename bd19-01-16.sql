@@ -1,4 +1,6 @@
--- MySQL dump 10.13  Distrib 5.6.17, for Win32 (x86)
+CREATE DATABASE  IF NOT EXISTS `centroestetica` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `centroestetica`;
+-- MySQL dump 10.13  Distrib 5.5.16, for Win32 (x86)
 --
 -- Host: localhost    Database: centroestetica
 -- ------------------------------------------------------
@@ -61,7 +63,7 @@ CREATE TABLE `contador` (
 
 LOCK TABLES `contador` WRITE;
 /*!40000 ALTER TABLE `contador` DISABLE KEYS */;
-INSERT INTO `contador` VALUES (1,3,'factura'),(2,0,'recibo');
+INSERT INTO `contador` VALUES (1,6,'factura'),(2,0,'recibo');
 /*!40000 ALTER TABLE `contador` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,7 +81,7 @@ CREATE TABLE `esperas` (
   `detalle` varchar(150) DEFAULT NULL,
   `fecha` datetime NOT NULL,
   PRIMARY KEY (`idesperas`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +90,6 @@ CREATE TABLE `esperas` (
 
 LOCK TABLES `esperas` WRITE;
 /*!40000 ALTER TABLE `esperas` DISABLE KEYS */;
-INSERT INTO `esperas` VALUES (1,'eze','123','prueba','2016-01-19 00:00:00'),(2,'eze',' ','','2016-01-19 00:00:00'),(3,'eze',' ','','2016-01-19 00:00:00'),(4,'asddd','3211','sadfasdfasf','2016-01-19 00:00:00');
 /*!40000 ALTER TABLE `esperas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,7 +113,7 @@ CREATE TABLE `facturacion` (
   `factura` int(11) DEFAULT '0',
   `bonificacion` decimal(10,2) DEFAULT '0.00',
   PRIMARY KEY (`idfacturacion`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +122,7 @@ CREATE TABLE `facturacion` (
 
 LOCK TABLES `facturacion` WRITE;
 /*!40000 ALTER TABLE `facturacion` DISABLE KEYS */;
-INSERT INTO `facturacion` VALUES (1,'2016-01-18 21:30:32',0,'Consumidor Final','S/Domicilio','','7600 - Mar del Plata',75.00,0,1,0.00),(2,'2016-01-18 21:30:58',0,'Consumidor Final','S/Domicilio','','7600 - Mar del Plata',690.00,0,2,60.00),(3,'2016-01-18 21:39:16',0,'Consumidor Final','S/Domicilio','','7600 - Mar del Plata',155.00,0,3,10.00);
+INSERT INTO `facturacion` VALUES (1,'2016-01-18 21:30:32',0,'Consumidor Final','S/Domicilio','','7600 - Mar del Plata',75.00,0,1,0.00),(2,'2016-01-18 21:30:58',0,'Consumidor Final','S/Domicilio','','7600 - Mar del Plata',690.00,0,2,60.00),(3,'2016-01-18 21:39:16',0,'Consumidor Final','S/Domicilio','','7600 - Mar del Plata',155.00,0,3,10.00),(4,'2016-01-19 19:37:24',1,'eze','asd','231','7600 - Mar del Plata',100.00,0,4,0.00),(5,'2016-01-19 20:46:44',0,'Consumidor Final','S/Domicilio','','7600 - Mar del Plata',100.00,0,5,0.00),(6,'2016-01-19 20:55:47',1,'eze askjdlasjdlkasdsa','asd','','7600 - Mar del Plata',115.00,0,5,0.00),(7,'2016-01-19 20:58:09',1,'eze','asd','231','7600 - Mar del Plata',100.00,0,6,0.00);
 /*!40000 ALTER TABLE `facturacion` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,7 +171,7 @@ CREATE TABLE `formasdepago` (
   KEY `fpfkidtarjetas_idx` (`idtarjetas`),
   CONSTRAINT `fpfkidfacturacion` FOREIGN KEY (`idfacturacion`) REFERENCES `facturacion` (`idfacturacion`) ON UPDATE CASCADE,
   CONSTRAINT `fpfkidformaspago` FOREIGN KEY (`idtipoformaspago`) REFERENCES `tipoformaspago` (`idtipoformaspago`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -179,7 +180,7 @@ CREATE TABLE `formasdepago` (
 
 LOCK TABLES `formasdepago` WRITE;
 /*!40000 ALTER TABLE `formasdepago` DISABLE KEYS */;
-INSERT INTO `formasdepago` VALUES (1,1,1,'','','',75.00),(2,1,2,'','','',690.00),(3,1,3,'','','',155.00);
+INSERT INTO `formasdepago` VALUES (1,1,1,'','','',75.00),(2,1,2,'','','',690.00),(3,1,3,'','','',155.00),(4,1,4,'','','',100.00),(5,1,6,'','','',115.00),(6,1,7,'','','',100.00);
 /*!40000 ALTER TABLE `formasdepago` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -299,7 +300,7 @@ CREATE TABLE `lineafactura` (
   KEY `lffidfact_idx` (`idfacturacion`),
   CONSTRAINT `lffidfact` FOREIGN KEY (`idfacturacion`) REFERENCES `facturacion` (`idfacturacion`) ON UPDATE CASCADE,
   CONSTRAINT `lffkidprod` FOREIGN KEY (`idproductos`) REFERENCES `productos` (`idproductos`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -308,7 +309,7 @@ CREATE TABLE `lineafactura` (
 
 LOCK TABLES `lineafactura` WRITE;
 /*!40000 ALTER TABLE `lineafactura` DISABLE KEYS */;
-INSERT INTO `lineafactura` VALUES (1,1,5,15.00,1,0.00,0),(2,1,50,15.00,2,0.00,0),(3,1,11,15.00,3,0.00,0);
+INSERT INTO `lineafactura` VALUES (1,1,5,15.00,1,0.00,0),(2,1,50,15.00,2,0.00,0),(3,1,11,15.00,3,0.00,0),(4,2,1,100.00,4,75.00,10),(5,2,1,100.00,5,75.00,10),(6,1,1,15.00,6,0.00,0),(7,2,1,100.00,6,75.00,10),(8,2,1,100.00,7,75.00,10);
 /*!40000 ALTER TABLE `lineafactura` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -365,7 +366,7 @@ CREATE TABLE `productos` (
   `activo` int(11) NOT NULL,
   `preciocalculo` decimal(10,2) NOT NULL,
   PRIMARY KEY (`idproductos`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -374,7 +375,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'prueb eze',15.00,0,-66,1,0.00);
+INSERT INTO `productos` VALUES (1,'prueb eze',15.00,0,-67,1,0.00),(2,'masaje',100.00,10,0,1,75.00);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -454,7 +455,7 @@ CREATE TABLE `seguimientos` (
   PRIMARY KEY (`idseguimientos`),
   KEY `sfkidprof_idx` (`idprofesionales`),
   KEY `sfkidturnos_idx` (`idturnos`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -463,7 +464,7 @@ CREATE TABLE `seguimientos` (
 
 LOCK TABLES `seguimientos` WRITE;
 /*!40000 ALTER TABLE `seguimientos` DISABLE KEYS */;
-INSERT INTO `seguimientos` VALUES (1,1,'11:00','2016-01-14 00:00:00','Deshabilitacion Manual de Horario',0,'2016-01-13 16:08:08',0),(2,1,'11:00','2016-01-14 00:00:00','Habilitacion Manual de Horario',0,'2016-01-13 16:08:21',0),(3,1,'16:00','2016-01-14 00:00:00','Habilitacion Manual de Horario',0,'2016-01-13 16:08:28',0),(4,1,'11:00','2016-01-13 00:00:00','Inserta nuevo turno',0,'2016-01-13 19:25:40',0),(5,3,'12:00','2016-02-12 00:00:00','Inserta nuevo turno',0,'2016-01-15 18:16:36',0),(6,3,'12:00','2016-02-12 00:00:00','Libera turno',0,'2016-01-15 18:16:59',0),(7,3,'10:00','2016-01-15 00:00:00','Inserta nuevo turno',0,'2016-01-15 18:19:32',0),(8,3,'10:00','2016-02-26 00:00:00','Suspende turno fijo por el dia del Cliente: eze',0,'2016-01-15 18:21:56',0),(9,3,'08:00','2016-01-15 00:00:00','Inserta nuevo turno',0,'2016-01-15 18:31:18',0),(10,3,'08:00','2016-01-15 00:00:00','Libera turno del cliente: eze',0,'2016-01-15 18:31:24',0);
+INSERT INTO `seguimientos` VALUES (1,1,'11:00','2016-01-14 00:00:00','Deshabilitacion Manual de Horario',0,'2016-01-13 16:08:08',0),(2,1,'11:00','2016-01-14 00:00:00','Habilitacion Manual de Horario',0,'2016-01-13 16:08:21',0),(3,1,'16:00','2016-01-14 00:00:00','Habilitacion Manual de Horario',0,'2016-01-13 16:08:28',0),(4,1,'11:00','2016-01-13 00:00:00','Inserta nuevo turno',0,'2016-01-13 19:25:40',0),(5,3,'12:00','2016-02-12 00:00:00','Inserta nuevo turno',0,'2016-01-15 18:16:36',0),(6,3,'12:00','2016-02-12 00:00:00','Libera turno',0,'2016-01-15 18:16:59',0),(7,3,'10:00','2016-01-15 00:00:00','Inserta nuevo turno',0,'2016-01-15 18:19:32',0),(8,3,'10:00','2016-02-26 00:00:00','Suspende turno fijo por el dia del Cliente: eze',0,'2016-01-15 18:21:56',0),(9,3,'08:00','2016-01-15 00:00:00','Inserta nuevo turno',0,'2016-01-15 18:31:18',0),(10,3,'08:00','2016-01-15 00:00:00','Libera turno del cliente: eze',0,'2016-01-15 18:31:24',0),(11,3,'08:00','2016-01-19 00:00:00','Inserta nuevo turno',0,'2016-01-19 21:32:53',0),(12,3,'09:00','2016-01-19 00:00:00','Inserta nuevo turno',0,'2016-01-19 21:49:42',0);
 /*!40000 ALTER TABLE `seguimientos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -482,6 +483,7 @@ CREATE TABLE `servicios` (
   `usadas` int(11) NOT NULL,
   `idfacturacion` int(11) NOT NULL,
   `idpacientes` int(11) NOT NULL,
+  `fecha` datetime NOT NULL,
   PRIMARY KEY (`idservicios`),
   KEY `sfkidprod_idx` (`idproductos`),
   KEY `sfkidfact_idx` (`idfacturacion`),
@@ -489,7 +491,7 @@ CREATE TABLE `servicios` (
   CONSTRAINT `sfkidfact` FOREIGN KEY (`idfacturacion`) REFERENCES `facturacion` (`idfacturacion`) ON UPDATE CASCADE,
   CONSTRAINT `sfkidpac` FOREIGN KEY (`idpacientes`) REFERENCES `pacientes` (`idpacientes`) ON UPDATE CASCADE,
   CONSTRAINT `sfkidprod` FOREIGN KEY (`idproductos`) REFERENCES `productos` (`idproductos`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -498,7 +500,42 @@ CREATE TABLE `servicios` (
 
 LOCK TABLES `servicios` WRITE;
 /*!40000 ALTER TABLE `servicios` DISABLE KEYS */;
+INSERT INTO `servicios` VALUES (1,2,'masaje',10,0,4,1,'2015-12-19 00:00:00'),(3,2,'masaje',10,2,6,1,'2016-01-19 20:55:47'),(4,2,'masaje',10,0,7,1,'2016-01-19 20:58:09');
 /*!40000 ALTER TABLE `servicios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `serviciosturnos`
+--
+
+DROP TABLE IF EXISTS `serviciosturnos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `serviciosturnos` (
+  `idserviciosturnos` int(11) NOT NULL AUTO_INCREMENT,
+  `idprofesionales` int(11) NOT NULL,
+  `idservicios` int(11) NOT NULL,
+  `fecha` datetime NOT NULL,
+  `hora` varchar(5) NOT NULL,
+  `idpacientes` int(11) NOT NULL,
+  PRIMARY KEY (`idserviciosturnos`),
+  KEY `stfkprof_idx` (`idprofesionales`),
+  KEY `stfkserv_idx` (`idservicios`),
+  KEY `stfkpac_idx` (`idpacientes`),
+  CONSTRAINT `stfkpac` FOREIGN KEY (`idpacientes`) REFERENCES `pacientes` (`idpacientes`) ON DELETE CASCADE,
+  CONSTRAINT `stfkprof` FOREIGN KEY (`idprofesionales`) REFERENCES `profesionales` (`idprofesionales`) ON UPDATE CASCADE,
+  CONSTRAINT `stfkserv` FOREIGN KEY (`idservicios`) REFERENCES `servicios` (`idservicios`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `serviciosturnos`
+--
+
+LOCK TABLES `serviciosturnos` WRITE;
+/*!40000 ALTER TABLE `serviciosturnos` DISABLE KEYS */;
+INSERT INTO `serviciosturnos` VALUES (2,3,3,'2016-01-19 00:00:00','09:00',1);
+/*!40000 ALTER TABLE `serviciosturnos` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -645,12 +682,12 @@ CREATE TABLE `turnos` (
   `semana` varchar(1) DEFAULT NULL,
   `dia` varchar(1) DEFAULT NULL,
   `telefono` varchar(45) DEFAULT NULL,
-  `idproductos` varchar(1) DEFAULT NULL,
+  `idservicios` varchar(1) DEFAULT NULL,
   `finturnofijo` datetime DEFAULT '1900-01-01 00:00:00',
   PRIMARY KEY (`idturnos`),
   KEY `tfkidprofesional_idx` (`idprofesionales`),
   CONSTRAINT `tfkidprofesional` FOREIGN KEY (`idprofesionales`) REFERENCES `profesionales` (`idprofesionales`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -659,7 +696,7 @@ CREATE TABLE `turnos` (
 
 LOCK TABLES `turnos` WRITE;
 /*!40000 ALTER TABLE `turnos` DISABLE KEYS */;
-INSERT INTO `turnos` VALUES (1,1,'11:00','2016-01-13 00:00:00','','Micaela','','0','3','lala','','1900-01-01 00:00:00'),(3,3,'10:00','2016-01-15 00:00:00','1','','s','0','5','848','','1900-01-01 00:00:00');
+INSERT INTO `turnos` VALUES (1,1,'11:00','2016-01-13 00:00:00','','Micaela','','0','3','lala','','1900-01-01 00:00:00'),(3,3,'10:00','2016-01-15 00:00:00','1','','s','0','5','848','','1900-01-01 00:00:00'),(4,3,'11:00','2016-01-19 00:00:00','','jkxzc','','0','2','',NULL,'1900-01-01 00:00:00'),(6,3,'08:00','2016-01-19 00:00:00','1','','','0','2','',NULL,'1900-01-01 00:00:00'),(7,3,'09:00','2016-01-19 00:00:00','1','','','0','2','',NULL,'1900-01-01 00:00:00');
 /*!40000 ALTER TABLE `turnos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -706,7 +743,7 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` FUNCTION `fn_prohoramanual`(idpro int, fec datetime) RETURNS varchar(100) CHARSET latin1
+/*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 FUNCTION `fn_prohoramanual`(idpro int, fec datetime) RETURNS varchar(100) CHARSET latin1
 BEGIN
 -- --------------------------------------------------------------------------------
 
@@ -746,7 +783,7 @@ else
 	set a=concat(b,cant);
 end if;
 RETURN a;
-END ;;
+END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -762,7 +799,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` FUNCTION `fn_protrabaja`(idpro int, fec datetime) RETURNS varchar(100) CHARSET latin1
+/*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 FUNCTION `fn_protrabaja`(idpro int, fec datetime) RETURNS varchar(100) CHARSET latin1
 BEGIN
 -- --------------------------------------------------------------------------------
 
@@ -843,7 +880,7 @@ else
 	set a=concat(b,cant);
 end if;
 RETURN a;
-END ;;
+END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -859,7 +896,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_protrabaja`(fec date )
+/*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 PROCEDURE `sp_protrabaja`(fec date )
 BEGIN
 SET lc_time_names = 'es_MX';
 		select p.idprofesionales, case when fec=curdate() then concat(p.profesional,' (',p.gabinete,')') else p.profesional end as profesional,
@@ -871,7 +908,7 @@ SET lc_time_names = 'es_MX';
 		having horario<>""
 		order by p.profesional ;
 
-END ;;
+END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -887,7 +924,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_turnos`(fec date, dias integer,sema integer)
+/*!50003 CREATE*/ /*!50020 DEFINER=`root`@`localhost`*/ /*!50003 PROCEDURE `sp_turnos`(fec date, dias integer,sema integer)
 BEGIN
 select t.idturnos, t.idprofesionales, t.hora,t.fecha, ifnull(p.paciente,t.detalle) as detalle, t.fijo,t.semana, 0 as suspendido
 from turnos t
@@ -904,7 +941,7 @@ where t.fijo = 's' and t.dia=dias and t.finturnofijo>fec  and t.fecha<fec or
 (t.fijo = 'q' and t.dia=dias and t.semana=sema and t.finturnofijo='1900-01-01' and t.fecha<fec)
 order by idprofesionales,hora;
 
-END ;;
+END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -920,4 +957,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-19 15:43:22
+-- Dump completed on 2016-01-19 21:51:29

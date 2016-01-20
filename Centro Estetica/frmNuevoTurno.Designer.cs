@@ -87,7 +87,6 @@
             this.btnBuscarProd.BackColor = System.Drawing.SystemColors.Control;
             this.btnBuscarProd.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
             this.btnBuscarProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarProd.Enabled = false;
             this.btnBuscarProd.Location = new System.Drawing.Point(364, 83);
             this.btnBuscarProd.Name = "btnBuscarProd";
             this.btnBuscarProd.Size = new System.Drawing.Size(41, 38);
@@ -322,7 +321,6 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Enabled = false;
             this.label7.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(27, 94);
             this.label7.Name = "label7";

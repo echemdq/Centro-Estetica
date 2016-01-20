@@ -103,14 +103,14 @@ namespace Centro_Estetica
         private void frmBuscaProductos_Load(object sender, EventArgs e)
         {
             dataGridView1.ColumnCount = 7;
-            dataGridView1.Columns[0].Name = "idproductos";
+            dataGridView1.Columns[0].Name = "Codigo";
             dataGridView1.Columns[1].Name = "Detalle";
             dataGridView1.Columns[2].Name = "Stock";
             dataGridView1.Columns[3].Name = "Sesiones";
             dataGridView1.Columns[4].Name = "Precio Venta";
             dataGridView1.Columns[5].Name = "Precio Calculo";
             dataGridView1.Columns[6].Name = "Activo";
-            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[0].Visible = true;
             dataGridView1.Columns[6].Visible = false;
         }
 

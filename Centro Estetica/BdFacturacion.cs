@@ -21,7 +21,7 @@ namespace Centro_Estetica
             {
                 if (aux.P.Sesiones > 0)
                 {
-                    oacceso.ActualizarBD("insert into lineafactura (idproductos, cantidad, precioventa, idfacturacion, preciocalculo, sesiones) values ('" + aux.P.Idproductos + "','" + aux.Cantidad + "','" + aux.P.Precioventa.ToString().Replace(',', '.') + "','" + idfactura + "','" + aux.P.Preciocalculo.ToString().Replace(',', '.') + "','" + aux.P.Sesiones + "'); insert into servicios (idproductos, detalle, sesiones, usadas, idpacientes, idfacturacion) values ('" + aux.P.Idproductos + "','" + aux.P.Detalle + "','" + aux.P.Sesiones + "','0','"+dato.Idpaciente+"','"+idfactura+"')");
+                    oacceso.ActualizarBD("insert into lineafactura (idproductos, cantidad, precioventa, idfacturacion, preciocalculo, sesiones) values ('" + aux.P.Idproductos + "','" + aux.Cantidad + "','" + aux.P.Precioventa.ToString().Replace(',', '.') + "','" + idfactura + "','" + aux.P.Preciocalculo.ToString().Replace(',', '.') + "','" + aux.P.Sesiones + "'); insert into servicios (idproductos, detalle, sesiones, usadas, idpacientes, idfacturacion, fecha) values ('" + aux.P.Idproductos + "','" + aux.P.Detalle + "','" + aux.P.Sesiones + "','0','"+dato.Idpaciente+"','"+idfactura+"','"+dato.Fecha.ToString("yyyy-MM-dd HH:mm:ss")+"')");
                 }
                 else
                 {

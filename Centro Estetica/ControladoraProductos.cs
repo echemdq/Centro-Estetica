@@ -26,7 +26,7 @@ namespace Centro_Estetica
 
         public Productos Buscar(string dato)
         {
-            throw new NotImplementedException();
+            return bd.Buscar(dato);
         }
 
         public List<Productos> BuscarEspecial(string dato)

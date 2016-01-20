@@ -6,35 +6,35 @@ using System.Threading.Tasks;
 
 namespace Centro_Estetica
 {
-    public class ControladoraEsperas : IDAO<Esperas>
+    public class ControladoraServicios : IDAO<Servicios>
     {
-        BdEsperas bd = new BdEsperas();
-        public void Agregar(Esperas dato)
-        {
-            bd.Agregar(dato);
-        }
-
-        public List<Esperas> TraerTodos()
+        BdServicios bd = new BdServicios();
+        public void Agregar(Servicios dato)
         {
             throw new NotImplementedException();
         }
 
-        public void Borrar(Esperas dato)
-        {
-            bd.Borrar(dato);
-        }
-
-        public Esperas Buscar(string dato)
+        public List<Servicios> TraerTodos()
         {
             throw new NotImplementedException();
         }
 
-        public List<Esperas> BuscarEspecial(string dato)
+        public void Borrar(Servicios dato)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Servicios Buscar(string dato)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Servicios> BuscarEspecial(string dato)
         {
             return bd.BuscarEspecial(dato);
         }
 
-        public void Modificar(Esperas dato)
+        public void Modificar(Servicios dato)
         {
             throw new NotImplementedException();
         }

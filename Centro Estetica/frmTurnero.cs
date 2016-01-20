@@ -566,5 +566,27 @@ namespace Centro_Estetica
             dataGridView2.Columns[4].Visible = false;
             dataGridView2.Columns[0].Visible = false;
         }
+
+        private void dataGridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int filaseleccionada = Convert.ToInt32(this.dataGridView2.CurrentRow.Index);
+                int idsubprof = Convert.ToInt32(dataGridView2[4, filaseleccionada].Value);
+                Esperas n = new Esperas(idsubprof, "", "", "");
+                DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar", "Eliminar Espera", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    controle.Borrar(n);
+                    dataGridView2.DataSource = controle.BuscarEspecial(DateTime.Now.ToString("yyyy-MM-dd"));
+                    dataGridView2.Columns[4].Visible = false;
+                    dataGridView2.Columns[0].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

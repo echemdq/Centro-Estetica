@@ -114,6 +114,7 @@ namespace Centro_Estetica
         }
         public void limpiar()
         {
+            textBox1.Text = "";
             txtStock.Text = "0";
             txtSesiones.Value = 0;
             txtProducto.Text = "";
@@ -174,6 +175,7 @@ namespace Centro_Estetica
                 Productos u = frm.u;
                 if (u != null)
                 {
+                    textBox1.Text = u.Idproductos.ToString();
                     lblId.Text = Convert.ToString(u.Idproductos);
                     txtProducto.Text = u.Detalle;
                     txtSesiones.Value = u.Sesiones;

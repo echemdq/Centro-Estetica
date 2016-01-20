@@ -15,7 +15,7 @@ namespace Centro_Estetica
         ControladoraProfesionales controlp = new ControladoraProfesionales();
         ControladoraTurnos controlt = new ControladoraTurnos();
         Profesionales p = null;
-        Productos prod = null;
+        Servicios serv = null;
         Pacientes u = null;
         Acceso_BD oacceso = new Acceso_BD();
         int suspendido = 0;
@@ -141,12 +141,12 @@ namespace Centro_Estetica
                 string detalle = txtDetalle.Text;
                 string hora = txtHora.Text;
                 string telefono = txtTelefono.Text;
-                string idprod = "";
-                if (prod != null)
+                string idserv = "";
+                if (serv != null)
                 {
-                    idprod = prod.Idproductos.ToString();
+                    idserv = serv.Idservicios.ToString();
                 }
-                Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idprod);
+                Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idserv);
                 if (detalle != "" || u != null)
                 {
                     controlt.Agregar(t);
@@ -171,12 +171,12 @@ namespace Centro_Estetica
             {
                 if (u != null)
                 {
-                    frmBuscaProductos frm = new frmBuscaProductos();
+                    frmBuscaServicio frm = new frmBuscaServicio(u.Idpacientes.ToString());
                     frm.ShowDialog();
-                    prod = frm.u;
-                    if (prod != null)
+                    serv = frm.u;
+                    if (serv != null)
                     {
-                        txtProducto.Text = prod.Detalle;
+                        txtProducto.Text = serv.Detalle;
                     }
                 }
                 else

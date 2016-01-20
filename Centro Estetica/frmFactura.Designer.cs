@@ -128,6 +128,7 @@
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(126, 21);
             this.txtDocumento.TabIndex = 72;
+            this.txtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
             // 
             // label4
             // 
@@ -170,6 +171,7 @@
             this.txtCodigo.Size = new System.Drawing.Size(70, 21);
             this.txtCodigo.TabIndex = 76;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // button1
             // 
