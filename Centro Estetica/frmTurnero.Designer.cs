@@ -80,6 +80,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(927, 394);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDown);
             // 
             // contextMenuStrip1
@@ -97,7 +98,7 @@
             this.toolStripSeparator4,
             this.asignarGabineteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 182);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 204);
             // 
             // nuevoTurnoToolStripMenuItem
             // 

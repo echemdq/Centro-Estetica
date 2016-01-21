@@ -26,7 +26,7 @@ namespace Centro_Estetica
 
         public Turnos Buscar(string dato)
         {
-            throw new NotImplementedException();
+            return bd.Buscar(dato);
         }
 
         public List<Turnos> BuscarEspecial(string dato)

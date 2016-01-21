@@ -175,7 +175,7 @@ namespace Centro_Estetica
                             }
                             else
                             {
-                                grilla gri = new grilla(col, fila, "0");
+                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
                                 laux.Add(gri);
                             }
                             if (Convert.ToString(dr["suspendido"]) == "0")
@@ -197,7 +197,7 @@ namespace Centro_Estetica
                             }
                             else
                             {
-                                grilla gri = new grilla(col, fila, "0");
+                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
                                 laux.Add(gri);
                             }
                             if (Convert.ToString(dr["suspendido"]) == "0")
@@ -283,7 +283,7 @@ namespace Centro_Estetica
 
         private void dataGridView1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
+            if (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left)
             {
                 var ht = dataGridView1.HitTest(e.X, e.Y);
                 //Checks for correct column index
@@ -581,6 +581,30 @@ namespace Centro_Estetica
                     dataGridView2.DataSource = controle.BuscarEspecial(DateTime.Now.ToString("yyyy-MM-dd"));
                     dataGridView2.Columns[4].Visible = false;
                     dataGridView2.Columns[0].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.White && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.Gray && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.LightBlue)
+                {
+                    int idturnos = 0;
+                    foreach (grilla aux in laux)
+                    {
+                        if (ro == aux.Fila && col == aux.Columna)
+                        {
+                            idturnos = Convert.ToInt32(aux.Id);
+                        }
+                    }
+                    frmDatosTurno frm = new frmDatosTurno(idturnos, dataGridView1.Rows[ro].Cells[col].Value.ToString(), monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy"));
+                    frm.ShowDialog();
                 }
             }
             catch (Exception ex)
