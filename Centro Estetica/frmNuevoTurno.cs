@@ -149,10 +149,36 @@ namespace Centro_Estetica
                 Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idserv);
                 if (detalle != "" || u != null)
                 {
-                    controlt.Agregar(t);
-                    oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + p.Idprofesionales + "','" + fecha.ToString("yyyy-MM-dd") + "','" + hora + "','Inserta nuevo turno','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
-                    MessageBox.Show("Turno grabado exitosamente");
-                    this.Close();
+                    int existe = 0;
+                    if (fijo == "s")
+                    {
+                        DataTable dt = oacceso.leerDatos("select ifnull(idturnos,0) as id from turnos where idprofesionales = '"+p.Idprofesionales+"' and dia = '"+dia+"' and hora = '"+hora+"'");                        
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            existe = Convert.ToInt32(dr["id"]);
+                            break;
+                        }
+                    }
+                    else if (fijo == "q")
+                    {
+                        DataTable dt = oacceso.leerDatos("select count(*) as id from turnos where case when mod(week(fecha,0),2) = 0 then 1 else 2 end in ('" + TSemana.Text + "') and idprofesionales = '" + p.Idprofesionales + "' and dia = '" + dia + "' and hora = '" + hora + "'");
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            existe = Convert.ToInt32(dr["id"]);
+                            break;
+                        }
+                    }
+                    if (existe == 0)
+                    {
+                        controlt.Agregar(t);
+                        oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + p.Idprofesionales + "','" + fecha.ToString("yyyy-MM-dd") + "','" + hora + "','Inserta nuevo turno " + txtPaciente.Text + "','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                        MessageBox.Show("Turno grabado exitosamente");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Imposible grabar turno, el horario posee turnos otorgados a futuro");
+                    }
                 }
                 else
                 {

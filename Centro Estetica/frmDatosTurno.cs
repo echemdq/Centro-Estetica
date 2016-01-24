@@ -82,6 +82,7 @@ namespace Centro_Estetica
                     if (dialogResult == DialogResult.Yes)
                     {
                         oacceso.ActualizarBD("start transaction; delete from serviciosturnos where idserviciosturnos = '"+idserviciosturnos+"'; update servicios set usadas = usadas - 1 where idservicios = '"+idservicios+"'; commit;");
+                        oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + t.Profesionales.Idprofesionales + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','Elimino servicio: " + txtProducto.Text + "','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                         MessageBox.Show("Servicio eliminado correctamente");
                         this.Close();
                     }
@@ -102,13 +103,15 @@ namespace Centro_Estetica
                     frmBuscaServicio frm = new frmBuscaServicio(t.Paciente);
                     frm.ShowDialog();
                     serv = frm.u;
+                    string ses = frm.sesion;
                     if (serv != null)
                     {
                         txtProducto.Text = serv.Detalle;
                         DialogResult dialogResult = MessageBox.Show("Esta seguro de Agregar el Servicio del turno?", "Agregar Servicio del Turno", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
-                            DataTable dt = oacceso.leerDatos("start transaction; insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes) values ('" + t.Profesionales.Idprofesionales + "','" + serv.Idservicios + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','" + t.Paciente + "'); update servicios set usadas = usadas + 1 where idservicios = '" + serv.Idservicios + "'; select max(idserviciosturnos) as idservt from serviciosturnos; commit;");
+                            DataTable dt = oacceso.leerDatos("start transaction; insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes, sesion) values ('" + t.Profesionales.Idprofesionales + "','" + serv.Idservicios + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','" + t.Paciente + "','"+ses+"'); update servicios set usadas = usadas + 1 where idservicios = '" + serv.Idservicios + "'; select max(idserviciosturnos) as idservt from serviciosturnos; commit;");
+                            oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + t.Profesionales.Idprofesionales + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','Agrego servicio: "+serv.Detalle+"','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                             foreach (DataRow dr in dt.Rows)
                             {
                                 idserviciosturnos = Convert.ToInt32(dr["idservt"]);
@@ -139,6 +142,7 @@ namespace Centro_Estetica
                 if (dialogResult == DialogResult.Yes)
                 {
                     oacceso.ActualizarBD("update serviciosturnos set asistencia = 1 where idserviciosturnos = '"+idserviciosturnos+"'");
+                    oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + t.Profesionales.Idprofesionales + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','Confirmo Asistencia','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                     MessageBox.Show("Asistencia Confirmada");
                     this.Close();
                 }

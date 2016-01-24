@@ -202,7 +202,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(208, 241);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(41, 38);
-            this.btnGuardar.TabIndex = 112;
+            this.btnGuardar.TabIndex = 2;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Visible = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -216,7 +216,7 @@
             this.btnAgregarServ.Location = new System.Drawing.Point(404, 70);
             this.btnAgregarServ.Name = "btnAgregarServ";
             this.btnAgregarServ.Size = new System.Drawing.Size(41, 38);
-            this.btnAgregarServ.TabIndex = 125;
+            this.btnAgregarServ.TabIndex = 0;
             this.toolTip1.SetToolTip(this.btnAgregarServ, "Agrega Servicio");
             this.btnAgregarServ.UseVisualStyleBackColor = false;
             this.btnAgregarServ.Click += new System.EventHandler(this.btnAgregarServ_Click);
@@ -230,7 +230,7 @@
             this.btnEliminarServ.Location = new System.Drawing.Point(357, 70);
             this.btnEliminarServ.Name = "btnEliminarServ";
             this.btnEliminarServ.Size = new System.Drawing.Size(41, 38);
-            this.btnEliminarServ.TabIndex = 124;
+            this.btnEliminarServ.TabIndex = 1;
             this.toolTip1.SetToolTip(this.btnEliminarServ, "Elimina Servicio");
             this.btnEliminarServ.UseVisualStyleBackColor = false;
             this.btnEliminarServ.Click += new System.EventHandler(this.btnEliminarServ_Click);
@@ -259,7 +259,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDatosTurno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmDatosTurno";
+            this.Text = "Informacion del Turno";
             this.Load += new System.EventHandler(this.frmDatosTurno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

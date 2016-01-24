@@ -26,6 +26,8 @@ namespace Centro_Estetica
 
         private void frmTurnero_Load(object sender, EventArgs e)
         {
+            
+            
             dataGridView2.DataSource = controle.BuscarEspecial(DateTime.Now.ToString("yyyy-MM-dd"));
             dataGridView2.Columns[4].Visible = false;
             dataGridView2.Columns[0].Visible = false;
@@ -56,6 +58,7 @@ namespace Centro_Estetica
                 DataTable dt = oacceso.leerDatos("call sp_protrabaja('" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "')");
                 dataGridView1.ColumnCount = dt.Rows.Count + 1;
                 dataGridView1.Columns[0].Name = "Horario";
+                
                 DateTime start = DateTime.Parse("08:00");
                 DateTime start1 = DateTime.Parse("08:00");
                 DateTime end = DateTime.Parse("22:00");                
@@ -164,58 +167,69 @@ namespace Centro_Estetica
                     }
                     int fila = Convert.ToInt32(Convert.ToString(dr["hora"]).Substring(0, 2))-8;                    
                     string fijo = Convert.ToString(dr["fijo"]);
+                    int asistencia = Convert.ToInt32(Convert.ToString(dr["asistencia"]));
                     if (col != 0)
                     {
-                        if (fijo == "s")
-                        {
-                            if (Convert.ToDateTime(dr["fecha"]) == monthCalendar1.SelectionRange.Start)
-                            {
-                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
-                                laux.Add(gri);
-                            }
-                            else
-                            {
-                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
-                                laux.Add(gri);
-                            }
-                            if (Convert.ToString(dr["suspendido"]) == "0")
-                            {
-                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Red;
-                                this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]);
-                            }
-                            else
-                            {
-                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
-                            }
-                        }
-                        else if (fijo == "q")
-                        {
-                            if (Convert.ToDateTime(dr["fecha"]) == monthCalendar1.SelectionRange.Start)
-                            {
-                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
-                                laux.Add(gri);
-                            }
-                            else
-                            {
-                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
-                                laux.Add(gri);
-                            }
-                            if (Convert.ToString(dr["suspendido"]) == "0")
-                            {
-                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Blue;
-                                this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]);
-                            }
-                            else
-                            {
-                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
-                            }
-                        }
-                        else
+                        if (asistencia == 1)
                         {
                             grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
                             laux.Add(gri);
-                            this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Green;
-                            this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]);
+                            this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Orange;
+                            this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
+                        }
+                        else
+                        {
+                            if (fijo == "s")
+                            {
+                                if (Convert.ToDateTime(dr["fecha"]) == monthCalendar1.SelectionRange.Start)
+                                {
+                                    grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
+                                    laux.Add(gri);
+                                }
+                                else
+                                {
+                                    grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
+                                    laux.Add(gri);
+                                }
+                                if (Convert.ToString(dr["suspendido"]) == "0")
+                                {
+                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Red;
+                                    this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
+                                }
+                                else
+                                {
+                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
+                                }
+                            }
+                            else if (fijo == "q")
+                            {
+                                if (Convert.ToDateTime(dr["fecha"]) == monthCalendar1.SelectionRange.Start)
+                                {
+                                    grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
+                                    laux.Add(gri);
+                                }
+                                else
+                                {
+                                    grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
+                                    laux.Add(gri);
+                                }
+                                if (Convert.ToString(dr["suspendido"]) == "0")
+                                {
+                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Blue;
+                                    this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
+                                }
+                                else
+                                {
+                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
+                                }
+                            }
+                            else
+                            {
+                                grilla gri = new grilla(col, fila, Convert.ToString(dr["idturnos"]));
+                                laux.Add(gri);
+                                this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Green;
+                                this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
+                            }
                         }
                     }
                     else
@@ -605,6 +619,8 @@ namespace Centro_Estetica
                     }
                     frmDatosTurno frm = new frmDatosTurno(idturnos, dataGridView1.Rows[ro].Cells[col].Value.ToString(), monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy"));
                     frm.ShowDialog();
+                    dataGridView1.Rows.Clear();
+                    cargagrilla();
                 }
             }
             catch (Exception ex)

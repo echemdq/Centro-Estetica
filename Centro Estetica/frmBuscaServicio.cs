@@ -14,6 +14,7 @@ namespace Centro_Estetica
     {
         ControladoraServicios controls = new ControladoraServicios();
         public Servicios u = null;
+        public string sesion = "";
         string idpacientes = "";
         public frmBuscaServicio(string id)
         {
@@ -65,6 +66,7 @@ namespace Centro_Estetica
             int usadas = Convert.ToInt32(dataGridView1[4, filaseleccionada].Value);
             int idfacturacion = Convert.ToInt32(dataGridView1[5, filaseleccionada].Value);
             int idpacientes = Convert.ToInt32(dataGridView1[6, filaseleccionada].Value);
+            sesion = Convert.ToString(usadas + 1) + "/" + sesiones;
             u = new Servicios(idservicios, idproductos, detalle, sesiones, usadas, idfacturacion, idpacientes);
             this.Close();
         }
