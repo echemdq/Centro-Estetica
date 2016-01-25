@@ -41,14 +41,19 @@ namespace Centro_Estetica
             txtFecha.Text = fec;
             txtHora.Text = t.Hora;
             txtPaciente.Text = pac;
-            DataTable dt = oacceso.leerDatos("select st.asistencia as asistencia, st.idserviciosturnos as idservt, s.detalle as detalle, st.idservicios as idservicios from serviciosturnos st inner join servicios s on st.idservicios = s.idservicios where st.fecha = '"+fechaa.ToString("yyyy-MM-dd")+"' and st.hora = '"+t.Hora+"' and st.idprofesionales = '"+t.Profesionales.Idprofesionales+"' and st.idpacientes = '"+t.Paciente+"'");
-            
+            DataTable dt = oacceso.leerDatos("select st.asistencia as asistencia, st.idserviciosturnos as idservt, s.detalle as detalle, st.idservicios as idservicios, p.paciente as paciente from serviciosturnos st inner join servicios s on st.idservicios = s.idservicios inner join pacientes p on s.idpacientes = p.idpacientes where st.fecha = '"+fechaa.ToString("yyyy-MM-dd")+"' and st.hora = '"+t.Hora+"' and st.idprofesionales = '"+t.Profesionales.Idprofesionales+"' and st.idpacientes = '"+t.Paciente+"'");
+            string paci = "";
             foreach (DataRow dr in dt.Rows)
             {
                 idserviciosturnos = Convert.ToInt32(dr["idservt"]);
                 idservicios = Convert.ToInt32(dr["idservicios"]);
                 txtProducto.Text = Convert.ToString(dr["detalle"]);
                 asistencia = Convert.ToInt32(dr["asistencia"]);
+                paci = Convert.ToString(dr["paciente"]);
+            }
+            if (paci != "" && !txtPaciente.Text.Equals(paci))
+            {
+                txtProducto.Text = txtProducto.Text + " Regalo de: " + paci;
             }
             if (idserviciosturnos == 0 && fechaa >= DateTime.Now.Date)
             {
@@ -98,34 +103,75 @@ namespace Centro_Estetica
         {
             try
             {
-                if (txtProducto.Text == "")
+                if (!chkRegalo.Checked)
                 {
-                    frmBuscaServicio frm = new frmBuscaServicio(t.Paciente);
-                    frm.ShowDialog();
-                    serv = frm.u;
-                    string ses = frm.sesion;
-                    if (serv != null)
-                    {
-                        txtProducto.Text = serv.Detalle;
-                        DialogResult dialogResult = MessageBox.Show("Esta seguro de Agregar el Servicio del turno?", "Agregar Servicio del Turno", MessageBoxButtons.YesNo);
-                        if (dialogResult == DialogResult.Yes)
+                    if (txtProducto.Text == "")
+                    {                        
+                        frmBuscaServicio frm = new frmBuscaServicio(t.Paciente);
+                        frm.ShowDialog();
+                        serv = frm.u;
+                        string ses = frm.sesion;
+                        if (serv != null)
                         {
-                            DataTable dt = oacceso.leerDatos("start transaction; insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes, sesion) values ('" + t.Profesionales.Idprofesionales + "','" + serv.Idservicios + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','" + t.Paciente + "','"+ses+"'); update servicios set usadas = usadas + 1 where idservicios = '" + serv.Idservicios + "'; select max(idserviciosturnos) as idservt from serviciosturnos; commit;");
-                            oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + t.Profesionales.Idprofesionales + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','Agrego servicio: "+serv.Detalle+"','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
-                            foreach (DataRow dr in dt.Rows)
+                            txtProducto.Text = serv.Detalle;
+                            DialogResult dialogResult = MessageBox.Show("Esta seguro de Agregar el Servicio del turno?", "Agregar Servicio del Turno", MessageBoxButtons.YesNo);
+                            if (dialogResult == DialogResult.Yes)
                             {
-                                idserviciosturnos = Convert.ToInt32(dr["idservt"]);
+                                DataTable dt = oacceso.leerDatos("start transaction; insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes, sesion) values ('" + t.Profesionales.Idprofesionales + "','" + serv.Idservicios + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','" + t.Paciente + "','" + ses + "'); update servicios set usadas = usadas + 1 where idservicios = '" + serv.Idservicios + "'; select max(idserviciosturnos) as idservt from serviciosturnos; commit;");
+                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + t.Profesionales.Idprofesionales + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','Agrego servicio: " + serv.Detalle + "','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                foreach (DataRow dr in dt.Rows)
+                                {
+                                    idserviciosturnos = Convert.ToInt32(dr["idservt"]);
+                                }
+                                MessageBox.Show("Servicio agregado correctamente");
+                                idservicios = serv.Idservicios;
+                                if (fechaa == DateTime.Now.Date)
+                                {
+                                    btnGuardar.Visible = true;
+                                }
+                                btnEliminarServ.Enabled = true;
+                                btnAgregarServ.Enabled = false;
                             }
-                            MessageBox.Show("Servicio agregado correctamente");
-                            idservicios = serv.Idservicios;
-                            if (fechaa == DateTime.Now.Date)
-                            {
-                                btnGuardar.Visible = true;
-                            }
-                            btnEliminarServ.Enabled = true;
-                            btnAgregarServ.Enabled = false;
                         }
-                    }                    
+                    }
+                }
+                else
+                {
+                    if (txtProducto.Text == "")
+                    {
+                        frmBuscaPacientes frm1 = new frmBuscaPacientes();
+                        frm1.ShowDialog();
+                        Pacientes p1 = frm1.u;
+                        if (p1 != null)
+                        {
+                            frmBuscaServicio frm = new frmBuscaServicio(p1.Idpacientes.ToString());
+                            frm.ShowDialog();
+                            serv = frm.u;
+                            string ses = frm.sesion;
+                            if (serv != null)
+                            {
+                                txtProducto.Text = serv.Detalle;
+                                DialogResult dialogResult = MessageBox.Show("Esta seguro de Agregar el Servicio del turno?", "Agregar Servicio del Turno", MessageBoxButtons.YesNo);
+                                if (dialogResult == DialogResult.Yes)
+                                {
+                                    DataTable dt = oacceso.leerDatos("start transaction; insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes, sesion) values ('" + t.Profesionales.Idprofesionales + "','" + serv.Idservicios + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','" + t.Paciente + "','" + ses + "'); update servicios set usadas = usadas + 1 where idservicios = '" + serv.Idservicios + "'; select max(idserviciosturnos) as idservt from serviciosturnos; commit;");
+                                    oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + t.Profesionales.Idprofesionales + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','Agrego servicio: " + serv.Detalle + "','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                    foreach (DataRow dr in dt.Rows)
+                                    {
+                                        idserviciosturnos = Convert.ToInt32(dr["idservt"]);
+                                    }
+                                    MessageBox.Show("Servicio agregado correctamente");
+                                    idservicios = serv.Idservicios;
+                                    if (fechaa == DateTime.Now.Date)
+                                    {
+                                        btnGuardar.Visible = true;
+                                    }
+                                    btnEliminarServ.Enabled = true;
+                                    btnAgregarServ.Enabled = false;                                    
+                                }
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception ex)

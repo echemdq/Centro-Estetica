@@ -86,8 +86,15 @@ namespace Centro_Estetica
             get { return idturnos; }
             set { idturnos = value; }
         }
+        string sesion;
 
-        public Turnos(int i, Profesionales p, string h, DateTime f, string pa, string d, string fi, string s, string di, string t, string idserv)
+        public string Sesion
+        {
+            get { return sesion; }
+            set { sesion = value; }
+        }
+
+        public Turnos(int i, Profesionales p, string h, DateTime f, string pa, string d, string fi, string s, string di, string t, string idserv, string ses)
         {
             idturnos = i;
             profesionales = p;
@@ -100,6 +107,7 @@ namespace Centro_Estetica
             dia = di;
             telefono = t;
             idservicios = idserv;
+            sesion = ses;
         }
     }
 }

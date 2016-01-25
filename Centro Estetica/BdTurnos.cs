@@ -14,7 +14,7 @@ namespace Centro_Estetica
         {
             if (dato.Idservicios != "")
             {
-                oacceso.ActualizarBD("begin; insert into turnos (idprofesionales, hora, fecha, idpacientes, detalle, fijo, semana, dia, telefono) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Hora + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Paciente + "','" + dato.Detalle + "','" + dato.Fijo + "','" + dato.Semana + "','" + dato.Dia + "','" + dato.Telefono + "'); insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Idservicios + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Hora + "','"+dato.Paciente+"'); update servicios set usadas = usadas + 1 where idservicios = '" + dato.Idservicios + "'; commit;");
+                oacceso.ActualizarBD("begin; insert into turnos (idprofesionales, hora, fecha, idpacientes, detalle, fijo, semana, dia, telefono) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Hora + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Paciente + "','" + dato.Detalle + "','" + dato.Fijo + "','" + dato.Semana + "','" + dato.Dia + "','" + dato.Telefono + "'); insert into serviciosturnos (idprofesionales, idservicios, fecha, hora, idpacientes, sesion) values ('" + dato.Profesionales.Idprofesionales + "','" + dato.Idservicios + "','" + dato.Fecha.ToString("yyyy-MM-dd") + "','" + dato.Hora + "','" + dato.Paciente + "','" + dato.Sesion + "'); update servicios set usadas = usadas + 1 where idservicios = '" + dato.Idservicios + "'; commit;");
             }
             else
             {
@@ -39,7 +39,7 @@ namespace Centro_Estetica
             foreach (DataRow dr in dt.Rows)
             {
                 Profesionales p = controlp.Buscar(Convert.ToInt32(dr["idprofesionales"]).ToString());
-                t = new Turnos(Convert.ToInt32(dr["idturnos"]), p, Convert.ToString(dr["hora"]), Convert.ToDateTime(dr["fecha"]), Convert.ToString(dr["idpacientes"]), Convert.ToString(dr["detalle"]), Convert.ToString(dr["fijo"]), Convert.ToString(dr["semana"]), Convert.ToString(dr["dia"]), Convert.ToString(dr["telefono"]), "");
+                t = new Turnos(Convert.ToInt32(dr["idturnos"]), p, Convert.ToString(dr["hora"]), Convert.ToDateTime(dr["fecha"]), Convert.ToString(dr["idpacientes"]), Convert.ToString(dr["detalle"]), Convert.ToString(dr["fijo"]), Convert.ToString(dr["semana"]), Convert.ToString(dr["dia"]), Convert.ToString(dr["telefono"]), "","");
             }
             return t;
         }

@@ -47,6 +47,7 @@
             this.btnAgregarServ = new System.Windows.Forms.Button();
             this.btnEliminarServ = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.chkRegalo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtProducto
@@ -235,11 +236,22 @@
             this.btnEliminarServ.UseVisualStyleBackColor = false;
             this.btnEliminarServ.Click += new System.EventHandler(this.btnEliminarServ_Click);
             // 
+            // chkRegalo
+            // 
+            this.chkRegalo.AutoSize = true;
+            this.chkRegalo.Location = new System.Drawing.Point(356, 114);
+            this.chkRegalo.Name = "chkRegalo";
+            this.chkRegalo.Size = new System.Drawing.Size(98, 17);
+            this.chkRegalo.TabIndex = 124;
+            this.chkRegalo.Text = "Asignar Regalo";
+            this.chkRegalo.UseVisualStyleBackColor = true;
+            // 
             // frmDatosTurno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 291);
+            this.Controls.Add(this.chkRegalo);
             this.Controls.Add(this.btnAgregarServ);
             this.Controls.Add(this.btnEliminarServ);
             this.Controls.Add(this.txtProducto);
@@ -286,5 +298,6 @@
         private System.Windows.Forms.Button btnAgregarServ;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btnEliminarServ;
+        private System.Windows.Forms.CheckBox chkRegalo;
     }
 }

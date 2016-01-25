@@ -55,6 +55,7 @@
             this.txtProfesional = new System.Windows.Forms.TextBox();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.chkRegalo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnBuscarPac
@@ -328,11 +329,22 @@
             this.label7.TabIndex = 103;
             this.label7.Text = "Servicios";
             // 
+            // chkRegalo
+            // 
+            this.chkRegalo.AutoSize = true;
+            this.chkRegalo.Location = new System.Drawing.Point(354, 127);
+            this.chkRegalo.Name = "chkRegalo";
+            this.chkRegalo.Size = new System.Drawing.Size(98, 17);
+            this.chkRegalo.TabIndex = 125;
+            this.chkRegalo.Text = "Asignar Regalo";
+            this.chkRegalo.UseVisualStyleBackColor = true;
+            // 
             // frmNuevoTurno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 350);
+            this.Controls.Add(this.chkRegalo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBuscarProd);
             this.Controls.Add(this.txtProducto);
@@ -394,5 +406,6 @@
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox chkRegalo;
     }
 }

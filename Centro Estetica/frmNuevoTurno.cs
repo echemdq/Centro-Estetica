@@ -19,6 +19,7 @@ namespace Centro_Estetica
         Pacientes u = null;
         Acceso_BD oacceso = new Acceso_BD();
         int suspendido = 0;
+        string ses = "";
         public frmNuevoTurno(string fecha, string hora, int idprofesional, int estado)
         {
             InitializeComponent();
@@ -146,7 +147,7 @@ namespace Centro_Estetica
                 {
                     idserv = serv.Idservicios.ToString();
                 }
-                Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idserv);
+                Turnos t = new Turnos(0, p, hora, fecha, lblIdPac.Text, detalle, fijo, semana, dia, telefono, idserv,ses);
                 if (detalle != "" || u != null)
                 {
                     int existe = 0;
@@ -195,19 +196,40 @@ namespace Centro_Estetica
         {
             try
             {
-                if (u != null)
+                if (!chkRegalo.Checked)
                 {
-                    frmBuscaServicio frm = new frmBuscaServicio(u.Idpacientes.ToString());
-                    frm.ShowDialog();
-                    serv = frm.u;
-                    if (serv != null)
+                    if (u != null)
                     {
-                        txtProducto.Text = serv.Detalle;
+                        frmBuscaServicio frm = new frmBuscaServicio(u.Idpacientes.ToString());
+                        frm.ShowDialog();
+                        serv = frm.u;
+                        ses = frm.sesion;
+                        if (serv != null)
+                        {
+                            txtProducto.Text = serv.Detalle;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Para seleccionar un servicio debe elegir primero un Cliente");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Para seleccionar un servicio debe elegir primero un Cliente");
+                    frmBuscaPacientes frm1 = new frmBuscaPacientes();
+                    frm1.ShowDialog();
+                    Pacientes p1 = frm1.u;
+                    if (p1 != null)
+                    {
+                        frmBuscaServicio frm = new frmBuscaServicio(p1.Idpacientes.ToString());
+                        frm.ShowDialog();
+                        serv = frm.u;
+                        ses = frm.sesion;
+                        if (serv != null)
+                        {
+                            txtProducto.Text = serv.Detalle;
+                        }
+                    }
                 }
             }
             catch (Exception ex)
