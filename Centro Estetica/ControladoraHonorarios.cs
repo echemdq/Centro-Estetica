@@ -12,7 +12,7 @@ namespace Centro_Estetica
 
         public void Agregar(Honorarios dato)
         {
-            throw new NotImplementedException();
+            bd.Agregar(dato);
         }
 
         public List<Honorarios> TraerTodos()
@@ -22,7 +22,7 @@ namespace Centro_Estetica
 
         public void Borrar(Honorarios dato)
         {
-            throw new NotImplementedException();
+            bd.Borrar(dato);
         }
 
         public Honorarios Buscar(string dato)
@@ -32,12 +32,12 @@ namespace Centro_Estetica
 
         public List<Honorarios> BuscarEspecial(string dato)
         {
-            throw new NotImplementedException();
+            return bd.BuscarEspecial(dato);
         }
 
         public void Modificar(Honorarios dato)
         {
-            throw new NotImplementedException();
+            bd.Modificar(dato);
         }
 
         public int traerSigID()

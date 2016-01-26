@@ -166,6 +166,12 @@
     <Compile Include="frmGabinete.Designer.cs">
       <DependentUpon>frmGabinete.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHonorariosProfesionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHonorariosProfesionales.Designer.cs">
+      <DependentUpon>frmHonorariosProfesionales.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHorariosProfesionales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGabinete.resx">
       <DependentUpon>frmGabinete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHonorariosProfesionales.resx">
+      <DependentUpon>frmHonorariosProfesionales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHorariosProfesionales.resx">
       <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>

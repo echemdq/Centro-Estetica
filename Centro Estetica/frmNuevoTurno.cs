@@ -216,19 +216,26 @@ namespace Centro_Estetica
                 }
                 else
                 {
-                    frmBuscaPacientes frm1 = new frmBuscaPacientes();
-                    frm1.ShowDialog();
-                    Pacientes p1 = frm1.u;
-                    if (p1 != null)
+                    if (u != null)
                     {
-                        frmBuscaServicio frm = new frmBuscaServicio(p1.Idpacientes.ToString());
-                        frm.ShowDialog();
-                        serv = frm.u;
-                        ses = frm.sesion;
-                        if (serv != null)
+                        frmBuscaPacientes frm1 = new frmBuscaPacientes();
+                        frm1.ShowDialog();
+                        Pacientes p1 = frm1.u;
+                        if (p1 != null)
                         {
-                            txtProducto.Text = serv.Detalle;
+                            frmBuscaServicio frm = new frmBuscaServicio(p1.Idpacientes.ToString());
+                            frm.ShowDialog();
+                            serv = frm.u;
+                            ses = frm.sesion;
+                            if (serv != null)
+                            {
+                                txtProducto.Text = serv.Detalle;
+                            }
                         }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Para seleccionar un servicio debe elegir primero un Cliente");
                     }
                 }
             }

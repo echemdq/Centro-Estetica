@@ -43,5 +43,12 @@ namespace Centro_Estetica
             get { return idhonorarios; }
             set { idhonorarios = value; }
         }
+        public Honorarios(int i, Productos pro, Profesionales p, decimal im)
+        {
+            idhonorarios = i;
+            prod = pro;
+            prof = p;
+            importe = im;
+        }
     }
 }
