@@ -13,7 +13,7 @@ namespace Centro_Estetica
 
         public void Agregar(Honorarios dato)
         {
-            oacceso.ActualizarBD("insert into honorarios (idprofesionales, idproductos, preciocalculo) values ('" + dato.Prof.Idprofesionales + "','" + dato.Prod.Idproductos + "','" + dato.Importe.ToString().Replace(',', '.') + "')");
+            oacceso.ActualizarBD("insert into honorarios (idprofesionales, idproductos, preciocalculo) select * from ( select '" + dato.Prof.Idprofesionales + "','" + dato.Prod.Idproductos + "','" + dato.Importe.ToString().Replace(',', '.') + "') as tmp where not exists (select * from honorarios where idprofesionales = '" + dato.Prof.Idprofesionales + "' and idproductos = '" + dato.Prod.Idproductos + "') LIMIT 1;");
         }
 
         public List<Honorarios> TraerTodos()

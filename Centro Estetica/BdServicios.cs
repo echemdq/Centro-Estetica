@@ -35,7 +35,7 @@ namespace Centro_Estetica
             List<Servicios> lista = new List<Servicios>();
             foreach (DataRow dr in dt.Rows)
             {
-                Servicios s = new Servicios(Convert.ToInt32(dr["idservicios"]), Convert.ToInt32(dr["idproductos"]), Convert.ToString(dr["detalle"]), Convert.ToInt32(dr["sesiones"]), Convert.ToInt32(dr["usadas"]), Convert.ToInt32(dr["idfacturacion"]), Convert.ToInt32(dr["idpacientes"]));
+                Servicios s = new Servicios(Convert.ToInt32(dr["idservicios"]), Convert.ToInt32(dr["idproductos"]), Convert.ToString(dr["detalle"]), Convert.ToInt32(dr["sesiones"]), Convert.ToInt32(dr["usadas"]), Convert.ToInt32(dr["idlineafactura"]), Convert.ToInt32(dr["idpacientes"]));
                 lista.Add(s);
             }
             return lista;

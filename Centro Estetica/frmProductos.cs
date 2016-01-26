@@ -13,6 +13,7 @@ namespace Centro_Estetica
     public partial class frmProductos : Form
     {
         ControladoraProductos controlp = new ControladoraProductos();
+        Productos u = null;
         public frmProductos()
         {
             InitializeComponent();
@@ -98,6 +99,7 @@ namespace Centro_Estetica
 
         public void habilitar()
         {
+            button2.Enabled = true;
             txtPrecioC.Enabled = true;
             txtPrecioV.Enabled = true;
             txtProducto.Enabled = true;
@@ -106,6 +108,7 @@ namespace Centro_Estetica
         }
         public void deshabilitar()
         {
+            button2.Enabled = false;
             txtPrecioC.Enabled = false;
             txtPrecioV.Enabled = false;
             txtProducto.Enabled = false;
@@ -172,7 +175,7 @@ namespace Centro_Estetica
                 limpiar();
                 frmBuscaProductos frm = new frmBuscaProductos();
                 frm.ShowDialog();
-                Productos u = frm.u;
+                 u = frm.u;
                 if (u != null)
                 {
                     textBox1.Text = u.Idproductos.ToString();
@@ -238,6 +241,21 @@ namespace Centro_Estetica
             catch (Exception ex)
             {
                 MessageBox.Show("Error al Eliminar: " + ex.Message);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (u != null)
+            {
+                frmBuscaProfesionales frm = new frmBuscaProfesionales();
+                frm.ShowDialog();
+                Profesionales prof = frm.u;
+                if (prof != null)
+                {
+                    frmHonorariosProfesionales frm1 = new frmHonorariosProfesionales(prof.Idprofesionales.ToString(), u);
+                    frm1.ShowDialog();
+                }
             }
         }
     }

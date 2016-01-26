@@ -217,7 +217,7 @@ namespace Centro_Estetica
         {
             if (lblId.Text != "")
             {
-                frmHonorariosProfesionales frm = new frmHonorariosProfesionales(lblId.Text);
+                frmHonorariosProfesionales frm = new frmHonorariosProfesionales(lblId.Text, null);
                 frm.ShowDialog();
             }
             else
