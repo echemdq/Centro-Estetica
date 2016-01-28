@@ -59,8 +59,13 @@ namespace Centro_Estetica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmReport frm = new frmReport();
-            frm.Show();
+
+        }
+
+        private void configHonorariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInformeHonorariosDiarios frm = new frmInformeHonorariosDiarios();
+            frm.ShowDialog();
         }
 
     }

@@ -128,15 +128,16 @@
             // aBMProfesionalesToolStripMenuItem
             // 
             this.aBMProfesionalesToolStripMenuItem.Name = "aBMProfesionalesToolStripMenuItem";
-            this.aBMProfesionalesToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.aBMProfesionalesToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.aBMProfesionalesToolStripMenuItem.Text = "ABM Profesionales";
             this.aBMProfesionalesToolStripMenuItem.Click += new System.EventHandler(this.aBMProfesionalesToolStripMenuItem_Click);
             // 
             // configHonorariosToolStripMenuItem
             // 
             this.configHonorariosToolStripMenuItem.Name = "configHonorariosToolStripMenuItem";
-            this.configHonorariosToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.configHonorariosToolStripMenuItem.Text = "Config Honorarios";
+            this.configHonorariosToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.configHonorariosToolStripMenuItem.Text = "Pago Profesionales";
+            this.configHonorariosToolStripMenuItem.Click += new System.EventHandler(this.configHonorariosToolStripMenuItem_Click);
             // 
             // pacientesToolStripMenuItem
             // 

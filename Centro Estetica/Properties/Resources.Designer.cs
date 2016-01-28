@@ -113,6 +113,16 @@ namespace Centro_Estetica.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Printer {
+            get {
+                object obj = ResourceManager.GetObject("Printer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Recycle_Bin_Empty {
             get {
                 object obj = ResourceManager.GetObject("Recycle Bin Empty", resourceCulture);

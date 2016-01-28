@@ -26,7 +26,8 @@ C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Cen
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmEsperas.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmBuscaServicio.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmReport.resources
-C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\RdlCompile.cache
-C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\RdlCompile.compiled
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmDatosTurno.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmHonorariosProfesionales.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmInformeHonorariosDiarios.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\RdlCompile.cache
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\RdlCompile.compiled
