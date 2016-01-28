@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ProductosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.ProductosBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ProductosBindingSource
+            // 
+            this.ProductosBindingSource.DataSource = typeof(Centro_Estetica.Productos);
             // 
             // reportViewer1
             // 
@@ -43,18 +47,14 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Centro_Estetica.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 12);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(791, 543);
+            this.reportViewer1.Size = new System.Drawing.Size(866, 543);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // ProductosBindingSource
-            // 
-            this.ProductosBindingSource.DataSource = typeof(Centro_Estetica.Productos);
             // 
             // frmReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 567);
+            this.ClientSize = new System.Drawing.Size(890, 567);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmReport";
             this.Text = "frmReport";

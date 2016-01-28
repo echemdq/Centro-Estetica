@@ -28,13 +28,14 @@ namespace Centro_Estetica
         {
             try
             {
+
+                ReportParameter[] parameters = new ReportParameter[1];
+                parameters[0] = new ReportParameter("ReportParameter1", dia);
+                this.reportViewer1.LocalReport.SetParameters(parameters);
+                this.reportViewer1.RefreshReport();
                 
-                //ReportParameter[] parameters = new ReportParameter[1];
-                //parameters[0] = new ReportParameter("ReportParameter1", dia);
-                //this.reportViewer1.LocalReport.SetParameters(parameters);
-                //this.reportViewer1.RefreshReport();
                 reportViewer1.LocalReport.DataSources.Clear(); //clear report
-                reportViewer1.LocalReport.ReportEmbeddedResource = "Centro_Estetica.Report2.rdlc"; // bind reportviewer with .rdlc
+                reportViewer1.LocalReport.ReportEmbeddedResource = "Centro_Estetica.Report1.rdlc"; // bind reportviewer with .rdlc
                 Microsoft.Reporting.WinForms.ReportDataSource dataset = new Microsoft.Reporting.WinForms.ReportDataSource("DSInfHono", list); // set the datasource                
                 reportViewer1.LocalReport.DataSources.Add(dataset);
                 dataset.Value = list;

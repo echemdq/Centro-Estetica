@@ -348,7 +348,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
     <None Include="app.config" />
     <None Include="InfHonorarios.datasource" />
     <None Include="Productos.datasource" />

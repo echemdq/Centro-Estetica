@@ -38,6 +38,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 79);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 92);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(658, 195);
@@ -85,6 +86,7 @@
             this.txtFecha.TabIndex = 72;
             this.txtFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtFecha.ValidatingType = typeof(System.DateTime);
+            this.txtFecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFecha_KeyPress);
             // 
             // label3
             // 
@@ -101,7 +103,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.BackgroundImage = global::Centro_Estetica.Properties.Resources.Printer;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(633, 36);
+            this.button1.Location = new System.Drawing.Point(633, 46);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(37, 37);
             this.button1.TabIndex = 90;
@@ -132,11 +134,23 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(633, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 37);
+            this.button2.TabIndex = 91;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmInformeHonorariosDiarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 286);
+            this.ClientSize = new System.Drawing.Size(682, 299);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.txtFecha);
@@ -166,5 +180,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
