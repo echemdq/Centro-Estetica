@@ -666,5 +666,61 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnHistCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmHistorialCliente frm = new frmHistorialCliente();
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void liberaInasistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.Orange && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.White && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.Gray && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.LightBlue && monthCalendar1.SelectionRange.Start < DateTime.Now.Date && monthCalendar1.SelectionRange.Start >= DateTime.Now.Date.AddDays(-10))
+                {
+                    MessageBox.Show("ok");
+                    int idprofesional = 0;
+                    foreach (grilla aux in laux)
+                    {
+                        if (-1 == aux.Fila && col == aux.Columna)
+                        {
+                            idprofesional = Convert.ToInt32(aux.Id);
+                        }
+                    }
+
+                    DataTable dt = oacceso.leerDatos("select ifnull(estado,0) as estado, idservicios, idserviciosturnos from serviciosturnos where idprofesionales = '" + idprofesional + "' and hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and fecha = '" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "'");
+                    int estado = 0;
+                    string idservicios = "";
+                    string idserviciosturnos = "";
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        estado = Convert.ToInt32(dr["estado"]);
+                        idservicios = Convert.ToString(dr["idservicios"]);
+                        idserviciosturnos = Convert.ToString(dr["idserviciosturnos"]);
+                    }
+                    if (estado == 0)
+                    {
+                        oacceso.ActualizarBD("begin; update serviciosturnos set estado = 1 where idserviciosturnos = '" + idserviciosturnos + "'; update servicios set usadas = usadas - 1 where idservicios = '" + idservicios + "'; commit;");
+                        MessageBox.Show("Sesion de inasistencia Liberada");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Servicio ya reasignado");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -57,12 +57,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnHistCliente = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.liberaInasistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -92,6 +94,7 @@
             this.toolStripSeparator2,
             this.suspenderTurnoFijoToolStripMenuItem,
             this.liberaTurnoToolStripMenuItem,
+            this.liberaInasistenciaToolStripMenuItem,
             this.toolStripSeparator3,
             this.habilitaHoraToolStripMenuItem,
             this.deshabilitaHoraToolStripMenuItem,
@@ -100,7 +103,7 @@
             this.toolStripSeparator4,
             this.asignarGabineteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 182);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 226);
             // 
             // nuevoTurnoToolStripMenuItem
             // 
@@ -181,7 +184,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1049, 12);
+            this.button1.Location = new System.Drawing.Point(957, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 42);
             this.button1.TabIndex = 2;
@@ -326,18 +329,6 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Lista de Espera de Turnos";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Add;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(1276, 267);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(37, 37);
-            this.button2.TabIndex = 85;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -369,11 +360,41 @@
             this.label9.TabIndex = 87;
             this.label9.Text = "Asist Confirmada";
             // 
+            // btnHistCliente
+            // 
+            this.btnHistCliente.Location = new System.Drawing.Point(1131, 12);
+            this.btnHistCliente.Name = "btnHistCliente";
+            this.btnHistCliente.Size = new System.Drawing.Size(182, 42);
+            this.btnHistCliente.TabIndex = 89;
+            this.btnHistCliente.Text = "Historial Cliente";
+            this.btnHistCliente.UseVisualStyleBackColor = true;
+            this.btnHistCliente.Click += new System.EventHandler(this.btnHistCliente_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Add;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(1276, 267);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 37);
+            this.button2.TabIndex = 85;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // liberaInasistenciaToolStripMenuItem
+            // 
+            this.liberaInasistenciaToolStripMenuItem.Name = "liberaInasistenciaToolStripMenuItem";
+            this.liberaInasistenciaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.liberaInasistenciaToolStripMenuItem.Text = "Libera Inasistencia";
+            this.liberaInasistenciaToolStripMenuItem.Click += new System.EventHandler(this.liberaInasistenciaToolStripMenuItem_Click);
+            // 
             // frmTurnero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1325, 508);
+            this.Controls.Add(this.btnHistCliente);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -444,5 +465,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnHistCliente;
+        private System.Windows.Forms.ToolStripMenuItem liberaInasistenciaToolStripMenuItem;
     }
 }

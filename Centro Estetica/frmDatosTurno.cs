@@ -41,8 +41,10 @@ namespace Centro_Estetica
             txtFecha.Text = fec;
             txtHora.Text = t.Hora;
             txtPaciente.Text = pac;
-            DataTable dt = oacceso.leerDatos("select st.asistencia as asistencia, st.idserviciosturnos as idservt, s.detalle as detalle, st.idservicios as idservicios, p.paciente as paciente from serviciosturnos st inner join servicios s on st.idservicios = s.idservicios inner join pacientes p on s.idpacientes = p.idpacientes where st.fecha = '"+fechaa.ToString("yyyy-MM-dd")+"' and st.hora = '"+t.Hora+"' and st.idprofesionales = '"+t.Profesionales.Idprofesionales+"' and st.idpacientes = '"+t.Paciente+"'");
+            DataTable dt = oacceso.leerDatos("select st.asistencia as asistencia, st.idserviciosturnos as idservt, s.detalle as detalle, st.idservicios as idservicios, p.paciente as paciente, p.idpacientes as idpac, st.idpacientes as idpacu from serviciosturnos st inner join servicios s on st.idservicios = s.idservicios inner join pacientes p on s.idpacientes = p.idpacientes where st.fecha = '"+fechaa.ToString("yyyy-MM-dd")+"' and st.hora = '"+t.Hora+"' and st.idprofesionales = '"+t.Profesionales.Idprofesionales+"' and st.idpacientes = '"+t.Paciente+"'");
             string paci = "";
+            int idpac = 0;
+            int idpacu = 0;
             foreach (DataRow dr in dt.Rows)
             {
                 idserviciosturnos = Convert.ToInt32(dr["idservt"]);
@@ -50,8 +52,10 @@ namespace Centro_Estetica
                 txtProducto.Text = Convert.ToString(dr["detalle"]);
                 asistencia = Convert.ToInt32(dr["asistencia"]);
                 paci = Convert.ToString(dr["paciente"]);
+                idpac = Convert.ToInt32(dr["idpac"]);
+                idpacu = Convert.ToInt32(dr["idpacu"]);
             }
-            if (paci != "" && !txtPaciente.Text.Equals(paci))
+            if (idpac != idpacu)
             {
                 txtProducto.Text = txtProducto.Text + " Regalo de: " + paci;
             }
