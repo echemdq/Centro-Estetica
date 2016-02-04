@@ -20,6 +20,13 @@ namespace Centro_Estetica
 
         private void frmHistorialCliente_Load(object sender, EventArgs e)
         {
+            dataGridView1.ColumnCount = 6;
+            dataGridView1.Columns[0].Name = "Fecha";
+            dataGridView1.Columns[1].Name = "Profesional";
+            dataGridView1.Columns[2].Name = "Servicio";
+            dataGridView1.Columns[3].Name = "Sesion";
+            dataGridView1.Columns[4].Name = "Asistio";
+            dataGridView1.Columns[5].Name = "Regalo de";
             frmBuscaPacientes frm = new frmBuscaPacientes();
             frm.ShowDialog();
             pac = frm.u;
