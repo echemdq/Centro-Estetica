@@ -20,13 +20,11 @@ namespace Centro_Estetica
 
         private void frmHistorialCliente_Load(object sender, EventArgs e)
         {
-            dataGridView1.ColumnCount = 6;
+            dataGridView1.ColumnCount = 4;
             dataGridView1.Columns[0].Name = "Fecha";
             dataGridView1.Columns[1].Name = "Profesional";
             dataGridView1.Columns[2].Name = "Servicio";
-            dataGridView1.Columns[3].Name = "Sesion";
-            dataGridView1.Columns[4].Name = "Asistio";
-            dataGridView1.Columns[5].Name = "Regalo de";
+            dataGridView1.Columns[3].Name = "Regalo de";
             frmBuscaPacientes frm = new frmBuscaPacientes();
             frm.ShowDialog();
             pac = frm.u;
@@ -59,7 +57,14 @@ namespace Centro_Estetica
                 {
                     if (rbAsistidos.Checked)
                     {
-
+                        Acceso_BD oacceso = new Acceso_BD();
+                        DataTable dt = oacceso.leerDatos("select p.profesional,st.fecha,st.hora,concat(s.detalle,' ',st.sesion) as servicio, case when st.idpacientes<>s.idpacientes then Concat('Regalo ', pc.paciente) else '' end as regalo from serviciosturnos st left join servicios s on st.idservicios = s.idservicios left join profesionales p on p.idprofesionales=st.idprofesionales left join pacientes pc on pc.idpacientes=s.idpacientes where st.idpacientes= '"+pac.Idpacientes+"' and st.asistencia = 1 order by st.fecha desc , st.hora");
+                        int regalo = 0;
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            string profesional = Convert.ToString(dr["profesional"]);
+                            DateTime fecha = Convert.ToDateTime(dr["fecha"])
+                        }
                     }
                     else
                     {
