@@ -686,7 +686,6 @@ namespace Centro_Estetica
             {
                 if (dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.Orange && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.White && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.Gray && dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.LightBlue && monthCalendar1.SelectionRange.Start < DateTime.Now.Date && monthCalendar1.SelectionRange.Start >= DateTime.Now.Date.AddDays(-10))
                 {
-                    MessageBox.Show("ok");
                     int idprofesional = 0;
                     foreach (grilla aux in laux)
                     {
@@ -708,7 +707,7 @@ namespace Centro_Estetica
                     }
                     if (estado == 0)
                     {
-                        oacceso.ActualizarBD("begin; update serviciosturnos set estado = 1 where idserviciosturnos = '" + idserviciosturnos + "'; update servicios set usadas = usadas - 1 where idservicios = '" + idservicios + "'; commit;");
+                        oacceso.ActualizarBD("begin; update serviciosturnos set estado = 1 where idserviciosturnos = '" + idserviciosturnos + "'; update servicios set usadas = usadas - 1 where idservicios = '" + idservicios + "'; insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Liberacion de inasistencia y reasignacion de sesiones','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0'); commit;");
                         MessageBox.Show("Sesion de inasistencia Liberada");
                     }
                     else

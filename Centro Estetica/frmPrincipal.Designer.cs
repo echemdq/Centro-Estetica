@@ -45,6 +45,7 @@
             this.turnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresosEgresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -164,7 +165,8 @@
             // ventasToolStripMenuItem
             // 
             this.ventasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.facturacionToolStripMenuItem});
+            this.facturacionToolStripMenuItem,
+            this.ingresosEgresosToolStripMenuItem});
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.ventasToolStripMenuItem.Text = "Ventas";
@@ -172,9 +174,16 @@
             // facturacionToolStripMenuItem
             // 
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
             this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
+            // 
+            // ingresosEgresosToolStripMenuItem
+            // 
+            this.ingresosEgresosToolStripMenuItem.Name = "ingresosEgresosToolStripMenuItem";
+            this.ingresosEgresosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.ingresosEgresosToolStripMenuItem.Text = "Ingresos/Egresos";
+            this.ingresosEgresosToolStripMenuItem.Click += new System.EventHandler(this.ingresosEgresosToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -226,6 +235,7 @@
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem ingresosEgresosToolStripMenuItem;
 
     }
 }

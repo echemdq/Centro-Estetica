@@ -190,6 +190,12 @@
     <Compile Include="frmInformeHonorariosDiarios.Designer.cs">
       <DependentUpon>frmInformeHonorariosDiarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMovCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovCaja.Designer.cs">
+      <DependentUpon>frmMovCaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNuevoTurno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +281,7 @@
     <Compile Include="Tarjetas.cs" />
     <Compile Include="TipoDoc.cs" />
     <Compile Include="TipoFormasPago.cs" />
+    <Compile Include="TipoMovCajas.cs" />
     <Compile Include="Turnos.cs" />
     <EmbeddedResource Include="frmBuscaPacientes.resx">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
@@ -314,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInformeHonorariosDiarios.resx">
       <DependentUpon>frmInformeHonorariosDiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovCaja.resx">
+      <DependentUpon>frmMovCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoTurno.resx">
       <DependentUpon>frmNuevoTurno.cs</DependentUpon>
