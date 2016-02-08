@@ -184,6 +184,12 @@
     <Compile Include="frmHorariosProfesionales.Designer.cs">
       <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInfCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfCajas.Designer.cs">
+      <DependentUpon>frmInfCajas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInformeHonorariosDiarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,7 @@
     <Compile Include="TipoDoc.cs" />
     <Compile Include="TipoFormasPago.cs" />
     <Compile Include="TipoMovCajas.cs" />
+    <Compile Include="TotalesCaja.cs" />
     <Compile Include="Turnos.cs" />
     <EmbeddedResource Include="frmBuscaPacientes.resx">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
@@ -318,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHorariosProfesionales.resx">
       <DependentUpon>frmHorariosProfesionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfCajas.resx">
+      <DependentUpon>frmInfCajas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInformeHonorariosDiarios.resx">
       <DependentUpon>frmInformeHonorariosDiarios.cs</DependentUpon>

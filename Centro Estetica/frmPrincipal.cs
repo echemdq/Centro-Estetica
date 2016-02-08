@@ -74,5 +74,11 @@ namespace Centro_Estetica
             frm.ShowDialog();
         }
 
+        private void cajasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInfCajas frm = new frmInfCajas();
+            frm.ShowDialog();
+        }
+
     }
 }

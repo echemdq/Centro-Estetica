@@ -125,7 +125,10 @@ namespace Centro_Estetica
             {
                 Acceso_BD oacceso = new Acceso_BD();
                 oacceso.ActualizarBD("insert into movcajas (idtipomovcajas, detalle, importe, fecha, tipo) values ('" + cmbrubro.SelectedValue + "','" + textBox1.Text + "','" + txtPrecioV.Text + "','" + DateTime.Now.Date.ToString("yyyy-MM-dd") + "','" + comboBox1.Text + "')");
+                txtPrecioV.Text = "0.00";
+                textBox1.Text = "";
                 frmMovCaja_Load(sender, e);
+
             }
             catch (Exception ex)
             {
