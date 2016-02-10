@@ -169,6 +169,12 @@
     <Compile Include="frmFormaPago.Designer.cs">
       <DependentUpon>frmFormaPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFormaPago1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormaPago1.Designer.cs">
+      <DependentUpon>frmFormaPago1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGabinete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     <EmbeddedResource Include="frmFormaPago.resx">
       <DependentUpon>frmFormaPago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFormaPago1.resx">
+      <DependentUpon>frmFormaPago1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGabinete.resx">
       <DependentUpon>frmGabinete.cs</DependentUpon>
     </EmbeddedResource>
@@ -420,6 +429,7 @@
     <None Include="Imagenes\Undo.ico" />
     <None Include="Imagenes\Background-Image41.jpg" />
     <None Include="Imagenes\Background-Spa.jpg" />
+    <Content Include="Imagenes\cash.ico" />
     <Content Include="Imagenes\Document.ico" />
     <Content Include="Imagenes\Edit.ico" />
     <Content Include="Imagenes\Hopstarter-Soft-Scraps-Clock.ico" />

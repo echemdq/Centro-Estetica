@@ -14,8 +14,15 @@ namespace Centro_Estetica
         decimal importe;
         decimal cancelado;
         int tipocomp;
+        decimal acancelar;
 
-        public Ctacte(int i, int ip, Factura ifac, decimal imp, decimal can, int t)
+        public decimal Acancelar
+        {
+            get { return acancelar; }
+            set { acancelar = value; }
+        }
+
+        public Ctacte(int i, int ip, Factura ifac, decimal imp, decimal can, int t,decimal a)
         {
             idctacte = i;
             idpaciente = ip;
@@ -23,6 +30,7 @@ namespace Centro_Estetica
             importe = imp;
             cancelado = can;
             tipocomp = t;
+            acancelar = a;
         }
 
         public int Tipocomp

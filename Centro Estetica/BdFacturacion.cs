@@ -66,6 +66,24 @@ namespace Centro_Estetica
             oacceso.ActualizarBD("insert into formasdepago (idtipoformaspago, idfacturacion, idtarjetas, cupon, cuotas, total) values ('" + dato2.Idtipoformaspago + "','" + idfactura + "','" + dato2.Idtarjetas + "','" + dato2.Cupon + "','" + dato2.Cuotas + "','" + dato.Total.ToString().Replace(',', '.') + "')");
         }
 
+        public void Agregar2(Factura dato, List<Ctacte> dato1, TipoFormasPago dato2)
+        {
+            DataTable dt = oacceso.leerDatos("insert into facturacion (fecha,idpaciente,detalle,domicilio,documento,localidad,total,ptoventa,factura,bonificacion, tipocomp) values ('" + dato.Fecha.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dato.Idpaciente + "','" + dato.Detalle + "','" + dato.Domicilio + "','" + dato.Documento + "','" + dato.Localidad + "','" + dato.Total.ToString().Replace(',', '.') + "','" + dato.Ptoventa + "','" + dato.Numerofact + "','" + dato.Bonif.ToString().Replace(',', '.') + "','2'); select max(idfacturacion) as idfactura from facturacion;");
+            string idfactura = "";
+            foreach (DataRow dr in dt.Rows)
+            {
+                idfactura = Convert.ToString(dr["idfactura"]);
+            }
+            string update = "begin; ";
+            foreach (Ctacte aux in dato1)
+            {                
+                update = update + "update ctacte set cancelado = cancelado + '" + aux.Acancelar + "' where idctacte = '" + aux.Idctacte + "'; ";
+            }
+            update = update + "insert into ctacte (idfacturacion, idpacientes, tipocomp, importe, cancelado) values ('" + idfactura + "','" + dato.Idpaciente + "','2','" + dato.Total.ToString().Replace(',', '.') + "','" + dato.Total.ToString().Replace(',', '.') + "'); commit;";
+            oacceso.ActualizarBD(update);
+            oacceso.ActualizarBD("insert into formasdepago (idtipoformaspago, idfacturacion, idtarjetas, cupon, cuotas, total) values ('" + dato2.Idtipoformaspago + "','" + idfactura + "','" + dato2.Idtarjetas + "','" + dato2.Cupon + "','" + dato2.Cuotas + "','" + dato.Total.ToString().Replace(',', '.') + "')");
+        }
+
         public List<Factura> TraerTodos()
         {
             throw new NotImplementedException();
