@@ -48,6 +48,7 @@
             this.btnEliminarServ = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.chkRegalo = new System.Windows.Forms.CheckBox();
+            this.btnBuscarPac = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtProducto
@@ -214,7 +215,7 @@
             this.btnAgregarServ.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Add;
             this.btnAgregarServ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgregarServ.Enabled = false;
-            this.btnAgregarServ.Location = new System.Drawing.Point(404, 70);
+            this.btnAgregarServ.Location = new System.Drawing.Point(404, 76);
             this.btnAgregarServ.Name = "btnAgregarServ";
             this.btnAgregarServ.Size = new System.Drawing.Size(41, 38);
             this.btnAgregarServ.TabIndex = 0;
@@ -228,7 +229,7 @@
             this.btnEliminarServ.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Delete;
             this.btnEliminarServ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEliminarServ.Enabled = false;
-            this.btnEliminarServ.Location = new System.Drawing.Point(357, 70);
+            this.btnEliminarServ.Location = new System.Drawing.Point(357, 76);
             this.btnEliminarServ.Name = "btnEliminarServ";
             this.btnEliminarServ.Size = new System.Drawing.Size(41, 38);
             this.btnEliminarServ.TabIndex = 1;
@@ -239,18 +240,32 @@
             // chkRegalo
             // 
             this.chkRegalo.AutoSize = true;
-            this.chkRegalo.Location = new System.Drawing.Point(356, 114);
+            this.chkRegalo.Location = new System.Drawing.Point(356, 120);
             this.chkRegalo.Name = "chkRegalo";
             this.chkRegalo.Size = new System.Drawing.Size(98, 17);
             this.chkRegalo.TabIndex = 124;
             this.chkRegalo.Text = "Asignar Regalo";
             this.chkRegalo.UseVisualStyleBackColor = true;
             // 
+            // btnBuscarPac
+            // 
+            this.btnBuscarPac.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBuscarPac.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
+            this.btnBuscarPac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarPac.Location = new System.Drawing.Point(357, 36);
+            this.btnBuscarPac.Name = "btnBuscarPac";
+            this.btnBuscarPac.Size = new System.Drawing.Size(41, 38);
+            this.btnBuscarPac.TabIndex = 125;
+            this.toolTip1.SetToolTip(this.btnBuscarPac, "Buscar");
+            this.btnBuscarPac.UseVisualStyleBackColor = false;
+            this.btnBuscarPac.Click += new System.EventHandler(this.btnBuscarPac_Click);
+            // 
             // frmDatosTurno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 291);
+            this.Controls.Add(this.btnBuscarPac);
             this.Controls.Add(this.chkRegalo);
             this.Controls.Add(this.btnAgregarServ);
             this.Controls.Add(this.btnEliminarServ);
@@ -269,6 +284,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtProfesional);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(472, 329);
+            this.MinimumSize = new System.Drawing.Size(472, 329);
             this.Name = "frmDatosTurno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informacion del Turno";
@@ -299,5 +316,6 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btnEliminarServ;
         private System.Windows.Forms.CheckBox chkRegalo;
+        private System.Windows.Forms.Button btnBuscarPac;
     }
 }

@@ -228,7 +228,7 @@ namespace Centro_Estetica
                 else
                 {
                     Acceso_BD oacceso = new Acceso_BD();
-                    DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'factura'");
+                    DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'recibo'");
                     int factura = 0;
                     foreach (DataRow dr in dt.Rows)
                     {

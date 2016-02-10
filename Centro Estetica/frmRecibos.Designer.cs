@@ -145,9 +145,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTraer);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(557, 392);
+            this.MinimumSize = new System.Drawing.Size(557, 392);
             this.Name = "frmRecibos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRecibos";
+            this.Text = "Recibos Internos";
             this.Load += new System.EventHandler(this.frmRecibos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

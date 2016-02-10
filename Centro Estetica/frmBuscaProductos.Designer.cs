@@ -90,7 +90,10 @@
             this.Controls.Add(this.btnTraer);
             this.Controls.Add(this.txtPaciente);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(797, 367);
+            this.MinimumSize = new System.Drawing.Size(797, 367);
             this.Name = "frmBuscaProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar Productos";
             this.Load += new System.EventHandler(this.frmBuscaProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

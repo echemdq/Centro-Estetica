@@ -54,7 +54,7 @@
             this.cmbFormaPago.Location = new System.Drawing.Point(139, 12);
             this.cmbFormaPago.Name = "cmbFormaPago";
             this.cmbFormaPago.Size = new System.Drawing.Size(159, 21);
-            this.cmbFormaPago.TabIndex = 2;
+            this.cmbFormaPago.TabIndex = 0;
             // 
             // txtTotal
             // 
@@ -75,7 +75,7 @@
             this.cmbTarjetas.Location = new System.Drawing.Point(139, 64);
             this.cmbTarjetas.Name = "cmbTarjetas";
             this.cmbTarjetas.Size = new System.Drawing.Size(159, 21);
-            this.cmbTarjetas.TabIndex = 6;
+            this.cmbTarjetas.TabIndex = 1;
             // 
             // label1
             // 
@@ -154,7 +154,7 @@
             this.txtCuotas.Location = new System.Drawing.Point(139, 90);
             this.txtCuotas.Name = "txtCuotas";
             this.txtCuotas.Size = new System.Drawing.Size(75, 21);
-            this.txtCuotas.TabIndex = 19;
+            this.txtCuotas.TabIndex = 2;
             this.txtCuotas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuotas_KeyPress);
             // 
             // txtCupon
@@ -164,7 +164,7 @@
             this.txtCupon.Location = new System.Drawing.Point(139, 116);
             this.txtCupon.Name = "txtCupon";
             this.txtCupon.Size = new System.Drawing.Size(75, 21);
-            this.txtCupon.TabIndex = 20;
+            this.txtCupon.TabIndex = 3;
             this.txtCupon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCupon_KeyPress);
             // 
             // txtPtoVenta
@@ -174,7 +174,7 @@
             this.txtPtoVenta.Location = new System.Drawing.Point(164, 177);
             this.txtPtoVenta.Name = "txtPtoVenta";
             this.txtPtoVenta.Size = new System.Drawing.Size(43, 21);
-            this.txtPtoVenta.TabIndex = 21;
+            this.txtPtoVenta.TabIndex = 5;
             this.txtPtoVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPtoVenta_KeyPress);
             // 
             // txtFactura
@@ -184,7 +184,7 @@
             this.txtFactura.Location = new System.Drawing.Point(213, 177);
             this.txtFactura.Name = "txtFactura";
             this.txtFactura.Size = new System.Drawing.Size(85, 21);
-            this.txtFactura.TabIndex = 22;
+            this.txtFactura.TabIndex = 6;
             this.txtFactura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFactura_KeyPress);
             // 
             // button4
@@ -195,7 +195,7 @@
             this.button4.Location = new System.Drawing.Point(139, 213);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(37, 37);
-            this.button4.TabIndex = 89;
+            this.button4.TabIndex = 7;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -205,7 +205,7 @@
             this.chkFactura.Location = new System.Drawing.Point(139, 179);
             this.chkFactura.Name = "chkFactura";
             this.chkFactura.Size = new System.Drawing.Size(15, 14);
-            this.chkFactura.TabIndex = 90;
+            this.chkFactura.TabIndex = 4;
             this.chkFactura.UseVisualStyleBackColor = true;
             this.chkFactura.CheckedChanged += new System.EventHandler(this.chkFactura_CheckedChanged);
             // 
@@ -230,6 +230,8 @@
             this.Controls.Add(this.cmbTarjetas);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.cmbFormaPago);
+            this.MaximumSize = new System.Drawing.Size(328, 300);
+            this.MinimumSize = new System.Drawing.Size(328, 300);
             this.Name = "frmFormaPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forma de Pago";

@@ -218,7 +218,10 @@
             this.Controls.Add(this.txtProducto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(537, 404);
+            this.MinimumSize = new System.Drawing.Size(537, 404);
             this.Name = "frmHonorariosProfesionales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Honorarios por Excepcion";
             this.Load += new System.EventHandler(this.frmHonorariosProfesionales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

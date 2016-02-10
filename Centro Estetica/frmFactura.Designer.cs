@@ -291,6 +291,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.Control;
+            this.button4.BackgroundImage = global::Centro_Estetica.Properties.Resources.cash;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Location = new System.Drawing.Point(560, 334);
             this.button4.Name = "button4";
@@ -302,6 +303,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Delete;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Location = new System.Drawing.Point(560, 160);
             this.button3.Name = "button3";
@@ -313,6 +315,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Add;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(560, 117);
             this.button2.Name = "button2";
@@ -324,6 +327,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(93, 142);
             this.button1.Name = "button1";
@@ -335,6 +339,7 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBuscar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscar.Location = new System.Drawing.Point(287, 6);
             this.btnBuscar.Name = "btnBuscar";
@@ -375,6 +380,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPaciente);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(625, 418);
+            this.MinimumSize = new System.Drawing.Size(625, 418);
             this.Name = "frmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facturacion";

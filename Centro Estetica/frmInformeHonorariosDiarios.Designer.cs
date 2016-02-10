@@ -137,6 +137,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.BackgroundImage = global::Centro_Estetica.Properties.Resources.cash;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(633, 7);
             this.button2.Name = "button2";
@@ -159,8 +160,11 @@
             this.Controls.Add(this.txtProfesional);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(698, 337);
+            this.MinimumSize = new System.Drawing.Size(698, 337);
             this.Name = "frmInformeHonorariosDiarios";
-            this.Text = "frmInformeHonorariosDiarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Informe Honorarios Diarios";
             this.Load += new System.EventHandler(this.frmInformeHonorariosDiarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

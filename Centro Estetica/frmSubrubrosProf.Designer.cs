@@ -130,7 +130,11 @@
             this.Controls.Add(this.cmbSubrubros);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbRubros);
+            this.MaximumSize = new System.Drawing.Size(347, 300);
+            this.MinimumSize = new System.Drawing.Size(347, 300);
             this.Name = "frmSubrubrosProf";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Subrubros Profesionales";
             this.Activated += new System.EventHandler(this.frmSubrubrosProf_Activated);
             this.Load += new System.EventHandler(this.frmSubrubrosProf_Load);

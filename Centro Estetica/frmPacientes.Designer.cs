@@ -427,7 +427,10 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
+            this.MaximumSize = new System.Drawing.Size(720, 359);
+            this.MinimumSize = new System.Drawing.Size(720, 359);
             this.Name = "frmPacientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM Clientes";
             this.Load += new System.EventHandler(this.frmPacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoUser)).EndInit();

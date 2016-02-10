@@ -175,8 +175,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.MaximumSize = new System.Drawing.Size(586, 338);
+            this.MinimumSize = new System.Drawing.Size(586, 338);
             this.Name = "frmMovCaja";
-            this.Text = "frmMovCaja";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Movimientos de Caja";
             this.Load += new System.EventHandler(this.frmMovCaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

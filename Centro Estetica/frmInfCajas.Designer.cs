@@ -105,7 +105,7 @@
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 22);
-            this.maskedTextBox1.TabIndex = 5;
+            this.maskedTextBox1.TabIndex = 0;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // maskedTextBox2
@@ -115,7 +115,7 @@
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(100, 22);
-            this.maskedTextBox2.TabIndex = 6;
+            this.maskedTextBox2.TabIndex = 1;
             this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
             // 
             // btnTraer
@@ -126,7 +126,7 @@
             this.btnTraer.Location = new System.Drawing.Point(209, 24);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
-            this.btnTraer.TabIndex = 78;
+            this.btnTraer.TabIndex = 2;
             this.btnTraer.UseVisualStyleBackColor = false;
             this.btnTraer.Click += new System.EventHandler(this.btnTraer_Click);
             // 
@@ -153,6 +153,8 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(802, 563);
+            this.MinimumSize = new System.Drawing.Size(802, 563);
             this.Name = "frmInfCajas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informe de Cajas";

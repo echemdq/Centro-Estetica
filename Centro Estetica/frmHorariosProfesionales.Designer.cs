@@ -286,7 +286,10 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(567, 414);
+            this.MinimumSize = new System.Drawing.Size(567, 414);
             this.Name = "frmHorariosProfesionales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Horarios Profesionales";
             this.Load += new System.EventHandler(this.frmHorariosProfesionales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

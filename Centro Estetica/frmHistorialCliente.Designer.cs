@@ -92,7 +92,7 @@
             this.btnTraer.Location = new System.Drawing.Point(391, 12);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
-            this.btnTraer.TabIndex = 26;
+            this.btnTraer.TabIndex = 1;
             this.btnTraer.UseVisualStyleBackColor = false;
             this.btnTraer.Click += new System.EventHandler(this.btnTraer_Click);
             // 
@@ -104,7 +104,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(332, 12);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(41, 38);
-            this.btnBuscar.TabIndex = 41;
+            this.btnBuscar.TabIndex = 0;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -132,8 +132,11 @@
             this.Controls.Add(this.rbTurnos);
             this.Controls.Add(this.rbAsistidos);
             this.Controls.Add(this.txtPaciente);
+            this.MaximumSize = new System.Drawing.Size(695, 430);
+            this.MinimumSize = new System.Drawing.Size(695, 430);
             this.Name = "frmHistorialCliente";
-            this.Text = "frmHistorialCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Historial del Cliente";
             this.Load += new System.EventHandler(this.frmHistorialCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

@@ -59,7 +59,7 @@
             this.btnTraer.Location = new System.Drawing.Point(562, 12);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
-            this.btnTraer.TabIndex = 2;
+            this.btnTraer.TabIndex = 1;
             this.btnTraer.UseVisualStyleBackColor = false;
             this.btnTraer.Click += new System.EventHandler(this.btnTraer_Click);
             // 
@@ -90,7 +90,7 @@
             this.button1.Location = new System.Drawing.Point(387, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(41, 38);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -104,8 +104,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTraer);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(631, 349);
+            this.MinimumSize = new System.Drawing.Size(631, 349);
             this.Name = "frmCtaCte";
-            this.Text = "frmCtaCte";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Consulta Cuenta Corriente";
             this.Load += new System.EventHandler(this.frmCtaCte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

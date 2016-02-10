@@ -316,7 +316,10 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
+            this.MaximumSize = new System.Drawing.Size(526, 278);
+            this.MinimumSize = new System.Drawing.Size(526, 278);
             this.Name = "frmProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM Productos";
             ((System.ComponentModel.ISupportInitialize)(this.txtSesiones)).EndInit();
             this.ResumeLayout(false);

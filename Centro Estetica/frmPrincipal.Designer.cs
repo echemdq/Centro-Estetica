@@ -42,14 +42,13 @@
             this.configHonorariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMPacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaCtaCteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.turnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosEgresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cajasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.consultaCtaCteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,6 +158,13 @@
             this.aBMPacientesToolStripMenuItem.Text = "ABM Clientes";
             this.aBMPacientesToolStripMenuItem.Click += new System.EventHandler(this.aBMPacientesToolStripMenuItem_Click);
             // 
+            // consultaCtaCteToolStripMenuItem
+            // 
+            this.consultaCtaCteToolStripMenuItem.Name = "consultaCtaCteToolStripMenuItem";
+            this.consultaCtaCteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.consultaCtaCteToolStripMenuItem.Text = "Consulta CtaCte";
+            this.consultaCtaCteToolStripMenuItem.Click += new System.EventHandler(this.consultaCtaCteToolStripMenuItem_Click);
+            // 
             // turnosToolStripMenuItem
             // 
             this.turnosToolStripMenuItem.Name = "turnosToolStripMenuItem";
@@ -205,23 +211,6 @@
             this.cajasToolStripMenuItem.Text = "Cajas";
             this.cajasToolStripMenuItem.Click += new System.EventHandler(this.cajasToolStripMenuItem_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(301, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // consultaCtaCteToolStripMenuItem
-            // 
-            this.consultaCtaCteToolStripMenuItem.Name = "consultaCtaCteToolStripMenuItem";
-            this.consultaCtaCteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.consultaCtaCteToolStripMenuItem.Text = "Consulta CtaCte";
-            this.consultaCtaCteToolStripMenuItem.Click += new System.EventHandler(this.consultaCtaCteToolStripMenuItem_Click);
-            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,7 +218,6 @@
             this.BackgroundImage = global::Centro_Estetica.Properties.Resources.Background_Spa;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1219, 640);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -261,7 +249,6 @@
         private System.Windows.Forms.ToolStripMenuItem turnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem ingresosEgresosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cajasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;

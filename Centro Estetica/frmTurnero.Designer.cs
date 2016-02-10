@@ -35,6 +35,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.suspenderTurnoFijoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liberaTurnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liberaInasistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.habilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deshabilitaHoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,7 +65,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.liberaInasistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -103,7 +103,7 @@
             this.toolStripSeparator4,
             this.asignarGabineteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 226);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 204);
             // 
             // nuevoTurnoToolStripMenuItem
             // 
@@ -130,6 +130,13 @@
             this.liberaTurnoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.liberaTurnoToolStripMenuItem.Text = "Libera Turno";
             this.liberaTurnoToolStripMenuItem.Click += new System.EventHandler(this.liberaTurnoToolStripMenuItem_Click);
+            // 
+            // liberaInasistenciaToolStripMenuItem
+            // 
+            this.liberaInasistenciaToolStripMenuItem.Name = "liberaInasistenciaToolStripMenuItem";
+            this.liberaInasistenciaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.liberaInasistenciaToolStripMenuItem.Text = "Libera Inasistencia";
+            this.liberaInasistenciaToolStripMenuItem.Click += new System.EventHandler(this.liberaInasistenciaToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -382,13 +389,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // liberaInasistenciaToolStripMenuItem
-            // 
-            this.liberaInasistenciaToolStripMenuItem.Name = "liberaInasistenciaToolStripMenuItem";
-            this.liberaInasistenciaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.liberaInasistenciaToolStripMenuItem.Text = "Libera Inasistencia";
-            this.liberaInasistenciaToolStripMenuItem.Click += new System.EventHandler(this.liberaInasistenciaToolStripMenuItem_Click);
-            // 
             // frmTurnero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -415,7 +415,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dataGridView1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1341, 546);
+            this.MinimumSize = new System.Drawing.Size(1341, 546);
             this.Name = "frmTurnero";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Turnero";
             this.Load += new System.EventHandler(this.frmTurnero_Load);

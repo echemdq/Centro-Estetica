@@ -32,6 +32,13 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnSubrubros = new System.Windows.Forms.Button();
             this.btnHorarios = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.lblId = new System.Windows.Forms.Label();
             this.cmbTipoDoc = new System.Windows.Forms.ComboBox();
             this.txtMail = new System.Windows.Forms.TextBox();
@@ -46,13 +53,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chkActivo = new System.Windows.Forms.CheckBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSubrubros
@@ -78,6 +78,92 @@
             this.toolTip1.SetToolTip(this.btnHorarios, "Configurar Subrubros del Profesional");
             this.btnHorarios.UseVisualStyleBackColor = true;
             this.btnHorarios.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBuscar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscar.Location = new System.Drawing.Point(424, 4);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(41, 38);
+            this.btnBuscar.TabIndex = 63;
+            this.toolTip1.SetToolTip(this.btnBuscar, "Buscar");
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Centro_Estetica.Properties.Resources.Undo;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(328, 200);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 38);
+            this.button1.TabIndex = 45;
+            this.toolTip1.SetToolTip(this.button1, "Limpiar");
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Edit;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditar.Location = new System.Drawing.Point(281, 200);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(41, 38);
+            this.btnEditar.TabIndex = 44;
+            this.toolTip1.SetToolTip(this.btnEditar, "Editar");
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Recycle_Bin_Full;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.Location = new System.Drawing.Point(234, 200);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(41, 38);
+            this.btnEliminar.TabIndex = 43;
+            this.toolTip1.SetToolTip(this.btnEliminar, "Eliminar");
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Save;
+            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.Location = new System.Drawing.Point(187, 200);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(41, 38);
+            this.btnGuardar.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.btnGuardar, "Guardar");
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.SystemColors.Control;
+            this.btnNuevo.BackgroundImage = global::Centro_Estetica.Properties.Resources.Document;
+            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo.Location = new System.Drawing.Point(140, 200);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(41, 38);
+            this.btnNuevo.TabIndex = 41;
+            this.toolTip1.SetToolTip(this.btnNuevo, "Nuevo");
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(409, 171);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 55);
+            this.button2.TabIndex = 67;
+            this.button2.Text = "Honorarios por Excepcion";
+            this.toolTip1.SetToolTip(this.button2, "Configurar Subrubros del Profesional");
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // lblId
             // 
@@ -221,92 +307,6 @@
             this.chkActivo.Text = "Activo";
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnBuscar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscar.Location = new System.Drawing.Point(424, 4);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(41, 38);
-            this.btnBuscar.TabIndex = 63;
-            this.toolTip1.SetToolTip(this.btnBuscar, "Buscar");
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Centro_Estetica.Properties.Resources.Undo;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(328, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 38);
-            this.button1.TabIndex = 45;
-            this.toolTip1.SetToolTip(this.button1, "Limpiar");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Edit;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditar.Location = new System.Drawing.Point(281, 200);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(41, 38);
-            this.btnEditar.TabIndex = 44;
-            this.toolTip1.SetToolTip(this.btnEditar, "Editar");
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Recycle_Bin_Full;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEliminar.Location = new System.Drawing.Point(234, 200);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(41, 38);
-            this.btnEliminar.TabIndex = 43;
-            this.toolTip1.SetToolTip(this.btnEliminar, "Eliminar");
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Save;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardar.Location = new System.Drawing.Point(187, 200);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(41, 38);
-            this.btnGuardar.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.btnGuardar, "Guardar");
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.SystemColors.Control;
-            this.btnNuevo.BackgroundImage = global::Centro_Estetica.Properties.Resources.Document;
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNuevo.Location = new System.Drawing.Point(140, 200);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(41, 38);
-            this.btnNuevo.TabIndex = 41;
-            this.toolTip1.SetToolTip(this.btnNuevo, "Nuevo");
-            this.btnNuevo.UseVisualStyleBackColor = false;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // button2
-            // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(409, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 55);
-            this.button2.TabIndex = 67;
-            this.button2.Text = "Honorarios por Excepcion";
-            this.toolTip1.SetToolTip(this.button2, "Configurar Subrubros del Profesional");
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // frmProfesionales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,7 +335,10 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
+            this.MaximumSize = new System.Drawing.Size(526, 286);
+            this.MinimumSize = new System.Drawing.Size(526, 286);
             this.Name = "frmProfesionales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM Profesionales";
             this.Load += new System.EventHandler(this.frmProfesionales_Load);
             this.ResumeLayout(false);

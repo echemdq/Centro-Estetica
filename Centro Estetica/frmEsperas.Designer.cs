@@ -44,7 +44,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.Control;
             this.button4.BackgroundImage = global::Centro_Estetica.Properties.Resources.Save;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(124, 250);
+            this.button4.Location = new System.Drawing.Point(123, 216);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(37, 37);
             this.button4.TabIndex = 98;
@@ -56,7 +56,7 @@
             this.btnBuscar.BackColor = System.Drawing.SystemColors.Control;
             this.btnBuscar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscar.Location = new System.Drawing.Point(229, 36);
+            this.btnBuscar.Location = new System.Drawing.Point(229, 10);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(40, 39);
             this.btnBuscar.TabIndex = 101;
@@ -67,7 +67,7 @@
             // 
             this.txtPaciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPaciente.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaciente.Location = new System.Drawing.Point(12, 76);
+            this.txtPaciente.Location = new System.Drawing.Point(12, 50);
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Size = new System.Drawing.Size(260, 21);
             this.txtPaciente.TabIndex = 99;
@@ -76,7 +76,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 50);
+            this.label1.Location = new System.Drawing.Point(86, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 100;
@@ -86,7 +86,7 @@
             // 
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefono.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(52, 132);
+            this.txtTelefono.Location = new System.Drawing.Point(52, 106);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(181, 21);
             this.txtTelefono.TabIndex = 102;
@@ -95,7 +95,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(114, 109);
+            this.label5.Location = new System.Drawing.Point(114, 83);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 103;
@@ -105,7 +105,7 @@
             // 
             this.txtComentarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComentarios.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComentarios.Location = new System.Drawing.Point(16, 186);
+            this.txtComentarios.Location = new System.Drawing.Point(16, 160);
             this.txtComentarios.Multiline = true;
             this.txtComentarios.Name = "txtComentarios";
             this.txtComentarios.Size = new System.Drawing.Size(253, 50);
@@ -115,7 +115,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(102, 166);
+            this.label8.Location = new System.Drawing.Point(102, 140);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 13);
             this.label8.TabIndex = 105;
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 300);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.lblfecha);
             this.Controls.Add(this.txtComentarios);
             this.Controls.Add(this.label8);
@@ -144,6 +144,8 @@
             this.Controls.Add(this.txtPaciente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
+            this.MaximumSize = new System.Drawing.Size(300, 299);
+            this.MinimumSize = new System.Drawing.Size(300, 299);
             this.Name = "frmEsperas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adicion Lista Espera";

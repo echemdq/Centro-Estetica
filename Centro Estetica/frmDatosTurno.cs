@@ -34,7 +34,10 @@ namespace Centro_Estetica
 
         private void frmDatosTurno_Load(object sender, EventArgs e)
         {
-            t = controlt.Buscar(idt.ToString());
+            if (t == null)
+            {
+                t = controlt.Buscar(idt.ToString());
+            }
             txtProfesional.Text = t.Profesionales.Profesional;
             txtTelefono.Text = t.Telefono;
             txtDetalle.Text = t.Detalle;
@@ -62,10 +65,12 @@ namespace Centro_Estetica
             if (idserviciosturnos == 0 && fechaa >= DateTime.Now.Date)
             {
                 btnAgregarServ.Enabled = true;
+                btnBuscarPac.Enabled = true;
             }
             else if (idserviciosturnos != 0 && fechaa >= DateTime.Now.Date)
             {
-                btnEliminarServ.Enabled = true;                
+                btnEliminarServ.Enabled = true;
+                btnBuscarPac.Enabled = false;
             }
 
             if (idserviciosturnos != 0 && fechaa == DateTime.Now.Date)
@@ -135,6 +140,7 @@ namespace Centro_Estetica
                                 }
                                 btnEliminarServ.Enabled = true;
                                 btnAgregarServ.Enabled = false;
+                                btnBuscarPac.Enabled = false;
                             }
                         }
                     }
@@ -195,6 +201,28 @@ namespace Centro_Estetica
                     oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + t.Profesionales.Idprofesionales + "','" + fechaa.ToString("yyyy-MM-dd") + "','" + t.Hora + "','Confirmo Asistencia','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
                     MessageBox.Show("Asistencia Confirmada");
                     this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnBuscarPac_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Pacientes p = null;
+                frmBuscaPacientes frm = new frmBuscaPacientes();
+                frm.ShowDialog();
+                p = frm.u;
+                if (p != null)
+                {
+                    t.Paciente = p.Idpacientes.ToString();
+                    pac = p.Paciente;
+                    oacceso.ActualizarBD("update turnos set idpacientes = '" + p.Idpacientes + "' where idturnos = '" + idt + "'");
+                    frmDatosTurno_Load(sender, e);
                 }
             }
             catch (Exception ex)

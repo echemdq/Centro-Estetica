@@ -55,6 +55,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 191);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(556, 229);
+            this.MinimumSize = new System.Drawing.Size(556, 229);
             this.Name = "frmBuscaServicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleccionar Servicio Disponible";

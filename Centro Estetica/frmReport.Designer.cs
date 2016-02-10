@@ -56,8 +56,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(890, 567);
             this.Controls.Add(this.reportViewer1);
+            this.MaximumSize = new System.Drawing.Size(906, 605);
+            this.MinimumSize = new System.Drawing.Size(906, 605);
             this.Name = "frmReport";
-            this.Text = "frmReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Impresion Informes";
             this.Load += new System.EventHandler(this.frmReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProductosBindingSource)).EndInit();
             this.ResumeLayout(false);

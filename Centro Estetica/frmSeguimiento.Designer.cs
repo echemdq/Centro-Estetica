@@ -65,7 +65,11 @@
             this.ClientSize = new System.Drawing.Size(500, 262);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(516, 300);
+            this.MinimumSize = new System.Drawing.Size(516, 300);
             this.Name = "frmSeguimiento";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seguimientos";
             this.Load += new System.EventHandler(this.frmSeguimiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -98,6 +98,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtProfesional);
             this.Controls.Add(this.label7);
+            this.MaximumSize = new System.Drawing.Size(300, 205);
+            this.MinimumSize = new System.Drawing.Size(300, 205);
             this.Name = "frmGabinete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asignar Gabinete";

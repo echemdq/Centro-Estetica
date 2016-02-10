@@ -370,7 +370,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtProfesional);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(471, 388);
+            this.MinimumSize = new System.Drawing.Size(471, 388);
             this.Name = "frmNuevoTurno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Turno";
             this.Load += new System.EventHandler(this.frmNuevoTurno_Load);
             this.ResumeLayout(false);
