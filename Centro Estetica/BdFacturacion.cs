@@ -76,8 +76,11 @@ namespace Centro_Estetica
             }
             string update = "begin; ";
             foreach (Ctacte aux in dato1)
-            {                
-                update = update + "update ctacte set cancelado = cancelado + '" + aux.Acancelar + "' where idctacte = '" + aux.Idctacte + "'; ";
+            {
+                if (aux.Acancelar > 0)
+                {
+                    update = update + "update ctacte set cancelado = cancelado + '" + aux.Acancelar.ToString().Replace(',', '.') + "' where idctacte = '" + aux.Idctacte + "'; ";
+                }
             }
             update = update + "insert into ctacte (idfacturacion, idpacientes, tipocomp, importe, cancelado) values ('" + idfactura + "','" + dato.Idpaciente + "','2','" + dato.Total.ToString().Replace(',', '.') + "','" + dato.Total.ToString().Replace(',', '.') + "'); commit;";
             oacceso.ActualizarBD(update);

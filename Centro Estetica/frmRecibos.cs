@@ -38,17 +38,20 @@ namespace Centro_Estetica
 
         private void dataGridView1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            int filaseleccionada = Convert.ToInt32(this.dataGridView1.CurrentRow.Index);
-            if (e.KeyChar == (char)(Keys.Escape))
+            if (dataGridView1.Rows.Count > 0)
             {
-                e.Handled = true;                
-                dataGridView1[4, filaseleccionada].Value = "0,00";
-                decimal v1 = 0;
-                foreach (DataGridViewRow row in dataGridView1.Rows)
+                int filaseleccionada = Convert.ToInt32(this.dataGridView1.CurrentRow.Index);
+                if (e.KeyChar == (char)(Keys.Escape))
                 {
-                    v1 += Convert.ToDecimal(row.Cells[4].Value);
+                    e.Handled = true;
+                    dataGridView1[4, filaseleccionada].Value = "0,00";
+                    decimal v1 = 0;
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        v1 += Convert.ToDecimal(row.Cells[4].Value);
+                    }
+                    textBox2.Text = v1.ToString();
                 }
-                textBox2.Text = v1.ToString();
             }
         }
 
@@ -129,13 +132,16 @@ namespace Centro_Estetica
                     decimal v1 = 0;
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {
-                        v1 += Convert.ToDecimal(row.Cells[4].Value);
-                        foreach (Ctacte aux in lista)
+                        v1 = Convert.ToDecimal(row.Cells[4].Value);
+                        if (v1 > 0)
                         {
-                            if (aux.Idctacte == Convert.ToInt32(row.Cells[0].Value))
+                            foreach (Ctacte aux in lista)
                             {
-                                aux.Acancelar = v1;
-                                break;
+                                if (aux.Idctacte == Convert.ToInt32(row.Cells[0].Value))
+                                {
+                                    aux.Acancelar = v1;
+                                    break;
+                                }
                             }
                         }
                     }
