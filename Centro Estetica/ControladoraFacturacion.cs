@@ -15,7 +15,10 @@ namespace Centro_Estetica
             bd.Agregar(dato, dato1, dato2);
         }
 
-        
+        public void Agregar1(Factura dato, List<Facturacion> dato1, TipoFormasPago dato2)
+        {
+            bd.Agregar1(dato, dato1, dato2);
+        }
 
         public void Borrar(Factura dato)
         {

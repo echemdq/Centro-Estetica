@@ -45,6 +45,21 @@ namespace Centro_Estetica
                 pac = frm.u;
                 if (pac != null)
                 {
+                    Acceso_BD oac = new Acceso_BD();
+                    DataTable dt = oac.leerDatos("select ifnull(sum(case when tipocomp = 1 then importe else importe * (-1) end),0) as saldo from ctacte where idpacientes = '" + pac.Idpacientes + "'");
+                    decimal saldo = 0;
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        saldo = Convert.ToDecimal(dr["saldo"]);
+                    }
+                    if (saldo != 0)
+                    {
+                        label11.Text = "SALDO: $" + saldo;
+                    }
+                    else
+                    {
+                        label11.Text = "SALDO: $0.00";
+                    }
                     txtPaciente.Text = pac.Paciente;
                     txtPaciente.Enabled = false;
                     txtDocumento.Text = pac.Documento;

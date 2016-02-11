@@ -80,5 +80,18 @@ namespace Centro_Estetica
             frm.ShowDialog();
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmRecibos frm = new frmRecibos();
+            frm.ShowDialog();
+        }
+
+        private void consultaCtaCteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCtaCte frm = new frmCtaCte();
+            frm.ShowDialog();
+        }
+
+
     }
 }

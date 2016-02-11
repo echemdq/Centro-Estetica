@@ -181,7 +181,21 @@ namespace Centro_Estetica
                         t.Cupon = txtCupon.Text;
                         t.Cuotas = txtCuotas.Text;
                     }
-                    controlf.Agregar(fact, lista1, t);
+                    if (cmbFormaPago.Text != "CUENTA CORRIENTE")
+                    {
+                        controlf.Agregar(fact, lista1, t);
+                    }
+                    else
+                    {
+                        if (fact.Idpaciente != 0)
+                        {
+                            controlf.Agregar1(fact, lista1, t);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Para facturar en cuenta corriente debe seleccionar un cliente");
+                        }
+                    }
                 }
                 else
                 {
@@ -201,7 +215,14 @@ namespace Centro_Estetica
                         t.Cupon = txtCupon.Text;
                         t.Cuotas = txtCuotas.Text;
                     }
-                    controlf.Agregar(fact, lista1, t);
+                    if (cmbFormaPago.Text != "CUENTA CORRIENTE")
+                    {
+                        controlf.Agregar(fact, lista1, t);
+                    }
+                    else
+                    {
+                        controlf.Agregar1(fact, lista1, t);
+                    }
                     oacceso.ActualizarBD("update contador set numero = numero + 1 where detalle = 'factura'");
                 }
                 MessageBox.Show("Comprobante guardado exitosamente");
