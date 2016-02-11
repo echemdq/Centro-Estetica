@@ -247,7 +247,7 @@ namespace Centro_Estetica
                     {
                         controlf.Agregar2(fact, lista1, t);
                     }
-                    oacceso.ActualizarBD("update contador set numero = numero + 1 where detalle = 'factura'");
+                    oacceso.ActualizarBD("update contador set numero = numero + 1 where detalle = 'recibo'");
                 }
                 MessageBox.Show("Comprobante guardado exitosamente");
                 this.Close();
