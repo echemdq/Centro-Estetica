@@ -128,7 +128,7 @@ namespace Centro_Estetica
                         idpaciente = p.Idpacientes;
                     }
                     decimal bonif = 0;
-                    Factura f = new Factura(0, DateTime.Now, idpaciente, p.Paciente, p.Domicilio, p.Documento, "", Convert.ToDecimal(textBox2.Text), 0, 0, bonif);
+                    Factura f = new Factura(0, DateTime.Now, idpaciente, p.Paciente, p.Domicilio, p.Documento, "", Convert.ToDecimal(textBox2.Text), 0, 0, bonif,0,"");
                     decimal v1 = 0;
                     foreach (DataGridViewRow row in dataGridView1.Rows)
                     {

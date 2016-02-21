@@ -21,7 +21,7 @@ namespace Centro_Estetica
             List<Ctacte> lista = new List<Ctacte>();
             foreach (DataRow dr in dt.Rows)
             {
-                Factura f = new Factura(0, Convert.ToDateTime(dr["fecha"]), 0, "", "", "", "", 0, Convert.ToInt32(dr["ptoventa"]), Convert.ToInt32(dr["factura"]), 0);
+                Factura f = new Factura(0, Convert.ToDateTime(dr["fecha"]), 0, "", "", "", "", 0, Convert.ToInt32(dr["ptoventa"]), Convert.ToInt32(dr["factura"]), 0,0,"");
                 Ctacte c = new Ctacte(Convert.ToInt32(dr["idctacte"]), Convert.ToInt32(dr["idpacientes"]), f, Convert.ToDecimal(dr["importe"]), Convert.ToDecimal(dr["cancelado"]), Convert.ToInt32(dr["tipocomp"]),0);
                 lista.Add(c);
             }
@@ -44,7 +44,7 @@ namespace Centro_Estetica
             List<Ctacte> lista = new List<Ctacte>();
             foreach (DataRow dr in dt.Rows)
             {
-                Factura f = new Factura(0, Convert.ToDateTime(dr["fecha"]), 0, "", "", "", "",0, Convert.ToInt32(dr["ptoventa"]), Convert.ToInt32(dr["factura"]),0);
+                Factura f = new Factura(0, Convert.ToDateTime(dr["fecha"]), 0, "", "", "", "",0, Convert.ToInt32(dr["ptoventa"]), Convert.ToInt32(dr["factura"]),0,0,"");
                 Ctacte c = new Ctacte(Convert.ToInt32(dr["idctacte"]), Convert.ToInt32(dr["idpacientes"]), f, Convert.ToDecimal(dr["importe"]), Convert.ToDecimal(dr["cancelado"]), Convert.ToInt32(dr["tipocomp"]),0);
                 lista.Add(c);
             }

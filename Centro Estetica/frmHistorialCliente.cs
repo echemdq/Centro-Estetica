@@ -81,7 +81,7 @@ namespace Centro_Estetica
                             x++;
                         }
                     }
-                    else
+                    else if(rbTurnos.Checked)
                     {
                         Acceso_BD oacceso = new Acceso_BD();
                         DataTable dt = oacceso.leerDatos("select p.profesional,t.fecha,t.hora,IFNULL(concat(s.detalle,' ',st.sesion),'') as servicio,ifnull(pc.paciente,t.detalle) as cliente, case when st.idpacientes<>s.idpacientes then Concat('Regalo ', pcc.paciente) else '' end as regalo, case when st.asistencia is null then '' else case when st.asistencia=0 then 'AUSENTE' else 'PRESENTE' END end as asistencia, case when st.estado is null then '' else case when st.estado=1 then 'SESION REASIGNADA' else '' END end as PENALIZACION from turnos t left join serviciosturnos st on st.fecha=t.fecha and st.hora=t.hora and st.idprofesionales=t.idprofesionales left join servicios s on st.idservicios = s.idservicios left join pacientes pc on pc.idpacientes=t.idpacientes left join pacientes pcc on pcc.idpacientes=s.idpacientes left join profesionales p on p.idprofesionales=t.idprofesionales where t.idpacientes= '"+pac.Idpacientes+"' union select p.profesional,st.fecha,st.hora,ifnull(concat(s.detalle,' ',st.sesion),'') as servicio,ifnull(pc.paciente,'') as cliente, case when st.idpacientes<>s.idpacientes then Concat('Regalo ', pc.paciente) else '' end as regalo, case when st.asistencia is null then '' else case when st.asistencia=0 then 'AUSENTE' else 'PRESENTE' END end as asistencia, case when st.estado is null then '' else case when st.estado=1 then 'SESION REASIGNADA' else '' END end as PENALIZACION from serviciosturnos st left join servicios s on st.idservicios = s.idservicios left join profesionales p on p.idprofesionales=st.idprofesionales left join pacientes pc on pc.idpacientes=s.idpacientes where st.idpacientes= '"+pac.Idpacientes+"' order by fecha desc , hora desc");
@@ -110,6 +110,32 @@ namespace Centro_Estetica
                             dataGridView1.Rows[x].Cells[3].Value = regalo;
                             dataGridView1.Rows[x].Cells[4].Value = asistencia;
                             dataGridView1.Rows[x].Cells[5].Value = penalizacion;
+                            x++;
+                        }
+                    }
+                    else if (rbFacturacion.Checked)
+                    {
+                        Acceso_BD oacceso = new Acceso_BD();
+                        DataTable dt = oacceso.leerDatos("select f.fecha, p.detalle, lf.precioventa, f.ptoventa, f.factura from facturacion f left join lineafactura lf on f.idfacturacion = lf.idfacturacion left join productos p on lf.idproductos = p.idproductos where f.idpaciente = '"+pac.Idpacientes+"'");
+                        dataGridView1.ColumnCount = 4;
+                        dataGridView1.Rows.Clear();
+                        dataGridView1.Columns[0].Name = "Fecha";
+                        dataGridView1.Columns[1].Name = "Comprobante";
+                        dataGridView1.Columns[2].Name = "Detalle";
+                        dataGridView1.Columns[3].Name = "Importe";
+                        int x = 0;
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            DateTime fecha = Convert.ToDateTime(dr["fecha"]);
+                            string detalle = Convert.ToString(dr["detalle"]);
+                            string preciovente = Convert.ToString(dr["precioventa"]);
+                            string ptoventa = Convert.ToString(dr["ptoventa"]);
+                            string factura = Convert.ToString(dr["factura"]);
+                            dataGridView1.Rows.Add(1);
+                            dataGridView1.Rows[x].Cells[0].Value = fecha.ToString("dd-MM-yyyy HH:mm:ss");
+                            dataGridView1.Rows[x].Cells[1].Value = ptoventa + " "+factura;
+                            dataGridView1.Rows[x].Cells[2].Value = detalle;
+                            dataGridView1.Rows[x].Cells[3].Value = preciovente;
                             x++;
                         }
                     }

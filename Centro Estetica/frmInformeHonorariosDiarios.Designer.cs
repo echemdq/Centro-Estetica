@@ -39,6 +39,8 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.button2 = new System.Windows.Forms.Button();
+            this.mskHasta = new System.Windows.Forms.MaskedTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -94,9 +96,9 @@
             this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(42, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 73;
-            this.label3.Text = "Fecha";
+            this.label3.Text = "Desde";
             // 
             // button1
             // 
@@ -146,11 +148,36 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // mskHasta
+            // 
+            this.mskHasta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mskHasta.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskHasta.Location = new System.Drawing.Point(240, 12);
+            this.mskHasta.Mask = "00/00/0000";
+            this.mskHasta.Name = "mskHasta";
+            this.mskHasta.Size = new System.Drawing.Size(92, 22);
+            this.mskHasta.TabIndex = 92;
+            this.mskHasta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mskHasta.ValidatingType = typeof(System.DateTime);
+            this.mskHasta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskHasta_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(197, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 93;
+            this.label2.Text = "Hasta";
+            // 
             // frmInformeHonorariosDiarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 299);
+            this.Controls.Add(this.mskHasta);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
@@ -185,5 +212,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MaskedTextBox mskHasta;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -24,6 +24,7 @@ namespace Centro_Estetica
         private void frmInformeHonorariosDiarios_Load(object sender, EventArgs e)
         {
             txtFecha.Text = DateTime.Now.ToString("dd-MM-yyyy");
+            mskHasta.Text = DateTime.Now.ToString("dd-MM-yyyy");
             dataGridView1.ColumnCount = 7;
             dataGridView1.Columns[0].Name = "Profesional";
             dataGridView1.Columns[1].Name = "Cliente";
@@ -60,7 +61,8 @@ namespace Centro_Estetica
             if (profesionales == null)
             {
                 dia = Convert.ToDateTime(txtFecha.Text);
-                DataTable dt = oacceso.leerDatos("select p.profesional, pa.paciente, s.detalle, lf.sesiones, lf.precioventa, ifnull((select preciocalculo from honorarios where idprofesionales=st.idprofesionales and idproductos=lf.idproductos), lf.preciocalculo) as prueba, round(lf.precioventa * ifnull((select preciocalculo from honorarios where idprofesionales=st.idprofesionales and idproductos=lf.idproductos), lf.preciocalculo) / 100 / lf.sesiones,2) as pagoprofesional from serviciosturnos st left join servicios s on st.idservicios = s.idservicios left join lineafactura lf on s.idlineafactura = lf.idlineafactura left join profesionales p on st.idprofesionales = p.idprofesionales left join pacientes pa on st.idpacientes = pa.idpacientes where st.fecha = '"+dia.ToString("yyyy-MM-dd")+"' and asistencia = 1 order by profesional asc");
+                DateTime hasta = Convert.ToDateTime(mskHasta.Text);
+                DataTable dt = oacceso.leerDatos("select p.profesional, pa.paciente, s.detalle, lf.sesiones, lf.precioventa, ifnull((select preciocalculo from honorarios where idprofesionales=st.idprofesionales and idproductos=lf.idproductos), lf.preciocalculo) as prueba, round(lf.precioventa * ifnull((select preciocalculo from honorarios where idprofesionales=st.idprofesionales and idproductos=lf.idproductos), lf.preciocalculo) / 100 / lf.sesiones,2) as pagoprofesional from serviciosturnos st left join servicios s on st.idservicios = s.idservicios left join lineafactura lf on s.idlineafactura = lf.idlineafactura left join profesionales p on st.idprofesionales = p.idprofesionales left join pacientes pa on st.idpacientes = pa.idpacientes where st.fecha between '"+dia.ToString("yyyy-MM-dd")+"' and '"+hasta.ToString("yyyy-MM-dd")+"' and asistencia = 1 order by profesional asc");
                 int x = 0;
                 
                 if (dt.Rows.Count > 0)
@@ -236,6 +238,12 @@ namespace Centro_Estetica
         }
 
         private void txtFecha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            lista.Clear();
+            dataGridView1.Rows.Clear();
+        }
+
+        private void mskHasta_KeyPress(object sender, KeyPressEventArgs e)
         {
             lista.Clear();
             dataGridView1.Rows.Clear();

@@ -31,11 +31,11 @@ namespace Centro_Estetica
 
         public List<Servicios> BuscarEspecial(string dato)
         {
-            DataTable dt = oacceso.leerDatos("select * from servicios where idpacientes = '" + dato + "' and usadas < sesiones and fecha >= DATE_SUB(curdate(), INTERVAL 30 DAY)");
+            DataTable dt = oacceso.leerDatos("select s.idservicios, s.idproductos, s.detalle, s.sesiones, s.usadas, s.idlineafactura, s.idpacientes, f.comentario from servicios s left join lineafactura lf on s.idlineafactura = lf.idlineafactura left join facturacion f on lf.idfacturacion = f.idfacturacion where s.idpacientes = '"+dato+"' and s.usadas < s.sesiones and s.fecha >= DATE_SUB(curdate(), INTERVAL 30 DAY) and f.regalo = '1'");
             List<Servicios> lista = new List<Servicios>();
             foreach (DataRow dr in dt.Rows)
             {
-                Servicios s = new Servicios(Convert.ToInt32(dr["idservicios"]), Convert.ToInt32(dr["idproductos"]), Convert.ToString(dr["detalle"]), Convert.ToInt32(dr["sesiones"]), Convert.ToInt32(dr["usadas"]), Convert.ToInt32(dr["idlineafactura"]), Convert.ToInt32(dr["idpacientes"]));
+                Servicios s = new Servicios(Convert.ToInt32(dr["idservicios"]), Convert.ToInt32(dr["idproductos"]), Convert.ToString(dr["detalle"]), Convert.ToInt32(dr["sesiones"]), Convert.ToInt32(dr["usadas"]), Convert.ToInt32(dr["idlineafactura"]), Convert.ToInt32(dr["idpacientes"]), Convert.ToString(dr["comentario"]));
                 lista.Add(s);
             }
             return lista;

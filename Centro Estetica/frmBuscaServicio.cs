@@ -24,7 +24,7 @@ namespace Centro_Estetica
 
         private void frmBuscaServicio_Load(object sender, EventArgs e)
         {
-            dataGridView1.ColumnCount = 7;
+            dataGridView1.ColumnCount = 8;
             dataGridView1.Columns[0].Name = "idservicios";
             dataGridView1.Columns[1].Name = "idproductos";
             dataGridView1.Columns[2].Name = "Detalle";
@@ -32,6 +32,7 @@ namespace Centro_Estetica
             dataGridView1.Columns[4].Name = "Usadas";
             dataGridView1.Columns[5].Name = "idfacturacion";
             dataGridView1.Columns[6].Name = "idpacientes";
+            dataGridView1.Columns[7].Name = "Comentario";
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[5].Visible = false;
@@ -51,6 +52,7 @@ namespace Centro_Estetica
                     dataGridView1.Rows[x].Cells[4].Value = aux.Usadas;
                     dataGridView1.Rows[x].Cells[5].Value = aux.Idfacturacion;
                     dataGridView1.Rows[x].Cells[6].Value = aux.Idpacientes;
+                    dataGridView1.Rows[x].Cells[7].Value = aux.Comentario;
                     x++;
                 }
             }
@@ -67,7 +69,7 @@ namespace Centro_Estetica
             int idfacturacion = Convert.ToInt32(dataGridView1[5, filaseleccionada].Value);
             int idpacientes = Convert.ToInt32(dataGridView1[6, filaseleccionada].Value);
             sesion = Convert.ToString(usadas + 1) + "/" + sesiones;
-            u = new Servicios(idservicios, idproductos, detalle, sesiones, usadas, idfacturacion, idpacientes);
+            u = new Servicios(idservicios, idproductos, detalle, sesiones, usadas, idfacturacion, idpacientes,"");
             this.Close();
         }
     }

@@ -273,7 +273,15 @@ namespace Centro_Estetica
                 {
                     bonif = Convert.ToDecimal(txtBonificacion.Text.Replace('.', ','));
                 }
-                Factura f = new Factura(0, DateTime.Now, idpaciente, txtPaciente.Text, txtDomicilio.Text, txtDocumento.Text, txtLocalidad.Text, Convert.ToDecimal(lbltotal.Text),0,0,bonif);
+                Factura f = null;
+                if (!chkRegalo.Checked)
+                {
+                    f = new Factura(0, DateTime.Now, idpaciente, txtPaciente.Text, txtDomicilio.Text, txtDocumento.Text, txtLocalidad.Text, Convert.ToDecimal(lbltotal.Text), 0, 0, bonif, 0, "");
+                }
+                else
+                {
+                    f = new Factura(0, DateTime.Now, idpaciente, txtPaciente.Text, txtDomicilio.Text, txtDocumento.Text, txtLocalidad.Text, Convert.ToDecimal(lbltotal.Text), 0, 0, bonif, 1, textBox1.Text);
+                }
                 frmFormaPago frm = new frmFormaPago(f, listaf);
                 frm.ShowDialog();
                 this.Close();
@@ -386,6 +394,27 @@ namespace Centro_Estetica
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void chkRegalo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (pac != null)
+            {
+                if (chkRegalo.Checked)
+                {
+                    textBox1.Text = "";
+                    textBox1.Enabled = true;
+                }
+                else
+                {
+                    textBox1.Text = "";
+                    textBox1.Enabled = false;
+                }
+            }
+            else
+            {
+                chkRegalo.Checked = false;
             }
         }
     }

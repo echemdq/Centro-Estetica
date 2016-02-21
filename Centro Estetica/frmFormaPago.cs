@@ -170,63 +170,118 @@ namespace Centro_Estetica
         {
             try
             {
-                if (chkFactura.Checked && txtPtoVenta.Text != "" && txtFactura.Text != "")
+                if (cmbFormaPago.Text == "TARJETA DE CREDITO" || cmbFormaPago.Text == "TARJETA DE DEBITO")
                 {
-                    fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
-                    fact.Numerofact = Convert.ToInt32(txtFactura.Text);
-                    TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
-                    if (cmbFormaPago.Text == "TARJETA DE CREDITO" || cmbFormaPago.Text == "TARJETA DE DEBITO")
+                    if (chkFactura.Checked)
                     {
-                        t.Idtarjetas = (Convert.ToString(cmbFormaPago.SelectedValue));
-                        t.Cupon = txtCupon.Text;
-                        t.Cuotas = txtCuotas.Text;
-                    }
-                    if (cmbFormaPago.Text != "CUENTA CORRIENTE")
-                    {
-                        controlf.Agregar(fact, lista1, t);
+                        if (txtPtoVenta.Text != "" && txtFactura.Text != "" && txtCuotas.Text != "" && txtCupon.Text != "" && cmbTarjetas.Text != "")
+                        {
+                            fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
+                            fact.Numerofact = Convert.ToInt32(txtFactura.Text);
+                            TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
+                            t.Idtarjetas = (Convert.ToString(cmbTarjetas.SelectedValue));
+                            t.Cupon = txtCupon.Text;
+                            t.Cuotas = txtCuotas.Text;
+                            controlf.Agregar(fact, lista1, t);
+                            MessageBox.Show("Comprobante guardado exitosamente");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Debe completar los datos de la factura, pto de venta, tarjeta, cuotas y nro de cupon");
+                        }
                     }
                     else
                     {
+                        MessageBox.Show("Debe cargar los datos de la factura");
+                    }
+                }
+                else if (cmbFormaPago.Text == "EFECTIVO")
+                {
+                    if (chkFactura.Checked)
+                    {
+                        if (txtPtoVenta.Text != "" && txtFactura.Text != "")
+                        {
+                            fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
+                            fact.Numerofact = Convert.ToInt32(txtFactura.Text);
+                            TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
+                            controlf.Agregar(fact, lista1, t);
+                            MessageBox.Show("Comprobante guardado exitosamente");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Debe completar los datos de la factura y pto de venta");
+                        }
+                    }
+                    else
+                    {
+                        Acceso_BD oacceso = new Acceso_BD();
+                        DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'factura'");
+                        int factura = 0;
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            factura = Convert.ToInt32(dr["numero"]);
+                        }
+                        fact.Ptoventa = 0;
+                        fact.Numerofact = factura;
+                        TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
+                        controlf.Agregar(fact, lista1, t);
+                        oacceso.ActualizarBD("update contador set numero = numero + 1 where detalle = 'factura'");
+                        MessageBox.Show("Comprobante guardado exitosamente");
+                        this.Close();
+                    }
+                }
+                else if (cmbFormaPago.Text == "CUENTA CORRIENTE")
+                {
+                    if (chkFactura.Checked)
+                    {
+                        if (txtPtoVenta.Text != "" && txtFactura.Text != "")
+                        {
+                            fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
+                            fact.Numerofact = Convert.ToInt32(txtFactura.Text);
+                            TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
+                            if (fact.Idpaciente != 0)
+                            {
+                                controlf.Agregar1(fact, lista1, t);
+                                MessageBox.Show("Comprobante guardado exitosamente");
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Para facturar en cuenta corriente debe seleccionar un cliente");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Debe completar los datos de la factura y pto de venta");
+                        }
+                    }
+                    else
+                    {
+                        Acceso_BD oacceso = new Acceso_BD();
+                        DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'factura'");
+                        int factura = 0;
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            factura = Convert.ToInt32(dr["numero"]);
+                        }
+                        fact.Ptoventa = 0;
+                        fact.Numerofact = factura;
+                        TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
                         if (fact.Idpaciente != 0)
                         {
                             controlf.Agregar1(fact, lista1, t);
+                            oacceso.ActualizarBD("update contador set numero = numero + 1 where detalle = 'factura'");
+                            MessageBox.Show("Comprobante guardado exitosamente");
+                            this.Close();
                         }
                         else
                         {
                             MessageBox.Show("Para facturar en cuenta corriente debe seleccionar un cliente");
-                        }
+                        }                        
                     }
                 }
-                else
-                {
-                    Acceso_BD oacceso = new Acceso_BD();
-                    DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'factura'");
-                    int factura = 0;
-                    foreach (DataRow dr in dt.Rows)
-                    {
-                        factura = Convert.ToInt32(dr["numero"]);
-                    }
-                    fact.Ptoventa = 0;
-                    fact.Numerofact = factura;
-                    TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
-                    if (cmbFormaPago.Text == "TARJETA DE CREDITO" || cmbFormaPago.Text == "TARJETA DE DEBITO")
-                    {
-                        t.Idtarjetas = (Convert.ToString(cmbFormaPago.SelectedValue));
-                        t.Cupon = txtCupon.Text;
-                        t.Cuotas = txtCuotas.Text;
-                    }
-                    if (cmbFormaPago.Text != "CUENTA CORRIENTE")
-                    {
-                        controlf.Agregar(fact, lista1, t);
-                    }
-                    else
-                    {
-                        controlf.Agregar1(fact, lista1, t);
-                    }
-                    oacceso.ActualizarBD("update contador set numero = numero + 1 where detalle = 'factura'");
-                }
-                MessageBox.Show("Comprobante guardado exitosamente");
-                this.Close();
             }
             catch (Exception ex)
             {

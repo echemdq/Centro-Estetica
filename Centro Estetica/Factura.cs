@@ -15,7 +15,20 @@ namespace Centro_Estetica
         string domicilio;
         string documento;
         int ptoventa;
+        int regalo;
 
+        public int Regalo
+        {
+            get { return regalo; }
+            set { regalo = value; }
+        }
+        string comentario;
+
+        public string Comentario
+        {
+            get { return comentario; }
+            set { comentario = value; }
+        }
         public int Ptoventa
         {
             get { return ptoventa; }
@@ -44,7 +57,7 @@ namespace Centro_Estetica
             set { bonif = value; }
         }
 
-        public Factura(int i, DateTime f, int idp, string de, string dom, string docu, string lo, decimal t, int punto, int num, decimal b)
+        public Factura(int i, DateTime f, int idp, string de, string dom, string docu, string lo, decimal t, int punto, int num, decimal b, int reg, string com)
         {
             ptoventa = punto;
             numerofact = num;
@@ -57,6 +70,8 @@ namespace Centro_Estetica
             total = t;
             documento = docu;
             bonif = b;
+            comentario = com;
+            regalo = reg;
         }
     
         public decimal Total

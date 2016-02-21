@@ -47,8 +47,8 @@
             this.btnAgregarServ = new System.Windows.Forms.Button();
             this.btnEliminarServ = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.chkRegalo = new System.Windows.Forms.CheckBox();
             this.btnBuscarPac = new System.Windows.Forms.Button();
+            this.chkRegalo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtProducto
@@ -205,6 +205,7 @@
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(41, 38);
             this.btnGuardar.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.btnGuardar, "Dar asistencia");
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Visible = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -237,16 +238,6 @@
             this.btnEliminarServ.UseVisualStyleBackColor = false;
             this.btnEliminarServ.Click += new System.EventHandler(this.btnEliminarServ_Click);
             // 
-            // chkRegalo
-            // 
-            this.chkRegalo.AutoSize = true;
-            this.chkRegalo.Location = new System.Drawing.Point(356, 120);
-            this.chkRegalo.Name = "chkRegalo";
-            this.chkRegalo.Size = new System.Drawing.Size(98, 17);
-            this.chkRegalo.TabIndex = 124;
-            this.chkRegalo.Text = "Asignar Regalo";
-            this.chkRegalo.UseVisualStyleBackColor = true;
-            // 
             // btnBuscarPac
             // 
             this.btnBuscarPac.BackColor = System.Drawing.SystemColors.Control;
@@ -259,6 +250,16 @@
             this.toolTip1.SetToolTip(this.btnBuscarPac, "Buscar");
             this.btnBuscarPac.UseVisualStyleBackColor = false;
             this.btnBuscarPac.Click += new System.EventHandler(this.btnBuscarPac_Click);
+            // 
+            // chkRegalo
+            // 
+            this.chkRegalo.AutoSize = true;
+            this.chkRegalo.Location = new System.Drawing.Point(356, 120);
+            this.chkRegalo.Name = "chkRegalo";
+            this.chkRegalo.Size = new System.Drawing.Size(98, 17);
+            this.chkRegalo.TabIndex = 124;
+            this.chkRegalo.Text = "Asignar Regalo";
+            this.chkRegalo.UseVisualStyleBackColor = true;
             // 
             // frmDatosTurno
             // 

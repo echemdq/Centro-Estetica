@@ -15,9 +15,16 @@ namespace Centro_Estetica
         int usadas;
         int idfacturacion;
         int idpacientes;
+        string comentario;
 
-        public Servicios(int ids, int idp, string d, int s, int u, int idf, int idpa)
+        public string Comentario
         {
+            get { return comentario; }
+            set { comentario = value; }
+        }
+        public Servicios(int ids, int idp, string d, int s, int u, int idf, int idpa, string c)
+        {
+            comentario = c;
             idservicios = ids;
             idproductos = idp;
             detalle = d;

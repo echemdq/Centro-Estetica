@@ -57,6 +57,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.chkRegalo = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -241,7 +243,7 @@
             // 
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(282, 342);
+            this.lbltotal.Location = new System.Drawing.Point(282, 376);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(0, 29);
             this.lbltotal.TabIndex = 87;
@@ -250,7 +252,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(186, 342);
+            this.label9.Location = new System.Drawing.Point(186, 376);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 29);
             this.label9.TabIndex = 89;
@@ -260,7 +262,7 @@
             // 
             this.txtBonificacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBonificacion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBonificacion.Location = new System.Drawing.Point(59, 350);
+            this.txtBonificacion.Location = new System.Drawing.Point(93, 384);
             this.txtBonificacion.Name = "txtBonificacion";
             this.txtBonificacion.Size = new System.Drawing.Size(70, 21);
             this.txtBonificacion.TabIndex = 91;
@@ -272,7 +274,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(57, 334);
+            this.label10.Location = new System.Drawing.Point(15, 386);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 13);
             this.label10.TabIndex = 90;
@@ -293,7 +295,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.Control;
             this.button4.BackgroundImage = global::Centro_Estetica.Properties.Resources.cash;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(560, 334);
+            this.button4.Location = new System.Drawing.Point(560, 368);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(37, 37);
             this.button4.TabIndex = 88;
@@ -348,11 +350,34 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // chkRegalo
+            // 
+            this.chkRegalo.AutoSize = true;
+            this.chkRegalo.Location = new System.Drawing.Point(18, 341);
+            this.chkRegalo.Name = "chkRegalo";
+            this.chkRegalo.Size = new System.Drawing.Size(60, 17);
+            this.chkRegalo.TabIndex = 93;
+            this.chkRegalo.Text = "Regalo";
+            this.chkRegalo.UseVisualStyleBackColor = true;
+            this.chkRegalo.CheckedChanged += new System.EventHandler(this.chkRegalo_CheckedChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.textBox1.Location = new System.Drawing.Point(93, 341);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(452, 21);
+            this.textBox1.TabIndex = 94;
+            // 
             // frmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 380);
+            this.ClientSize = new System.Drawing.Size(609, 408);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.chkRegalo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtBonificacion);
             this.Controls.Add(this.label10);
@@ -380,7 +405,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPaciente);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(625, 418);
             this.MinimumSize = new System.Drawing.Size(625, 418);
             this.Name = "frmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -423,5 +447,7 @@
         private System.Windows.Forms.TextBox txtBonificacion;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckBox chkRegalo;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

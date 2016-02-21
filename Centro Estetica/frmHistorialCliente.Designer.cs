@@ -37,6 +37,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.rbFacturacion = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             // 
             this.rbAsistidos.AutoSize = true;
             this.rbAsistidos.Checked = true;
-            this.rbAsistidos.Location = new System.Drawing.Point(60, 43);
+            this.rbAsistidos.Location = new System.Drawing.Point(12, 43);
             this.rbAsistidos.Name = "rbAsistidos";
             this.rbAsistidos.Size = new System.Drawing.Size(102, 17);
             this.rbAsistidos.TabIndex = 2;
@@ -66,7 +67,7 @@
             // rbTurnos
             // 
             this.rbTurnos.AutoSize = true;
-            this.rbTurnos.Location = new System.Drawing.Point(210, 43);
+            this.rbTurnos.Location = new System.Drawing.Point(116, 43);
             this.rbTurnos.Name = "rbTurnos";
             this.rbTurnos.Size = new System.Drawing.Size(103, 17);
             this.rbTurnos.TabIndex = 3;
@@ -89,7 +90,7 @@
             this.btnTraer.BackColor = System.Drawing.SystemColors.Control;
             this.btnTraer.BackgroundImage = global::Centro_Estetica.Properties.Resources.Symbol_Check;
             this.btnTraer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTraer.Location = new System.Drawing.Point(391, 12);
+            this.btnTraer.Location = new System.Drawing.Point(407, 12);
             this.btnTraer.Name = "btnTraer";
             this.btnTraer.Size = new System.Drawing.Size(41, 38);
             this.btnTraer.TabIndex = 1;
@@ -101,7 +102,7 @@
             this.btnBuscar.BackColor = System.Drawing.SystemColors.Control;
             this.btnBuscar.BackgroundImage = global::Centro_Estetica.Properties.Resources.Search;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscar.Location = new System.Drawing.Point(332, 12);
+            this.btnBuscar.Location = new System.Drawing.Point(348, 12);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(41, 38);
             this.btnBuscar.TabIndex = 0;
@@ -120,11 +121,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(657, 302);
             this.dataGridView1.TabIndex = 42;
             // 
+            // rbFacturacion
+            // 
+            this.rbFacturacion.AutoSize = true;
+            this.rbFacturacion.Location = new System.Drawing.Point(225, 43);
+            this.rbFacturacion.Name = "rbFacturacion";
+            this.rbFacturacion.Size = new System.Drawing.Size(81, 17);
+            this.rbFacturacion.TabIndex = 43;
+            this.rbFacturacion.TabStop = true;
+            this.rbFacturacion.Text = "Facturacion";
+            this.rbFacturacion.UseVisualStyleBackColor = true;
+            // 
             // frmHistorialCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 392);
+            this.Controls.Add(this.rbFacturacion);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnTraer);
@@ -155,5 +168,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.RadioButton rbFacturacion;
     }
 }
