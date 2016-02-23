@@ -442,13 +442,11 @@ namespace Centro_Estetica
                                     idservt = Convert.ToString(dr["idservt"]);
                                     idserv = Convert.ToString(dr["idserv"]);
                                 }
+                                dt = oacceso.leerDatos("select ifnull(idturnos,0) as id from turnos where hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and fecha = '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "'");
                                 int idturnos = 0;
-                                foreach (grilla aux in laux)
+                                foreach (DataRow dr in dt.Rows)
                                 {
-                                    if (aux.Columna == col && aux.Fila == ro)
-                                    {
-                                        idturnos = Convert.ToInt32(aux.Id);
-                                    }
+                                    idturnos = Convert.ToInt32(dr["id"]);
                                 }
                                 if (idturnos == 0)
                                 {
@@ -487,7 +485,7 @@ namespace Centro_Estetica
                 {
                     if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Green)
                     {
-                        DialogResult dialogResult = MessageBox.Show("asd Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
+                        DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
                             int idprofesional = 0;
@@ -535,28 +533,39 @@ namespace Centro_Estetica
                                 }
                             }
                             int idturnos = 0;
-                            foreach (grilla aux in laux)
-                            {
-                                if (aux.Columna == col && aux.Fila == ro)
-                                {
-                                    idturnos = Convert.ToInt32(aux.Id);
-                                }
-                            }
-                            DataTable dt = oacceso.leerDatos("select ifnull(idserviciosturnos,0) as idservt, ifnull(idservicios,0) as idserv from serviciosturnos where idprofesionales = '" + idprofesional + "' and fecha = '" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "' and hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "'");
-                            string idservt = "";
-                            string idserv = "";
+                            DataTable dt = oacceso.leerDatos("select ifnull(idturnos,0) as id, idprofesionales as idpr, idpacientes as idpa from turnos where hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and fecha = '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "'");
+                            int idpacientes = 0;
+                            int idprof = 0;
                             foreach (DataRow dr in dt.Rows)
                             {
-                                idservt = Convert.ToString(dr["idservt"]);
-                                idserv = Convert.ToString(dr["idserv"]);
+                                idturnos = Convert.ToInt32(dr["id"]);
+                                idprof = Convert.ToInt32(dr["idpr"]);
+                                idpacientes = Convert.ToInt32(dr["idpa"]);
                             }
                             if (idturnos != 0)
                             {
-                                oacceso.ActualizarBD("begin; delete from serviciosturnos where idserviciosturnos = '" + idservt + "'; update servicios set usadas = usadas - 1 where idservicios = '" + idserv + "'; delete from turnos where idturnos ='" + idturnos + "'; commit;");
-                                oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera Turno del Cliente: " + dataGridView1.Rows[ro].Cells[col].Value.ToString() + "','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
-                                MessageBox.Show("Turno liberado Correctamente");
-                                dataGridView1.Rows.Clear();
-                                cargagrilla();
+                                dt = oacceso.leerDatos("select count(*) as ts from serviciosturnos where idpacientes = '" + idpacientes + "' and idprofesionales = '" + idprof + "' and hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and dayofweek(fecha) = dayofweek('" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "') and fecha >= '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "'");
+                                int ts = 0;
+                                foreach (DataRow dr in dt.Rows)
+                                {
+                                    ts = Convert.ToInt32(dr["ts"]);
+                                }
+                                if (ts == 0)
+                                {
+                                    oacceso.ActualizarBD("begin; delete from turnos where idturnos ='" + idturnos + "'; commit;");
+                                    oacceso.ActualizarBD("insert into seguimientos (idprofesionales, dia, hora, detalle, idturnos, fechareal, idusuarios) values ( '" + idprofesional + "','" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "','" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "','Libera turno del cliente: " + dataGridView1.Rows[ro].Cells[col].Value.ToString() + "','0','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','0')");
+                                    MessageBox.Show("Turno liberado Correctamente");
+                                    dataGridView1.Rows.Clear();
+                                    cargagrilla();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Turnos posteriores con servicios asignados, imposible liberar");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Utilice suspender turno, opcion valida solo para comienzos de turnos");
                             }
                         }
                     }
