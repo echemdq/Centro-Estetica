@@ -115,6 +115,12 @@
     <Compile Include="Esperas.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="Facturacion.cs" />
+    <Compile Include="frmAnulaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnulaFacturas.Designer.cs">
+      <DependentUpon>frmAnulaFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscaPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     <Compile Include="TipoMovCajas.cs" />
     <Compile Include="TotalesCaja.cs" />
     <Compile Include="Turnos.cs" />
+    <EmbeddedResource Include="frmAnulaFacturas.resx">
+      <DependentUpon>frmAnulaFacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscaPacientes.resx">
       <DependentUpon>frmBuscaPacientes.cs</DependentUpon>
     </EmbeddedResource>

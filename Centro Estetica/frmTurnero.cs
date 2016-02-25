@@ -730,5 +730,67 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void finTurnoFijoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Blue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Red)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de dar por finalizado el turno a partir del dia seleccionado?", "Fin de Turno", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+
+                        int idturnos = 0;
+                        foreach (grilla aux in laux)
+                        {
+                            if (aux.Columna == col && aux.Fila == ro)
+                            {
+                                idturnos = Convert.ToInt32(aux.Id);
+                            }
+                        }
+                        DataTable dt = new DataTable();
+                        int idpacientes = 0;
+                        int idprofesionales = 0;
+                        DateTime fin = DateTime.Now;
+                        dt = oacceso.leerDatos("select idpacientes, idprofesionales, idturnos, finturnofijo from turnos where idturnos = '" + idturnos + "' and finturnofijo = '1900-01-01'");
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            idpacientes = Convert.ToInt32(dr["idpacientes"]);
+                            idprofesionales = Convert.ToInt32(dr["idprofesionales"]);
+                            fin = Convert.ToDateTime(dr["finturnofijo"]);
+                        }
+                        if (idpacientes != 0 && idprofesionales != 0)
+                        {
+                            dt = oacceso.leerDatos("select count(*) as ts from serviciosturnos where idpacientes = '" + idpacientes + "' and idprofesionales = '" + idprofesionales + "' and hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and dayofweek(fecha) = dayofweek('" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "') and fecha >= '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "'");
+                            int ts = 0;
+                            foreach (DataRow dr in dt.Rows)
+                            {
+                                ts = Convert.ToInt32(dr["ts"]);
+                            }
+                            if (ts == 0)
+                            {
+                                oacceso.ActualizarBD("update turnos set finturnofijo = '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "' where idturnos = '" + idturnos + "'");
+                                MessageBox.Show("Turno finalizado correctamente");
+                                dataGridView1.Rows.Clear();
+                                cargagrilla();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Turnos posteriores a la finalizacion con servicios asignados, imposible liberar");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("El turno ya posee fecha de finalizacion");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -49,6 +49,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosEgresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cajasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anularFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,7 +179,8 @@
             this.facturacionToolStripMenuItem,
             this.toolStripMenuItem1,
             this.ingresosEgresosToolStripMenuItem,
-            this.cajasToolStripMenuItem});
+            this.cajasToolStripMenuItem,
+            this.anularFacturasToolStripMenuItem});
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.ventasToolStripMenuItem.Text = "Ventas";
@@ -210,6 +212,12 @@
             this.cajasToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.cajasToolStripMenuItem.Text = "Cajas";
             this.cajasToolStripMenuItem.Click += new System.EventHandler(this.cajasToolStripMenuItem_Click);
+            // 
+            // anularFacturasToolStripMenuItem
+            // 
+            this.anularFacturasToolStripMenuItem.Name = "anularFacturasToolStripMenuItem";
+            this.anularFacturasToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.anularFacturasToolStripMenuItem.Text = "Anular Facturas";
             // 
             // frm_Principal
             // 
@@ -253,6 +261,7 @@
         private System.Windows.Forms.ToolStripMenuItem cajasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem consultaCtaCteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anularFacturasToolStripMenuItem;
 
     }
 }

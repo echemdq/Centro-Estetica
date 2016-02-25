@@ -37,3 +37,4 @@ C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Cen
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmRecibos.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmCtaCte.resources
 C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmFormaPago1.resources
+C:\Users\Ezequiel\Documents\GitHub\Centro-Estetica\Centro Estetica\obj\Debug\Centro_Estetica.frmAnulaFacturas.resources

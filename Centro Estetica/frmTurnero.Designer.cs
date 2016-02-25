@@ -65,6 +65,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.finTurnoFijoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -95,6 +96,7 @@
             this.suspenderTurnoFijoToolStripMenuItem,
             this.liberaTurnoToolStripMenuItem,
             this.liberaInasistenciaToolStripMenuItem,
+            this.finTurnoFijoToolStripMenuItem,
             this.toolStripSeparator3,
             this.habilitaHoraToolStripMenuItem,
             this.deshabilitaHoraToolStripMenuItem,
@@ -103,7 +105,7 @@
             this.toolStripSeparator4,
             this.asignarGabineteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 204);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(187, 248);
             // 
             // nuevoTurnoToolStripMenuItem
             // 
@@ -389,6 +391,13 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // finTurnoFijoToolStripMenuItem
+            // 
+            this.finTurnoFijoToolStripMenuItem.Name = "finTurnoFijoToolStripMenuItem";
+            this.finTurnoFijoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.finTurnoFijoToolStripMenuItem.Text = "Fin Turno Fijo";
+            this.finTurnoFijoToolStripMenuItem.Click += new System.EventHandler(this.finTurnoFijoToolStripMenuItem_Click);
+            // 
             // frmTurnero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,5 +480,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnHistCliente;
         private System.Windows.Forms.ToolStripMenuItem liberaInasistenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem finTurnoFijoToolStripMenuItem;
     }
 }
