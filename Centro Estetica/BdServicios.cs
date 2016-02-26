@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 namespace Centro_Estetica
 {
-    public class BdServicios : IDAO<Servicios>
+    public class BdServicios 
     {
         Acceso_BD oacceso = new Acceso_BD();
         public void Agregar(Servicios dato)
@@ -29,9 +29,9 @@ namespace Centro_Estetica
             throw new NotImplementedException();
         }
 
-        public List<Servicios> BuscarEspecial(string dato)
+        public List<Servicios> BuscarEspecial(string dato, string regalo)
         {
-            DataTable dt = oacceso.leerDatos("select s.idservicios, s.idproductos, s.detalle, s.sesiones, s.usadas, s.idlineafactura, s.idpacientes, f.comentario from servicios s left join lineafactura lf on s.idlineafactura = lf.idlineafactura left join facturacion f on lf.idfacturacion = f.idfacturacion where s.idpacientes = '"+dato+"' and s.usadas < s.sesiones and s.fecha >= DATE_SUB(curdate(), INTERVAL 30 DAY) and f.regalo = '1'");
+            DataTable dt = oacceso.leerDatos("select s.idservicios, s.idproductos, s.detalle, s.sesiones, s.usadas, s.idlineafactura, s.idpacientes, f.comentario from servicios s left join lineafactura lf on s.idlineafactura = lf.idlineafactura left join facturacion f on lf.idfacturacion = f.idfacturacion where s.idpacientes = '"+dato+"' and s.usadas < s.sesiones and s.fecha >= DATE_SUB(curdate(), INTERVAL 30 DAY) and f.regalo = '"+regalo+"'");
             List<Servicios> lista = new List<Servicios>();
             foreach (DataRow dr in dt.Rows)
             {

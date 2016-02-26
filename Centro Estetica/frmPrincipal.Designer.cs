@@ -218,6 +218,7 @@
             this.anularFacturasToolStripMenuItem.Name = "anularFacturasToolStripMenuItem";
             this.anularFacturasToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.anularFacturasToolStripMenuItem.Text = "Anular Facturas";
+            this.anularFacturasToolStripMenuItem.Click += new System.EventHandler(this.anularFacturasToolStripMenuItem_Click);
             // 
             // frm_Principal
             // 

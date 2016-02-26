@@ -16,10 +16,12 @@ namespace Centro_Estetica
         public Servicios u = null;
         public string sesion = "";
         string idpacientes = "";
-        public frmBuscaServicio(string id)
+        string regalo1 = "0";
+        public frmBuscaServicio(string id, string regalo)
         {
             InitializeComponent();
             idpacientes = id;
+            regalo1 = regalo;
         }
 
         private void frmBuscaServicio_Load(object sender, EventArgs e)
@@ -37,7 +39,7 @@ namespace Centro_Estetica
             dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[5].Visible = false;
             dataGridView1.Columns[6].Visible = false;
-            List<Servicios> lista = controls.BuscarEspecial(idpacientes);
+            List<Servicios> lista = controls.BuscarEspecial(idpacientes, regalo1);
             int i = lista.Count;
             int x = 0;
             if (i > 0)

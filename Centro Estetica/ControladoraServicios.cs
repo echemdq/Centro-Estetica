@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Centro_Estetica
 {
-    public class ControladoraServicios : IDAO<Servicios>
+    public class ControladoraServicios
     {
         BdServicios bd = new BdServicios();
         public void Agregar(Servicios dato)
@@ -29,9 +29,9 @@ namespace Centro_Estetica
             throw new NotImplementedException();
         }
 
-        public List<Servicios> BuscarEspecial(string dato)
+        public List<Servicios> BuscarEspecial(string dato, string regalo)
         {
-            return bd.BuscarEspecial(dato);
+            return bd.BuscarEspecial(dato, regalo);
         }
 
         public void Modificar(Servicios dato)

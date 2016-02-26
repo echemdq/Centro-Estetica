@@ -92,6 +92,12 @@ namespace Centro_Estetica
             frm.ShowDialog();
         }
 
+        private void anularFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAnulaFacturas frm = new frmAnulaFacturas();
+            frm.ShowDialog();
+        }
+
 
     }
 }

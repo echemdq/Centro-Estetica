@@ -116,7 +116,7 @@ namespace Centro_Estetica
                 {
                     if (txtProducto.Text == "")
                     {                        
-                        frmBuscaServicio frm = new frmBuscaServicio(t.Paciente);
+                        frmBuscaServicio frm = new frmBuscaServicio(t.Paciente,"0");
                         frm.ShowDialog();
                         serv = frm.u;
                         string ses = frm.sesion;
@@ -154,7 +154,7 @@ namespace Centro_Estetica
                         Pacientes p1 = frm1.u;
                         if (p1 != null)
                         {
-                            frmBuscaServicio frm = new frmBuscaServicio(p1.Idpacientes.ToString());
+                            frmBuscaServicio frm = new frmBuscaServicio(p1.Idpacientes.ToString(),"1");
                             frm.ShowDialog();
                             serv = frm.u;
                             string ses = frm.sesion;
