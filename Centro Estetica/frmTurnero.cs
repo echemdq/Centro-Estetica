@@ -25,9 +25,7 @@ namespace Centro_Estetica
         }
 
         private void frmTurnero_Load(object sender, EventArgs e)
-        {
-            
-            
+        {      
             dataGridView2.DataSource = controle.BuscarEspecial(DateTime.Now.ToString("yyyy-MM-dd"));
             dataGridView2.Columns[4].Visible = false;
             dataGridView2.Columns[0].Visible = false;

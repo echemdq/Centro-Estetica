@@ -134,7 +134,7 @@ namespace Centro_Estetica
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
+                try
             {
                 dataGridView1.Rows.Clear();
                 decimal precio = 0;

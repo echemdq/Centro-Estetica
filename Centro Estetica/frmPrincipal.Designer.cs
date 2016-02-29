@@ -37,6 +37,7 @@
             this.subrubrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMProducotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresosEgresosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.profesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMProfesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configHonorariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +51,7 @@
             this.ingresosEgresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cajasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anularFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pruebaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +63,8 @@
             this.profesionalesToolStripMenuItem,
             this.pacientesToolStripMenuItem,
             this.turnosToolStripMenuItem,
-            this.ventasToolStripMenuItem});
+            this.ventasToolStripMenuItem,
+            this.pruebaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1219, 24);
@@ -108,7 +111,8 @@
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMProducotsToolStripMenuItem});
+            this.aBMProducotsToolStripMenuItem,
+            this.ingresosEgresosToolStripMenuItem1});
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.productosToolStripMenuItem.Text = "Productos";
@@ -116,9 +120,16 @@
             // aBMProducotsToolStripMenuItem
             // 
             this.aBMProducotsToolStripMenuItem.Name = "aBMProducotsToolStripMenuItem";
-            this.aBMProducotsToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.aBMProducotsToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.aBMProducotsToolStripMenuItem.Text = "ABM Productos";
             this.aBMProducotsToolStripMenuItem.Click += new System.EventHandler(this.aBMProducotsToolStripMenuItem_Click);
+            // 
+            // ingresosEgresosToolStripMenuItem1
+            // 
+            this.ingresosEgresosToolStripMenuItem1.Name = "ingresosEgresosToolStripMenuItem1";
+            this.ingresosEgresosToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
+            this.ingresosEgresosToolStripMenuItem1.Text = "Ingresos/Egresos";
+            this.ingresosEgresosToolStripMenuItem1.Click += new System.EventHandler(this.ingresosEgresosToolStripMenuItem1_Click);
             // 
             // profesionalesToolStripMenuItem
             // 
@@ -220,6 +231,13 @@
             this.anularFacturasToolStripMenuItem.Text = "Anular Facturas";
             this.anularFacturasToolStripMenuItem.Click += new System.EventHandler(this.anularFacturasToolStripMenuItem_Click);
             // 
+            // pruebaToolStripMenuItem
+            // 
+            this.pruebaToolStripMenuItem.Name = "pruebaToolStripMenuItem";
+            this.pruebaToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.pruebaToolStripMenuItem.Text = "Turnos Salon";
+            this.pruebaToolStripMenuItem.Click += new System.EventHandler(this.pruebaToolStripMenuItem_Click);
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,6 +281,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem consultaCtaCteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem anularFacturasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresosEgresosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pruebaToolStripMenuItem;
 
     }
 }

@@ -160,7 +160,20 @@ namespace Centro_Estetica
                         }
                         if (id == 0)
                         {
-
+                            dt = oc.leerDatos("select * from lineafactura where idfacturacion = '"+idfactura+"'");
+                            List<Facturacion> lista = new List<Facturacion>();
+                            foreach (DataRow dr in dt.Rows)
+                            {
+                                Productos p = new Productos(Convert.ToInt32(dr["idproductos"]), "", 0, 0, 0, 0, 0);
+                                Facturacion f = new Facturacion(Convert.ToInt32(dr["idlineafactura"]), p, Convert.ToInt32(dr["cantidad"]));
+                                lista.Add(f);
+                            }
+                            foreach (Facturacion a in lista)
+                            {
+                                oc.ActualizarBD("begin; update productos set stock = stock + '" + a.Cantidad + "' where idproductos = '" + a.P.Idproductos + "' and sesiones = 0; delete from servicios where idlineafactura = '"+a.Idfacturacion+"'; delete from lineafactura where idlineafactura = '"+a.Idfacturacion+"'; commit;");
+                            }
+                            oc.ActualizarBD("begin; delete from formasdepago where idfacturacion = '"+idfactura+"'; delete from facturacion where idfacturacion = '" + idfactura + "'; commit;");
+                            MessageBox.Show("Comprobante eliminado exitosamente");
                         }
                         else
                         {

@@ -86,6 +86,7 @@
     <Compile Include="BdFacturacion.cs" />
     <Compile Include="BdHonorarios.cs" />
     <Compile Include="BdHorariosProfesionales.cs" />
+    <Compile Include="BdMovProductos.cs" />
     <Compile Include="BdPacientes.cs" />
     <Compile Include="BdProductos.cs" />
     <Compile Include="BdProfesionales.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="ControladoraFacturacion.cs" />
     <Compile Include="ControladoraHonorarios.cs" />
     <Compile Include="ControladoraHorariosProfesionales.cs" />
+    <Compile Include="ControladoraMovProductos.cs" />
     <Compile Include="ControladoraPacientes.cs" />
     <Compile Include="ControladoraProductos.cs" />
     <Compile Include="ControladoraProfesionales.cs" />
@@ -156,6 +158,12 @@
     </Compile>
     <Compile Include="frmDatosTurno.Designer.cs">
       <DependentUpon>frmDatosTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosTurnoSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosTurnoSalon.Designer.cs">
+      <DependentUpon>frmDatosTurnoSalon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEsperas.cs">
       <SubType>Form</SubType>
@@ -223,11 +231,23 @@
     <Compile Include="frmMovCaja.Designer.cs">
       <DependentUpon>frmMovCaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMovProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovProductos.Designer.cs">
+      <DependentUpon>frmMovProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNuevoTurno.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNuevoTurno.Designer.cs">
       <DependentUpon>frmNuevoTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoTurnoSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoTurnoSalon.Designer.cs">
+      <DependentUpon>frmNuevoTurnoSalon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPacientes.cs">
       <SubType>Form</SubType>
@@ -295,12 +315,19 @@
     <Compile Include="frmTurnero.Designer.cs">
       <DependentUpon>frmTurnero.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTurneroSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTurneroSalon.Designer.cs">
+      <DependentUpon>frmTurneroSalon.cs</DependentUpon>
+    </Compile>
     <Compile Include="grilla.cs" />
     <Compile Include="Honorarios.cs" />
     <Compile Include="HorariosProfesionales.cs" />
     <Compile Include="IDAO.cs" />
     <Compile Include="InfHonorarios.cs" />
     <Compile Include="MovCajas.cs" />
+    <Compile Include="MovProductos.cs" />
     <Compile Include="Pacientes.cs" />
     <Compile Include="Productos.cs" />
     <Compile Include="Profesionales.cs" />
@@ -338,6 +365,9 @@
     <EmbeddedResource Include="frmDatosTurno.resx">
       <DependentUpon>frmDatosTurno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosTurnoSalon.resx">
+      <DependentUpon>frmDatosTurnoSalon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEsperas.resx">
       <DependentUpon>frmEsperas.cs</DependentUpon>
     </EmbeddedResource>
@@ -371,8 +401,14 @@
     <EmbeddedResource Include="frmMovCaja.resx">
       <DependentUpon>frmMovCaja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMovProductos.resx">
+      <DependentUpon>frmMovProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoTurno.resx">
       <DependentUpon>frmNuevoTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoTurnoSalon.resx">
+      <DependentUpon>frmNuevoTurnoSalon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPacientes.resx">
       <DependentUpon>frmPacientes.cs</DependentUpon>
@@ -406,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTurnero.resx">
       <DependentUpon>frmTurnero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTurneroSalon.resx">
+      <DependentUpon>frmTurneroSalon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

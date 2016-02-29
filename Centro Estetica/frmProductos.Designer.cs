@@ -46,11 +46,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSesiones = new System.Windows.Forms.NumericUpDown();
-            this.txtStock = new System.Windows.Forms.MaskedTextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.txtStock = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSesiones)).BeginInit();
             this.SuspendLayout();
             // 
@@ -235,21 +235,6 @@
             this.txtSesiones.Size = new System.Drawing.Size(42, 21);
             this.txtSesiones.TabIndex = 2;
             // 
-            // txtStock
-            // 
-            this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStock.Enabled = false;
-            this.txtStock.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.txtStock.HideSelection = false;
-            this.txtStock.Location = new System.Drawing.Point(155, 91);
-            this.txtStock.Mask = "99999";
-            this.txtStock.Name = "txtStock";
-            this.txtStock.PromptChar = ' ';
-            this.txtStock.Size = new System.Drawing.Size(43, 21);
-            this.txtStock.TabIndex = 3;
-            this.txtStock.Text = "0";
-            this.txtStock.ValidatingType = typeof(int);
-            // 
             // lblId
             // 
             this.lblId.AutoSize = true;
@@ -290,17 +275,28 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // txtStock
+            // 
+            this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStock.Enabled = false;
+            this.txtStock.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.txtStock.Location = new System.Drawing.Point(155, 91);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(65, 21);
+            this.txtStock.TabIndex = 78;
+            this.txtStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStock_KeyPress);
+            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 240);
+            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.txtSesiones);
             this.Controls.Add(this.chkActivo);
             this.Controls.Add(this.txtPrecioC);
@@ -345,11 +341,11 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.NumericUpDown txtSesiones;
-        private System.Windows.Forms.MaskedTextBox txtStock;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtStock;
     }
 }

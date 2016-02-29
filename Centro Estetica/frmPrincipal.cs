@@ -98,6 +98,18 @@ namespace Centro_Estetica
             frm.ShowDialog();
         }
 
+        private void ingresosEgresosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmMovProductos frm = new frmMovProductos();
+            frm.ShowDialog();
+        }
+
+        private void pruebaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTurneroSalon frm = new frmTurneroSalon();
+            frm.ShowDialog();
+        }
+
 
     }
 }
