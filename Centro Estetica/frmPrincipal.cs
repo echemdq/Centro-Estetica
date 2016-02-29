@@ -110,6 +110,12 @@ namespace Centro_Estetica
             frm.ShowDialog();
         }
 
+        private void informeDeMovimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInfProductos frm = new frmInfProductos();
+            frm.ShowDialog();
+        }
+
 
     }
 }

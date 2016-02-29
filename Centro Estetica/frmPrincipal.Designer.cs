@@ -52,6 +52,7 @@
             this.cajasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anularFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pruebaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informeDeMovimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,7 +113,8 @@
             // 
             this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMProducotsToolStripMenuItem,
-            this.ingresosEgresosToolStripMenuItem1});
+            this.ingresosEgresosToolStripMenuItem1,
+            this.informeDeMovimientosToolStripMenuItem});
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.productosToolStripMenuItem.Text = "Productos";
@@ -120,14 +122,14 @@
             // aBMProducotsToolStripMenuItem
             // 
             this.aBMProducotsToolStripMenuItem.Name = "aBMProducotsToolStripMenuItem";
-            this.aBMProducotsToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.aBMProducotsToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.aBMProducotsToolStripMenuItem.Text = "ABM Productos";
             this.aBMProducotsToolStripMenuItem.Click += new System.EventHandler(this.aBMProducotsToolStripMenuItem_Click);
             // 
             // ingresosEgresosToolStripMenuItem1
             // 
             this.ingresosEgresosToolStripMenuItem1.Name = "ingresosEgresosToolStripMenuItem1";
-            this.ingresosEgresosToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
+            this.ingresosEgresosToolStripMenuItem1.Size = new System.Drawing.Size(205, 22);
             this.ingresosEgresosToolStripMenuItem1.Text = "Ingresos/Egresos";
             this.ingresosEgresosToolStripMenuItem1.Click += new System.EventHandler(this.ingresosEgresosToolStripMenuItem1_Click);
             // 
@@ -238,6 +240,13 @@
             this.pruebaToolStripMenuItem.Text = "Turnos Salon";
             this.pruebaToolStripMenuItem.Click += new System.EventHandler(this.pruebaToolStripMenuItem_Click);
             // 
+            // informeDeMovimientosToolStripMenuItem
+            // 
+            this.informeDeMovimientosToolStripMenuItem.Name = "informeDeMovimientosToolStripMenuItem";
+            this.informeDeMovimientosToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.informeDeMovimientosToolStripMenuItem.Text = "Informe de Movimientos";
+            this.informeDeMovimientosToolStripMenuItem.Click += new System.EventHandler(this.informeDeMovimientosToolStripMenuItem_Click);
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,6 +292,7 @@
         private System.Windows.Forms.ToolStripMenuItem anularFacturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresosEgresosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pruebaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informeDeMovimientosToolStripMenuItem;
 
     }
 }
