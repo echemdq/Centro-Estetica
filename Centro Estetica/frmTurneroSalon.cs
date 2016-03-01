@@ -13,9 +13,13 @@ namespace Centro_Estetica
     public partial class frmTurneroSalon : Form
     {
         List<grilla> laux;
+        DateTime inicio;
+        DateTime fin;
         int ro = 0; int col = 0;
         public frmTurneroSalon()
         {
+            inicio = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
+            fin = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
             InitializeComponent();
         }
 
@@ -30,6 +34,16 @@ namespace Centro_Estetica
         {
             try
             {
+                while (fin.DayOfWeek != DayOfWeek.Sunday)
+                {
+                    fin = fin.AddDays(1);
+                }
+                while (inicio.DayOfWeek != DayOfWeek.Monday)
+                {
+                    inicio = inicio.AddDays(-1);
+                }
+                maskedTextBox1.Text = inicio.ToString("dd/MM/yyyy");
+                maskedTextBox2.Text = fin.ToString("dd/MM/yyyy");
                 dataGridView1.Columns.Clear();
                 // Create an unbound DataGridView by declaring a column count.
                 dataGridView1.ColumnCount = 8;
@@ -61,7 +75,7 @@ namespace Centro_Estetica
                 }
                 laux = new List<grilla>();
                 Acceso_BD oacceso = new Acceso_BD();
-                DataTable dt = oacceso.leerDatos("select * from turnossalon where fecha = '"+monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")+"'");                
+                DataTable dt = oacceso.leerDatos("select * from turnossalon where fecha between '" + inicio.ToString("yyyy-MM-dd") + "' and '" + fin.ToString("yyyy-MM-dd") + "'");               
                 foreach (DataRow dr in dt.Rows)
                 {
                     int dia = Convert.ToInt32(dr["dia"]);
@@ -71,7 +85,14 @@ namespace Centro_Estetica
                     {
                         grilla gri = new grilla(dia, ini, Convert.ToString(dr["idturnossalon"]));
                         laux.Add(gri);
-                        this.dataGridView1.Rows[ini].Cells[dia].Style.BackColor = Color.Aquamarine;
+                        if (Convert.ToInt32(dr["pago"]) == 0)
+                        {
+                            this.dataGridView1.Rows[ini].Cells[dia].Style.BackColor = Color.Aquamarine;
+                        }
+                        else
+                        {
+                            this.dataGridView1.Rows[ini].Cells[dia].Style.BackColor = Color.DarkTurquoise;
+                        }
                         this.dataGridView1.Rows[ini].Cells[dia].Value = Convert.ToString(dr["nombre"]).ToUpper();
                     }                    
                 }
@@ -92,11 +113,13 @@ namespace Centro_Estetica
         {
             try
             {
-                if (monthCalendar1.SelectionRange.Start.Date >= DateTime.Now.Date)
+                string dia = col.ToString();
+                DateTime fechaturno = inicio.AddDays(Convert.ToDouble(dia) - 1);
+                if (fechaturno >= DateTime.Now.Date)
                 {
                     if (dataGridView1.Rows[ro].Cells[col].Style.BackColor != Color.Aquamarine)
-                    {
-                        frmNuevoTurnoSalon frm = new frmNuevoTurnoSalon(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"),col, dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0,5));
+                    {   
+                        frmNuevoTurnoSalon frm = new frmNuevoTurnoSalon(fechaturno.ToString("dd/MM/yyyy"), col, dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5));
                         frm.ShowDialog();
                         dataGridView1.Columns.Clear();
                         cargagrilla();
@@ -164,6 +187,84 @@ namespace Centro_Estetica
                         Acceso_BD oa = new Acceso_BD();
                         oa.ActualizarBD("delete from turnossalon where idturnossalon = '" + idturnos + "'");
                         MessageBox.Show("Turno eliminado correctamente");
+                        dataGridView1.Columns.Clear();
+                        cargagrilla();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            inicio = inicio.AddDays(7);
+            fin = fin.AddDays(7);
+            cargagrilla();
+            MessageBox.Show("Ha avanzado una semana");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            inicio = inicio.AddDays(-7);
+            fin = fin.AddDays(-7);
+            cargagrilla();
+            MessageBox.Show("Ha retrocedido una semana");
+        }
+
+        private void pagoTurnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Aquamarine)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Asignar pago al turno ?", "Pago Turno", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        int idturnos = 0;
+                        foreach (grilla aux in laux)
+                        {
+                            if (ro == aux.Fila && col == aux.Columna)
+                            {
+                                idturnos = Convert.ToInt32(aux.Id);
+                            }
+                        }
+                        Acceso_BD oa = new Acceso_BD();
+                        oa.ActualizarBD("update turnossalon set pago = 1 where idturnossalon = '" + idturnos + "'");
+                        MessageBox.Show("Pagó turno correctamente");
+                        dataGridView1.Columns.Clear();
+                        cargagrilla();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void anulaPagoTurnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.DarkTurquoise)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el pago", "Eliminar Pago Turno", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        int idturnos = 0;
+                        foreach (grilla aux in laux)
+                        {
+                            if (ro == aux.Fila && col == aux.Columna)
+                            {
+                                idturnos = Convert.ToInt32(aux.Id);
+                            }
+                        }
+                        Acceso_BD oa = new Acceso_BD();
+                        oa.ActualizarBD("update turnossalon set pago = 0 where idturnossalon = '" + idturnos + "'");
+                        MessageBox.Show("Pagó Turno eliminado correctamente");
                         dataGridView1.Columns.Clear();
                         cargagrilla();
                     }

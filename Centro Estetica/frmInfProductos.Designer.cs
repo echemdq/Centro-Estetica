@@ -190,6 +190,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmInfProductos";
             this.Text = "Movimientos de Productos entre fechas";
+            this.Load += new System.EventHandler(this.frmInfProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

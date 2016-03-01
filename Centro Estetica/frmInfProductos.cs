@@ -109,5 +109,11 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void frmInfProductos_Load(object sender, EventArgs e)
+        {
+            maskedTextBox1.Text = DateTime.Now.ToShortDateString();
+            maskedTextBox2.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }
