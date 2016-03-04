@@ -180,5 +180,53 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int fila = dataGridView1.CurrentRow.Index;
+                if (dataGridView1.Rows[fila].Cells[1].Value.ToString() != "")
+                {
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el producto: " + dataGridView1.Rows[fila].Cells[1].Value.ToString(), "Eliminar producto", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        int flag = 0;
+                        
+                        MovProductos mo = new MovProductos(0, "", "", 0, "", 0, "", "");
+                        foreach (MovProductos fe in lista)
+                        {
+                            if (fe.Idproductos == Convert.ToInt32(dataGridView1.Rows[fila].Cells[0].Value))
+                            {
+                                flag = 1;
+                                mo = fe;
+                                break;
+                            }
+                        }
+                        if (flag == 1)
+                        {
+                            lista.Remove(mo);
+                        }
+                        dataGridView1.Rows.Clear();
+                        int x = 0;
+                        if (lista.Count > 0)
+                        {
+                            dataGridView1.Rows.Add(lista.Count());
+                            foreach (MovProductos fa in lista)
+                            {
+                                dataGridView1.Rows[x].Cells[0].Value = fa.Idproductos;
+                                dataGridView1.Rows[x].Cells[1].Value = fa.Producto;
+                                dataGridView1.Rows[x].Cells[2].Value = fa.Cantidad;
+                                x++;
+                            }
+                        } 
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

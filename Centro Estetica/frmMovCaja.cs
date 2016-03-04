@@ -71,7 +71,7 @@ namespace Centro_Estetica
                 cmbrubro.ValueMember = "idtipo";
                 cmbrubro.SelectedIndex = 0;
             }
-            dt = oacceso.leerDatos("select m.idmovcajas as id, m.tipo as tipo, t.detalle as rubro, m.detalle as detalle, importe, fecha from movcajas m left join tipomovcajas t on m.idtipomovcajas = t.idtipomovcajas where fecha = '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
+            dt = oacceso.leerDatos("select m.idmovcajas as id, m.tipo as tipo, t.detalle as rubro, m.detalle as detalle, importe, fecha from movcajas m left join tipomovcajas t on m.idtipomovcajas = t.idtipomovcajas where fecha = '" + DateTime.Now.ToString("yyyy-MM-dd") + "' union select l.idliquidaciondiaria as id, 'EGRESO' as tipo, 'LIQUIDACION HONORARIO' as rubro, p.profesional, importe, fecha from liquidaciondiaria l left join profesionales p on l.idprofesionales = p.idprofesionales where fecha = '" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
             dataGridView1.ColumnCount = 6;
             dataGridView1.Columns[0].Name = "idtipomov";
             dataGridView1.Columns[1].Name = "Tipo de Movimiento";
@@ -129,6 +129,37 @@ namespace Centro_Estetica
                 textBox1.Text = "";
                 frmMovCaja_Load(sender, e);
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int fila = dataGridView1.CurrentRow.Index;
+                if (dataGridView1.Rows[fila].Cells[0].Value.ToString() != "")
+                {
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el movimiento: " + dataGridView1.Rows[fila].Cells[1].Value.ToString(), "Eliminar movimiento", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        if (dataGridView1.Rows[fila].Cells[2].Value.ToString().Equals("LIQUIDACION HONORARIO"))
+                        {
+                            Acceso_BD oa = new Acceso_BD();
+                            oa.ActualizarBD("delete from liquidaciondiaria where idliquidaciondiaria = '" + dataGridView1.Rows[fila].Cells[0].Value + "'");
+                        }
+                        else
+                        {
+                            Acceso_BD oa = new Acceso_BD();
+                            oa.ActualizarBD("delete from movcajas where idmovcajas = '" + dataGridView1.Rows[fila].Cells[0].Value + "'");
+                        }
+                        MessageBox.Show("Movimiento eliminado exitosamente");
+                        frmMovCaja_Load(sender, e);
+                    }
+                }
             }
             catch (Exception ex)
             {
