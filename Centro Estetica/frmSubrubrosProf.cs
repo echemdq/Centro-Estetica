@@ -68,7 +68,7 @@ namespace Centro_Estetica
                 if (cmbSubrubros.SelectedValue.ToString() != "")
                 {
                     Subrubros s = new Subrubros(Convert.ToInt32(cmbSubrubros.SelectedValue),"");
-                    Profesionales p = new Profesionales(Convert.ToInt32(idprofe), "","",null,"","","",0);
+                    Profesionales p = new Profesionales(Convert.ToInt32(idprofe), "","",null,"","","",0,0,0);
                     SubrubrosProfesionales dato = new SubrubrosProfesionales(0, s, p);
                     csrubpr.Agregar(dato);
                     frmSubrubrosProf_Activated(sender, e);

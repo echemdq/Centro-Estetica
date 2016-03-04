@@ -73,7 +73,7 @@ namespace Centro_Estetica
                 int x = 1;
                 foreach (DataRow dr in dt.Rows)
                 {
-                    Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 1);
+                    Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 1,0,0);
                     int cantidad = Convert.ToInt32(Convert.ToString(dr["horario"]).Substring(Convert.ToString(dr["horario"]).Length - 1, 1));
                     string query = Convert.ToString(dr["horario"]);
                     if (Convert.ToString(dr["horasmanuales"]) != "")
@@ -150,7 +150,7 @@ namespace Centro_Estetica
                 int idp = 0;
                 foreach (DataRow dr in dt.Rows)
                 {
-                    Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]),"","",null,"","","",0);
+                    Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]),"","",null,"","","",0,0,0);
                     if (idp != p.Idprofesionales)
                     {
                         foreach (grilla aux in laux)

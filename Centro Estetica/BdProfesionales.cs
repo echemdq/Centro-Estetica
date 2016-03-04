@@ -13,7 +13,7 @@ namespace Centro_Estetica
 
         public void Agregar(Profesionales dato)
         {
-            oacceso.ActualizarBD("insert into profesionales (profesional, documento, idtipodoc, domicilio, telefono, activo, mail) values ('" + dato.Profesional + "','" + dato.Documento + "','" + dato.Tipod.Idtipodoc + "','" + dato.Domicilio + "','" + dato.Telefono + "','" + dato.Activo + "','"+dato.Mail+"')");
+            oacceso.ActualizarBD("insert into profesionales (profesional, documento, idtipodoc, domicilio, telefono, activo, mail, sinturnero, idespecialidades) values ('" + dato.Profesional + "','" + dato.Documento + "','" + dato.Tipod.Idtipodoc + "','" + dato.Domicilio + "','" + dato.Telefono + "','" + dato.Activo + "','"+dato.Mail+"','"+dato.Sinturnero+"','"+dato.Idespecialidades+"')");
         }
 
         public List<Profesionales> TraerTodos()
@@ -27,7 +27,9 @@ namespace Centro_Estetica
             {
                 tipod = new TipoDoc(Convert.ToInt32(dr["idtipodoc"]), Convert.ToString(dr["detalle"]));
                 int activo = Convert.ToInt32(dr["activo"]);
-                usuario = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), Convert.ToString(dr["documento"]), tipod, Convert.ToString(dr["domicilio"]), Convert.ToString(dr["telefono"]), Convert.ToString(dr["mail"]), activo);
+                int sintu = Convert.ToInt32(dr["sinturnero"]);
+                int esp = Convert.ToInt32(dr["idespecialidades"]);
+                usuario = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), Convert.ToString(dr["documento"]), tipod, Convert.ToString(dr["domicilio"]), Convert.ToString(dr["telefono"]), Convert.ToString(dr["mail"]), activo,sintu,esp);
                 lista.Add(usuario);
             }
             return lista;
@@ -44,7 +46,7 @@ namespace Centro_Estetica
             Profesionales p = null;
             foreach (DataRow dr in dt.Rows)
             {
-                p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 0);
+                p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 0,0,0);
             }
             return p;
         }
@@ -60,7 +62,9 @@ namespace Centro_Estetica
             {
                 tipod = new TipoDoc(Convert.ToInt32(dr["idtipodoc"]), Convert.ToString(dr["detalle"]));
                 int activo = Convert.ToInt32(dr["activo"]);
-                usuario = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), Convert.ToString(dr["documento"]), tipod, Convert.ToString(dr["domicilio"]), Convert.ToString(dr["telefono"]), Convert.ToString(dr["mail"]), activo);
+                int sintu = Convert.ToInt32(dr["sinturnero"]);
+                int esp = Convert.ToInt32(dr["idespecialidades"]);
+                usuario = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), Convert.ToString(dr["documento"]), tipod, Convert.ToString(dr["domicilio"]), Convert.ToString(dr["telefono"]), Convert.ToString(dr["mail"]), activo,sintu,esp);
                 lista.Add(usuario);
             }
             return lista;
@@ -68,7 +72,7 @@ namespace Centro_Estetica
 
         public void Modificar(Profesionales dato)
         {
-            oacceso.ActualizarBD("update profesionales set profesional = '" + dato.Profesional + "', documento = '" + dato.Documento + "', idtipodoc = '" + dato.Tipod.Idtipodoc + "', domicilio = '" + dato.Domicilio + "', telefono = '" + dato.Telefono + "', activo = '" + dato.Activo + "', mail = '"+dato.Mail+"' where idprofesionales = '" + dato.Idprofesionales + "'");
+            oacceso.ActualizarBD("update profesionales set profesional = '" + dato.Profesional + "', documento = '" + dato.Documento + "', idtipodoc = '" + dato.Tipod.Idtipodoc + "', domicilio = '" + dato.Domicilio + "', telefono = '" + dato.Telefono + "', activo = '" + dato.Activo + "', mail = '"+dato.Mail+"', sinturnero = '"+dato.Sinturnero+"', idespecialidades = '"+dato.Idespecialidades+"' where idprofesionales = '" + dato.Idprofesionales + "'");
         }
 
         public int traerSigID()

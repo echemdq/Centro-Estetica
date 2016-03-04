@@ -96,6 +96,8 @@ namespace Centro_Estetica
                         dataGridView1.Rows[x].Cells[6].Value = aux.Mail;
                         dataGridView1.Rows[x].Cells[7].Value = aux.Tipod.Idtipodoc;
                         dataGridView1.Rows[x].Cells[8].Value = aux.Activo;
+                        dataGridView1.Rows[x].Cells[9].Value = aux.Sinturnero;
+                        dataGridView1.Rows[x].Cells[10].Value = aux.Idespecialidades;
                         x++;
                     }
                 }
@@ -104,7 +106,7 @@ namespace Centro_Estetica
 
         private void frmBuscaProfesionales_Load(object sender, EventArgs e)
         {
-            dataGridView1.ColumnCount = 9;
+            dataGridView1.ColumnCount = 11;
             dataGridView1.Columns[0].Name = "idprofesionales";
             dataGridView1.Columns[1].Name = "Profesional";
             dataGridView1.Columns[2].Name = "Tipo Doc";
@@ -114,9 +116,13 @@ namespace Centro_Estetica
             dataGridView1.Columns[6].Name = "Mail";
             dataGridView1.Columns[7].Name = "idtipodoc";
             dataGridView1.Columns[8].Name = "";
+            dataGridView1.Columns[9].Name = "";
+            dataGridView1.Columns[10].Name = "";
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[8].Visible = false;
             dataGridView1.Columns[7].Visible = false;
+            dataGridView1.Columns[9].Visible = false;
+            dataGridView1.Columns[10].Visible = false;
         }
 
         private void txtPaciente_KeyPress(object sender, KeyPressEventArgs e)
@@ -140,7 +146,9 @@ namespace Centro_Estetica
             string telefono = dataGridView1[5, filaseleccionada].Value.ToString();
             string mail = dataGridView1[6, filaseleccionada].Value.ToString();
             int activo = Convert.ToInt32(dataGridView1[8, filaseleccionada].Value);
-            u = new Profesionales(idprofesionales, profesional, documento, tipodoc, domicilio, telefono, mail, activo);
+            int sintu = Convert.ToInt32(dataGridView1[9, filaseleccionada].Value);
+            int esp = Convert.ToInt32(dataGridView1[10, filaseleccionada].Value);
+            u = new Profesionales(idprofesionales, profesional, documento, tipodoc, domicilio, telefono, mail, activo,sintu,esp);
             this.Close();
         }
     }

@@ -62,7 +62,7 @@ namespace Centro_Estetica
                 string sabado = Convert.ToString(dr["sabado"]);
                 string domingo = Convert.ToString(dr["domingo"]);
                 string semana = Convert.ToString(dr["semana"]);
-                Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), "", "", null, "", "", "", 0);
+                Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), "", "", null, "", "", "", 0,0,0);
                 HorariosProfesionales c = new HorariosProfesionales(id, p, ingreso, egreso, desde, hasta, lunes, martes, miercoles, jueves, viernes, sabado, domingo, semana);
                 aux.Add(c);
             }

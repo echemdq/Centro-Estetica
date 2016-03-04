@@ -144,7 +144,7 @@ namespace Centro_Estetica
         {
             try
             {
-                Profesionales prof = new Profesionales(idprof, "", "", null, "", "", "", 0);
+                Profesionales prof = new Profesionales(idprof, "", "", null, "", "", "", 0,0,0);
                 if (prod != null)
                 {
                     Honorarios h = new Honorarios(0, prod, prof, Convert.ToDecimal(txtPrecioC.Text.Replace('.',',')));

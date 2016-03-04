@@ -37,7 +37,7 @@ namespace Centro_Estetica
             List<Honorarios> lista = new List<Honorarios>();
             foreach (DataRow dr in dt.Rows)
             {
-                Profesionales prof = new Profesionales(Convert.ToInt32(dr["idprof"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 0);
+                Profesionales prof = new Profesionales(Convert.ToInt32(dr["idprof"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 0,0,0);
                 Productos prod = new Productos(Convert.ToInt32(dr["idproductos"]), Convert.ToString(dr["producto"]), 0, 0, 0, 0, 0);
                 Honorarios h = new Honorarios(Convert.ToInt32(dr["idhonorarios"]), prod, prof, Convert.ToDecimal(dr["precio"]));
                 lista.Add(h);

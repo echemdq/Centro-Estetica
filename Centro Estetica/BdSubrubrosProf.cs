@@ -43,7 +43,7 @@ namespace Centro_Estetica
                 string rubro = Convert.ToString(dr["rubro"]);
                 Rubros r = new Rubros(idr, rubro);
                 Subrubros s = new Subrubros(id, detalle, r);
-                Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), "", "", null, "", "", "", 0);
+                Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), "", "", null, "", "", "", 0,0,0);
                 SubrubrosProfesionales c = new SubrubrosProfesionales(Convert.ToInt32(dr["idsubrubrosprofesionales"]), s, p);
                 aux.Add(c);
             }

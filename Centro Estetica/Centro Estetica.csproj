@@ -114,6 +114,7 @@
     <Compile Include="ControladoraTipoDoc.cs" />
     <Compile Include="ControladoraTurnos.cs" />
     <Compile Include="Ctacte.cs" />
+    <Compile Include="Especialidades.cs" />
     <Compile Include="Esperas.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="Facturacion.cs" />

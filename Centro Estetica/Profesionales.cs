@@ -16,9 +16,24 @@ namespace Centro_Estetica
         string telefono;
         string mail;
         int activo;
+        int sinturnero;
+        int idespecialidades;
 
-        public Profesionales(int i, string p, string d, TipoDoc t, string dom, string tel, string m, int a)
+        public int Idespecialidades
         {
+            get { return idespecialidades; }
+            set { idespecialidades = value; }
+        }
+
+        public int Sinturnero
+        {
+            get { return sinturnero; }
+            set { sinturnero = value; }
+        }
+
+        public Profesionales(int i, string p, string d, TipoDoc t, string dom, string tel, string m, int a, int s, int esp)
+        {
+            idespecialidades = esp;
             idprofesionales = i;
             profesional = p;
             documento = d;
@@ -26,6 +41,7 @@ namespace Centro_Estetica
             domicilio = dom;
             telefono = tel;
             mail = m;
+            sinturnero = s;
             activo = a;
         }
 

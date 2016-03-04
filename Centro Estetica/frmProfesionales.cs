@@ -26,6 +26,22 @@ namespace Centro_Estetica
             cmbTipoDoc.ValueMember = "idtipodoc";
             cmbTipoDoc.SelectedIndex = 0;
             cmbTipoDoc.Text = "DNI";
+            List<Especialidades> laux = new List<Especialidades>();
+            Acceso_BD oacceso = new Acceso_BD();
+            DataTable dt = oacceso.leerDatos("select * from especialidades");
+            foreach (DataRow dr in dt.Rows)
+            {
+                Especialidades t = new Especialidades(Convert.ToInt32(dr["idespecialidades"]), Convert.ToString(dr["detalle"]));
+                laux.Add(t);
+            }
+            if (laux.Count != 0)
+            {
+                cmbEspecialidades.DataSource = laux;
+                cmbEspecialidades.DisplayMember = "detalle";
+                cmbEspecialidades.ValueMember = "idtipo";
+                cmbEspecialidades.SelectedIndex = 0;
+                cmbEspecialidades.SelectedValue = 0;
+            }
         }
         public void deshabilitar()
         {
@@ -58,6 +74,8 @@ namespace Centro_Estetica
             txtProfesional.Text = "";
             txtTelefono.Text = "";
             lblId.Text = "";
+            checkBox1.Checked = false;
+            cmbEspecialidades.SelectedValue = 0;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -66,6 +84,7 @@ namespace Centro_Estetica
             habilitar();
             btnSubrubros.Enabled = false;
             btnHorarios.Enabled = false;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -92,6 +111,7 @@ namespace Centro_Estetica
                     txtTelefono.Text = u.Telefono;
                     txtMail.Text = u.Mail;
                     cmbTipoDoc.Text = u.Tipod.Detalle;
+                    cmbEspecialidades.SelectedValue = u.Idespecialidades;
                     if (u.Activo == 0)
                     {
                         chkActivo.Checked = false;
@@ -100,6 +120,16 @@ namespace Centro_Estetica
                     else if (u.Activo == 1)
                     {
                         chkActivo.Checked = true;
+                        //tabPageCargaEmpleados.BackColor = SystemColors.Info;
+                    }
+                    if (u.Sinturnero == 0)
+                    {
+                        checkBox1.Checked = false;
+                        //tabPageCargaEmpleados.BackColor = Color.LightCoral;
+                    }
+                    else if (u.Sinturnero == 1)
+                    {
+                        checkBox1.Checked = true;
                         //tabPageCargaEmpleados.BackColor = SystemColors.Info;
                     }
                 }
@@ -126,7 +156,16 @@ namespace Centro_Estetica
                         activo = 1;
                     }
                     TipoDoc tip = new TipoDoc(Convert.ToInt32(cmbTipoDoc.SelectedValue), "");
-                    Profesionales r = new Profesionales(0, txtProfesional.Text, txtDocumento.Text, tip, txtDomicilio.Text, txtTelefono.Text, txtMail.Text, activo);
+                    int sintu = 0;
+                    if (!checkBox1.Checked)
+                    {
+                        sintu = 0;
+                    }
+                    else
+                    {
+                        sintu = 1;
+                    }
+                    Profesionales r = new Profesionales(0, txtProfesional.Text, txtDocumento.Text, tip, txtDomicilio.Text, txtTelefono.Text, txtMail.Text, activo, sintu, Convert.ToInt32(cmbEspecialidades.SelectedValue));
                     if (lblId.Text == "")
                     {
                         cprof.Agregar(r);
@@ -158,7 +197,7 @@ namespace Centro_Estetica
             {
                 if (lblId.Text != "")
                 {
-                    Profesionales r = new Profesionales(Convert.ToInt32(lblId.Text), "", "", null, "", "", "", 0);
+                    Profesionales r = new Profesionales(Convert.ToInt32(lblId.Text), "", "", null, "", "", "", 0,0,0);
                     DialogResult dialogResult = MessageBox.Show("Esta seguro de eliminar el profesional: "+ txtProfesional.Text, "Eliminar Profesional", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
@@ -223,6 +262,43 @@ namespace Centro_Estetica
             else
             {
                 MessageBox.Show("Debe seleccionar un profesional para ir a la configuracion");
+            }
+        }
+
+        private void cmbEspecialidades_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+
+                if (e.KeyChar == 13)
+                {
+                    Acceso_BD oacceso = new Acceso_BD();
+                    DialogResult dialogResult = MessageBox.Show("Esta seguro de Agregar la nueva Especialidad: " + cmbEspecialidades.Text, "Agrega Especialidad", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {                       
+                        oacceso.ActualizarBD("insert into especialidades (detalle) values ('" + cmbEspecialidades.Text + "')");
+                        List<Especialidades> laux = new List<Especialidades>();
+                        DataTable dt = oacceso.leerDatos("select * from especialidades");
+                        cmbEspecialidades.DataSource = null;
+                        foreach (DataRow dr in dt.Rows)
+                        {
+                            Especialidades t = new Especialidades(Convert.ToInt32(dr["idespecialidades"]), Convert.ToString(dr["detalle"]));
+                            laux.Add(t);
+                        }
+                        if (laux.Count != 0)
+                        {
+                            cmbEspecialidades.DataSource = laux;
+                            cmbEspecialidades.DisplayMember = "detalle";
+                            cmbEspecialidades.ValueMember = "idtipo";
+                            cmbEspecialidades.SelectedIndex = 0;
+                            cmbEspecialidades.SelectedValue = 0;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -27,7 +27,7 @@ namespace Centro_Estetica
             {
                 if (lblId.Text != "")
                 {
-                    Profesionales prof = new Profesionales(Convert.ToInt32(lblId.Text), "", "", null, "", "", "", 0);
+                    Profesionales prof = new Profesionales(Convert.ToInt32(lblId.Text), "", "", null, "", "", "", 0,0,0);
                     string ingreso = txtIng.Text;
                     string egreso = txtEgr.Text;
                     DateTime t;

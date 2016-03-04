@@ -203,7 +203,6 @@ namespace Centro_Estetica
             inicio = inicio.AddDays(7);
             fin = fin.AddDays(7);
             cargagrilla();
-            MessageBox.Show("Ha avanzado una semana");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -211,7 +210,6 @@ namespace Centro_Estetica
             inicio = inicio.AddDays(-7);
             fin = fin.AddDays(-7);
             cargagrilla();
-            MessageBox.Show("Ha retrocedido una semana");
         }
 
         private void pagoTurnoToolStripMenuItem_Click(object sender, EventArgs e)

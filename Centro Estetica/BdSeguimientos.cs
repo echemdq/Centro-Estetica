@@ -36,7 +36,7 @@ namespace Centro_Estetica
             List<Seguimientos> lista = new List<Seguimientos>();
             foreach (DataRow dr in dt.Rows)
             {
-                Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 0);
+                Profesionales p = new Profesionales(Convert.ToInt32(dr["idprofesionales"]), Convert.ToString(dr["profesional"]), "", null, "", "", "", 0,0,0);
                 usuario = new Seguimientos(Convert.ToInt32(dr["idseguimientos"]), p, Convert.ToString(dr["hora"]), Convert.ToDateTime(dr["dia"]), Convert.ToString(dr["detalle"]), Convert.ToInt32(dr["idturnos"]), Convert.ToDateTime(dr["fechareal"]), Convert.ToInt32(dr["idusuarios"]));
                 lista.Add(usuario);
             }
