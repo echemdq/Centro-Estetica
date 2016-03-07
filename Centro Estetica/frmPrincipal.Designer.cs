@@ -38,6 +38,7 @@
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMProducotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosEgresosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.informeDeMovimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMProfesionalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configHonorariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +53,7 @@
             this.cajasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anularFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pruebaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informeDeMovimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +66,8 @@
             this.pacientesToolStripMenuItem,
             this.turnosToolStripMenuItem,
             this.ventasToolStripMenuItem,
-            this.pruebaToolStripMenuItem});
+            this.pruebaToolStripMenuItem,
+            this.cursosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1219, 24);
@@ -132,6 +134,13 @@
             this.ingresosEgresosToolStripMenuItem1.Size = new System.Drawing.Size(205, 22);
             this.ingresosEgresosToolStripMenuItem1.Text = "Ingresos/Egresos";
             this.ingresosEgresosToolStripMenuItem1.Click += new System.EventHandler(this.ingresosEgresosToolStripMenuItem1_Click);
+            // 
+            // informeDeMovimientosToolStripMenuItem
+            // 
+            this.informeDeMovimientosToolStripMenuItem.Name = "informeDeMovimientosToolStripMenuItem";
+            this.informeDeMovimientosToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.informeDeMovimientosToolStripMenuItem.Text = "Informe de Movimientos";
+            this.informeDeMovimientosToolStripMenuItem.Click += new System.EventHandler(this.informeDeMovimientosToolStripMenuItem_Click);
             // 
             // profesionalesToolStripMenuItem
             // 
@@ -240,12 +249,12 @@
             this.pruebaToolStripMenuItem.Text = "Turnos Salon";
             this.pruebaToolStripMenuItem.Click += new System.EventHandler(this.pruebaToolStripMenuItem_Click);
             // 
-            // informeDeMovimientosToolStripMenuItem
+            // cursosToolStripMenuItem
             // 
-            this.informeDeMovimientosToolStripMenuItem.Name = "informeDeMovimientosToolStripMenuItem";
-            this.informeDeMovimientosToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.informeDeMovimientosToolStripMenuItem.Text = "Informe de Movimientos";
-            this.informeDeMovimientosToolStripMenuItem.Click += new System.EventHandler(this.informeDeMovimientosToolStripMenuItem_Click);
+            this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
+            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.cursosToolStripMenuItem.Text = "Cursos";
+            this.cursosToolStripMenuItem.Click += new System.EventHandler(this.cursosToolStripMenuItem_Click);
             // 
             // frm_Principal
             // 
@@ -293,6 +302,7 @@
         private System.Windows.Forms.ToolStripMenuItem ingresosEgresosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pruebaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informeDeMovimientosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
 
     }
 }

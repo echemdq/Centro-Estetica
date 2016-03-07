@@ -116,6 +116,12 @@ namespace Centro_Estetica
             frm.ShowDialog();
         }
 
+        private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCursos frm = new frmCursos();
+            frm.ShowDialog();
+        }
+
 
     }
 }

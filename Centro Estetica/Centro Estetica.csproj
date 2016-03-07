@@ -154,6 +154,12 @@
     <Compile Include="frmCtaCte.Designer.cs">
       <DependentUpon>frmCtaCte.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCursos.Designer.cs">
+      <DependentUpon>frmCursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDatosTurno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -368,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCtaCte.resx">
       <DependentUpon>frmCtaCte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCursos.resx">
+      <DependentUpon>frmCursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosTurno.resx">
       <DependentUpon>frmDatosTurno.cs</DependentUpon>
