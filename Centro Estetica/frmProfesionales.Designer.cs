@@ -333,6 +333,7 @@
             // 
             // cmbEspecialidades
             // 
+            this.cmbEspecialidades.Enabled = false;
             this.cmbEspecialidades.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.cmbEspecialidades.FormattingEnabled = true;
             this.cmbEspecialidades.Location = new System.Drawing.Point(128, 181);

@@ -53,6 +53,7 @@ namespace Centro_Estetica
             btnSubrubros.Enabled = false;
             btnHorarios.Enabled = false;
             button2.Enabled = false;
+            cmbEspecialidades.Enabled = false;
         }
         public void habilitar()
         {
@@ -64,6 +65,7 @@ namespace Centro_Estetica
             btnSubrubros.Enabled = true;
             btnHorarios.Enabled = true;
             button2.Enabled = true;
+            cmbEspecialidades.Enabled = true;
 
         }
         public void limpiar()

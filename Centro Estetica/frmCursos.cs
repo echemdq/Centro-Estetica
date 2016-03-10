@@ -116,6 +116,7 @@ namespace Centro_Estetica
                                 esp = null;
                                 btnCliente.Enabled = false;
                                 cmbEspecialidades.SelectedValue = 0;
+                                dataGridView1.DataSource = null;
                             }
                         }
                     }
