@@ -79,6 +79,7 @@ namespace Centro_Estetica
                     if (Convert.ToString(dr["horasmanuales"]) != "")
                     {
                         cantidad = cantidad + Convert.ToInt32(Convert.ToString(dr["horasmanuales"]).Substring(Convert.ToString(dr["horasmanuales"]).Length - 1, 1));
+                        query = query.Substring(0,query.Length - 1);
                         query = query + Convert.ToString(dr["horasmanuales"]);
                     }
                     int desde = 0;
