@@ -56,7 +56,7 @@ namespace Centro_Estetica
                 DataTable dt = oacceso.leerDatos("call sp_protrabaja('" + monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd") + "')");
                 dataGridView1.ColumnCount = dt.Rows.Count + 1;
                 dataGridView1.Columns[0].Name = "Horario";
-                
+                dataGridView1.Columns[0].Frozen = true;
                 DateTime start = DateTime.Parse("08:00");
                 DateTime start1 = DateTime.Parse("08:00");
                 DateTime end = DateTime.Parse("22:00");                
