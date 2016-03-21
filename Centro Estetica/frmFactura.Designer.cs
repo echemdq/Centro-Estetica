@@ -49,7 +49,6 @@
             this.lbltotal = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtBonificacion = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -59,6 +58,8 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.chkRegalo = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rbBonif = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -243,7 +244,7 @@
             // 
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(282, 376);
+            this.lbltotal.Location = new System.Drawing.Point(296, 378);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(0, 29);
             this.lbltotal.TabIndex = 87;
@@ -252,7 +253,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(186, 376);
+            this.label9.Location = new System.Drawing.Point(193, 376);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 29);
             this.label9.TabIndex = 89;
@@ -262,23 +263,13 @@
             // 
             this.txtBonificacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBonificacion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBonificacion.Location = new System.Drawing.Point(93, 384);
+            this.txtBonificacion.Location = new System.Drawing.Point(110, 392);
             this.txtBonificacion.Name = "txtBonificacion";
             this.txtBonificacion.Size = new System.Drawing.Size(70, 21);
             this.txtBonificacion.TabIndex = 91;
             this.txtBonificacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBonificacion.TextChanged += new System.EventHandler(this.txtBonificacion_TextChanged);
             this.txtBonificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBonificacion_KeyPress);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(15, 386);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 13);
-            this.label10.TabIndex = 90;
-            this.label10.Text = "Bonificacion";
             // 
             // label11
             // 
@@ -371,16 +362,41 @@
             this.textBox1.Size = new System.Drawing.Size(452, 21);
             this.textBox1.TabIndex = 94;
             // 
+            // rbBonif
+            // 
+            this.rbBonif.AutoSize = true;
+            this.rbBonif.Checked = true;
+            this.rbBonif.Location = new System.Drawing.Point(16, 383);
+            this.rbBonif.Name = "rbBonif";
+            this.rbBonif.Size = new System.Drawing.Size(83, 17);
+            this.rbBonif.TabIndex = 95;
+            this.rbBonif.TabStop = true;
+            this.rbBonif.Text = "Bonificacion";
+            this.rbBonif.UseVisualStyleBackColor = true;
+            this.rbBonif.CheckedChanged += new System.EventHandler(this.rbBonif_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(16, 403);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(66, 17);
+            this.radioButton2.TabIndex = 96;
+            this.radioButton2.Text = "Recargo";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
             // frmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 408);
+            this.ClientSize = new System.Drawing.Size(609, 430);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.rbBonif);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.chkRegalo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtBonificacion);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lbltotal);
@@ -445,9 +461,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtBonificacion;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox chkRegalo;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rbBonif;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }

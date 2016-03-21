@@ -269,9 +269,13 @@ namespace Centro_Estetica
                     idpaciente = pac.Idpacientes;
                 }
                 decimal bonif = 0;
-                if (txtBonificacion.Text != "")
+                if (txtBonificacion.Text != "" && rbBonif.Checked)
                 {
                     bonif = Convert.ToDecimal(txtBonificacion.Text.Replace('.', ','));
+                }
+                else if (txtBonificacion.Text != "" && radioButton2.Checked)
+                {
+                    bonif = bonif - Convert.ToDecimal(txtBonificacion.Text.Replace('.', ','));
                 }
                 Factura f = null;
                 if (!chkRegalo.Checked)
@@ -339,9 +343,14 @@ namespace Centro_Estetica
         private void txtBonificacion_TextChanged(object sender, EventArgs e)
         {
             decimal precio = total;
-            if (txtBonificacion.Text != "" && total > 0)
+            if (txtBonificacion.Text != "" && total > 0 && rbBonif.Checked)
             {
                 precio = precio - Convert.ToDecimal(txtBonificacion.Text.Replace('.',','));
+                lbltotal.Text = precio.ToString();
+            }
+            else if (txtBonificacion.Text != "" && total > 0 && radioButton2.Checked)
+            {
+                precio = precio + Convert.ToDecimal(txtBonificacion.Text.Replace('.', ','));
                 lbltotal.Text = precio.ToString();
             }
             else
@@ -416,6 +425,16 @@ namespace Centro_Estetica
             {
                 chkRegalo.Checked = false;
             }
+        }
+
+        private void rbBonif_CheckedChanged(object sender, EventArgs e)
+        {
+            txtBonificacion_TextChanged(sender, e);
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            txtBonificacion_TextChanged(sender, e);
         }
     }
 }

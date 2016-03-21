@@ -192,7 +192,7 @@ namespace Centro_Estetica
                                 }
                                 if (Convert.ToString(dr["suspendido"]) == "0")
                                 {
-                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Red;
+                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.IndianRed;
                                     this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
                                 }
                                 else
@@ -214,7 +214,7 @@ namespace Centro_Estetica
                                 }
                                 if (Convert.ToString(dr["suspendido"]) == "0")
                                 {
-                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Blue;
+                                    this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.CornflowerBlue;
                                     this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
                                 }
                                 else
@@ -420,7 +420,7 @@ namespace Centro_Estetica
                 
                     if (monthCalendar1.SelectionRange.Start.Date >= DateTime.Now.Date)
                     {
-                        if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Blue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Red)
+                        if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.CornflowerBlue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.IndianRed)
                         {
                             DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
                             if (dialogResult == DialogResult.Yes)
@@ -518,7 +518,7 @@ namespace Centro_Estetica
                             cargagrilla();
                         }
                     }
-                    else if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Blue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Red)
+                    else if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.CornflowerBlue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.IndianRed)
                     {
                         DialogResult dialogResult = MessageBox.Show("Esta seguro de suspender turno dado a la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Suspender turno", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
@@ -734,7 +734,7 @@ namespace Centro_Estetica
         {
             try
             {
-                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Blue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.Red)
+                if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.CornflowerBlue || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.IndianRed)
                 {
                     DialogResult dialogResult = MessageBox.Show("Esta seguro de dar por finalizado el turno a partir del dia seleccionado?", "Fin de Turno", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
