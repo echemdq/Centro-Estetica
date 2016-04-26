@@ -29,7 +29,7 @@ namespace Centro_Estetica
             List<TipoFormasPago> listat = new List<TipoFormasPago>();
             foreach (DataRow dr in dt.Rows)
             {
-                TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(dr["idtipoformaspago"]), Convert.ToString(dr["tipo"]), "", "", "");
+                TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(dr["idtipoformaspago"]), Convert.ToString(dr["tipo"]), "", "", "",0);
                 listat.Add(t);
             }
             cmbFormaPago.DataSource = listat;
@@ -213,7 +213,7 @@ namespace Centro_Estetica
                 {
                     fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
                     fact.Numerofact = Convert.ToInt32(txtFactura.Text);
-                    TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
+                    TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "",0);
                     if (cmbFormaPago.Text == "TARJETA DE CREDITO" || cmbFormaPago.Text == "TARJETA DE DEBITO")
                     {
                         t.Idtarjetas = (Convert.ToString(cmbFormaPago.SelectedValue));
@@ -236,7 +236,7 @@ namespace Centro_Estetica
                     }
                     fact.Ptoventa = 0;
                     fact.Numerofact = factura;
-                    TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "");
+                    TipoFormasPago t = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, "", "", "",0);
                     if (cmbFormaPago.Text == "TARJETA DE CREDITO" || cmbFormaPago.Text == "TARJETA DE DEBITO")
                     {
                         t.Idtarjetas = (Convert.ToString(cmbFormaPago.SelectedValue));

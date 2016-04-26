@@ -13,6 +13,13 @@ namespace Centro_Estetica
         string idtarjetas;
         string cupon;
         string cuotas;
+        decimal importe;
+
+        public decimal Importe
+        {
+            get { return importe; }
+            set { importe = value; }
+        }
 
         public string Cuotas
         {
@@ -44,13 +51,14 @@ namespace Centro_Estetica
             set { idtipoformaspago = value; }
         }
 
-        public TipoFormasPago(int i, string f, string idt, string cuo, string cup)
+        public TipoFormasPago(int i, string f, string idt, string cuo, string cup, decimal imp)
         {
             idtipoformaspago = i;
             forma = f;
             idtarjetas = idt;
             cuotas = cuo;
             cupon = cup;
+            importe = imp;
         }
     }
 }

@@ -136,10 +136,11 @@ namespace Centro_Estetica
         {
                 try
             {
-                dataGridView1.Rows.Clear();
+                
                 decimal precio = 0;
                 if (prod != null)
                 {
+                    dataGridView1.Rows.Clear();
                     Facturacion f = new Facturacion(0, prod, Convert.ToInt32(txtCant.Text));
                     if (listaf.Count > 0)
                     {

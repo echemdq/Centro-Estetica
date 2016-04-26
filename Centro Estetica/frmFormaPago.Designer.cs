@@ -44,6 +44,8 @@
             this.txtFactura = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.chkFactura = new System.Windows.Forms.CheckBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbFormaPago
@@ -59,7 +61,6 @@
             // txtTotal
             // 
             this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotal.Enabled = false;
             this.txtTotal.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.Location = new System.Drawing.Point(139, 38);
             this.txtTotal.Name = "txtTotal";
@@ -93,7 +94,7 @@
             this.label2.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.label2.Location = new System.Drawing.Point(46, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Importe Total";
             // 
@@ -103,7 +104,7 @@
             this.label3.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.label3.Location = new System.Drawing.Point(83, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 13;
             this.label3.Text = "Tarjeta";
             // 
@@ -133,7 +134,7 @@
             this.label6.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.label6.Location = new System.Drawing.Point(12, 179);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 13);
+            this.label6.Size = new System.Drawing.Size(115, 13);
             this.label6.TabIndex = 16;
             this.label6.Text = "Pto Venta - Factura";
             // 
@@ -143,7 +144,7 @@
             this.label7.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.label7.Location = new System.Drawing.Point(83, 150);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 13);
+            this.label7.Size = new System.Drawing.Size(166, 13);
             this.label7.TabIndex = 18;
             this.label7.Text = "DATOS DEL COMPROBANTE";
             // 
@@ -209,11 +210,20 @@
             this.chkFactura.UseVisualStyleBackColor = true;
             this.chkFactura.CheckedChanged += new System.EventHandler(this.chkFactura_CheckedChanged);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(9, 256);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(291, 150);
+            this.dataGridView1.TabIndex = 19;
+            // 
             // frmFormaPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 262);
+            this.ClientSize = new System.Drawing.Size(312, 414);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chkFactura);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.txtFactura);
@@ -230,12 +240,12 @@
             this.Controls.Add(this.cmbTarjetas);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.cmbFormaPago);
-            this.MaximumSize = new System.Drawing.Size(328, 300);
             this.MinimumSize = new System.Drawing.Size(328, 300);
             this.Name = "frmFormaPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forma de Pago";
             this.Load += new System.EventHandler(this.frmFormaPago_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +269,7 @@
         private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.CheckBox chkFactura;
+        private System.Windows.Forms.DataGridView dataGridView1;
 
     }
 }
