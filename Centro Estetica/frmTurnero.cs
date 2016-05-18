@@ -441,7 +441,7 @@ namespace Centro_Estetica
                                     idservt = Convert.ToString(dr["idservt"]);
                                     idserv = Convert.ToString(dr["idserv"]);
                                 }
-                                dt = oacceso.leerDatos("select ifnull(idturnos,0) as id from turnos where hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and fecha = '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "'");
+                                dt = oacceso.leerDatos("select ifnull(idturnos,0) as id from turnos where hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and fecha = '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "' and idprofesionales = '"+idprofesional+"'");
                                 int idturnos = 0;
                                 foreach (DataRow dr in dt.Rows)
                                 {
@@ -532,7 +532,7 @@ namespace Centro_Estetica
                                 }
                             }
                             int idturnos = 0;
-                            DataTable dt = oacceso.leerDatos("select ifnull(idturnos,0) as id, idprofesionales as idpr, idpacientes as idpa from turnos where hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and fecha = '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "'");
+                            DataTable dt = oacceso.leerDatos("select ifnull(idturnos,0) as id, idprofesionales as idpr, idpacientes as idpa from turnos where hora = '" + dataGridView1.Rows[ro].Cells[0].Value.ToString().Substring(0, 5) + "' and fecha = '" + monthCalendar1.SelectionRange.Start.Date.ToString("yyyy-MM-dd") + "' and idprofesionales = '"+idprofesional+"'");
                             int idpacientes = 0;
                             int idprof = 0;
                             foreach (DataRow dr in dt.Rows)
