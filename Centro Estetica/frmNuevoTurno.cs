@@ -153,7 +153,7 @@ namespace Centro_Estetica
                     int existe = 0;
                     if (fijo == "s")
                     {
-                        DataTable dt = oacceso.leerDatos("select ifnull(idturnos,0) as id from turnos where idprofesionales = '"+p.Idprofesionales+"' and dia = '"+dia+"' and hora = '"+hora+"' and fecha >= '"+fecha+"'");                        
+                        DataTable dt = oacceso.leerDatos("select ifnull(idturnos,0) as id from turnos where idprofesionales = '" + p.Idprofesionales + "' and dia = '" + dia + "' and hora = '" + hora + "' and fecha >= '" + fecha.ToString("yyyy-MM-dd") + "'");                        
                         foreach (DataRow dr in dt.Rows)
                         {
                             existe = Convert.ToInt32(dr["id"]);
@@ -162,7 +162,7 @@ namespace Centro_Estetica
                     }
                     else if (fijo == "q")
                     {
-                        DataTable dt = oacceso.leerDatos("select count(*) as id from turnos where case when mod(week(fecha,0),2) = 0 then 1 else 2 end in ('" + TSemana.Text + "') and idprofesionales = '" + p.Idprofesionales + "' and dia = '" + dia + "' and hora = '" + hora + "' and fecha >= '" + fecha + "'");
+                        DataTable dt = oacceso.leerDatos("select count(*) as id from turnos where case when mod(week(fecha,0),2) = 0 then 1 else 2 end in ('" + TSemana.Text + "') and idprofesionales = '" + p.Idprofesionales + "' and dia = '" + dia + "' and hora = '" + hora + "' and fecha >= '" + fecha.ToString("yyyy-MM-dd") + "'");
                         foreach (DataRow dr in dt.Rows)
                         {
                             existe = Convert.ToInt32(dr["id"]);

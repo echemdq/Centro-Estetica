@@ -791,5 +791,12 @@ namespace Centro_Estetica
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void frmTurnero_Activated(object sender, EventArgs e)
+        {
+            label6.Text = "Dia Seleccionado: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy");
+            dataGridView1.Rows.Clear();
+            cargagrilla();
+        }
     }
 }
