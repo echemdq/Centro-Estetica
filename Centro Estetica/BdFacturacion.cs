@@ -9,7 +9,7 @@ namespace Centro_Estetica
     public class BdFacturacion
     {
         Acceso_BD oacceso = new Acceso_BD();
-        public void Agregar(Factura dato, List<Facturacion> dato1, TipoFormasPago dato2)
+        public string Agregar(Factura dato, List<Facturacion> dato1)
         {
             DataTable dt = oacceso.leerDatos("insert into facturacion (fecha,idpaciente,detalle,domicilio,documento,localidad,total,ptoventa,factura,bonificacion, tipocomp, regalo, comentario) values ('" + dato.Fecha.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dato.Idpaciente + "','" + dato.Detalle + "','" + dato.Domicilio + "','" + dato.Documento + "','" + dato.Localidad + "','" + dato.Total.ToString().Replace(',', '.') + "','" + dato.Ptoventa + "','" + dato.Numerofact + "','" + dato.Bonif.ToString().Replace(',', '.') + "','1','"+dato.Regalo+"','"+dato.Comentario+"'); select max(idfacturacion) as idfactura from facturacion;");
             string idfactura = "";
@@ -34,10 +34,10 @@ namespace Centro_Estetica
                     oacceso.ActualizarBD("insert into lineafactura (idproductos, cantidad, precioventa, idfacturacion, preciocalculo, sesiones) values ('" + aux.P.Idproductos + "','" + aux.Cantidad + "','" + aux.P.Precioventa.ToString().Replace(',', '.') + "','" + idfactura + "','" + aux.P.Preciocalculo.ToString().Replace(',', '.') + "','" + aux.P.Sesiones + "'); update productos set stock = stock - '"+aux.Cantidad+"' where idproductos = '"+aux.P.Idproductos+"'");
                 }
             }
-            oacceso.ActualizarBD("insert into formasdepago (idtipoformaspago, idfacturacion, idtarjetas, cupon, cuotas, total) values ('" + dato2.Idtipoformaspago + "','" + idfactura + "','" + dato2.Idtarjetas + "','" + dato2.Cupon + "','" + dato2.Cuotas + "','" + dato.Total.ToString().Replace(',', '.') + "')");
+            return idfactura;
         }
 
-        public void Agregar1(Factura dato, List<Facturacion> dato1, TipoFormasPago dato2)
+        public string Agregar1(Factura dato, List<Facturacion> dato1)
         {
             DataTable dt = oacceso.leerDatos("insert into facturacion (fecha,idpaciente,detalle,domicilio,documento,localidad,total,ptoventa,factura,bonificacion, tipocomp, regalo, comentario) values ('" + dato.Fecha.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dato.Idpaciente + "','" + dato.Detalle + "','" + dato.Domicilio + "','" + dato.Documento + "','" + dato.Localidad + "','" + dato.Total.ToString().Replace(',', '.') + "','" + dato.Ptoventa + "','" + dato.Numerofact + "','" + dato.Bonif.ToString().Replace(',', '.') + "','1','"+dato.Regalo+"','"+dato.Comentario+"'); select max(idfacturacion) as idfactura from facturacion;");
             string idfactura = "";
@@ -45,7 +45,7 @@ namespace Centro_Estetica
             {
                 idfactura = Convert.ToString(dr["idfactura"]);
             }
-            oacceso.ActualizarBD("insert into ctacte (idfacturacion, idpacientes, tipocomp, importe, cancelado) values ('" + idfactura + "','" + dato.Idpaciente + "','1','" + dato.Total.ToString().Replace(',', '.') + "',0)");
+            
             foreach (Facturacion aux in dato1)
             {
                 if (aux.P.Sesiones > 0)
@@ -63,7 +63,18 @@ namespace Centro_Estetica
                     oacceso.ActualizarBD("insert into lineafactura (idproductos, cantidad, precioventa, idfacturacion, preciocalculo, sesiones) values ('" + aux.P.Idproductos + "','" + aux.Cantidad + "','" + aux.P.Precioventa.ToString().Replace(',', '.') + "','" + idfactura + "','" + aux.P.Preciocalculo.ToString().Replace(',', '.') + "','" + aux.P.Sesiones + "'); update productos set stock = stock - '" + aux.Cantidad + "' where idproductos = '" + aux.P.Idproductos + "'");
                 }
             }
-            oacceso.ActualizarBD("insert into formasdepago (idtipoformaspago, idfacturacion, idtarjetas, cupon, cuotas, total) values ('" + dato2.Idtipoformaspago + "','" + idfactura + "','" + dato2.Idtarjetas + "','" + dato2.Cupon + "','" + dato2.Cuotas + "','" + dato.Total.ToString().Replace(',', '.') + "')");
+            return idfactura;
+        }
+
+        public void AgregarFP(TipoFormasPago dato2, string idfactura)
+        {
+            oacceso.ActualizarBD("insert into formasdepago (idtipoformaspago, idfacturacion, idtarjetas, cupon, cuotas, total) values ('" + dato2.Idtipoformaspago + "','" + idfactura + "','" + dato2.Idtarjetas + "','" + dato2.Cupon + "','" + dato2.Cuotas + "','" + dato2.Importe.ToString().Replace(',', '.') + "')");
+        }
+
+        public void AgregarFPC(TipoFormasPago dato2, string idfactura, string idpaciente)
+        {
+            oacceso.ActualizarBD("insert into ctacte (idfacturacion, idpacientes, tipocomp, importe, cancelado) values ('" + idfactura + "','" + idpaciente + "','1','" + dato2.Importe.ToString().Replace(',', '.') + "',0)");
+            oacceso.ActualizarBD("insert into formasdepago (idtipoformaspago, idfacturacion, idtarjetas, cupon, cuotas, total) values ('" + dato2.Idtipoformaspago + "','" + idfactura + "','" + dato2.Idtarjetas + "','" + dato2.Cupon + "','" + dato2.Cuotas + "','" + dato2.Importe.ToString().Replace(',', '.') + "')");
         }
 
         public void Agregar2(Factura dato, List<Ctacte> dato1, TipoFormasPago dato2)

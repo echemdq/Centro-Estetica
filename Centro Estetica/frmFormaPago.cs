@@ -172,10 +172,9 @@ namespace Centro_Estetica
         {
             try
             {
-                
                 if (total == -1)
                 {
-                    total = fact.Total;                   
+                    total = fact.Total;
                 }
                 if (total > 0)
                 {
@@ -184,7 +183,7 @@ namespace Centro_Estetica
 
                         if (cmbFormaPago.Text == "TARJETA DE CREDITO" || cmbFormaPago.Text == "TARJETA DE DEBITO")
                         {
-                            if (txtPtoVenta.Text != "" && txtFactura.Text != "" && txtCuotas.Text != "" && txtCupon.Text != "" && cmbTarjetas.Text != "")
+                            if (txtCuotas.Text != "" && txtCupon.Text != "" && cmbTarjetas.Text != "")
                             {
                                 total = total - Convert.ToDecimal(txtTotal.Text);
                                 TipoFormasPago tip = new TipoFormasPago(Convert.ToInt32(cmbFormaPago.SelectedValue), cmbFormaPago.Text, Convert.ToString(cmbTarjetas.SelectedValue), txtCuotas.Text, txtCupon.Text, Convert.ToDecimal(txtTotal.Text));
@@ -204,122 +203,49 @@ namespace Centro_Estetica
 
                         if (total == 0)
                         {
-                            foreach (TipoFormasPago aux in laux)
+                            if (chkFactura.Checked)
                             {
-                                if (aux.Forma == "TARJETA DE CREDITO" || aux.Forma == "TARJETA DE DEBITO")
+                                if (txtPtoVenta.Text != "" && txtFactura.Text != "")
                                 {
-                                    if (chkFactura.Checked)
+                                    fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
+                                    fact.Numerofact = Convert.ToInt32(txtFactura.Text);
+                                    string idf = "0";
+                                    idf = controlf.Agregar(fact, lista1);
+                                    foreach (TipoFormasPago aux in laux)
                                     {
-                                        if (txtPtoVenta.Text != "" && txtFactura.Text != "" && txtCuotas.Text != "" && txtCupon.Text != "" && cmbTarjetas.Text != "")
+                                        if (aux.Forma == "CUENTA CORRIENTE")
                                         {
-                                            fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
-                                            fact.Numerofact = Convert.ToInt32(txtFactura.Text);
-                                            TipoFormasPago t = new TipoFormasPago(aux.Idtipoformaspago, aux.Forma, "", "", "", 0);
-                                            t.Idtarjetas = (aux.Idtarjetas);
-                                            t.Cupon = aux.Cupon;
-                                            t.Cuotas = aux.Cuotas;
-                                            fact.Total = aux.Importe;
-                                            controlf.Agregar(fact, lista1, t);
-                                            //MessageBox.Show("Comprobante guardado exitosamente");
-                                            //this.Close();
+                                            controlf.AgregarFPC(aux, idf, fact.Idpaciente.ToString());
                                         }
                                         else
                                         {
-                                            MessageBox.Show("Debe completar los datos de la factura, pto de venta, tarjeta, cuotas y nro de cupon");
+                                            controlf.AgregarFP(aux, idf);
                                         }
-                                    }
-                                    else
-                                    {
-                                        MessageBox.Show("Debe cargar los datos de la factura");
                                     }
                                 }
-                                else if (aux.Forma == "EFECTIVO")
+                            }
+                            else
+                            {
+                                Acceso_BD oacceso = new Acceso_BD();
+                                DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'factura'");
+                                int factura = 0;
+                                foreach (DataRow dr in dt.Rows)
                                 {
-                                    if (chkFactura.Checked)
-                                    {
-                                        if (txtPtoVenta.Text != "" && txtFactura.Text != "")
-                                        {
-                                            fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
-                                            fact.Numerofact = Convert.ToInt32(txtFactura.Text);
-                                            TipoFormasPago t = new TipoFormasPago(aux.Idtipoformaspago, aux.Forma, "", "", "", 0);
-                                            fact.Total = aux.Importe;
-                                            controlf.Agregar(fact, lista1, t);
-                                            //MessageBox.Show("Comprobante guardado exitosamente");
-                                            //this.Close();
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("Debe completar los datos de la factura y pto de venta");
-                                        }
-                                    }
-                                    else
-                                    {
-                                        Acceso_BD oacceso = new Acceso_BD();
-                                        DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'factura'");
-                                        int factura = 0;
-                                        foreach (DataRow dr in dt.Rows)
-                                        {
-                                            factura = Convert.ToInt32(dr["numero"]);
-                                        }
-                                        fact.Ptoventa = 0;
-                                        fact.Numerofact = factura;
-                                        TipoFormasPago t = new TipoFormasPago(aux.Idtipoformaspago, aux.Forma, "", "", "", 0);
-                                        fact.Total = aux.Importe;
-                                        controlf.Agregar(fact, lista1, t);
-
-                                        //MessageBox.Show("Comprobante guardado exitosamente");
-                                        //this.Close();
-                                    }
+                                    factura = Convert.ToInt32(dr["numero"]);
                                 }
-                                else if (aux.Forma == "CUENTA CORRIENTE")
+                                fact.Ptoventa = 0;
+                                fact.Numerofact = factura;
+                                string idf = "0";
+                                idf = controlf.Agregar(fact, lista1);
+                                foreach (TipoFormasPago aux in laux)
                                 {
-                                    if (chkFactura.Checked)
+                                    if (aux.Forma == "CUENTA CORRIENTE")
                                     {
-                                        if (txtPtoVenta.Text != "" && txtFactura.Text != "")
-                                        {
-                                            fact.Ptoventa = Convert.ToInt32(txtPtoVenta.Text);
-                                            fact.Numerofact = Convert.ToInt32(txtFactura.Text);
-                                            TipoFormasPago t = new TipoFormasPago(aux.Idtipoformaspago, aux.Forma, "", "", "", 0);
-                                            fact.Total = aux.Importe;
-                                            if (fact.Idpaciente != 0)
-                                            {
-                                                controlf.Agregar1(fact, lista1, t);
-                                                //MessageBox.Show("Comprobante guardado exitosamente");
-                                                //this.Close();
-                                            }
-                                            else
-                                            {
-                                                MessageBox.Show("Para facturar en cuenta corriente debe seleccionar un cliente");
-                                            }
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("Debe completar los datos de la factura y pto de venta");
-                                        }
+                                        controlf.AgregarFPC(aux, idf, fact.Idpaciente.ToString());
                                     }
                                     else
                                     {
-                                        Acceso_BD oacceso = new Acceso_BD();
-                                        DataTable dt = oacceso.leerDatos("select numero + 1 as numero from contador where detalle = 'factura'");
-                                        int factura = 0;
-                                        foreach (DataRow dr in dt.Rows)
-                                        {
-                                            factura = Convert.ToInt32(dr["numero"]);
-                                        }
-                                        fact.Ptoventa = 0;
-                                        fact.Numerofact = factura;
-                                        TipoFormasPago t = new TipoFormasPago(aux.Idtipoformaspago, aux.Forma, "", "", "", 0);
-                                        fact.Total = aux.Importe;
-                                        if (fact.Idpaciente != 0)
-                                        {
-                                            controlf.Agregar1(fact, lista1, t);
-                                            //MessageBox.Show("Comprobante guardado exitosamente");
-                                            //this.Close();
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("Para facturar en cuenta corriente debe seleccionar un cliente");
-                                        }
+                                        controlf.AgregarFP(aux, idf);
                                     }
                                 }
                             }
@@ -345,7 +271,7 @@ namespace Centro_Estetica
                         MessageBox.Show("Verifique el importe");
                         txtTotal.Text = total.ToString();
                     }
-                }              
+                }
             }
             catch (Exception ex)
             {

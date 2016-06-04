@@ -45,6 +45,9 @@ namespace Centro_Estetica
         {
             try
             {
+                //dataGridView1.DefaultCellStyle.Font = new Font("Calibri", 10, FontStyle.Regular);
+                //dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Calibri", 10, FontStyle.Regular);
+                
                 laux = new List<grilla>();
                 dataGridView1.ColumnHeadersVisible = true;
                 DataGridViewCellStyle columnHeaderStyle = new DataGridViewCellStyle();
@@ -229,7 +232,7 @@ namespace Centro_Estetica
                                 this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.Green;
                                 this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
                             }
-                        }
+                        }                        
                     }
                     else
                     {
@@ -351,7 +354,7 @@ namespace Centro_Estetica
             {
                 if (monthCalendar1.SelectionRange.Start.Date >= DateTime.Now.Date)
                 {
-                    if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White)
+                    if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White || dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.LightBlue)
                     {
                         DialogResult dialogResult = MessageBox.Show("Esta seguro de deshabilitar la hora: " + dataGridView1.Rows[ro].Cells[0].Value + " del dia: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy") + " del profesional: " + dataGridView1.Columns[col].Name.ToString(), "Deshabilitar Hora", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
@@ -797,6 +800,32 @@ namespace Centro_Estetica
             label6.Text = "Dia Seleccionado: " + monthCalendar1.SelectionRange.Start.ToString("dd-MM-yyyy");
             dataGridView1.Rows.Clear();
             cargagrilla();
+        }
+
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            float fontSize = dataGridView1.DefaultCellStyle.Font.Size;
+            
+
+            if (e.KeyCode == Keys.Add)//Control with '+'
+            {
+                dataGridView1.DefaultCellStyle.Font = new Font("Arial", fontSize + 1, FontStyle.Regular);
+                dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", fontSize + 1, FontStyle.Regular);
+                foreach(DataGridViewColumn aux in dataGridView1.Columns)
+                {
+                    aux.Width = aux.Width + 15;
+                }
+
+            }
+            else if (e.KeyCode == Keys.Subtract)//Control with '-'
+            {
+                dataGridView1.DefaultCellStyle.Font = new Font("Arial", fontSize - 1, FontStyle.Regular);
+                dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", fontSize - 1, FontStyle.Regular);
+                foreach (DataGridViewColumn aux in dataGridView1.Columns)
+                {
+                    aux.Width = aux.Width - 15;
+                }
+            }
         }
     }
 }

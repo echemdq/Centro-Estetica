@@ -10,16 +10,24 @@ namespace Centro_Estetica
     {
         BdFacturacion bd = new BdFacturacion();
 
-        public void Agregar(Factura dato, List<Facturacion> dato1, TipoFormasPago dato2)
+        public string Agregar(Factura dato, List<Facturacion> dato1)
         {
-            bd.Agregar(dato, dato1, dato2);
+            return bd.Agregar(dato, dato1);
         }
 
-        public void Agregar1(Factura dato, List<Facturacion> dato1, TipoFormasPago dato2)
+        public string Agregar1(Factura dato, List<Facturacion> dato1)
         {
-            bd.Agregar1(dato, dato1, dato2);
+            return bd.Agregar1(dato, dato1);
         }
 
+        public void AgregarFP(TipoFormasPago dato2, string d)
+        {
+            bd.AgregarFP(dato2, d);
+        }
+        public void AgregarFPC(TipoFormasPago dato2, string d, string p)
+        {
+            bd.AgregarFPC(dato2, d, p);
+        }
         public void Agregar2(Factura dato, List<Ctacte> dato1, TipoFormasPago dato2)
         {
             bd.Agregar2(dato, dato1, dato2);
