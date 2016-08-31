@@ -170,6 +170,10 @@ namespace Centro_Estetica
                     int fila = Convert.ToInt32(Convert.ToString(dr["hora"]).Substring(0, 2))-8;                    
                     string fijo = Convert.ToString(dr["fijo"]);
                     int asistencia = Convert.ToInt32(Convert.ToString(dr["asistencia"]));
+                    if(idp == 15)
+                    {
+
+                    }
                     if (col != 0)
                     {
                         if (asistencia == 1)
@@ -198,7 +202,7 @@ namespace Centro_Estetica
                                     this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.IndianRed;
                                     this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
                                 }
-                                else
+                                else if (this.dataGridView1.Rows[fila].Cells[col].Style.BackColor != Color.Gray)
                                 {
                                     this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
                                 }
@@ -220,7 +224,7 @@ namespace Centro_Estetica
                                     this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.CornflowerBlue;
                                     this.dataGridView1.Rows[fila].Cells[col].Value = Convert.ToString(dr["detalle"]) + " " + Convert.ToString(dr["sesion"]);
                                 }
-                                else
+                                else if (this.dataGridView1.Rows[fila].Cells[col].Style.BackColor != Color.Gray)
                                 {
                                     this.dataGridView1.Rows[fila].Cells[col].Style.BackColor = Color.LightBlue;
                                 }
