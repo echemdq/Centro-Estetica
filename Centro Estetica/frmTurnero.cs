@@ -170,10 +170,7 @@ namespace Centro_Estetica
                     int fila = Convert.ToInt32(Convert.ToString(dr["hora"]).Substring(0, 2))-8;                    
                     string fijo = Convert.ToString(dr["fijo"]);
                     int asistencia = Convert.ToInt32(Convert.ToString(dr["asistencia"]));
-                    if(idp == 15)
-                    {
 
-                    }
                     if (col != 0)
                     {
                         if (asistencia == 1)
