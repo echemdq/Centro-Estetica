@@ -45,9 +45,6 @@ namespace Centro_Estetica
         {
             try
             {
-                //dataGridView1.DefaultCellStyle.Font = new Font("Calibri", 10, FontStyle.Regular);
-                //dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Calibri", 10, FontStyle.Regular);
-                
                 laux = new List<grilla>();
                 dataGridView1.ColumnHeadersVisible = true;
                 DataGridViewCellStyle columnHeaderStyle = new DataGridViewCellStyle();
@@ -81,7 +78,9 @@ namespace Centro_Estetica
                     string query = Convert.ToString(dr["horario"]);
                     if (Convert.ToString(dr["horasmanuales"]) != "")
                     {
-                        cantidad = cantidad + Convert.ToInt32(Convert.ToString(dr["horasmanuales"]).Substring(Convert.ToString(dr["horasmanuales"]).Length - 1, 1));
+                        int canthorasmanuales = 0;
+                        canthorasmanuales = Convert.ToInt32(Convert.ToString(dr["horasmanuales"]).Substring(Convert.ToString(dr["horasmanuales"]).LastIndexOf(';') + 1, Convert.ToString(dr["horasmanuales"]).Length - (Convert.ToString(dr["horasmanuales"]).LastIndexOf(';') + 1)));
+                        cantidad = cantidad + canthorasmanuales;
                         query = query.Substring(0,query.Length - 1);
                         query = query + Convert.ToString(dr["horasmanuales"]);
                     }
