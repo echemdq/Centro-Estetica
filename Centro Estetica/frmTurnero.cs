@@ -252,6 +252,7 @@ namespace Centro_Estetica
         {
             try
             {
+                int var = 0;
                 if (monthCalendar1.SelectionRange.Start.Date >= DateTime.Now.Date)
                 {
                     if (dataGridView1.Rows[ro].Cells[col].Style.BackColor == Color.White)
@@ -263,6 +264,17 @@ namespace Centro_Estetica
                             {
                                 idprofesional = Convert.ToInt32(aux.Id);
                             }
+                        }
+                        for(int x = 1; x <= dataGridView1.Columns.Count-1; x++)
+                        {
+                            if (dataGridView1.Rows[ro].Cells[x].Style.BackColor != Color.White && dataGridView1.Rows[ro].Cells[x].Style.BackColor != Color.Gray && dataGridView1.Rows[ro].Cells[x].Style.BackColor != Color.LightBlue)
+                            {
+                                var++;
+                            }
+                        }
+                        if (var >= 7)
+                        {
+                            MessageBox.Show("Atencion, ya se encuentran asignados 7 turnos en dicha franja horaria");
                         }
                         frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"), dataGridView1.Rows[ro].Cells[0].Value.ToString(), idprofesional,0);
                         frm.ShowDialog();
@@ -277,9 +289,21 @@ namespace Centro_Estetica
                                 idprofesional = Convert.ToInt32(aux.Id);
                             }
                         }
+                        for (int x = 1; x <= dataGridView1.Columns.Count - 1; x++)
+                        {
+                            if (dataGridView1.Rows[ro].Cells[x].Style.BackColor != Color.White && dataGridView1.Rows[ro].Cells[x].Style.BackColor != Color.Gray && dataGridView1.Rows[ro].Cells[x].Style.BackColor != Color.LightBlue)
+                            {
+                                var++;
+                            }
+                        }
+                        if (var >= 7)
+                        {
+                            MessageBox.Show("Atencion, ya se encuentran asignados 7 turnos en dicha franja horaria");
+                        }
                         frmNuevoTurno frm = new frmNuevoTurno(monthCalendar1.SelectionRange.Start.ToString("dd/MM/yyyy"), dataGridView1.Rows[ro].Cells[0].Value.ToString(), idprofesional, 1);
                         frm.ShowDialog();
                     }
+                    
                 }
                 else
                 {
